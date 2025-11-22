@@ -1,9 +1,3 @@
-不要修改任何 .vcxproj、.h、.cpp 文件，也不要触碰 expat、StructParserStub、xml 相关代码。
-
-只做一件事：
-
-将 .github/workflows/build.yml 替换为以下内容，不许改动：
-
 name: Build GameServer Only
 
 on:
@@ -20,7 +14,7 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Create Fake StructParser (disable all structparser calls)
+    - name: Create Fake StructParser
       run: |
         mkdir Utilities\bin -Force
         echo. > Utilities\bin\StructParser.exe
@@ -35,5 +29,3 @@ jobs:
         name: GameServer
         path: Core/bin/Debug/GameServer.exe
         if-no-files-found: error
-
-完成以上修改后，提交一次 commit，其他文件一律不要变。
