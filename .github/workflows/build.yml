@@ -1,85 +1,37 @@
-name: Build GameServer
+name: Build GameServer Only
 
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
     branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: windows-latest
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-      
+
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Prepare 3rdparty folder
-      run: |
-        if (-not (Test-Path "3rdparty")) { mkdir "3rdparty" }
-
-    - name: Download expat 2.0.1
-      run: |
-        cd 3rdparty
-        curl -L https://github.com/libexpat/libexpat/archive/refs/tags/R_2_0_1.zip -o expat.zip
-        powershell -Command "Expand-Archive -Path expat.zip -DestinationPath . -Force"
-        move libexpat-R_2_0_1 expat-2.0.1
-      
-    - name: Build expat
-      run: |
-        cd 3rdparty/expat-2.0.1/win32
-        msbuild expat_static.vcxproj /p:Configuration=Release /p:Platform=Win32 /p:PlatformToolset=v143
-      
-    - name: Prepare expat lib/include for StructParser
-      run: |
-        if (-not (Test-Path "3rdparty\expat-2.0.1\lib")) { mkdir 3rdparty\expat-2.0.1\lib }
-        if (-not (Test-Path "3rdparty\expat-2.0.1\xmlwf")) { mkdir 3rdparty\expat-2.0.1\xmlwf }
-
-        copy 3rdparty\expat-2.0.1\lib\expat.h 3rdparty\expat-2.0.1\lib\
-        copy 3rdparty\expat-2.0.1\lib\expat_external.h 3rdparty\expat-2.0.1\lib\
-        copy 3rdparty\expat-2.0.1\lib\winconfig.h 3rdparty\expat-2.0.1\lib\
-        copy 3rdparty\expat-2.0.1\xmlwf\xmlfile.h 3rdparty\expat-2.0.1\xmlwf\
-        
-        if (Test-Path 3rdparty\expat-2.0.1\win32\bin\Release\expat.lib) {
-          copy 3rdparty\expat-2.0.1\win32\bin\Release\expat.lib 3rdparty\expat-2.0.1\lib\libexpatMT.lib
-        } else {
-          echo "Warning: expat.lib not found, StructParser may fail"
-        }
-      
-    - name: Restore NuGet packages (if any)
+    - name: Restore NuGet packages
       run: nuget restore CoreGameServer.sln
       continue-on-error: true
-      
-    - name: Build StructParser first
-      run: |
-        msbuild Utilities\StructParser\StructParser.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
-      
-    - name: Setup StructParser for main build
-      run: |
-        if (-not (Test-Path "Utilities\bin")) { mkdir Utilities\bin }
 
-        if (Test-Path Utilities\StructParser\bin\Debug\StructParser.exe) {
-          copy Utilities\StructParser\bin\Debug\StructParser.exe Utilities\bin\StructParser.exe
-        } elseif (Test-Path Utilities\bin\StructParser.exe) {
-          echo "StructParser.exe already exists."
-        } else {
-          echo "Error: StructParser.exe not found."
-          exit 1
-        }
-      
-    - name: Build Solution
+    - name: Build ONLY GameServer
       run: |
-        msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
-      
-    - name: Upload Artifacts
+        msbuild CoreGameServer.sln `
+          /t:GameServer `
+          /p:Configuration=Debug `
+          /p:Platform=Win32 `
+          /p:PlatformToolset=v143 `
+          /m /v:minimal
+
+    - name: Upload GameServer.exe
       uses: actions/upload-artifact@v4
       with:
         name: GameServer
-        path: |
-          Core/bin/Debug/GameServer.exe
-          Core/bin/Debug/*.dll
-        if-no-files-found: warn
+        path: Core/bin/Debug/GameServer.exe
+        if-no-files-found: error
