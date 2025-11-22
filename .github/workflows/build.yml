@@ -14,11 +14,10 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Create Fake StructParser.exe
-      shell: pwsh
+    - name: Create Fake StructParser
       run: |
-        New-Item -ItemType Directory -Force -Path "Utilities/bin" | Out-Null
-        Set-Content -Path "Utilities/bin/StructParser.exe" -Value ([byte[]](0x4D,0x5A)) -Encoding Byte
+        mkdir Utilities\bin
+        echo. > Utilities\bin\StructParser.exe
 
     - name: Build GameServer
       run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
@@ -27,5 +26,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: GameServer
-        path: Core/bin/Debug/GameServer.exe
+        path: Core\bin\Debug\GameServer.exe
         if-no-files-found: error
