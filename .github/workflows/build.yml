@@ -20,13 +20,12 @@ jobs:
       run: nuget restore CoreGameServer.sln
       continue-on-error: true
 
-    - name: Build ONLY GameServer
+    - name: Build ONLY CoreGameServer (GameServer.exe)
       run: |
         msbuild CoreGameServer.sln `
-          /t:GameServer `
+          /t:CoreGameServer `
           /p:Configuration=Debug `
           /p:Platform=Win32 `
-          /p:PlatformToolset=v143 `
           /m /v:minimal
 
     - name: Upload GameServer.exe
