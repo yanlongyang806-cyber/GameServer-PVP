@@ -18,24 +18,29 @@ jobs:
       shell: cmd
       run: |
         if not exist Utilities\bin mkdir Utilities\bin
-        echo. > Utilities\bin\StructParser.exe
+        echo MZ > Utilities\bin\StructParser.exe
 
-    - name: Build GameServer
+    - name: Build Solution (all dependencies)
       shell: cmd
       run: |
-        msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
-        if errorlevel 1 exit /b 1
+        msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
+        if errorlevel 1 (
+          echo Build failed with error code %errorlevel%
+          exit /b 1
+        )
 
     - name: Find GameServer.exe
       shell: cmd
       run: |
         echo Searching for GameServer.exe...
-        dir /s /b GameServer.exe 2>nul || echo GameServer.exe not found
         if exist Core\bin\Debug\GameServer.exe (
           echo Found: Core\bin\Debug\GameServer.exe
           dir Core\bin\Debug\GameServer.exe
         ) else (
           echo Core\bin\Debug\GameServer.exe does not exist
+          echo Searching entire repository...
+          dir /s /b GameServer.exe 2>nul
+          exit /b 1
         )
 
     - name: Upload GameServer.exe
