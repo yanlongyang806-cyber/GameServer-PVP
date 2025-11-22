@@ -1,8 +1,6 @@
 name: Build GameServer Only
 
 on:
-  push:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -16,9 +14,16 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Build CoreGameServer (skip StructParser)
+    - name: Create fake StructParser.exe (empty)
+      run: |
+        mkdir Utilities\bin
+        echo @echo off > Utilities\bin\StructParser.bat
+        echo. >> Utilities\bin\StructParser.bat
+        powershell -Command "Add-Type -AssemblyName System.Windows.Forms; $bytes = [System.Text.Encoding]::ASCII.GetBytes('MZ'); Set-Content -Path 'Utilities/bin/StructParser.exe' -Value $bytes -Encoding Byte"
+
+    - name: Build CoreGameServer
       shell: cmd
-      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /p:PreBuildEvent= /p:RunStructParser=false /p:UseStructParser=false /m /v:minimal
+      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
 
     - name: Upload GameServer.exe
       uses: actions/upload-artifact@v4
