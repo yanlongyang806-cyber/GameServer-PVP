@@ -15,11 +15,13 @@ jobs:
       uses: microsoft/setup-msbuild@v1
 
     - name: Create Fake StructParser
+      shell: cmd
       run: |
-        mkdir Utilities\bin
+        if not exist Utilities\bin mkdir Utilities\bin
         echo. > Utilities\bin\StructParser.exe
 
     - name: Build GameServer
+      shell: cmd
       run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m
 
     - name: Upload GameServer.exe
