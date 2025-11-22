@@ -1,8 +1,6 @@
 name: Build GameServer Only
 
 on:
-  push:
-    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -16,11 +14,9 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Disable StructParser PreBuildEvent
-      run: echo "PreBuildEvent=" >> $env:GITHUB_ENV
-
-    - name: Build ONLY GameServer (skip StructParser)
-      run: |
+    - name: Build CoreGameServer (skip StructParser)
+      shell: cmd
+      run: >
         msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /p:PreBuildEvent= /p:RunStructParser=false /p:UseStructParser=false /m /v:minimal
 
     - name: Upload GameServer.exe
