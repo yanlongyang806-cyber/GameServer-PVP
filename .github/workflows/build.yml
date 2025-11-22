@@ -14,10 +14,11 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Create Fake StructParser (fix all errors)
+    - name: Force-create StructParser.exe in EXACT PATH
       run: |
+        mkdir Utilities
         mkdir Utilities\bin
-        echo. > Utilities\bin\StructParser.exe
+        echo @echo off > Utilities\bin\StructParser.exe
 
     - name: Build GameServer Only
       shell: cmd
