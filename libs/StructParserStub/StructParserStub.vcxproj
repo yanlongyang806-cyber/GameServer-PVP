@@ -84,7 +84,8 @@
       <OptimizeReferences>false</OptimizeReferences>
     </Link>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>if exist "$(SolutionDir)Utilities\bin\StructParser.exe" ("$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) || exit /b 0</Command>
+      <Message>Running StructParser...</Message>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -110,7 +111,8 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>if exist "$(SolutionDir)Utilities\bin\StructParser.exe" ("$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) || exit /b 0</Command>
+      <Message>Running StructParser...</Message>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
@@ -126,7 +128,8 @@
       <OptimizeReferences>false</OptimizeReferences>
     </Link>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>if exist "$(SolutionDir)Utilities\bin\StructParser.exe" ("$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) || exit /b 0</Command>
+      <Message>Running StructParser...</Message>
     </PreBuildEvent>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -152,7 +155,8 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>if exist "$(SolutionDir)Utilities\bin\StructParser.exe" ("$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) || exit /b 0</Command>
+      <Message>Running StructParser...</Message>
     </PreBuildEvent>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
