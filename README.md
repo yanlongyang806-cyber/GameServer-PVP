@@ -1,81 +1,108 @@
-﻿# GameServer - 鍏ㄥ湴鍥剧孩鍚峆K鐗堟湰
+﻿# GameServer - 全地图红名PK版本
 
-杩欐槸娓告垙鏈嶅姟鍣ㄧ殑绮剧畝鐗堟湰锛屽寘鍚叏鍦板浘绾㈠悕PK鍔熻兘銆?
+这是游戏服务器的精简版本，包含全地图红名PK功能。
 
-## 鍔熻兘鐗规€?
+## 🎮 功能特性
 
-鉁?**鍏ㄥ湴鍥剧孩鍚峆K妯″紡**
-- 鎵€鏈夌帺瀹惰繘鍏ユ父鎴忓悗浜掔浉鏄剧ず涓虹孩鍚嶏紙鏁屽鐘舵€侊級
-- 鍙互鍦ㄥ叏鍦板浘浠讳綍浣嶇疆浣跨敤鏅€氭敾鍑诲拰鎶€鑳芥敾鍑诲叾浠栫帺瀹?
-- 绉婚櫎浜嗘墍鏈塒K鍖哄煙闄愬埗
-- 绉婚櫎浜嗗ぇ閮ㄥ垎PK闄愬埗鏉′欢
+✅ **全地图红名PK模式**
+- 所有玩家进入游戏后互相显示为红名（敌对状态）
+- 可以在全地图任何位置使用普通攻击和技能攻击其他玩家
+- 移除了所有PK区域限制
+- 移除了大部分PK限制条件
 
-## 缂栬瘧瑕佹眰
+## 🛠️ 编译要求
 
-- **Visual Studio 2022** (鎺ㄨ崘) 鎴?Visual Studio 2019/2017
+- **Visual Studio 2022** (推荐) 或 Visual Studio 2019/2017
 - **Windows SDK 10.0**
-- **C++ 妗岄潰寮€鍙戝伐浣滆礋杞?*
+- **C++ 桌面开发工作负载**
 
-## 缂栬瘧姝ラ
+## 📦 编译步骤
 
-### 鏂规硶涓€锛氫娇鐢?Visual Studio
+### 方法一：使用 Visual Studio
 
-1. 鎵撳紑 CoreGameServer.sln
-2. 閫夋嫨閰嶇疆锛歚Debug | Win32
-3. 鑿滃崟锛?*鐢熸垚(B)** 鈫?**鐢熸垚瑙ｅ喅鏂规**
-4. 鎴栨寜 Ctrl+Shift+B
+1. 打开 `CoreGameServer.sln`
+2. 选择配置：`Debug | Win32`
+3. 菜单：**生成(B)** → **生成解决方案**
+4. 或按 `Ctrl+Shift+B`
 
-### 鏂规硶浜岋細浣跨敤鍛戒护琛?
+### 方法二：使用命令行
 
-`cmd
+```cmd
 cd I:\wdym\GameServer-PVP
 msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m
-`
+```
 
-## 杈撳嚭鏂囦欢
+### 方法三：GitHub Actions 自动编译
 
-缂栬瘧鎴愬姛鍚庯紝GameServer.exe 浼氬湪锛?
-`
+推送到 GitHub 后，GitHub Actions 会自动编译：
+1. 进入仓库的 "Actions" 标签
+2. 查看编译进度
+3. 下载编译好的文件
+
+## 📂 输出文件
+
+编译成功后，`GameServer.exe` 会在：
+```
 Core\bin\Debug\GameServer.exe
-`
+```
 
-## PVP 淇敼璇存槑
+## ⚔️ PVP 修改说明
 
-淇敼鐨勬枃浠讹細
-- CrossRoads\Common\Combat\Character_target.c - 瀹炰綋鍏崇郴鍒ゆ柇
-- CrossRoads\Common\pvp_common.c - PVP鐩稿叧鍑芥暟
+修改的文件：
+- `CrossRoads\Common\Combat\Character_target.c` - 实体关系判断
+- `CrossRoads\Common\pvp_common.c` - PVP相关函数
 
-璇︾粏淇敼璇存槑璇锋煡鐪嬶細鍏ㄥ湴鍥剧孩鍚峆K淇敼璇存槑.md
+详细修改说明请查看：`全地图红名PK修改说明.md`
 
-## 椤圭洰缁撴瀯
+## 📁 项目结构
 
-`
+```
 GameServer-PVP/
-鈹溾攢鈹€ Core/                    # 娓告垙鏈嶅姟鍣ㄦ牳蹇冧唬鐮?
-鈹?  鈹溾攢鈹€ GameServer/         # 涓绘湇鍔″櫒椤圭洰
-鈹?  鈹斺攢鈹€ Common/             # 閫氱敤浠ｇ爜
-鈹溾攢鈹€ CrossRoads/             # 娓告垙閫昏緫
-鈹?  鈹溾攢鈹€ GameServerLib/      # 鏈嶅姟鍣ㄥ簱
-鈹?  鈹斺攢鈹€ Common/             # 閫氱敤閫昏緫锛堝寘鍚玃VP淇敼锛?
-鈹溾攢鈹€ libs/                     # 鍚勭搴?
-鈹?  鈹溾攢鈹€ AILib/              # AI搴?
-鈹?  鈹溾攢鈹€ ContentLib/         # 鍐呭搴?
-鈹?  鈹溾攢鈹€ HttpLib/            # HTTP搴?
-鈹?  鈹溾攢鈹€ ServerLib/          # 鏈嶅姟鍣ㄥ簱
-鈹?  鈹溾攢鈹€ UtilitiesLib/       # 宸ュ叿搴?
-鈹?  鈹斺攢鈹€ WorldLib/           # 涓栫晫搴?
-鈹溾攢鈹€ PropertySheets/          # 椤圭洰灞炴€ц〃
-鈹溾攢鈹€ 3rdparty/               # 绗笁鏂瑰簱
-鈹斺攢鈹€ CoreGameServer.sln      # Visual Studio 瑙ｅ喅鏂规
-`
+├── Core/                    # 游戏服务器核心代码
+│   ├── GameServer/         # 主服务器项目
+│   └── Common/             # 通用代码
+├── CrossRoads/             # 游戏逻辑
+│   ├── GameServerLib/      # 服务器库
+│   └── Common/             # 通用逻辑（包含PVP修改）
+├── libs/                     # 各种库
+│   ├── AILib/              # AI库
+│   ├── ContentLib/         # 内容库
+│   ├── HttpLib/            # HTTP库
+│   ├── ServerLib/          # 服务器库
+│   ├── UtilitiesLib/       # 工具库
+│   └── WorldLib/           # 世界库
+├── PropertySheets/          # 项目属性表
+├── 3rdparty/               # 第三方库
+└── CoreGameServer.sln      # Visual Studio 解决方案
+```
 
-## 璁稿彲璇?
+## 🚀 快速开始
 
-璇锋牴鎹師椤圭洰璁稿彲璇佷娇鐢ㄣ€?
+### 推送到 GitHub
 
-## 鎶€鏈敮鎸?
+运行 `自动创建并推送.bat` 或 `推送到Git.bat`
 
-濡傛湁闂锛岃妫€鏌ワ細
-- Visual Studio 鐗堟湰鏄惁姝ｇ‘
-- 鎵€鏈変緷璧栧簱鏄惁瀹屾暣
-- 缂栬瘧杈撳嚭绐楀彛鐨勯敊璇俊鎭?
+### 本地编译
+
+```cmd
+cd I:\wdym\GameServer-PVP
+msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m
+```
+
+## 📝 许可证
+
+请根据原项目许可证使用。
+
+## 🔧 技术支持
+
+如有问题，请检查：
+- Visual Studio 版本是否正确
+- 所有依赖库是否完整
+- 编译输出窗口的错误信息
+- GitHub Actions 的编译日志
+
+## 📚 相关文档
+
+- `GIT设置说明.md` - Git 仓库设置说明
+- `全地图红名PK修改说明.md` - PVP 功能详细说明
+- `测试指南.md` - 测试步骤和验证清单
