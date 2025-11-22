@@ -1,0 +1,25 @@
+h4.AutoAwayIdleTime (int) - (AccessLevel 9) [Notes|Command_AutoAwayIdleTime_GameServerLib]
+__CATEGORY Settings that control player idle times that result in player going idle, getting warned, and getting kicked from the game.
+Change the autoaway idle time for the server, in seconds.
+
+
+h4.AwayKickAccessLevel (int) - (AccessLevel 9) [Notes|Command_AwayKickAccessLevel_GameServerLib]
+Any players at this access level or below will be considered for away kicking.
+
+
+h4.AwayKickTime (int) - (AccessLevel 9) [Notes|Command_AwayKickTime_GameServerLib]
+Change the afk kick time for the server, in seconds.
+
+
+h4.AwayKickTime_ProdEditMode (int) - (AccessLevel 9) [Notes|Command_AwayKickTime_ProdEditMode_GameServerLib]
+Change the afk kick time for production edit mode server, in seconds.
+
+
+h4.AwayKickWarnTime (int) - (AccessLevel 9) [Notes|Command_AwayKickWarnTime_GameServerLib]
+Change the afk kick warning time for the server, in seconds.
+
+
+h4.AwayKickWarnTime_ProdEditMode (int) - (AccessLevel 9) [Notes|Command_AwayKickWarnTime_ProdEditMode_GameServerLib]
+Change the afk kick warning time for production edit mode server, in seconds.
+
+

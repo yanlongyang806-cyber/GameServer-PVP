@@ -1,0 +1,11 @@
+h4.gslInterior_AcceptInvite (AccessLevel 0) [Notes|Command_gslInterior_AcceptInvite_GameServerLib]
+No comment provided
+
+h4.gslInterior_DeclineInvite (AccessLevel 0) [Notes|Command_gslInterior_DeclineInvite_GameServerLib]
+No comment provided
+
+h4.gslInterior_Invite (AKA InteriorInvite, HideoutInvite) (AccessLevel 0) [Notes|Command_gslInterior_Invite_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+Invite another player to your hideout/bridge
+
+

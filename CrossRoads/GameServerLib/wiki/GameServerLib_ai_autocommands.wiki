@@ -1,0 +1,277 @@
+h4.NemesisLeaderLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.PetCommands_RequestResurrection (AccessLevel 0) [Notes|Command_PetCommands_RequestResurrection_GameServerLib]
+No comment provided
+
+h4.PetCommands_SetAllToFollowOwner (AccessLevel 0) [Notes|Command_PetCommands_SetAllToFollowOwner_GameServerLib]
+No comment provided
+
+h4.PetCommands_SetAllToHoldPosition (AccessLevel 0) [Notes|Command_PetCommands_SetAllToHoldPosition_GameServerLib]
+No comment provided
+
+h4.PetCommands_SetAllToOwnerAttackTarget (AccessLevel 0) [Notes|Command_PetCommands_SetAllToOwnerAttackTarget_GameServerLib]
+No comment provided
+
+h4.SetAllPetsState (AccessLevel 9) [Notes|Command_SetAllPetsState_GameServerLib]
+*No Return*
+*Parameter 1: state (string)*
+No comment provided
+
+h4.SetSafe (AccessLevel 9) [Notes|Command_SetSafe_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the "safe" state for this Entity on or off
+
+
+h4.GetMyAllegiance (AccessLevel 9) [Notes|Command_GetMyAllegiance_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.GetMySubAllegiance (AccessLevel 9) [Notes|Command_GetMySubAllegiance_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.AddCostumeFx (AccessLevel 9) [Notes|Command_AddCostumeFx_GameServerLib]
+*No Return*
+*Parameter 1: fxName (string)*
+No comment provided
+
+h4.AffectedByPowerAI (AccessLevel 9) [Notes|Command_AffectedByPowerAI_GameServerLib]
+*Returns: int*
+*Parameter 1: powerName (string)*
+No comment provided
+
+h4.CheckMode (AccessLevel 9) [Notes|Command_CheckMode_GameServerLib]
+*Returns: int*
+*Parameter 1: modeName (string)*
+*Parameter 2: time (float)*
+Returns true if the current entity has a particular (powers) mode on it and it was placed on that
+entity in the past <time> seconds
+
+
+h4.ClearContactOverride (AccessLevel 9) [Notes|Command_ClearContactOverride_GameServerLib]
+*No Return*
+Removes any ContactDef override from a Critter, resetting it to its original ContactDef
+
+
+h4.DismissAllDeadPets (AccessLevel 9) [Notes|Command_DismissAllDeadPets_GameServerLib]
+*No Return*
+No comment provided
+
+h4.DismissAllPets (AccessLevel 9) [Notes|Command_DismissAllPets_GameServerLib]
+*No Return*
+No comment provided
+
+h4.EndJob (AccessLevel 9) [Notes|Command_EndJob_GameServerLib]
+*No Return*
+exit current job
+
+
+h4.EntGetUniqueID (AccessLevel 9) [Notes|Command_EntGetUniqueID_GameServerLib]
+*Returns: int*
+Returns a unique identifier from the entity (i.e. the entRef for now)
+
+
+h4.EntHasMode (AKA EntGetHasPowerMode) (AccessLevel 9) [Notes|Command_EntHasMode_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchModeName (string)*
+Returns true if the passed entity has the specified power mode
+
+
+h4.GetMyHealth (AKA GetMyHealthPct100) (AccessLevel 9) [Notes|Command_GetMyHealth_GameServerLib]
+*Returns: int*
+Returns the percentage of health the current entity has left
+
+
+h4.GetMyHealthPoints (AccessLevel 9) [Notes|Command_GetMyHealthPoints_GameServerLib]
+*Returns: int*
+Returns the percentage of health the current entity has left
+
+
+h4.GetMyLevel (AccessLevel 9) [Notes|Command_GetMyLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.IsCritterCurrentlyInteracted (AccessLevel 9) [Notes|Command_IsCritterCurrentlyInteracted_GameServerLib]
+*Returns: bool*
+Returns true if the critter is currently being interacted with at least one player.
+
+
+h4.Kill (AccessLevel 9) [Notes|Command_Kill_GameServerLib]
+*No Return*
+*Parameter 1: secToLinger (float)*
+*Parameter 2: giveRewards (int)*
+*Parameter 3: giveKillCredit (int)*
+*Parameter 4: dontFade (int)*
+Kills the current entity, and leaves the body around for <secToLinger>. Whether anyone receives
+credit for the kill can be controlled by passing in <giveRewards>.  Will fade out unless <dontfade> is true. 
+Also note that any expression functions like "PlayFX()" will not behave consistently if you kill the critter 
+they affect.
+
+
+h4.KillPets (AccessLevel 9) [Notes|Command_KillPets_GameServerLib]
+*No Return*
+*Parameter 1: secToLinger (float)*
+*Parameter 2: giveRewards (int)*
+*Parameter 3: giveKillCredit (int)*
+*Parameter 4: dontFade (int)*
+Kills all of the current entity's pets. See exprFuncKill.
+
+
+h4.PVPInfectStart (AccessLevel 9) [Notes|Command_PVPInfectStart_GameServerLib]
+*No Return*
+*Parameter 1: radius (float)*
+*Parameter 2: allow_heal (int)*
+No comment provided
+
+h4.PVPInfectStop (AccessLevel 9) [Notes|Command_PVPInfectStop_GameServerLib]
+*No Return*
+No comment provided
+
+h4.PetDismissSelf (AccessLevel 9) [Notes|Command_PetDismissSelf_GameServerLib]
+*No Return*
+No comment provided
+
+h4.RemoveCostumeFx (AccessLevel 9) [Notes|Command_RemoveCostumeFx_GameServerLib]
+*No Return*
+*Parameter 1: fxName (string)*
+No comment provided
+
+h4.ResetAllPets (AccessLevel 9) [Notes|Command_ResetAllPets_GameServerLib]
+*No Return*
+For player entities only- resets all pets 
+
+
+h4.SetActiveCostume (AccessLevel 9) [Notes|Command_SetActiveCostume_GameServerLib]
+*No Return*
+*Parameter 1: index (int)*
+Currently be used for testing purposes in Creatures for doing the transfomration costume swapping
+
+
+h4.SetContactOverride (AccessLevel 9) [Notes|Command_SetContactOverride_GameServerLib]
+*No Return*
+*Parameter 1: pchContactDefName (string)*
+Sets an override for the ContactDef on a Critter
+
+
+h4.SetCostume (AccessLevel 9) [Notes|Command_SetCostume_GameServerLib]
+*No Return*
+*Parameter 1: costume (string)*
+No comment provided
+
+h4.SetDisableFace (AccessLevel 9) [Notes|Command_SetDisableFace_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the powers disableface flag for this entity on or off 
+
+
+h4.SetIgnorePushyGeometry (AccessLevel 9) [Notes|Command_SetIgnorePushyGeometry_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Ignores pushy geometry
+
+
+h4.SetInvincible (AccessLevel 9) [Notes|Command_SetInvincible_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the invincible flag for this entity on or off 
+
+
+h4.SetInvisible (AccessLevel 9) [Notes|Command_SetInvisible_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns invisibility for this entity on or off 
+NOTE: invisibility in this context means the entity doesn't get sent down to any clients
+
+
+h4.SetMyEntAsNonCombatantForComplete (AccessLevel 9) [Notes|Command_SetMyEntAsNonCombatantForComplete_GameServerLib]
+*No Return*
+No comment provided
+
+h4.SetMyHealth (AccessLevel 9) [Notes|Command_SetMyHealth_GameServerLib]
+*Returns: int*
+*Parameter 1: health (int)*
+Sets my health to the specified value (0-hitPointsMax)
+
+
+h4.SetMyHealthPct (AccessLevel 9) [Notes|Command_SetMyHealthPct_GameServerLib]
+*Returns: int*
+*Parameter 1: pct (float)*
+Sets my health to the specified percentage (0-100)
+
+
+h4.SetNearDeath (AccessLevel 9) [Notes|Command_SetNearDeath_GameServerLib]
+*Returns: int*
+*Parameter 1: timeout (int)*
+Forces a Character into the NearDeath state, if they're alive and not already NearDeath.
+If the timer is negative, the NearDeath state is forever.  If the timer is 0 it uses the
+default timer for the particular Character (if the Character doesn't normally go into
+NearDeath, the default timer is forever).  Otherwise the NearDeath state will
+use the specified timer.
+Returns the resulting timer value (-1 for forever), or 0 if something went wrong.
+
+
+h4.SetNoColl (AccessLevel 9) [Notes|Command_SetNoColl_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns collision on or off for this entity
+
+
+h4.SetUndrawable (AccessLevel 9) [Notes|Command_SetUndrawable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns invisibility for this entity on or off 
+NOTE: invisibility in this context means the entity is still sent to the client but is not drawn
+
+
+h4.SetUnkillable (AccessLevel 9) [Notes|Command_SetUnkillable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the powers unkillable flag for this entity on or off 
+
+
+h4.SetUnstoppable (AccessLevel 9) [Notes|Command_SetUnstoppable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the powers unstoppable flag for this entity on or off 
+
+
+h4.StaticRandomFloat (AccessLevel 9) [Notes|Command_StaticRandomFloat_GameServerLib]
+*Returns: float*
+*Parameter 1: min (float)*
+*Parameter 2: max (float)*
+Returns a float in the range [min..max) which is generally static for the entity,
+though it can be regenerated using StaticRandomRegenerate().
+
+
+h4.StaticRandomRegenerate (AccessLevel 9) [Notes|Command_StaticRandomRegenerate_GameServerLib]
+*No Return*
+Regenerates the entity's static random seed, which is used for the StaticRandom() functions
+
+
+h4.RespawnPlayer (AccessLevel 9) [Notes|Command_RespawnPlayer_GameServerLib]
+*No Return*
+No comment provided
+

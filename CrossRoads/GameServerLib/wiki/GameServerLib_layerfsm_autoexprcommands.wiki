@@ -1,0 +1,40 @@
+h4.ComputePointsBasedOnMapPopulation (AccessLevel 9) [Notes|Command_ComputePointsBasedOnMapPopulation_GameServerLib]
+*Returns: int*
+*Parameter 1: mapName (string)*
+*Parameter 2: opposingMapName (string)*
+*Parameter 3: basePointsToAward (int)*
+No comment provided
+
+h4.NoLongerInterestedInMapPopulationData (AccessLevel 9) [Notes|Command_NoLongerInterestedInMapPopulationData_GameServerLib]
+*No Return*
+*Parameter 1: mapName (string)*
+No comment provided
+
+h4.RegisterInterestInMapPopulation (AccessLevel 9) [Notes|Command_RegisterInterestInMapPopulation_GameServerLib]
+*No Return*
+*Parameter 1: mapName (string)*
+No comment provided
+
+h4.IncrementShardVariableFloat (AccessLevel 9) [Notes|Command_IncrementShardVariableFloat_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: fValue (float)*
+Increment a float shard variable
+
+
+h4.IncrementShardVariableInt (AccessLevel 9) [Notes|Command_IncrementShardVariableInt_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: iValue (int)*
+Increment an integer shard variable
+
+
+h4.ResetShardVariable (AccessLevel 9) [Notes|Command_ResetShardVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+Reset a shard variable
+
+
+h4.SetShardVariable (AccessLevel 9) [Notes|Command_SetShardVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pcValue (string)*
+Sets a shard variable
+
+

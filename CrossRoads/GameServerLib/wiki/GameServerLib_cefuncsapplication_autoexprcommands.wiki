@@ -1,0 +1,68 @@
+h4.AffectedByThisActivation (AccessLevel 9) [Notes|Command_AffectedByThisActivation_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Application
+Inputs: Character
+Return: 1 if the Character is under the effects of a mod created by a previous application from this activation, otherwise 0
+
+
+h4.ApplicationGetNumHitTargetsExcludingSelf (AccessLevel 9) [Notes|Command_ApplicationGetNumHitTargetsExcludingSelf_GameServerLib]
+*Returns: int*
+Application
+Return: the number of targets hit excluding the source of the application
+
+
+h4.DistAppSource (AccessLevel 9) [Notes|Command_DistAppSource_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Application
+Inputs: Character
+Return: The Character's root distance from the Application's source (Character root or position), otherwise 0
+
+
+h4.DistAppSourceCapsule (AccessLevel 9) [Notes|Command_DistAppSourceCapsule_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Application
+Inputs: Character
+Return: The Character's capsule distance from the Application's source (Character capsule or position), otherwise 0
+
+
+h4.DistAppTarget (AccessLevel 9) [Notes|Command_DistAppTarget_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Application
+Inputs: Character
+Return: The Character's root distance from the Application's primary target (Character root or position), otherwise 0
+TODO(JW): Add support for target volumes used by the mission system
+
+
+h4.DistAppTargetCapsule (AccessLevel 9) [Notes|Command_DistAppTargetCapsule_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Application
+Inputs: Character
+Return: The Character's capsule distance from the Application's primary target (Character capsule or position), otherwise 0
+TODO(JW): Add support for target volumes used by the mission system
+
+
+h4.TableApp (AccessLevel 9) [Notes|Command_TableApp_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tableName (string)*
+Application, ApplicationSimple
+Inputs: Character, PowerTable name
+Return: The value in the Character's Class's table at the Application's level,
+otherwise the generic value of the table at the Application's level, otherwise 0
+
+
+h4.TableNodeRank (AccessLevel 9) [Notes|Command_TableNodeRank_GameServerLib]
+*Returns: float*
+*Parameter 1: tableName (string)*
+Application
+Inputs: PowerTable name
+Return: The value in the generic PowerTable at the PowerTree rank of the Power being applied.
+So a Rank 2 Power would return the second value in the PowerTable.  If there is no actual
+Power, or the Power isn't from a PowerTree, it returns the first value in the PowerTable.
+
+

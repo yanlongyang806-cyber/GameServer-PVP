@@ -1,0 +1,81 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.EntGetAccountFirstPlayed (AccessLevel 9) [Notes|Command_EntGetAccountFirstPlayed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetAccountTotalPlayed (AccessLevel 9) [Notes|Command_EntGetAccountTotalPlayed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.SetSkill (AccessLevel 9) [Notes|Command_SetSkill_GameServerLib]
+*No Return*
+*Parameter 1: iSkillType (int)*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntSetAccountDataValue (AccessLevel 9) [Notes|Command_EntSetAccountDataValue_GameServerLib]
+*No Return*
+*Parameter 1: pchAttrib (string)*
+*Parameter 2: pchValue (string)*
+Set the value associated with a GameAccountData attribute.
+
+
+h4.mission_ClearTeamMissions (AccessLevel 0) [Notes|Command_mission_ClearTeamMissions_GameServerLib]
+Clear the list of your team mate's missions
+
+
+h4.player_DropMission (AccessLevel 0) [Notes|Command_player_DropMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Drop the named mission, if you have it
+
+
+h4.player_ForceDropMission (AccessLevel 4) [Notes|Command_player_ForceDropMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Drop the named mission, if you have it
+
+
+h4.mission_GetTeamMissions (AccessLevel 0) [Notes|Command_mission_GetTeamMissions_GameServerLib]
+Fetch a list of your team mate's missions
+
+
+h4.player_MissionToggleTracked (AccessLevel 0) [Notes|Command_player_MissionToggleTracked_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Track/untrack mission in the HUD UI
+
+
+h4.PrimaryMission (AccessLevel 0) [Notes|Command_PrimaryMission_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+*Parameter 2: bMakePrimary (bool)*
+Offer this mission to other nearby members of your team and make it primary
+
+
+h4.mission_ShareMissionCmd (AccessLevel 0) [Notes|Command_mission_ShareMissionCmd_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+Offer this mission to other nearby members of your team.
+
+

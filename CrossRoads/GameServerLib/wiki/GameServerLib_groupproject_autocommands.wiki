@@ -1,0 +1,177 @@
+h4.GroupProject_ContributionReport (AccessLevel 9) [Notes|Command_GroupProject_ContributionReport_GameServerLib]
+*Parameter 1: projectName (string)*
+No comment provided
+
+h4.GroupProject_DebugGuildProjectInit (AccessLevel 9) [Notes|Command_GroupProject_DebugGuildProjectInit_GameServerLib]
+No comment provided
+
+h4.DumpGuildProjectStateForMap (AccessLevel 9) [Notes|Command_DumpGuildProjectStateForMap_GameServerLib]
+*Parameter 1: projectName (string)*
+This is a debug command that that prints the numerics and unlocks from the guild projects associated with the current map.
+
+
+h4.DumpGuildProjectStateForPlayer (AccessLevel 9) [Notes|Command_DumpGuildProjectStateForPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+This is a debug command that that prints the numerics and unlocks from the guild project associated with the player.
+
+
+h4.DumpPlayerProjectState (AccessLevel 9) [Notes|Command_DumpPlayerProjectState_GameServerLib]
+*Parameter 1: projectName (string)*
+This is a debug command that that prints the numerics and unlocks from the player project associated with the player.
+
+
+h4.GuildProject_CancelNextProject (AccessLevel 9) [Notes|Command_GuildProject_CancelNextProject_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+No comment provided
+
+h4.GuildProject_CancelProject (AccessLevel 9) [Notes|Command_GuildProject_CancelProject_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+No comment provided
+
+h4.GuildProject_ClearUnlock (AccessLevel 9) [Notes|Command_GuildProject_ClearUnlock_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+No comment provided
+
+h4.GuildProject_DonateSimpleItems (AccessLevel 9) [Notes|Command_GuildProject_DonateSimpleItems_GameServerLib]
+*Parameter 1: pGuild (Guild struct)*
+*Parameter 2: projectName (string)*
+*Parameter 3: taskSlotNum (int)*
+*Parameter 4: bucketName (string)*
+*Parameter 5: itemName (string)*
+*Parameter 6: count (int)*
+No comment provided
+
+h4.GuildProject_FillAllBuckets (AccessLevel 9) [Notes|Command_GuildProject_FillAllBuckets_GameServerLib]
+This is a debug command that that instantly fills a donation task bucket.
+
+
+h4.GuildProject_FillBucket (AccessLevel 9) [Notes|Command_GuildProject_FillBucket_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+*Parameter 3: bucketName (string)*
+This is a debug command that that instantly fills a donation task bucket.
+
+
+h4.GuildProject_GetProjectNumeric (AccessLevel 9) [Notes|Command_GuildProject_GetProjectNumeric_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+This is a debug command that allows a designer to query the values of the Group Project Numerics associated with the guild owner of their current map.
+
+
+h4.GuildProject_GiveNumeric (AccessLevel 9) [Notes|Command_GuildProject_GiveNumeric_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+*Parameter 3: value (int)*
+No comment provided
+
+h4.GuildProject_OverrideMapAllegiance (AccessLevel 9) [Notes|Command_GuildProject_OverrideMapAllegiance_GameServerLib]
+*Parameter 1: overrideAllegiance (string)*
+This is a debug command that allows a developer to override the guild allegiance on a guild owned map.
+
+
+h4.GuildProject_SetBucketFill (AccessLevel 9) [Notes|Command_GuildProject_SetBucketFill_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+*Parameter 3: bucketName (string)*
+*Parameter 4: count (int)*
+This is a debug command that will set the filled amount of a donation task bucket.
+
+
+h4.GuildProject_SetNextTask (AccessLevel 9) [Notes|Command_GuildProject_SetNextTask_GameServerLib]
+*Parameter 1: iParitionIdx (int)*
+*Parameter 2: pGuild (Guild struct)*
+*Parameter 3: pProjectContainer (GroupProjectContainer struct)*
+*Parameter 4: projectName (string)*
+*Parameter 5: taskSlotNum (int)*
+*Parameter 6: taskName (string)*
+Hey, make a wrapper before you check this in or you suck
+
+
+h4.GuildProject_SetProjectMessage (AccessLevel 9) [Notes|Command_GuildProject_SetProjectMessage_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: projectMessage (sentence)*
+No comment provided
+
+h4.GuildProject_SetProjectPlayerName (AccessLevel 9) [Notes|Command_GuildProject_SetProjectPlayerName_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: projectPlayerName (sentence)*
+No comment provided
+
+h4.GuildProject_SetUnlock (AccessLevel 9) [Notes|Command_GuildProject_SetUnlock_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+No comment provided
+
+h4.PlayerProject_CancelNextProject (AccessLevel 9) [Notes|Command_PlayerProject_CancelNextProject_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+No comment provided
+
+h4.PlayerProject_CancelProject (AccessLevel 9) [Notes|Command_PlayerProject_CancelProject_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+No comment provided
+
+h4.PlayerProject_ClaimReward (AccessLevel 9) [Notes|Command_PlayerProject_ClaimReward_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+No comment provided
+
+h4.PlayerProject_ClearUnlock (AccessLevel 9) [Notes|Command_PlayerProject_ClearUnlock_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+No comment provided
+
+h4.PlayerProject_DonateSimpleItems (AccessLevel 9) [Notes|Command_PlayerProject_DonateSimpleItems_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+*Parameter 3: bucketName (string)*
+*Parameter 4: itemName (string)*
+*Parameter 5: count (int)*
+No comment provided
+
+h4.PlayerProject_FillAllBuckets (AccessLevel 9) [Notes|Command_PlayerProject_FillAllBuckets_GameServerLib]
+This is a debug command that that instantly fills a donation task bucket.
+
+
+h4.PlayerProject_FillBucket (AccessLevel 9) [Notes|Command_PlayerProject_FillBucket_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+*Parameter 3: bucketName (string)*
+This is a debug command that that instantly fills a donation task bucket.
+
+
+h4.PlayerProject_GiveNumeric (AccessLevel 9) [Notes|Command_PlayerProject_GiveNumeric_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+*Parameter 3: value (int)*
+No comment provided
+
+h4.PlayerProject_SetBucketFill (AccessLevel 9) [Notes|Command_PlayerProject_SetBucketFill_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+*Parameter 3: bucketName (string)*
+*Parameter 4: count (int)*
+This is a debug command that will set the filled amount of a donation task bucket.
+
+
+h4.PlayerProject_SetNextTask (AccessLevel 9) [Notes|Command_PlayerProject_SetNextTask_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskSlotNum (int)*
+*Parameter 3: taskName (string)*
+No comment provided
+
+h4.PlayerProject_SetTaskAndDonateAllItems (AccessLevel 9) [Notes|Command_PlayerProject_SetTaskAndDonateAllItems_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskName (string)*
+*Parameter 3: taskSlotNum (int)*
+No comment provided
+
+h4.PlayerProject_SetUnlock (AccessLevel 9) [Notes|Command_PlayerProject_SetUnlock_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+No comment provided
+

@@ -1,0 +1,379 @@
+h4.BadPetCostume (AccessLevel 4) [Notes|Command_BadPetCostume_GameServerLib]
+*Parameter 1: pchPetRef (string)*
+Flags a player's pet or Nemesis as having a bad Costume
+Changes the pet's costume to the default and gives them a free costume change
+
+
+h4.BadPetName (AccessLevel 4) [Notes|Command_BadPetName_GameServerLib]
+*Parameter 1: pchPetRef (string)*
+Flags a player's pet or Nemesis as having an invalid name
+Gives the pet a default name and a free name change
+
+
+h4.BagClear (AccessLevel 4) [Notes|Command_BagClear_GameServerLib]
+*Parameter 1: bagName (string)*
+inventoryclear: Removes all items from your inventory, and equip slots.  For debugging
+
+
+h4.BanUGCProject (AKA ugc_BanProject) (AccessLevel 4) [Notes|Command_BanUGCProject_GameServerLib]
+*Parameter 1: bBan (bool)*
+not really a "CSR" command, per se, as it's just a normal command that someone can execute. But designed to be executed
+by CSRs
+
+
+h4.BanUGCProjectByID (AKA ugc_BanProjectByID) (AccessLevel 4) [Notes|Command_BanUGCProjectByID_GameServerLib]
+*Parameter 1: pIDString (string)*
+*Parameter 2: bBan (bool)*
+ban the ugc project with the specified ID, which can be either a numeric ID or an ID string
+
+
+h4.GrantCharSlot (AccessLevel 7) [Notes|Command_GrantCharSlot_GameServerLib]
+Add a CS granted character slot to the account of the given entity
+
+
+h4.ugc_ClearNaughtyValue (AccessLevel 4) [Notes|Command_ugc_ClearNaughtyValue_GameServerLib]
+*Parameter 1: pIDString (string)*
+No comment provided
+
+h4.ugc_DisableAutoBanProjectByID (AccessLevel 4) [Notes|Command_ugc_DisableAutoBanProjectByID_GameServerLib]
+*Parameter 1: pIDString (string)*
+*Parameter 2: bDisableAutoBan (bool)*
+No comment provided
+
+h4.GiveAndEquipItem (AccessLevel 7) [Notes|Command_GiveAndEquipItem_GameServerLib]
+*Parameter 1: pchItemName (string)*
+Give an item to yourself. It is put into your inventory
+
+
+h4.InventoryClear (AccessLevel 4) [Notes|Command_InventoryClear_GameServerLib]
+inventoryclear: Removes all items from your inventory, and equip slots.  For debugging
+
+
+h4.MapMoveStatic (AKA MapMove) (AccessLevel 4) [Notes|Command_MapMoveStatic_GameServerLib]
+*Parameter 1: zoneName (string)*
+Move to the named map
+
+
+h4.MicroTrans_RemoveOneTimePurchase (AccessLevel 4) [Notes|Command_MicroTrans_RemoveOneTimePurchase_GameServerLib]
+*Parameter 1: pchKey (string)*
+No comment provided
+
+h4.MovementReset (AccessLevel 0) [Notes|Command_MovementReset_GameServerLib]
+Resets your movement state
+
+
+h4.Power_Add (AKA Add_Power) (AccessLevel 7) [Notes|Command_Power_Add_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add <PowerName>: Adds the power of the given name to the player, outside of the scope of a tree
+
+
+h4.PowersResetIDs (AccessLevel 7) [Notes|Command_PowersResetIDs_GameServerLib]
+Completely resets all PowerIDs on the Entity and all of its OwnedContainers.  Useful if an Entity gets
+its PowerIDs into a bad state.  Generally should not be run on an online Entity.
+
+
+h4.ugc_PrintReportData (AccessLevel 4) [Notes|Command_ugc_PrintReportData_GameServerLib]
+*Parameter 1: pIDString (string)*
+Prints report data for a project to the chat logc
+
+
+h4.RespecAdvantages (AccessLevel 4) [Notes|Command_RespecAdvantages_GameServerLib]
+Respecs your advantages (all of them)
+
+
+h4.RespecFull (AKA Character_RespecFull) (AccessLevel 4) [Notes|Command_RespecFull_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing
+
+
+h4.CSR (AccessLevel 4) [Notes|Command_CSR_GameServerLib]
+*Parameter 1: entName (string)*
+*Parameter 2: pCommandString (sentence)*
+Executes an arbitrary command through another character, with the CSR's access level
+
+
+h4.csrpet (AccessLevel 9) [Notes|Command_csrpet_GameServerLib]
+*Parameter 1: pchPetRef (string)*
+*Parameter 2: pCommandString (sentence)*
+Executes an arbitrary command through another character, with the CSR's access level
+Syntax is petname:character@account
+NOTE:  This works, but we aren't sure that we want people to use it yet since it may
+be unsafe to run certain commands on a pet/nemesis.  So I am leaving it at ACCESSLEVEL 9
+for now.
+
+
+h4.announce (AccessLevel 4) [Notes|Command_announce_GameServerLib]
+*Parameter 1: msg (sentence)*
+Send a shard-wide announcement
+
+
+h4.BootPlayer (AccessLevel 4) [Notes|Command_BootPlayer_GameServerLib]
+Boots a player from the game
+
+
+h4.broadcast (AccessLevel 4) [Notes|Command_broadcast_GameServerLib]
+*Parameter 1: msg (sentence)*
+Send a zone-wide broadcast
+
+
+h4.deaf (AccessLevel 4) [Notes|Command_deaf_GameServerLib]
+Blocks incoming private messages
+
+
+h4.FindPlayer (AccessLevel 4) [Notes|Command_FindPlayer_GameServerLib]
+*Parameter 1: playerName (string)*
+Get the name of the map this player is on
+
+
+h4.MissionCompleteOther (AccessLevel 4) [Notes|Command_MissionCompleteOther_GameServerLib]
+*Parameter 1: missionName (string)*
+*Parameter 2: playerName (string)*
+MissionCompleteOther <missionName> <playername>: Completes mission of the given name for the given player.
+Player must already have that mission.
+To complete a sub-mission, use "missioncompleteother missionname::submissionname"
+
+
+h4.MissionDropOther (AccessLevel 4) [Notes|Command_MissionDropOther_GameServerLib]
+*Parameter 1: missionName (string)*
+*Parameter 2: playerName (string)*
+MissionDropOther <missionName> <playername>: Drops mission of the given name for the given player.
+
+
+h4.MoveToPlayer (AccessLevel 4) [Notes|Command_MoveToPlayer_GameServerLib]
+*Parameter 1: playerName (string)*
+MoveToPlayer <playerName>: Warps the CSR's character to the specified player, regardless of what map they are on
+
+
+h4.MoveToPlayerByID (AccessLevel 4) [Notes|Command_MoveToPlayerByID_GameServerLib]
+*Parameter 1: iOtherPlayerID (int)*
+MoveToPlayer <playerID>: Warps the CSR's character to the specified player, regardless of what map they are on
+
+
+h4.SetInvisible (AccessLevel 4) [Notes|Command_SetInvisible_GameServerLib]
+*Parameter 1: on (int)*
+Make yourself invisible to other players
+
+
+h4.SetInvisiblePersist (AccessLevel 4) [Notes|Command_SetInvisiblePersist_GameServerLib]
+*Parameter 1: on (int)*
+Make yourself invisible to other players
+
+
+h4.silence (AccessLevel 4) [Notes|Command_silence_GameServerLib]
+Prevent the player from talking in chat
+
+
+h4.silenceuser (AccessLevel 4) [Notes|Command_silenceuser_GameServerLib]
+*Parameter 1: displayName (sentence)*
+Prevent the player from talking in chat
+
+
+h4.spy (AccessLevel 4) [Notes|Command_spy_GameServerLib]
+*Parameter 1: handleOrCharacterName (string)*
+Spy on another player's chat
+
+
+h4.spylist (AccessLevel 4) [Notes|Command_spylist_GameServerLib]
+List all the people you're spying on
+
+
+h4.spystop (AccessLevel 4) [Notes|Command_spystop_GameServerLib]
+*Parameter 1: handleOrCharacterName (string)*
+Stop spying on another player's chat
+
+
+h4.SummonPlayer (AccessLevel 4) [Notes|Command_SummonPlayer_GameServerLib]
+*Parameter 1: playerName (sentence)*
+SummonPlayer <playerName>: Moves the player to the location of the CSR, regardless of what map they are on
+
+
+h4.undeaf (AccessLevel 4) [Notes|Command_undeaf_GameServerLib]
+Stops blocking incoming private messages
+
+
+h4.unsilence (AccessLevel 4) [Notes|Command_unsilence_GameServerLib]
+Allow the player to talk in chat again
+
+
+h4.unsilenceuser (AccessLevel 4) [Notes|Command_unsilenceuser_GameServerLib]
+*Parameter 1: displayName (sentence)*
+No comment provided
+
+h4.setexplevel (AKA setlevel) (AccessLevel 7) [Notes|Command_setexplevel_GameServerLib]
+*Parameter 1: iLevelValue (int)*
+Sets yourself to the specified level
+
+
+h4.SetExpLevelUsingCharacterPath (AKA SetExpLevelCharPath) (AccessLevel 7) [Notes|Command_SetExpLevelUsingCharacterPath_GameServerLib]
+*Parameter 1: iLevelValue (int)*
+Sets yourself to the specified level and buys all powers suggested by the character path
+
+
+h4.SetUGCReviewHidden (AKA ugc_SetReviewHidden) (AccessLevel 4) [Notes|Command_SetUGCReviewHidden_GameServerLib]
+*Parameter 1: pIDString (string)*
+*Parameter 2: pReviewerName (string)*
+*Parameter 3: bHidden (bool)*
+(project name) (reviewerName) (1=hide, 0=show) Hide (or show) a review by the given reviewer on the ugc project with the given name. 
+
+
+h4.SetSkillLevel (AccessLevel 7) [Notes|Command_SetSkillLevel_GameServerLib]
+*Parameter 1: value (int)*
+Set the players Skill Level
+
+
+h4.SetSkillLevelCap (AccessLevel 7) [Notes|Command_SetSkillLevelCap_GameServerLib]
+*Parameter 1: value (int)*
+Set the player's Skill Level cap
+
+
+h4.SyncNPCEMail (AccessLevel 4) [Notes|Command_SyncNPCEMail_GameServerLib]
+Make sure all NPC e-mail buffered on the player is synced into their inbox
+
+
+h4.getpetlist (AccessLevel 4) [Notes|Command_getpetlist_GameServerLib]
+*Parameter 1: entName (string)*
+Gets a list of the Names and IDs of all pets belonging to the specified player
+
+
+h4.BadCostume (AKA force_character_costume_change) (AccessLevel 4) [Notes|Command_BadCostume_GameServerLib]
+Changes a player's costume to the default and gives them a free costume change
+
+
+h4.BadEmblem (AccessLevel 4) [Notes|Command_BadEmblem_GameServerLib]
+Removes a guilds emblem
+
+
+h4.ReplaceCostumes (AccessLevel 4) [Notes|Command_ReplaceCostumes_GameServerLib]
+*Parameter 1: costumeName (string)*
+This command replaces all of the costumes on the entity. This can change the gender of the entity.
+
+
+h4.ReplaceCostumesSameGender (AccessLevel 4) [Notes|Command_ReplaceCostumesSameGender_GameServerLib]
+*Parameter 1: costumeNameMale (string)*
+*Parameter 2: costumeNameFemale (string)*
+Replace all of the costumes but maintain same gender, requires male and female costume names
+
+
+h4.TutorialDoneAdd (AccessLevel 4) [Notes|Command_TutorialDoneAdd_GameServerLib]
+*Parameter 1: iVal (S64)*
+Adds value to your tutorial done count
+
+
+h4.Ban (AccessLevel 7) [Notes|Command_Ban_GameServerLib]
+Ban this account
+
+
+h4.GMFlagSet (AccessLevel 7) [Notes|Command_GMFlagSet_GameServerLib]
+*Parameter 1: iVal (S64)*
+Set the GM account flag 
+
+
+h4.rename_character (AccessLevel 4) [Notes|Command_rename_character_GameServerLib]
+*Parameter 1: pcNewName (string)*
+rename this character
+
+
+h4.Suspend (AccessLevel 4) [Notes|Command_Suspend_GameServerLib]
+*Parameter 1: hoursToSuspend (float)*
+Suspend this account, 0 = forever, -1 no longer suspended, > 0 number of hours
+
+
+h4.UgcPublishBan (AccessLevel 7) [Notes|Command_UgcPublishBan_GameServerLib]
+Ban this account from UGC Publishing
+
+
+h4.UgcPublishUnBan (AccessLevel 4) [Notes|Command_UgcPublishUnBan_GameServerLib]
+Unban this account from UGC Publishing
+
+
+h4.UnBan (AccessLevel 4) [Notes|Command_UnBan_GameServerLib]
+Unban this account
+
+
+h4.ChangeName (AccessLevel 4) [Notes|Command_ChangeName_GameServerLib]
+*Parameter 1: pcNewName (string)*
+Change a player's name
+
+
+h4.ChangeName_NoRestrictions (AccessLevel 9) [Notes|Command_ChangeName_NoRestrictions_GameServerLib]
+*Parameter 1: pcNewName (string)*
+Change a player's name with no restrictions on what it can be.
+
+
+h4.SetIsDev (AccessLevel 3) [Notes|Command_SetIsDev_GameServerLib]
+*Parameter 1: isDev (int)*
+Toggle the Dev icon on or off
+
+
+h4.SetIsGM (AccessLevel 4) [Notes|Command_SetIsGM_GameServerLib]
+*Parameter 1: isGM (int)*
+Toggle the GM icon on or off
+
+
+h4.GuildCSR_ForceJoin (AccessLevel 7) [Notes|Command_GuildCSR_ForceJoin_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.GuildCSR_Info (AccessLevel 4) [Notes|Command_GuildCSR_Info_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.GuildCSR_PurgeBank (AccessLevel 7) [Notes|Command_GuildCSR_PurgeBank_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.GuildCSR_ResetRanks (AccessLevel 7) [Notes|Command_GuildCSR_ResetRanks_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+*Parameter 2: pcHandle (string)*
+No comment provided
+
+h4.GuildCSR_SetLeader (AccessLevel 4) [Notes|Command_GuildCSR_SetLeader_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+*Parameter 2: pcHandle (string)*
+No comment provided
+
+h4.GuildCSR_SetName (AccessLevel 4) [Notes|Command_GuildCSR_SetName_GameServerLib]
+*Parameter 1: pcOldName (string)*
+*Parameter 2: pcNewName (string)*
+No comment provided
+
+h4.GuildCSR_SetNameByID (AccessLevel 4) [Notes|Command_GuildCSR_SetNameByID_GameServerLib]
+*Parameter 1: iGuildID (int)*
+*Parameter 2: pcNewName (string)*
+No comment provided
+
+h4.GuildCSR_Who (AccessLevel 4) [Notes|Command_GuildCSR_Who_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.queue_Csr_FixAllStalledQueues (AccessLevel 4) [Notes|Command_queue_Csr_FixAllStalledQueues_GameServerLib]
+No comment provided
+
+h4.queue_Csr_FixStalledQueue (AccessLevel 4) [Notes|Command_queue_Csr_FixStalledQueue_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.queue_Csr_ResetQueue (AccessLevel 4) [Notes|Command_queue_Csr_ResetQueue_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.QueueRemoveAllPenaltiesByEntID (AccessLevel 4) [Notes|Command_QueueRemoveAllPenaltiesByEntID_GameServerLib]
+*Parameter 1: uPlayerID (int)*
+Removes all penalties given to the entity specified by the container ID (uPlayerID)
+
+
+h4.BadName (AKA force_rename_character) (AccessLevel 4) [Notes|Command_BadName_GameServerLib]
+Gives the character a default name and forces them to update it on login
+
+
+h4.Stasis (AccessLevel 4) [Notes|Command_Stasis_GameServerLib]
+Sets the stasis timer for a player.
+
+
+h4.Unstasis (AccessLevel 4) [Notes|Command_Unstasis_GameServerLib]
+Frees a player from stasis.
+
+
+h4.KillPlayer (AccessLevel 4) [Notes|Command_KillPlayer_GameServerLib]
+Will kill your character without a message prompt
+
+

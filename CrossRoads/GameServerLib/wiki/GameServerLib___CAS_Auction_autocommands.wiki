@@ -1,0 +1,11 @@
+h4.AuctionExpireOverride (int) - (AccessLevel 9) [Notes|Command_AuctionExpireOverride_GameServerLib]
+Allows QA to override the expiration time of created auctions for testing purposes.
+
+
+h4.EnableExpirationExtensionOnBid (int) - (AccessLevel 9) [Notes|Command_EnableExpirationExtensionOnBid_GameServerLib]
+Enables auction expiration time extension when an auction is bid on.
+
+
+h4.NPCMailCurrencyAlertThreshold (int) - (AccessLevel 9) [Notes|Command_NPCMailCurrencyAlertThreshold_GameServerLib]
+No comment provided
+

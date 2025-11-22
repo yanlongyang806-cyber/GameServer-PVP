@@ -1,0 +1,31 @@
+h4.CharacterPathContainsNode (AccessLevel 9) [Notes|Command_CharacterPathContainsNode_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.CharacterPathNodeIsChoice (AccessLevel 9) [Notes|Command_CharacterPathNodeIsChoice_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.NodeIsInPowerTree (AccessLevel 9) [Notes|Command_NodeIsInPowerTree_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchTreeName (string)*
+No comment provided
+
+h4.GetRequiredPointsSpentForRank (AccessLevel 9) [Notes|Command_GetRequiredPointsSpentForRank_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerHasCharacterPath (AccessLevel 9) [Notes|Command_PlayerHasCharacterPath_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PointsRespeced (AccessLevel 9) [Notes|Command_PointsRespeced_GameServerLib]
+*Returns: int*
+*Parameter 1: pchPoints (string)*
+Returns the points returned of the given type this far into the respec in the context
+
+
+h4.StepIsPermanent (AccessLevel 9) [Notes|Command_StepIsPermanent_GameServerLib]
+*Returns: int*
+No comment provided
+

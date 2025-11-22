@@ -1,0 +1,21 @@
+h4.MailCheck (AccessLevel 0) [Notes|Command_MailCheck_GameServerLib]
+Check for unread mail.
+
+
+h4.MailGet (AccessLevel 0) [Notes|Command_MailGet_GameServerLib]
+Check for new mail.
+
+
+h4.MailTakeItems (AccessLevel 0) [Notes|Command_MailTakeItems_GameServerLib]
+*Parameter 1: uLotID (int)*
+*Parameter 2: iNPCEmailID (int)*
+Transfer items from the given mail item lot to your inventory including NPC mail items
+
+
+h4.MailDeleteCompleteLog (AccessLevel 0) [Notes|Command_MailDeleteCompleteLog_GameServerLib]
+*Parameter 1: uMailID (int)*
+*Parameter 2: iNPCEMailID (int)*
+*Parameter 3: uAuctionLotID (int)*
+Delete a mail message. Deletes NPC email on characters. Logs email if lot id > 0
+
+

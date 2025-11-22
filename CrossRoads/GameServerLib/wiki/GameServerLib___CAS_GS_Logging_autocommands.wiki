@@ -1,0 +1,69 @@
+h4.EnableCombatDamageEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableCombatDamageEventLogging_GameServerLib]
+__CATEGORY Enabling or disabling various categories of GS logging
+Enable combat damage logs (damage, healing)
+
+
+h4.EnableCombatDeathEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableCombatDeathEventLogging_GameServerLib]
+Enable combat death logs (death)
+
+
+h4.EnableCombatHealingEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableCombatHealingEventLogging_GameServerLib]
+Enable combat death logs (death)
+
+
+h4.EnableCombatKillEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableCombatKillEventLogging_GameServerLib]
+Enable combat kill logs (kill, assist, nearDeath, PvP death)
+
+
+h4.EnableContentEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableContentEventLogging_GameServerLib]
+Enable content event logs (interaction, cut scene, encounters, FSM States, contacts, missions, volumes, zone events)
+
+
+h4.EnableEconomyLogging (int) - (AccessLevel 9) [Notes|Command_EnableEconomyLogging_GameServerLib]
+Enable economy logs (numerics, items)
+
+
+h4.EnableGamePlayDataLogging (int) - (AccessLevel 9) [Notes|Command_EnableGamePlayDataLogging_GameServerLib]
+Enable game play data logs (interact internal, training, mail, options, afk)
+
+
+h4.EnableGamePlayEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableGamePlayEventLogging_GameServerLib]
+Enable game play event logs (duels, group projects, item assignments, level up, nemesis, pvp)
+
+
+h4.EnableItemAssignmentLogging (int) - (AccessLevel 9) [Notes|Command_EnableItemAssignmentLogging_GameServerLib]
+Enable item assignment logging (duty officer and professions)
+
+
+h4.EnableItemEventLogging (int) - (AccessLevel 9) [Notes|Command_EnableItemEventLogging_GameServerLib]
+Enable item event logging (item gained/purchased/lost/used, gem slotted)
+
+
+h4.EnableItemTrackingLogging (int) - (AccessLevel 9) [Notes|Command_EnableItemTrackingLogging_GameServerLib]
+Enable item tracking logging
+
+
+h4.EnablePetAndPuppetLogging (int) - (AccessLevel 9) [Notes|Command_EnablePetAndPuppetLogging_GameServerLib]
+Enable pet and puppet logs (saved pets, puppets, nemesis)
+
+
+h4.EnablePowersDataLogging (int) - (AccessLevel 9) [Notes|Command_EnablePowersDataLogging_GameServerLib]
+Enable powers logs (power trees, powers)
+
+
+h4.EnablePvPLogging (int) - (AccessLevel 9) [Notes|Command_EnablePvPLogging_GameServerLib]
+Enable PvP logs (deaths, match results)
+
+
+h4.EnableRewardDataLogging (int) - (AccessLevel 9) [Notes|Command_EnableRewardDataLogging_GameServerLib]
+Enable reward logs (minigame events, loot drops)
+
+
+h4.EnableUgcDataLogging (int) - (AccessLevel 9) [Notes|Command_EnableUgcDataLogging_GameServerLib]
+Enable extra ugc logs
+
+
+h4.EnableUserExperienceLogging (int) - (AccessLevel 9) [Notes|Command_EnableUserExperienceLogging_GameServerLib]
+Enable extra ugc logs
+
+

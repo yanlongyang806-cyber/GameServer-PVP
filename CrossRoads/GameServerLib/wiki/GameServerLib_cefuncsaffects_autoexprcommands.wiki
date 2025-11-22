@@ -1,0 +1,20 @@
+h4.IsPowerDefThis (AccessLevel 9) [Notes|Command_IsPowerDefThis_GameServerLib]
+*Returns: int*
+Affects
+Inputs: none
+Return: 1 if the AttribMod or PowerDef being affected is the same as the affector AttribMod's PowerDef, otherwise 0
+
+
+h4.ModAffectedIsNewer (AccessLevel 9) [Notes|Command_ModAffectedIsNewer_GameServerLib]
+*Returns: int*
+Affects
+Return: 1 if the AttribMod being affected is newer than the affect AttribMod, otherwise 0
+Note that "newer" is in terms of the original application, NOT in terms of actual real-world time.
+
+
+h4.ModsFromSameSource (AccessLevel 9) [Notes|Command_ModsFromSameSource_GameServerLib]
+*Returns: int*
+Affects
+Return: 1 if the AttribMod being affected and the affector AttribMod are from the same source, otherwise 0
+
+

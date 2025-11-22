@@ -1,0 +1,67 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.PlayerHasCharacterPath (AccessLevel 9) [Notes|Command_PlayerHasCharacterPath_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.RewardEntCharPathHasPowerAtIndex (AccessLevel 9) [Notes|Command_RewardEntCharPathHasPowerAtIndex_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcSuperStat (string)*
+*Parameter 2: iIndex (int)*
+This is used by CO to see if a characterpath has a power (superstat) at index N in a suggested node
+Since this is a CO function, it will only check the Primary character path, since that's all CO uses.
+
+
+h4.RewardEntHasPower (AccessLevel 9) [Notes|Command_RewardEntHasPower_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcPower (string)*
+No comment provided
+
+h4.MissionCompleted (AccessLevel 9) [Notes|Command_MissionCompleted_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMission (string)*
+Return the number of times the player has succeeded/completed this mission.
+
+
+h4.MissionInProgress (AccessLevel 9) [Notes|Command_MissionInProgress_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchMission (string)*
+Check if the player is currently working on a mission.
+
+
+h4.EntGetPointbuyValue (AccessLevel 9) [Notes|Command_EntGetPointbuyValue_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GetLootParty (AccessLevel 9) [Notes|Command_GetLootParty_GameServerLib]
+Gets the list of players who are eligible for loot.
+
+
+h4.GetLooterClass (AccessLevel 9) [Notes|Command_GetLooterClass_GameServerLib]
+*Returns: string*
+Gets the list of players who are eligible for loot.
+
+
+h4.HasRewardTag (AccessLevel 9) [Notes|Command_HasRewardTag_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchRewardTag (string)*
+Checks the reward context to see if the given reward tag exists
+
+
+h4.InstanceDifficultyIs (AccessLevel 9) [Notes|Command_InstanceDifficultyIs_GameServerLib]
+*Parameter 1: pchInternalName (string)*
+No comment provided
+

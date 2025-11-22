@@ -1,0 +1,40 @@
+{anchor:ETransformEffectColorOrigin}
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\TransformationCommon.h_
+h3. Enumerated type *ETransformEffectColorOrigin* - (null)
+*none*
+*source_0*
+*source_1*
+*source_2*
+*source_3*
+*destination_0*
+*destination_1*
+*destination_2*
+*destination_3*
+*COUNT*
+{anchor:TransformationDef}
+
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\TransformationCommon.h_
+
+h3.TransformationDef
+
+*Event* (multiple allowed)
+-	list of events that will be triggered
+
+*\{*
+-	*Time* < float >
+--	the time this event fires
+-	*BoneSwapPart* < PCBoneDefRef >
+--	the bone	to perform the costume swap / removal on
+-	*effectColorOrigin* < none | source_0 | source_1 | source_2 | source_3 | destination_0 | destination_1 | destination_2 | destination_3 | COUNT > [#ETransformEffectColorOrigin]
+
+--	the color source to pull from when playing the effect
+-	*Effect* < string >
+--	the effect to trigger on this event
+-	*swapSkinColor* < int >
+--	swaps the skin color on the costume to the dest costumes
+
+*\}*
+
+*TotalTime* < float >
+-	the total time of the transformation, 
+-	after the time is expired, the costume will swap to the target costume

@@ -1,0 +1,4 @@
+h4.MissionStringVarFromTable (AccessLevel 9) [Notes|Command_MissionStringVarFromTable_GameServerLib]
+*Parameter 1: pcVarTableName (string)*
+No comment provided
+

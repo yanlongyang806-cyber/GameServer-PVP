@@ -1,0 +1,35 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.MapForcedTeamSize (AccessLevel 9) [Notes|Command_MapForcedTeamSize_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.GetMapName (AccessLevel 9) [Notes|Command_GetMapName_GameServerLib]
+*Returns: string*
+Get the public name of the current map
+This is available in the powers context, but it is highly recommended
+that you not use it for anything past prototyping.
+
+
+h4.IsNotOnMapNamed (AccessLevel 9) [Notes|Command_IsNotOnMapNamed_GameServerLib]
+*Returns: bool*
+*Parameter 1: pMapName (string)*
+No comment provided
+
+h4.IsOnMapNamed (AccessLevel 9) [Notes|Command_IsOnMapNamed_GameServerLib]
+*Returns: bool*
+*Parameter 1: pMapName (string)*
+No comment provided
+
+h4.IsOnUGCMap (AccessLevel 9) [Notes|Command_IsOnUGCMap_GameServerLib]
+*Returns: bool*
+No comment provided
+

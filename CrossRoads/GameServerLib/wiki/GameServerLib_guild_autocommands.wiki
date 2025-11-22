@@ -1,0 +1,250 @@
+h4.Guild_DemoteTime (AccessLevel 4) [Notes|Command_Guild_DemoteTime_GameServerLib]
+*Parameter 1: uNewDelay (int)*
+for testing guild demote leader. Set time
+
+
+h4.Guild_ProvisionalTime (AccessLevel 4) [Notes|Command_Guild_ProvisionalTime_GameServerLib]
+*Parameter 1: uNewDelay (int)*
+for testing guild demote leader. Set time
+
+
+h4.Guild_AcceptGuildMapInvite (AccessLevel 0) [Notes|Command_Guild_AcceptGuildMapInvite_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_AcceptInvite (AccessLevel 0) [Notes|Command_Guild_AcceptInvite_GameServerLib]
+No comment provided
+
+h4.Guild_ClaimLeadership (AccessLevel 0) [Notes|Command_Guild_ClaimLeadership_GameServerLib]
+No comment provided
+
+h4.Guild_Create (AccessLevel 0) [Notes|Command_Guild_Create_GameServerLib]
+*Parameter 1: iColor1 (int)*
+*Parameter 2: iColor2 (int)*
+*Parameter 3: pcEmblem (string)*
+*Parameter 4: pcDescription (string)*
+*Parameter 5: pcName (sentence)*
+No comment provided
+
+h4.Guild_CreateEx (AccessLevel 0) [Notes|Command_Guild_CreateEx_GameServerLib]
+*Parameter 1: iColor1 (int)*
+*Parameter 2: iColor2 (int)*
+*Parameter 3: pcEmblem (string)*
+*Parameter 4: pcDescription (string)*
+*Parameter 5: pchThemeName (string)*
+*Parameter 6: pcName (sentence)*
+No comment provided
+
+h4.Guild_CreateTest (AccessLevel 9) [Notes|Command_Guild_CreateTest_GameServerLib]
+*Parameter 1: iColor1 (int)*
+*Parameter 2: iColor2 (int)*
+*Parameter 3: pcEmblem (string)*
+*Parameter 4: pcDescription (string)*
+*Parameter 5: pcName (sentence)*
+No comment provided
+
+h4.Guild_DeclineGuildMapInvite (AccessLevel 0) [Notes|Command_Guild_DeclineGuildMapInvite_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_DeclineInvite (AccessLevel 0) [Notes|Command_Guild_DeclineInvite_GameServerLib]
+No comment provided
+
+h4.Guild_DeleteCostume (AccessLevel 0) [Notes|Command_Guild_DeleteCostume_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.Guild_Demote (AccessLevel 0) [Notes|Command_Guild_Demote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.GuildDestroy (AccessLevel 9) [Notes|Command_GuildDestroy_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_Info (AccessLevel 4) [Notes|Command_Guild_Info_GameServerLib]
+No comment provided
+
+h4.Guild_Invite (AccessLevel 0) [Notes|Command_Guild_Invite_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_InviteToGuildMap (AccessLevel 0) [Notes|Command_Guild_InviteToGuildMap_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.GuildJoinAuto (AccessLevel 0) [Notes|Command_GuildJoinAuto_GameServerLib]
+No comment provided
+
+h4.Guild_Kick (AccessLevel 0) [Notes|Command_Guild_Kick_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_KickFromGuildMap (AccessLevel 0) [Notes|Command_Guild_KickFromGuildMap_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_KickFromGuildMapByID (AccessLevel 0) [Notes|Command_Guild_KickFromGuildMapByID_GameServerLib]
+*Parameter 1: uOtherPlayerID (int)*
+No comment provided
+
+h4.Guild_Leave (AccessLevel 0) [Notes|Command_Guild_Leave_GameServerLib]
+No comment provided
+
+h4.GuildCSR_MakeMeLeader (AccessLevel 7) [Notes|Command_GuildCSR_MakeMeLeader_GameServerLib]
+No comment provided
+
+h4.Guild_MotD (AccessLevel 0) [Notes|Command_Guild_MotD_GameServerLib]
+No comment provided
+
+h4.Guild_Promote (AccessLevel 0) [Notes|Command_Guild_Promote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_Rename (AccessLevel 0) [Notes|Command_Guild_Rename_GameServerLib]
+*Parameter 1: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RenameBankTab (AccessLevel 0) [Notes|Command_Guild_RenameBankTab_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RenameRank (AccessLevel 0) [Notes|Command_Guild_RenameRank_GameServerLib]
+*Parameter 1: iRank (int)*
+*Parameter 2: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RescueLeader (AccessLevel 0) [Notes|Command_Guild_RescueLeader_GameServerLib]
+No comment provided
+
+h4.Guild_ResetGuildStats (AccessLevel 9) [Notes|Command_Guild_ResetGuildStats_GameServerLib]
+No comment provided
+
+h4.Guild_SetAllegiance (AccessLevel 0) [Notes|Command_Guild_SetAllegiance_GameServerLib]
+*Parameter 1: pcNewAllegiance (string)*
+No comment provided
+
+h4.Guild_SetBankItemWithdrawLimit (AccessLevel 0) [Notes|Command_Guild_SetBankItemWithdrawLimit_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iCount (int)*
+No comment provided
+
+h4.Guild_SetBankPermission (AccessLevel 0) [Notes|Command_Guild_SetBankPermission_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: pcPermission (string)*
+*Parameter 4: bOn (bool)*
+No comment provided
+
+h4.Guild_SetBankWithdrawLimit (AccessLevel 0) [Notes|Command_Guild_SetBankWithdrawLimit_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iLimit (int)*
+No comment provided
+
+h4.Guild_SetDescription (AccessLevel 0) [Notes|Command_Guild_SetDescription_GameServerLib]
+*Parameter 1: pcDescription (sentence)*
+No comment provided
+
+h4.Guild_SetEmblem (AccessLevel 0) [Notes|Command_Guild_SetEmblem_GameServerLib]
+*Parameter 1: pcEmblem (sentence)*
+No comment provided
+
+h4.Guild_SetMinLevelRecruit (AccessLevel 0) [Notes|Command_Guild_SetMinLevelRecruit_GameServerLib]
+*Parameter 1: iMin (int)*
+No comment provided
+
+h4.Guild_SetMotD (AccessLevel 0) [Notes|Command_Guild_SetMotD_GameServerLib]
+*Parameter 1: pcMotD (sentence)*
+No comment provided
+
+h4.Guild_SetOfficerComment (AccessLevel 0) [Notes|Command_Guild_SetOfficerComment_GameServerLib]
+*Parameter 1: pcOtherPlayer (string)*
+*Parameter 2: pcComment (sentence)*
+No comment provided
+
+h4.Guild_SetPermission (AccessLevel 0) [Notes|Command_Guild_SetPermission_GameServerLib]
+*Parameter 1: iRank (int)*
+*Parameter 2: pcPermission (string)*
+*Parameter 3: bOn (bool)*
+No comment provided
+
+h4.Guild_SetPublicComment (AccessLevel 0) [Notes|Command_Guild_SetPublicComment_GameServerLib]
+*Parameter 1: pcComment (sentence)*
+No comment provided
+
+h4.Guild_SetRecruitCat (AccessLevel 0) [Notes|Command_Guild_SetRecruitCat_GameServerLib]
+*Parameter 1: pcRecruitCat (string)*
+*Parameter 2: bSet (int)*
+No comment provided
+
+h4.Guild_SetRecruitMemberVisibility (AccessLevel 0) [Notes|Command_Guild_SetRecruitMemberVisibility_GameServerLib]
+*Parameter 1: bShow (int)*
+No comment provided
+
+h4.Guild_SetRecruitMessage (AccessLevel 0) [Notes|Command_Guild_SetRecruitMessage_GameServerLib]
+*Parameter 1: pcRecruitMessage (sentence)*
+No comment provided
+
+h4.Guild_SetRecruitVisibility (AccessLevel 0) [Notes|Command_Guild_SetRecruitVisibility_GameServerLib]
+*Parameter 1: bShow (int)*
+No comment provided
+
+h4.Guild_SetUniformPermission (AccessLevel 0) [Notes|Command_Guild_SetUniformPermission_GameServerLib]
+*Parameter 1: pcPermission (string)*
+*Parameter 2: pcUniform (string)*
+*Parameter 3: pcCategory (string)*
+*Parameter 4: bOn (bool)*
+No comment provided
+
+h4.Guild_SetWebSite (AccessLevel 0) [Notes|Command_Guild_SetWebSite_GameServerLib]
+*Parameter 1: pcWebSite (sentence)*
+No comment provided
+
+h4.Guild_UpdateGuildStat (AccessLevel 9) [Notes|Command_Guild_UpdateGuildStat_GameServerLib]
+*Parameter 1: pchStatName (string)*
+*Parameter 2: eOperation (enum)*
+*Parameter 3: iValue (int)*
+No comment provided
+
+h4.Guild_Who (AccessLevel 4) [Notes|Command_Guild_Who_GameServerLib]
+No comment provided
+
+h4.GuildCSR_ForceJoin (AccessLevel 7) [Notes|Command_GuildCSR_ForceJoin_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.GuildCSR_Info (AccessLevel 4) [Notes|Command_GuildCSR_Info_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.GuildCSR_PurgeBank (AccessLevel 7) [Notes|Command_GuildCSR_PurgeBank_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+
+h4.GuildCSR_ResetRanks (AccessLevel 7) [Notes|Command_GuildCSR_ResetRanks_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+*Parameter 2: pcHandle (string)*
+No comment provided
+
+h4.GuildCSR_SetLeader (AccessLevel 4) [Notes|Command_GuildCSR_SetLeader_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+*Parameter 2: pcHandle (string)*
+No comment provided
+
+h4.GuildCSR_SetName (AccessLevel 4) [Notes|Command_GuildCSR_SetName_GameServerLib]
+*Parameter 1: pcOldName (string)*
+*Parameter 2: pcNewName (string)*
+No comment provided
+
+h4.GuildCSR_SetNameByID (AccessLevel 4) [Notes|Command_GuildCSR_SetNameByID_GameServerLib]
+*Parameter 1: iGuildID (int)*
+*Parameter 2: pcNewName (string)*
+No comment provided
+
+h4.GuildCSR_Who (AccessLevel 4) [Notes|Command_GuildCSR_Who_GameServerLib]
+*Parameter 1: pcGuildName (string)*
+No comment provided
+

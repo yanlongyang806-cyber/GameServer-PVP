@@ -1,0 +1,46 @@
+h4.HasPowerCat (AccessLevel 9) [Notes|Command_HasPowerCat_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDef (PowerDef_ForExpr struct)*
+*Parameter 2: categoryName (string)*
+PowerDef
+Inputs: PowerDef, PowerCategory name
+Return: 1 if the PowerDef includes the named category, otherwise 0
+
+
+h4.HasPowerType (AccessLevel 9) [Notes|Command_HasPowerType_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDef (PowerDef_ForExpr struct)*
+*Parameter 2: powerTypeName (string)*
+PowerDef
+Inputs: PowerDef, PowerType name
+Return: 1 if the PowerDef is of the passed in type, otherwise 0
+
+
+h4.IsPowerDef (AccessLevel 9) [Notes|Command_IsPowerDef_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDef (PowerDef_ForExpr struct)*
+*Parameter 2: powerDefName (string)*
+PowerDef
+Inputs: PowerDef, PowerDef name
+Return: 1 if the PowerDef is the same as the named PowerDef, otherwise 0
+
+
+h4.PowerFromNode (AccessLevel 9) [Notes|Command_PowerFromNode_GameServerLib]
+*Returns: bool*
+*Parameter 1: powerTreeNodeDefName (string)*
+*Parameter 2: pPowerDefExpr (PowerDef_ForExpr struct)*
+Self
+Inputs: PowerTreeNodeDef name  PowerDef
+Return: True if the power def came from the given power node
+
+
+h4.PowerHasAttrib (AccessLevel 9) [Notes|Command_PowerHasAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDef (PowerDef_ForExpr struct)*
+*Parameter 2: attribName (string)*
+*Parameter 3: aspectName (string)*
+PowerDef
+Inputs: PowerDef, Attrib name, Aspect name
+Return: 1 if the PowerDef includes a matching attrib, otherwise 0
+
+

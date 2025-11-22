@@ -1,0 +1,267 @@
+h4.CanPickUp (AccessLevel 9) [Notes|Command_CanPickUp_GameServerLib]
+*Returns: int*
+*Parameter 1: mass (float)*
+Self
+Inputs: mass that you can pick up
+Return: 1 if you can pick up the target, otherwise 0
+
+
+h4.ChanceUnvalidated (AccessLevel 9) [Notes|Command_ChanceUnvalidated_GameServerLib]
+*Returns: int*
+*Parameter 1: chance (float)*
+Self
+Inputs: chance
+Return: 1 if the client generates a random number [0 .. 1) less than chance
+Prediction: True: Server agrees
+Prediction: False: Server agrees
+Unvalidated -- THIS FUNCTION IS NOT VALIDATED BY THE SERVER IN ANY WAY
+
+
+h4.Combo (AccessLevel 9) [Notes|Command_Combo_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDefName (string)*
+Self
+Inputs: PowerDef name
+Return: 1 if the entity can currently combo (or follow up) the named PowerDef, otherwise 0
+Prediction: True: Server agrees for finished activations up to .25s older than normal limit
+Prediction: False: Server agrees for finished activations at least .25s newer than normal limit
+
+
+h4.DDGetEnhancementBonus (AccessLevel 9) [Notes|Command_DDGetEnhancementBonus_GameServerLib]
+designer-friendly wrapper functions that may have different functionality later.
+
+
+h4.DDGetScaledEnhancementBonus (AccessLevel 9) [Notes|Command_DDGetScaledEnhancementBonus_GameServerLib]
+*Parameter 1: scalar (float)*
+No comment provided
+
+h4.DDImplementReq (AccessLevel 9) [Notes|Command_DDImplementReq_GameServerLib]
+*Returns: int*
+*Parameter 1: itemCategoryName (string)*
+Self
+Inputs: ItemCategory name
+Return: true if any equipped Implement (item equipped in specific bags/slots?) meets the requirement of the given ItemCategory, otherwise false
+
+
+h4.DDShieldReq (AccessLevel 9) [Notes|Command_DDShieldReq_GameServerLib]
+*Returns: int*
+*Parameter 1: itemCategoryName (string)*
+Self
+Inputs: ItemCategory name
+Return: true if any equipped Shield (item equipped in specific bags/slots?) meets the requirement of the given ItemCategory, otherwise false
+
+
+h4.DDWeaponDamage (AccessLevel 9) [Notes|Command_DDWeaponDamage_GameServerLib]
+*Returns: float*
+*Parameter 1: factor (float)*
+Self
+Inputs: factor
+Return: damage as a result of calculating the Application's Item's "Weapon" PowerDef's damage a factor number of times
+
+
+h4.DDWeaponReq (AccessLevel 9) [Notes|Command_DDWeaponReq_GameServerLib]
+*Returns: int*
+*Parameter 1: itemCategoryName (string)*
+Self
+Inputs: ItemCategory name
+Return: true if any equipped weapon (item equipped in specific bags/slots?) meets the requirement of the given ItemCategory, otherwise false
+
+
+h4.Falling (AccessLevel 9) [Notes|Command_Falling_GameServerLib]
+*Returns: int*
+Self
+Inputs: none
+Return: 1 if the entity is not flying and not on the ground, otherwise 0
+Prediction: True: Server wins
+Prediction: False: Server agrees
+
+
+h4.HasItemCategoryInBag (AccessLevel 9) [Notes|Command_HasItemCategoryInBag_GameServerLib]
+*Returns: int*
+*Parameter 1: itemCategoryName (string)*
+*Parameter 2: pchBagName (string)*
+Self
+Inputs: ItemCategory name
+Return: true if any equipped Implement (item equipped in specific bags/slots?) meets the requirement of the given ItemCategory, otherwise false
+
+
+h4.HeldObjectCostume (AccessLevel 9) [Notes|Command_HeldObjectCostume_GameServerLib]
+*Returns: string*
+*Parameter 1: pivot (string)*
+Self
+Inputs: optional pivot string, which is appended to the costume name to get a special costume
+Return: Costume of object you are holding, or your costume if you are an object, otherwise a null string
+
+
+h4.HeldObjectMass (AccessLevel 9) [Notes|Command_HeldObjectMass_GameServerLib]
+*Returns: float*
+Self
+Inputs: none
+Return: Mass of object you are holding, or your mass if you are an object, otherwise 0
+
+
+h4.HeldObjectThrowRotate (AccessLevel 9) [Notes|Command_HeldObjectThrowRotate_GameServerLib]
+*No Return*
+Self
+Inputs: None
+Return: Vec3 representing the rotation between the HandPivot costume and MassPivot 
+costume of object you are holding, or your costume if you are an object, otherwise <0, 0, 0>
+
+
+h4.HeldObjectThrowTranslate (AccessLevel 9) [Notes|Command_HeldObjectThrowTranslate_GameServerLib]
+*No Return*
+Self
+Inputs: None
+Return: Vec3 representing the translation between the HandPivot costume and MassPivot 
+costume of object you are holding, or your costume if you are an object, otherwise <0, 0, 0>
+
+
+h4.HoldingObject (AccessLevel 9) [Notes|Command_HoldingObject_GameServerLib]
+*Returns: int*
+Self
+Inputs: none
+Return: 1 if you are physically holding an object (which is no longer an entity), otherwise 0
+
+
+h4.HoldingObjectTele (AccessLevel 9) [Notes|Command_HoldingObjectTele_GameServerLib]
+*Returns: int*
+Self
+Inputs: none
+Return: 1 if you are non-physically holding an object (which is still an entity), otherwise 0
+
+
+h4.IsPowerSlottedInSlot (AccessLevel 9) [Notes|Command_IsPowerSlottedInSlot_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDefName (string)*
+*Parameter 2: iPowerSlotIndex (int)*
+Self
+Inputs: PowerDef name, The index to check if the power is slotted in
+Return: 1 if the Character owns the Power and has placed it in a PowerSlot, otherwise 0
+
+
+h4.ItemDPS (AccessLevel 9) [Notes|Command_ItemDPS_GameServerLib]
+*Returns: float*
+*Parameter 1: itemCategoryName (string)*
+Self
+Inputs: ItemCategory name
+Return: Sum of (Basic Damage/DataDefined Magnitudes / TimeRecharge) of first Power of
+all equipped items with the given ItemCategory.  If a Power does not have a TimeRecharge
+it is considered a TimeRecharge of 1.
+
+
+h4.ItemGetPowerFactor (AccessLevel 9) [Notes|Command_ItemGetPowerFactor_GameServerLib]
+Self
+Inputs: none
+Return: Power factor of weapon in the PowerApplication context
+
+
+h4.ItemWeaponDamage (AccessLevel 9) [Notes|Command_ItemWeaponDamage_GameServerLib]
+*Returns: float*
+Self
+Inputs: none
+Return: Damage calculated from all equipped weapons
+
+
+h4.ItemWeaponDamageNoVariance (AccessLevel 9) [Notes|Command_ItemWeaponDamageNoVariance_GameServerLib]
+*Returns: float*
+Self
+Inputs: none
+Return: Damage calculated from all equipped weapons
+
+
+h4.NodeEnhancementRank (AccessLevel 9) [Notes|Command_NodeEnhancementRank_GameServerLib]
+*Returns: int*
+*Parameter 1: powerTreeNodeDefName (string)*
+*Parameter 2: enhancementPowerDefName (string)*
+Self
+Inputs: PowerTreeNodeDef name, Enhancement PowerDef name
+Return: The rank of the named enhancement for named node if the entity owns the node and enhancement,
+0 if the entity owns the node but not the enhancement, and -1 if the entity doesn't own the node at all
+
+
+h4.NodeRank (AccessLevel 9) [Notes|Command_NodeRank_GameServerLib]
+*Returns: int*
+*Parameter 1: powerTreeNodeDefName (string)*
+Self
+Inputs: PowerTreeNodeDef name
+Return: The rank of the named node if the entity owns it, otherwise 0
+Override: The output of this function can be overridden
+
+
+h4.NumItemsWithCategoryInBag (AccessLevel 9) [Notes|Command_NumItemsWithCategoryInBag_GameServerLib]
+*Returns: int*
+*Parameter 1: itemCategoryName (string)*
+*Parameter 2: pchBagName (string)*
+Self
+Inputs: ItemCategory name
+Return: true if any equipped Implement (item equipped in specific bags/slots?) meets the requirement of the given ItemCategory, otherwise false
+
+
+h4.PlayerInGuildSelf (AccessLevel 9) [Notes|Command_PlayerInGuildSelf_GameServerLib]
+*Returns: int*
+Self
+Inputs: None
+Return: 1 if the player is in a guild, otherwise 0
+
+
+h4.SlottedPower (AccessLevel 9) [Notes|Command_SlottedPower_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDefName (string)*
+Self
+Inputs: PowerDef name
+Return: 1 if the Character owns the Power and has placed it in a PowerSlot, otherwise 0
+
+
+h4.SlottedPowerInType (AccessLevel 9) [Notes|Command_SlottedPowerInType_GameServerLib]
+*Returns: int*
+*Parameter 1: powerDefName (string)*
+*Parameter 2: powerSlotType (string)*
+Self
+Inputs: PowerDef name, PowerSlot type
+Return: 1 if the Character owns the Power and has placed it in a PowerSlot of the specified type, otherwise 0
+
+
+h4.SourceItemGetProgressionLevel (AccessLevel 9) [Notes|Command_SourceItemGetProgressionLevel_GameServerLib]
+Self
+Inputs: none
+Return: ProgressionLevel of source item in the PowerApplication context
+
+
+h4.SourceItemGetQuality (AccessLevel 9) [Notes|Command_SourceItemGetQuality_GameServerLib]
+Self
+Inputs: none
+Return: Quality of source item in the PowerApplication context
+
+
+h4.SourceItemGetSCPQualityModifier (AccessLevel 9) [Notes|Command_SourceItemGetSCPQualityModifier_GameServerLib]
+Self
+Inputs: none
+Return: Quality modifier of an SCP power, e.g. a purple pet gets a 1.25 stat bonus.
+
+
+h4.SourceItemGetZeroBasedProgressionLevel (AccessLevel 9) [Notes|Command_SourceItemGetZeroBasedProgressionLevel_GameServerLib]
+Self
+Inputs: none
+Return: Zero-based ProgressionLevel of source item in the PowerApplication context
+
+
+h4.ToggleActsWithPowerCat (AccessLevel 9) [Notes|Command_ToggleActsWithPowerCat_GameServerLib]
+*Returns: int*
+*Parameter 1: categoryName (string)*
+Self
+Inputs: Power Category name
+Return: Number of Toggle PowerActivations you have where the Power has the named PowerCategory
+
+
+h4.GetGuildProjectNumericValueFromPlayerSelf (AccessLevel 9) [Notes|Command_GetGuildProjectNumericValueFromPlayerSelf_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+Gets the value of a GroupProjectNumeric from a player.
+
+
+h4.GetGuildProjectUnlockFromPlayerSelf (AccessLevel 9) [Notes|Command_GetGuildProjectUnlockFromPlayerSelf_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+Gets the value of a GroupProjectUnlock from a player.
+
+

@@ -1,0 +1,1249 @@
+h4.DDCharacterGetSkillBonus (AccessLevel 9) [Notes|Command_DDCharacterGetSkillBonus_GameServerLib]
+*Returns: float*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+Returns the magnitude of the given character's bonus for a specified skill name.
+
+
+h4.DDCharacterHasSkill (AccessLevel 9) [Notes|Command_DDCharacterHasSkill_GameServerLib]
+*Returns: bool*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+No comment provided
+
+h4.DDCharacterPassiveRollSkill (AccessLevel 9) [Notes|Command_DDCharacterPassiveRollSkill_GameServerLib]
+*Returns: float*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+Returns the magnitude of the given character's bonus for a specified skill name.
+
+
+h4.DDCharacterPassiveSkillCheck (AccessLevel 9) [Notes|Command_DDCharacterPassiveSkillCheck_GameServerLib]
+*Returns: bool*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+Rolls a skill check on a character, returning the result. (or 1 on a critical failure)
+
+
+h4.DDCharacterRollSkill (AccessLevel 9) [Notes|Command_DDCharacterRollSkill_GameServerLib]
+*Returns: int*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+Rolls a skill check on a character, returning the result. (or 1 on a critical failure)
+
+
+h4.DDCharacterSkillCheck (AccessLevel 9) [Notes|Command_DDCharacterSkillCheck_GameServerLib]
+*Returns: bool*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+Evaluates a skill check on a character with a specific DC, returning true on success and false on failure (incl. critical failures.)
+
+
+h4.DDCharacterTake10 (AccessLevel 9) [Notes|Command_DDCharacterTake10_GameServerLib]
+*Returns: bool*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+Returns the result of taking 10 vs. a DC.
+
+
+h4.DDEntGetSkillBonus (AccessLevel 9) [Notes|Command_DDEntGetSkillBonus_GameServerLib]
+*Returns: float*
+*Parameter 1: skillName (string)*
+Returns the magnitude of the given character's bonus for a specified skill name.
+
+
+h4.DDEntityTake10 (AccessLevel 9) [Notes|Command_DDEntityTake10_GameServerLib]
+*Returns: bool*
+*Parameter 1: skillName (string)*
+*Parameter 2: DC (int)*
+Returns the result of taking 10 vs. a DC.
+
+
+h4.DDPartyRollSkill (AccessLevel 9) [Notes|Command_DDPartyRollSkill_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEntsIn (Entity Array)*
+*Parameter 2: skillName (string)*
+Rolls a skill check on a party, returning the highest result.
+
+
+h4.DDPartySkillCheck (AccessLevel 9) [Notes|Command_DDPartySkillCheck_GameServerLib]
+*Returns: bool*
+*Parameter 1: peaEntsIn (Entity Array)*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+Rolls a skill check on a party, returning the highest result.
+
+
+h4.EntOwnsPower (AccessLevel 9) [Notes|Command_EntOwnsPower_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnt (Entity Array)*
+*Parameter 2: powerDefName (string)*
+No comment provided
+
+h4.EntityBuildGetCurrentIndex (AccessLevel 9) [Notes|Command_EntityBuildGetCurrentIndex_GameServerLib]
+*Returns: int*
+Returns the current index of the build.
+Returns -1 if no build current or on error
+
+
+h4.GetBankSizeNumerics (AccessLevel 9) [Notes|Command_GetBankSizeNumerics_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GetGuildNumericItemValue (AccessLevel 9) [Notes|Command_GetGuildNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValue (AccessLevel 9) [Notes|Command_GetNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValueForEnt (AccessLevel 9) [Notes|Command_GetNumericItemValueForEnt_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValueScaled (AccessLevel 9) [Notes|Command_GetNumericItemValueScaled_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValueScaledForEnt (AccessLevel 9) [Notes|Command_GetNumericItemValueScaledForEnt_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.HasToken (AccessLevel 9) [Notes|Command_HasToken_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.StoreItemHasUnlocksForPlayer (AccessLevel 9) [Notes|Command_StoreItemHasUnlocksForPlayer_GameServerLib]
+*Returns: bool*
+Check to see if the given item is a costume unlock and
+if the given player never has never unlocked the costume on the item before
+
+
+h4.FormalName_GetPlayerFirstName (AccessLevel 9) [Notes|Command_FormalName_GetPlayerFirstName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetPlayerFullName (AccessLevel 9) [Notes|Command_FormalName_GetPlayerFullName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetPlayerLastName (AccessLevel 9) [Notes|Command_FormalName_GetPlayerLastName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.PermTokenKeyTypePlayer (AccessLevel 9) [Notes|Command_PermTokenKeyTypePlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchToken (string)*
+No comment provided
+
+h4.PermTokenTypePlayer (AccessLevel 9) [Notes|Command_PermTokenTypePlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchToken (string)*
+No comment provided
+
+h4.PermTokenPlayer (AccessLevel 9) [Notes|Command_PermTokenPlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: pchToken (string)*
+No comment provided
+
+h4.CanBuyBagPlayer (AccessLevel 9) [Notes|Command_CanBuyBagPlayer_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchBagID (string)*
+No comment provided
+
+h4.Nemesis_LeaderLoaded (AccessLevel 9) [Notes|Command_Nemesis_LeaderLoaded_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedEntArray (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedOrNot (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNot_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisLeaderLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisLeaderLoadedOrNotEntArray (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisTeamIndexGetLeader (AKA NemesisTeamGetLeader) (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetLeader_GameServerLib]
+*No Return*
+No comment provided
+
+h4.NemesisTeamGetMotivation (AccessLevel 9) [Notes|Command_NemesisTeamGetMotivation_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamIndex (int)*
+*Parameter 2: bUseLeader (bool)*
+Get the nemesis motivation, used for either team index or leader
+
+
+h4.NemesisTeamGetPersonality (AccessLevel 9) [Notes|Command_NemesisTeamGetPersonality_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamIndex (int)*
+*Parameter 2: bUseLeader (bool)*
+Get the nemesis personality, used for either team index or leader
+
+
+h4.NemesisTeamIndexGetNemesis (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetNemesis_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: iIndex (int)*
+Get the nemesis for the team at index. This only works if the team index has already been set by other expressions.
+
+
+h4.NemesisTeamIndexGetPlayer (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetPlayer_GameServerLib]
+*No Return*
+*Parameter 1: iIndex (int)*
+No comment provided
+
+h4.NemesisTeamIndexLoaded (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoaded_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedEntArray (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.TeamIndexLoadedOrNot (AccessLevel 9) [Notes|Command_TeamIndexLoadedOrNot_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotEntArray (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamLeaderGetNemesis (AccessLevel 9) [Notes|Command_NemesisTeamLeaderGetNemesis_GameServerLib]
+*Returns: Entity struct*
+Get the nemesis for the team leader. This only works if the team leader has already been set by other commands.
+
+
+h4.OfficerIsOfRankAndAllegiance (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+No comment provided
+
+h4.OfficerIsOfRankAndAllegianceUsingNumeric (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegianceUsingNumeric_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+*Parameter 3: pchNumeric (string)*
+TODO(MK): could make pchAllegiance into a comma delimited list if necessary later on
+
+
+h4.OfficerRequiredPointsForPlayerRank (AccessLevel 9) [Notes|Command_OfficerRequiredPointsForPlayerRank_GameServerLib]
+*Returns: int*
+*Parameter 1: iRank (int)*
+No comment provided
+
+h4.OfficerRequiredPointsForPlayerRankUsingNumeric (AccessLevel 9) [Notes|Command_OfficerRequiredPointsForPlayerRankUsingNumeric_GameServerLib]
+*Returns: int*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchNumeric (string)*
+No comment provided
+
+h4.PlayerHasCharacterPath (AccessLevel 9) [Notes|Command_PlayerHasCharacterPath_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasPrimaryNemesisLoadedOrNot (AccessLevel 9) [Notes|Command_PlayerHasPrimaryNemesisLoadedOrNot_GameServerLib]
+*Returns: bool*
+TRUE if the player has a Primary Nemesis (even if the Nemesis is not loaded yet), FALSE otherwise.
+
+
+h4.RewardEntCharPathHasPowerAtIndex (AccessLevel 9) [Notes|Command_RewardEntCharPathHasPowerAtIndex_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcSuperStat (string)*
+*Parameter 2: iIndex (int)*
+This is used by CO to see if a characterpath has a power (superstat) at index N in a suggested node
+Since this is a CO function, it will only check the Primary character path, since that's all CO uses.
+
+
+h4.RewardEntHasPower (AccessLevel 9) [Notes|Command_RewardEntHasPower_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcPower (string)*
+No comment provided
+
+h4.SharedBankPlayerCanBuySlots (AccessLevel 9) [Notes|Command_SharedBankPlayerCanBuySlots_GameServerLib]
+*Returns: bool*
+Returns true if this entity can has more slots available
+
+
+h4.TailorCostumeIndex (AccessLevel 9) [Notes|Command_TailorCostumeIndex_GameServerLib]
+*No Return*
+*Parameter 1: index (int)*
+Tells the Player to attempt to Tailor a specific costume index, if they can edit their costume at this time
+
+
+h4.GetAllegiance (AccessLevel 9) [Notes|Command_GetAllegiance_GameServerLib]
+*Returns: AllegianceDef struct*
+No comment provided
+
+h4.GetSubAllegiance (AccessLevel 9) [Notes|Command_GetSubAllegiance_GameServerLib]
+*Returns: AllegianceDef struct*
+No comment provided
+
+h4.IsAllegiance (AccessLevel 9) [Notes|Command_IsAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.IsPlayerAllegiance (AccessLevel 9) [Notes|Command_IsPlayerAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.IsPlayerGuildAllegiance (AccessLevel 9) [Notes|Command_IsPlayerGuildAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+Check the player's guild's allegiance
+
+
+h4.HasRecentlyCompletedContactDialog (AccessLevel 9) [Notes|Command_HasRecentlyCompletedContactDialog_GameServerLib]
+*Returns: int*
+*Parameter 1: pcContactName (string)*
+*Parameter 2: pcDialogName (string)*
+No comment provided
+
+h4.ShowContact (AccessLevel 9) [Notes|Command_ShowContact_GameServerLib]
+*Returns: int*
+*Parameter 1: pcContactName (string)*
+No comment provided
+
+h4.ShowContactDialog (AccessLevel 9) [Notes|Command_ShowContactDialog_GameServerLib]
+*Returns: int*
+*Parameter 1: pcContactName (string)*
+*Parameter 2: pcDialogName (string)*
+No comment provided
+
+h4.AccessLevel (AccessLevel 9) [Notes|Command_AccessLevel_GameServerLib]
+*Returns: int*
+Check the player's access level.
+
+
+h4.AccountAccessLevel (AccessLevel 9) [Notes|Command_AccountAccessLevel_GameServerLib]
+*Returns: int*
+Check the player's account access level.
+
+
+h4.DisplayLoreItem (AccessLevel 9) [Notes|Command_DisplayLoreItem_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemDefName (string)*
+No comment provided
+
+h4.CurrentPlayerInVolume (AccessLevel 9) [Notes|Command_CurrentPlayerInVolume_GameServerLib]
+*Returns: int*
+*Parameter 1: pcVolumeName (string)*
+No comment provided
+
+h4.EntityHasSteamLogin (AccessLevel 9) [Notes|Command_EntityHasSteamLogin_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntIsLinkedAccount (AccessLevel 9) [Notes|Command_EntIsLinkedAccount_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntIsShadowAccount (AccessLevel 9) [Notes|Command_EntIsShadowAccount_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.AllegianceSet (AccessLevel 9) [Notes|Command_AllegianceSet_GameServerLib]
+*No Return*
+*Parameter 1: allegianceName (string)*
+Runs the transaction that sets Player's Allegiance PERMANENTLY, also possibly modifies faction and species to match
+
+
+h4.ClearAutoExecForVolume (AccessLevel 9) [Notes|Command_ClearAutoExecForVolume_GameServerLib]
+*No Return*
+*Parameter 1: pchVolumeName (string)*
+Clear the auto-exec optional actions for a particular volume, making eligible to be automatically executed again
+
+
+h4.EntCropDDTake10 (AccessLevel 9) [Notes|Command_EntCropDDTake10_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+NNO-specific function that crops ents based on a skillcheck.
+
+
+h4.GadSharedBankSlotTest (AccessLevel 9) [Notes|Command_GadSharedBankSlotTest_GameServerLib]
+*Returns: bool*
+*Parameter 1: iValue (int)*
+No comment provided
+
+h4.GetPlayerEnt (AccessLevel 9) [Notes|Command_GetPlayerEnt_GameServerLib]
+*Returns: Entity struct*
+Returns an entity named "player" from the context, if one exists.
+
+
+h4.GetPlayerNemesis (AccessLevel 9) [Notes|Command_GetPlayerNemesis_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.GrantXP (AccessLevel 9) [Notes|Command_GrantXP_GameServerLib]
+*Returns: int*
+*Parameter 1: iValue (int)*
+Grants the current entity the passed in amount of XP (if it's a player)
+
+
+h4.HasRecentlyCompletedInteractWithEntityInEncounter (AccessLevel 9) [Notes|Command_HasRecentlyCompletedInteractWithEntityInEncounter_GameServerLib]
+*Parameter 1: pchEncounterName (string)*
+No comment provided
+
+h4.HasRecentlyCompletedClickable (AKA HasRecentlyCompletedInteractWithObject) (AccessLevel 9) [Notes|Command_HasRecentlyCompletedClickable_GameServerLib]
+*Parameter 1: pchObjectName (string)*
+No comment provided
+
+h4.HasRecentlyCompletedInteractWithVolume (AccessLevel 9) [Notes|Command_HasRecentlyCompletedInteractWithVolume_GameServerLib]
+*Parameter 1: pchVolumeName (string)*
+No comment provided
+
+h4.IsPlayer (AccessLevel 9) [Notes|Command_IsPlayer_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.IsPlayerCharPath (AccessLevel 9) [Notes|Command_IsPlayerCharPath_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchCharPath (string)*
+No comment provided
+
+h4.NemesisCount (AccessLevel 9) [Notes|Command_NemesisCount_GameServerLib]
+*Returns: int*
+Gets the number of Nemeses that the player currently has
+
+
+h4.NemesisDefeatCountMax (AccessLevel 9) [Notes|Command_NemesisDefeatCountMax_GameServerLib]
+*Returns: int*
+Gets the highest number of times that the player has defeated a single Nemesis
+
+
+h4.NemesisDefeatCountTotal (AccessLevel 9) [Notes|Command_NemesisDefeatCountTotal_GameServerLib]
+*Returns: int*
+Gets the total number of times a player has defeated a Nemesis
+
+
+h4.PlayFx (AccessLevel 9) [Notes|Command_PlayFx_GameServerLib]
+*Parameter 1: fxName (string)*
+Plays an effect on the current entity for every player within the FX draw distance
+
+
+h4.PlayMusicEvent (AccessLevel 9) [Notes|Command_PlayMusicEvent_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays the specified music event for the active player
+
+
+h4.PlayOneShotSound (AccessLevel 9) [Notes|Command_PlayOneShotSound_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays a one shot sound to all players within proximity range
+TODO: non-AIs should actually use PlayOneShotSoundAtPoint and this should be removed from the player context
+
+
+h4.PlayOneShotSoundFromEntity (AccessLevel 9) [Notes|Command_PlayOneShotSoundFromEntity_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays a one shot sound to all players within proximity range (keeps the sound's position at the source entity)
+
+
+h4.PlaySound (AccessLevel 9) [Notes|Command_PlaySound_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: soundName (string)*
+Plays a sound to all players in the specified ent array
+NOTE: it's generally a good idea to save the ent array you're playing a sound on so you can pass
+it in to StopSound() later
+
+
+h4.PlayVoiceSetSound (AccessLevel 9) [Notes|Command_PlayVoiceSetSound_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays a voice-set sound to all players within proximity range
+
+
+h4.PlayerCombatLevel (AccessLevel 9) [Notes|Command_PlayerCombatLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerCreateTime (AccessLevel 9) [Notes|Command_PlayerCreateTime_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerGetDDSkillBonus (AccessLevel 9) [Notes|Command_PlayerGetDDSkillBonus_GameServerLib]
+*Returns: float*
+*Parameter 1: pchSkillName (string)*
+No comment provided
+
+h4.PlayerGetTeamEnts (AccessLevel 9) [Notes|Command_PlayerGetTeamEnts_GameServerLib]
+No comment provided
+
+h4.PlayerHasAnyNemesis (AccessLevel 9) [Notes|Command_PlayerHasAnyNemesis_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasCharPath (AccessLevel 9) [Notes|Command_PlayerHasCharPath_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasCompletedMission (AccessLevel 9) [Notes|Command_PlayerHasCompletedMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMissionName (string)*
+No comment provided
+
+h4.PlayerHasGuildPermission (AccessLevel 9) [Notes|Command_PlayerHasGuildPermission_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcPermission (string)*
+Check guild permission on the player
+
+
+h4.PlayerHasMission (AccessLevel 9) [Notes|Command_PlayerHasMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMissionName (string)*
+No comment provided
+
+h4.PlayerHasPrimaryNemesis (AccessLevel 9) [Notes|Command_PlayerHasPrimaryNemesis_GameServerLib]
+*Returns: bool*
+DEPRECATED - Use "PlayerHasPrimaryNemesisLoaded" or "PlayerHasPrimaryNemesisLoadedOrNot" instead
+TRUE if the player has a Primary Nemesis and the Nemesis is loaded and ready to spawn, FALSE otherwise.
+
+
+h4.PlayerHasPrimaryNemesisLoaded (AccessLevel 9) [Notes|Command_PlayerHasPrimaryNemesisLoaded_GameServerLib]
+*Returns: bool*
+TRUE if the player has a Primary Nemesis and the Nemesis is loaded and ready to spawn, FALSE otherwise.
+
+
+h4.PlayerIsInCombat (AccessLevel 9) [Notes|Command_PlayerIsInCombat_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerSkillLevel (AccessLevel 9) [Notes|Command_PlayerSkillLevel_GameServerLib]
+*Parameter 1: skillName (string)*
+Returns the player's skill level with the specified skill.  If the player 
+doesn't have the skill, returns -1
+
+
+h4.PlayerXPLevel (AccessLevel 9) [Notes|Command_PlayerXPLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.SpeciesSet (AccessLevel 9) [Notes|Command_SpeciesSet_GameServerLib]
+*No Return*
+*Parameter 1: pchSpecies (string)*
+No comment provided
+
+h4.WarpToVolume (AccessLevel 9) [Notes|Command_WarpToVolume_GameServerLib]
+*Parameter 1: pcSpawnPoint (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementConsecutiveCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementConsecutiveCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementConsecutiveMultipleSetCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementConsecutiveMultipleSetCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementMaximumConsecutiveCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementMaximumConsecutiveCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAvailable (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAvailable_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.ugcAuthor_ProjectAchievementCount (AccessLevel 9) [Notes|Command_ugcAuthor_ProjectAchievementCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+*Parameter 2: count (int)*
+No comment provided
+
+h4.ugcAuthor_ProjectAchievementLargestCount (AccessLevel 9) [Notes|Command_ugcAuthor_ProjectAchievementLargestCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_SeriesAchievementCount (AccessLevel 9) [Notes|Command_ugcAuthor_SeriesAchievementCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+*Parameter 2: count (int)*
+No comment provided
+
+h4.ugcAuthor_SeriesAchievementLargestCount (AccessLevel 9) [Notes|Command_ugcAuthor_SeriesAchievementLargestCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.EntGetDupVanityPets (AccessLevel 9) [Notes|Command_EntGetDupVanityPets_GameServerLib]
+*Returns: int*
+*Parameter 1: pItemDef (ItemDef struct)*
+Returns the number of duplicate vanity pets on the item.  Returns -1 if ALL pets 
+
+
+h4.GadAttribValueTest (AccessLevel 9) [Notes|Command_GadAttribValueTest_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAttrib (string)*
+*Parameter 2: iValue (int)*
+Get the value of this game account attrib
+
+
+h4.GetGroupProjectNumericValueFromPlayer (AccessLevel 9) [Notes|Command_GetGroupProjectNumericValueFromPlayer_GameServerLib]
+*Parameter 1: projectType (int)*
+*Parameter 2: projectName (string)*
+*Parameter 3: numericName (string)*
+Gets the value of a GroupProjectNumeric from a player.
+
+
+h4.GetGroupProjectUnlockFromPlayer (AccessLevel 9) [Notes|Command_GetGroupProjectUnlockFromPlayer_GameServerLib]
+*Parameter 1: projectType (int)*
+*Parameter 2: projectName (string)*
+*Parameter 3: unlockName (string)*
+Gets the value of a GroupProjectUnlock from a player.
+
+
+h4.GetGuildProjectNumericValueFromPlayer (AccessLevel 9) [Notes|Command_GetGuildProjectNumericValueFromPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+Gets the value of a Guild GroupProjectNumeric from a player.
+
+
+h4.GetGuildProjectUnlockFromPlayer (AccessLevel 9) [Notes|Command_GetGuildProjectUnlockFromPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+Gets the value of a Guild GroupProjectUnlock from a player.
+
+
+h4.GetPlayerProjectNumericValueFromPlayer (AccessLevel 9) [Notes|Command_GetPlayerProjectNumericValueFromPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+Gets the value of a Player GroupProjectNumeric from a player.
+
+
+h4.GetPlayerProjectUnlockFromPlayer (AccessLevel 9) [Notes|Command_GetPlayerProjectUnlockFromPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+Gets the value of a Player GroupProjectUnlock from a player.
+
+
+h4.InteriorOptionChoiceSetByValue (AccessLevel 9) [Notes|Command_InteriorOptionChoiceSetByValue_GameServerLib]
+*No Return*
+*Parameter 1: optionName (string)*
+*Parameter 2: value (int)*
+No comment provided
+
+h4.IsInteriorOptionChoiceActiveByValue (AccessLevel 9) [Notes|Command_IsInteriorOptionChoiceActiveByValue_GameServerLib]
+*Returns: bool*
+*Parameter 1: optionName (string)*
+*Parameter 2: value (int)*
+No comment provided
+
+h4.IsPlayerInRegion (AccessLevel 9) [Notes|Command_IsPlayerInRegion_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchRegionType (string)*
+No comment provided
+
+h4.IsPlayerInteriorOwner (AccessLevel 9) [Notes|Command_IsPlayerInteriorOwner_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.MapIsInterior (AccessLevel 9) [Notes|Command_MapIsInterior_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerCompareClassCategory (AccessLevel 9) [Notes|Command_PlayerCompareClassCategory_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchCategoryName (string)*
+No comment provided
+
+h4.PlayerCompareClassName (AccessLevel 9) [Notes|Command_PlayerCompareClassName_GameServerLib]
+*Returns: bool*
+*Parameter 1: className (string)*
+No comment provided
+
+h4.PlayerGetAssignmentCooldownRemaining (AccessLevel 9) [Notes|Command_PlayerGetAssignmentCooldownRemaining_GameServerLib]
+*Returns: int*
+*Parameter 1: pchDefName (string)*
+No comment provided
+
+h4.PlayerGetSpeciesName (AccessLevel 9) [Notes|Command_PlayerGetSpeciesName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.PlayerGetSpeciesSpeciesName (AccessLevel 9) [Notes|Command_PlayerGetSpeciesSpeciesName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.PlayerGetTeamLevel (AccessLevel 9) [Notes|Command_PlayerGetTeamLevel_GameServerLib]
+*Returns: int*
+Returns the average level of the context Entity's team.
+
+
+h4.PlayerHasActiveItemAssignment (AccessLevel 9) [Notes|Command_PlayerHasActiveItemAssignment_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchDefName (string)*
+No comment provided
+
+h4.PlayerHasCompletedAssignment (AccessLevel 9) [Notes|Command_PlayerHasCompletedAssignment_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchDefName (string)*
+This only works on assignments with dependencies or assignments in cooldown
+
+
+h4.PlayerHasGrantedAssignment (AccessLevel 9) [Notes|Command_PlayerHasGrantedAssignment_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchDefName (string)*
+No comment provided
+
+h4.PlayerHasItemAssignment (AccessLevel 9) [Notes|Command_PlayerHasItemAssignment_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchDefName (string)*
+No comment provided
+
+h4.PlayerHasItemWithSpeciesAndCategories (AccessLevel 9) [Notes|Command_PlayerHasItemWithSpeciesAndCategories_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchBag (string)*
+*Parameter 2: pchSpeciesList (string)*
+*Parameter 3: pchItemCategories (string)*
+*Parameter 4: pchItemQualities (string)*
+Either pchSpecies or pchCategories must be valid
+If pchSpecies is null or empty, it is ignored
+If pchCategories is null or empty, it is ignored
+
+
+h4.PlayerHasRecentlyCompletedAssignment (AccessLevel 9) [Notes|Command_PlayerHasRecentlyCompletedAssignment_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchDefName (string)*
+*Parameter 2: pchOutcome (string)*
+No comment provided
+
+h4.PlayerIsPlayerType (AccessLevel 9) [Notes|Command_PlayerIsPlayerType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+No comment provided
+
+h4.PlayerNavToInteractable (AccessLevel 9) [Notes|Command_PlayerNavToInteractable_GameServerLib]
+*No Return*
+*Parameter 1: pchInteractableName (string)*
+No comment provided
+
+h4.PlayerOwnsPet (AccessLevel 9) [Notes|Command_PlayerOwnsPet_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchPetDefName (string)*
+No comment provided
+
+h4.PlayerPuppetCompareClassCategory (AccessLevel 9) [Notes|Command_PlayerPuppetCompareClassCategory_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchPuppetType (string)*
+*Parameter 2: pchCategoryName (string)*
+No comment provided
+
+h4.PlayerPuppetCompareClassName (AccessLevel 9) [Notes|Command_PlayerPuppetCompareClassName_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchPuppetType (string)*
+*Parameter 2: pchClassName (string)*
+No comment provided
+
+h4.PlayerPuppetIsSpecies (AccessLevel 9) [Notes|Command_PlayerPuppetIsSpecies_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchPuppetType (string)*
+*Parameter 2: pchSpeciesName (string)*
+No comment provided
+
+h4.PlayerSendGenMessage (AccessLevel 9) [Notes|Command_PlayerSendGenMessage_GameServerLib]
+*No Return*
+*Parameter 1: pchGenName (string)*
+*Parameter 2: pchMessage (string)*
+Sends a gen message to a client
+
+
+h4.PlayerSetMovementThrottle (AccessLevel 9) [Notes|Command_PlayerSetMovementThrottle_GameServerLib]
+*No Return*
+*Parameter 1: fThrottle (float)*
+Sets the Player's movement throttle, clamped to [-0.25..1]
+
+
+h4.SetTutorialDone (AccessLevel 9) [Notes|Command_SetTutorialDone_GameServerLib]
+*No Return*
+No comment provided
+
+h4.RestartMap (AccessLevel 9) [Notes|Command_RestartMap_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMapName (string)*
+*Parameter 2: pcSpawnName (string)*
+No comment provided
+
+h4.SavedPetsClearAllDeceased (AccessLevel 9) [Notes|Command_SavedPetsClearAllDeceased_GameServerLib]
+*No Return*
+No comment provided
+
+h4.SetSkill (AccessLevel 9) [Notes|Command_SetSkill_GameServerLib]
+*No Return*
+*Parameter 1: iSkillType (int)*
+No comment provided
+
+h4.UpdatePresence (AccessLevel 9) [Notes|Command_UpdatePresence_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.PlayerGetAccountDataValue (AccessLevel 9) [Notes|Command_PlayerGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetGender (AccessLevel 9) [Notes|Command_EntGetGender_GameServerLib]
+*Returns: string*
+Get the gender as a string
+
+
+h4.EntGetHiddenInGateway (AccessLevel 9) [Notes|Command_EntGetHiddenInGateway_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.CanPlayerAffordGuildAllegianceChange (AccessLevel 9) [Notes|Command_CanPlayerAffordGuildAllegianceChange_GameServerLib]
+*Returns: bool*
+Player/Mission expression to determine if the player can afford the allegiance change
+
+
+h4.queue_PlayerHasQueueInfo (AccessLevel 9) [Notes|Command_queue_PlayerHasQueueInfo_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerStickerBookPoints (AccessLevel 9) [Notes|Command_PlayerStickerBookPoints_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerStickerBookPointsForCollection (AccessLevel 9) [Notes|Command_PlayerStickerBookPointsForCollection_GameServerLib]
+*Parameter 1: pchCollectionName (string)*
+No comment provided
+
+h4.PlayerStickerBookPointsForCollectionType (AccessLevel 9) [Notes|Command_PlayerStickerBookPointsForCollectionType_GameServerLib]
+*Parameter 1: typeName (string)*
+No comment provided
+
+h4.PlayerStickerBookPointsForLocation (AccessLevel 9) [Notes|Command_PlayerStickerBookPointsForLocation_GameServerLib]
+*Parameter 1: pchCollectionName (string)*
+*Parameter 2: pchLocationName (string)*
+No comment provided
+
+h4.PlayerStickerBookPointsForSet (AccessLevel 9) [Notes|Command_PlayerStickerBookPointsForSet_GameServerLib]
+*Parameter 1: pchCollectionName (string)*
+*Parameter 2: pchSetName (string)*
+No comment provided
+
+h4.team_LowestMemberExpLevel (AccessLevel 9) [Notes|Command_team_LowestMemberExpLevel_GameServerLib]
+*Returns: int*
+Player/Mission expression to determine the lowest exp level on the team (including disconnecteds)
+
+
+h4.team_TeammateIsInDifferentPartition (AccessLevel 9) [Notes|Command_team_TeammateIsInDifferentPartition_GameServerLib]
+*Returns: bool*
+Player/Mission expression to determine if the player is on a team and a team member is on the same map but a different partition
+
+
+h4.PlayerGetGuildMemberClassCount (AccessLevel 9) [Notes|Command_PlayerGetGuildMemberClassCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcClassName (string)*
+Returns the number of members from the given class in the player's guild
+
+
+h4.PlayerGetGuildStat (AccessLevel 9) [Notes|Command_PlayerGetGuildStat_GameServerLib]
+*Returns: int*
+*Parameter 1: pcStatName (string)*
+No comment provided
+
+h4.PlayerGuildIsTheme (AccessLevel 9) [Notes|Command_PlayerGuildIsTheme_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcThemeName (string)*
+Indicates if the guild is assigned the same theme as the given theme
+
+
+h4.PlayerHasJoinedGuild (AccessLevel 9) [Notes|Command_PlayerHasJoinedGuild_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerIsGuildMember (AccessLevel 9) [Notes|Command_PlayerIsGuildMember_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.CanAcceptMission (AccessLevel 9) [Notes|Command_CanAcceptMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.GetNumCompletedMissions (AccessLevel 9) [Notes|Command_GetNumCompletedMissions_GameServerLib]
+*Returns: int*
+*Parameter 1: bIgnoreRepeats (bool)*
+*Parameter 2: bIgnoreInvisible (bool)*
+Gets the number of regular Missions a player has completed.  Does not count Perks, etc.
+
+
+h4.GetNumCompletedMissionsByCategory (AccessLevel 9) [Notes|Command_GetNumCompletedMissionsByCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCategoryName (string)*
+*Parameter 2: bIgnoreRepeats (bool)*
+*Parameter 3: bIgnoreInvisible (bool)*
+Gets the number of regular Missions a player has completed from the given category.  Does not count Perks, etc.
+
+
+h4.GetNumCompletedPerks (AccessLevel 9) [Notes|Command_GetNumCompletedPerks_GameServerLib]
+*Returns: int*
+Gets the number of Perks the player has completed.
+
+
+h4.GetNumCompletedPerksByCategory (AccessLevel 9) [Notes|Command_GetNumCompletedPerksByCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCategoryName (string)*
+Gets the number of Perks a player has completed from the given category.
+
+
+h4.GetPlayerMissionVariableFloat (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableFloat_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+Gets the value of a mission variable as a float
+
+
+h4.GetPlayerMissionVariableFloatWithDefault (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableFloatWithDefault_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: fDefault (int)*
+No comment provided
+
+h4.GetPlayerMissionVariableInt (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableInt_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+Gets the value of a mission variable as an integer
+
+
+h4.GetPlayerMissionVariableIntWithDefault (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableIntWithDefault_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: iDefault (int)*
+No comment provided
+
+h4.GetPlayerMissionVariableString (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableString_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+No comment provided
+
+h4.GetPlayerMissionVariableStringWithDefault (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableStringWithDefault_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: pcDefault (string)*
+No comment provided
+
+h4.GrantMission (AccessLevel 9) [Notes|Command_GrantMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.GrantMissionPrimaryOnly (AccessLevel 9) [Notes|Command_GrantMissionPrimaryOnly_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.GrantRandomAutoMission (AccessLevel 9) [Notes|Command_GrantRandomAutoMission_GameServerLib]
+*Parameter 1: pcCategory (string)*
+No comment provided
+
+h4.HasCompletedMission (AccessLevel 9) [Notes|Command_HasCompletedMission_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.HasCompletedMissionByTime (AccessLevel 9) [Notes|Command_HasCompletedMissionByTime_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: uTime (int)*
+
+Return true if the player has completed the mission before the given time
+
+
+
+h4.HasNoRecordOfMission (AccessLevel 9) [Notes|Command_HasNoRecordOfMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.PerformedEmote (AccessLevel 9) [Notes|Command_PerformedEmote_GameServerLib]
+*Returns: int*
+*Parameter 1: pchEmoteName (string)*
+*Parameter 2: uiTime (int)*
+No comment provided
+
+h4.MissionStateFailed (AccessLevel 9) [Notes|Command_MissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionStateInProgress (AccessLevel 9) [Notes|Command_MissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionStateInProgressByTag (AccessLevel 9) [Notes|Command_MissionStateInProgressByTag_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionTagName (string)*
+No comment provided
+
+h4.MissionStateSucceeded (AccessLevel 9) [Notes|Command_MissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionStateSucceededByTag (AccessLevel 9) [Notes|Command_MissionStateSucceededByTag_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionTagName (string)*
+No comment provided
+
+h4.PlayerGetPointsSpent (AccessLevel 9) [Notes|Command_PlayerGetPointsSpent_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.PlayerHasItemWithGemSlot (AccessLevel 9) [Notes|Command_PlayerHasItemWithGemSlot_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasNemesisGrantItem (AccessLevel 9) [Notes|Command_PlayerHasNemesisGrantItem_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerSlottedGem (AccessLevel 9) [Notes|Command_PlayerSlottedGem_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerStatCount (AccessLevel 9) [Notes|Command_PlayerStatCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcStatName (string)*
+Returns the value of a named PlayerStat for the current player.
+
+
+h4.SetPlayerMissionVariableFloat (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableFloat_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: fValue (float)*
+No comment provided
+
+h4.SetPlayerMissionVariableInt (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableInt_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: iValue (int)*
+No comment provided
+
+h4.SetPlayerMissionVariableMessage (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableMessage_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: pchMessageKey (string)*
+Set a message type mission variable by message key
+
+
+h4.SetPlayerMissionVariableString (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableString_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: pchString (string)*
+No comment provided
+
+h4.TeamHasCompletedMission (AccessLevel 9) [Notes|Command_TeamHasCompletedMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has completed this Mission
+
+
+h4.TeamMissionStateFailed (AccessLevel 9) [Notes|Command_TeamMissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has this Mission Failed
+
+
+h4.TeamMissionStateInProgress (AccessLevel 9) [Notes|Command_TeamMissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has this Mission in progress
+
+
+h4.TeamMissionStateSucceeded (AccessLevel 9) [Notes|Command_TeamMissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has this Mission Succeeded
+
+
+h4.GiveAccountRewardGate (AccessLevel 9) [Notes|Command_GiveAccountRewardGate_GameServerLib]
+*Returns: int*
+*Parameter 1: pchRewardTable (string)*
+*Parameter 2: pchGateType (string)*
+No comment provided
+
+h4.PlayerOnMissionLockoutList (AccessLevel 9) [Notes|Command_PlayerOnMissionLockoutList_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionRefString (string)*
+Returns TRUE if the player is on the Lockout List for the given MissionDef
+
+
+h4.NotifySend (AccessLevel 9) [Notes|Command_NotifySend_GameServerLib]
+*No Return*
+*Parameter 1: pcType (string)*
+*Parameter 2: pcDisplayString (string)*
+*Parameter 3: pcLogicalString (string)*
+*Parameter 4: pcTexture (string)*
+Send a notification.
+
+
+h4.NotifyQueueClearTag (AccessLevel 9) [Notes|Command_NotifyQueueClearTag_GameServerLib]
+*No Return*
+*Parameter 1: pcQueue (string)*
+*Parameter 2: pcTag (string)*
+No comment provided
+
+h4.NotifySendAudio (AccessLevel 9) [Notes|Command_NotifySendAudio_GameServerLib]
+*No Return*
+*Parameter 1: pcType (string)*
+*Parameter 2: pcDisplayString (string)*
+*Parameter 3: pcLogicalString (string)*
+*Parameter 4: pcSound (string)*
+*Parameter 5: pcTexture (string)*
+Send a notification.
+
+
+h4.NotifySendWithTag (AccessLevel 9) [Notes|Command_NotifySendWithTag_GameServerLib]
+*No Return*
+*Parameter 1: pcType (string)*
+*Parameter 2: pcDisplayString (string)*
+*Parameter 3: pcLogicalString (string)*
+*Parameter 4: pcTexture (string)*
+*Parameter 5: pcTag (string)*
+Send a notification with a tag.
+
+
+h4.OpenMissionMapCredit (AccessLevel 9) [Notes|Command_OpenMissionMapCredit_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.CountBagItems (AccessLevel 9) [Notes|Command_CountBagItems_GameServerLib]
+*Returns: int*
+*Parameter 1: pcBagType (string)*
+No comment provided
+
+h4.CountBagItemsWithCategory (AccessLevel 9) [Notes|Command_CountBagItemsWithCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pcBag (string)*
+*Parameter 2: pcCategory (string)*
+No comment provided
+
+h4.PlayerItemCount (AccessLevel 9) [Notes|Command_PlayerItemCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.PlayerGetDaysSubscribed (AccessLevel 9) [Notes|Command_PlayerGetDaysSubscribed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerIsLifetimeSubscription (AccessLevel 9) [Notes|Command_PlayerIsLifetimeSubscription_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerIsPressSubscription (AccessLevel 9) [Notes|Command_PlayerIsPressSubscription_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.ProgressionGetCurrentProgressByStory (AccessLevel 9) [Notes|Command_ProgressionGetCurrentProgressByStory_GameServerLib]
+*Returns: string*
+*Parameter 1: pchStoryArcNode (string)*
+Returns the current progress of the player for the given story. If the player is in a team, it returns the progress of the team.
+
+
+h4.ProgressionGetPersonalProgressByStory (AccessLevel 9) [Notes|Command_ProgressionGetPersonalProgressByStory_GameServerLib]
+*Returns: string*
+*Parameter 1: pchStoryArcNode (string)*
+Returns the current progress of the player for the given story.
+
+
+h4.ProgressionIsCurrentProgressEqualOrGreaterThanNode (AccessLevel 9) [Notes|Command_ProgressionIsCurrentProgressEqualOrGreaterThanNode_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchStoryArcNode (string)*
+*Parameter 2: pchNodeToCompare (string)*
+No comment provided
+

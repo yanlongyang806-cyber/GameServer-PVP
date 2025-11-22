@@ -1,0 +1,5 @@
+h4.MailCooldownTime (int) - (AccessLevel 9) [Notes|Command_MailCooldownTime_GameServerLib]
+__CATEGORY Mail related settings
+The time that players must wait after sending an email before sending another one.
+
+

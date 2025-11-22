@@ -1,0 +1,58 @@
+h4.AddScoreToTeam (AccessLevel 9) [Notes|Command_AddScoreToTeam_GameServerLib]
+*No Return*
+*Parameter 1: iTeamNumber (int)*
+*Parameter 2: iPoints (int)*
+No comment provided
+
+h4.EndGame (AccessLevel 9) [Notes|Command_EndGame_GameServerLib]
+*No Return*
+PvP based games should always use this method of ending a match instead of setting the scoreboard state directly
+
+
+h4.PvPGameStarted (AccessLevel 9) [Notes|Command_PvPGameStarted_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PvPGameGetPlayerRankByPlayerValue (AccessLevel 9) [Notes|Command_PvPGameGetPlayerRankByPlayerValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchValue (string)*
+returns the rank of the player based on the given value. The Rank starts at 1
+sorts from highest to lowest. 
+returns 100000 (arbitrary high number) if there was an error
+
+
+h4.GetTeamScore (AccessLevel 9) [Notes|Command_GetTeamScore_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamNumber (int)*
+No comment provided
+
+h4.NotifyPlayerOfKillingSpree (AccessLevel 9) [Notes|Command_NotifyPlayerOfKillingSpree_GameServerLib]
+*No Return*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcMsgKey (string)*
+*Parameter 3: pcImg (string)*
+No comment provided
+
+h4.AddPointsToPlayer (AccessLevel 9) [Notes|Command_AddPointsToPlayer_GameServerLib]
+*No Return*
+*Parameter 1: iPoints (int)*
+*Parameter 2: pchMessageKey (string)*
+No comment provided
+
+h4.AddPointsToTeam (AccessLevel 9) [Notes|Command_AddPointsToTeam_GameServerLib]
+*No Return*
+*Parameter 1: iTeamNumber (int)*
+*Parameter 2: iPoints (int)*
+*Parameter 3: pchMessageKey (string)*
+No comment provided
+
+h4.allowPlayerRespawns (AccessLevel 9) [Notes|Command_allowPlayerRespawns_GameServerLib]
+*No Return*
+*Parameter 1: bForceRespawn (bool)*
+No comment provided
+
+h4.PlayersAliveInGroup (AccessLevel 9) [Notes|Command_PlayersAliveInGroup_GameServerLib]
+*Returns: int*
+*Parameter 1: iGroupNumber (int)*
+No comment provided
+

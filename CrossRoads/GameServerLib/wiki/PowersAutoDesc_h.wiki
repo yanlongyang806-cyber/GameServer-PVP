@@ -1,0 +1,292 @@
+{anchor:AutoDescPower}
+
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\Combat\PowersAutoDesc.h_
+
+h3.AutoDescPower
+
+*Name* < string >
+-	Display name
+
+*Desc* < string >
+-	Description
+
+*DescLong* < string >
+-	Long description
+
+*DescFlavor* < string >
+-	Flavor description
+
+*Custom* < string >
+-	Custom (AutoDescOverride) description
+
+*Dev* < string >
+-	Dev mode data (internal power name, error/warning messages)
+
+*Type* < string >
+-	Type (click, toggle, etc)
+
+*ComboRequires* < string >
+-	Requires expression from the parent Combo Power for this child Power
+
+*ComboCharge* < string >
+-	PercentChargeRequired from the parent Combo Power for this child Power
+
+*EnhanceAttach* < string >
+-	EnhanceAttach expression
+
+*EnhanceAttached* < string >
+-	List of Powers being enhanced
+
+*EnhanceApply* < string >
+-	EnhanceAppy expression
+
+*Cost* < string >
+-	Effective Cost expression
+
+*CostPeriodic* < string >
+-	Effective CostPeriodic expression
+
+*Target* < string >
+-	Combination of TargetMain, TargetAffected and MaxTargets fields
+
+*Range* < string >
+-	Combination of effective Range, Radius, Arc, EffectArea and Lunge
+
+*TargetArc* < string >
+-	TargetArc
+
+*TimeCharge* < string >
+-	TimeCharge
+
+*TimeActivate* < string >
+-	TimeActivate
+
+*TimeActivatePeriod* < string >
+-	TimeActivatePeriod
+
+*TimeMaintain* < string >
+-	TimeMaintain (derived from MaxPeriods)
+
+*TimeRecharge* < string >
+-	Effective TimeRecharge
+
+*Charges* < string >
+-	Charges, including charges remaining
+
+*LifetimeUsage* < string >
+-	LifetimeUsage, including usage time remaining
+
+*LifetimeGame* < string >
+-	LifetimeGame, including game time remaining
+
+*LifetimeReal* < string >
+-	LifetimeReal, including real time remaining
+
+*Attribs* < string >
+-	Describes the attribs which modify the duration and/or magnitude of the power
+
+*Footnotes* < string1 >
+*Footnotes* < string2 >
+-	Footnotes for this Power and all its child Powers or AttribMods
+
+*PowersCombo* (multiple allowed)
+
+*PowersEnhancements* (multiple allowed)
+
+*AttribMods* (multiple allowed)
+
+*\{*
+-	*AttribName* < string >
+--	Attribute name
+-	*AttribDesc* < string >
+--	Attribute description
+-	*AttribDescLong* < string >
+--	Attribute long description
+-	*Dev* < string >
+--	Dev mode data (error/warning messages)
+-	*Default* < string >
+--	Default description, generated so it's available to Custom description
+-	*Custom* < string >
+--	Custom (AutoDescOverride) description
+-	*Effect* < string >
+--	Description of the effect, including magnitude, attribute and aspect, may be
+--	highly customized for the particular attribute and aspect.  Does not include
+--	duration, chance, etc.
+-	*Magnitude* < string >
+--	Effective magnitude (not including variance)
+-	*MagnitudePerSecond* < string >
+--	Effective magnitude per second (not including variance), only
+--	filled in when it might be useful and a reasonable calculation can be made.
+-	*MagnitudeVariance* < string >
+--	Variance when relevant to magnitude
+-	*Duration* < string >
+--	Effective duration (including variance and variable reason)
+-	*Period* < string >
+--	Period
+-	*Chance* < string >
+--	Chance
+-	*ChanceDenormalized* < string >
+--	Chance when normalized
+-	*Delay* < string >
+--	Delay
+-	*Target* < string >
+--	Target
+-	*StackLimit* < string >
+--	StackLimit
+-	*Requires* < string >
+--	Textual indicator of the existence of a Requires expression
+-	*Affects* < string >
+--	Textual indicator of the existence of an Affects expression
+-	*PowersInline* (multiple allowed)
+-	*Expire* < string >
+--	Description of expiration event
+-	*PowerExpire*
+-	*c* (multiple allowed)
+-	*EnhancementExtension*
+--	Set to true when this is an AttribMod from an Enhancement
+
+*\}*
+
+*AttribModsEnhancements* (multiple allowed)
+{anchor:AutoDescAttribMod}
+
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\Combat\PowersAutoDesc.h_
+
+h3.AutoDescAttribMod
+
+*AttribName* < string >
+-	Attribute name
+
+*AttribDesc* < string >
+-	Attribute description
+
+*AttribDescLong* < string >
+-	Attribute long description
+
+*Dev* < string >
+-	Dev mode data (error/warning messages)
+
+*Default* < string >
+-	Default description, generated so it's available to Custom description
+
+*Custom* < string >
+-	Custom (AutoDescOverride) description
+
+*Effect* < string >
+-	Description of the effect, including magnitude, attribute and aspect, may be
+-	highly customized for the particular attribute and aspect.  Does not include
+-	duration, chance, etc.
+
+*Magnitude* < string >
+-	Effective magnitude (not including variance)
+
+*MagnitudePerSecond* < string >
+-	Effective magnitude per second (not including variance), only
+-	filled in when it might be useful and a reasonable calculation can be made.
+
+*MagnitudeVariance* < string >
+-	Variance when relevant to magnitude
+
+*Duration* < string >
+-	Effective duration (including variance and variable reason)
+
+*Period* < string >
+-	Period
+
+*Chance* < string >
+-	Chance
+
+*ChanceDenormalized* < string >
+-	Chance when normalized
+
+*Delay* < string >
+-	Delay
+
+*Target* < string >
+-	Target
+
+*StackLimit* < string >
+-	StackLimit
+
+*Requires* < string >
+-	Textual indicator of the existence of a Requires expression
+
+*Affects* < string >
+-	Textual indicator of the existence of an Affects expression
+
+*PowersInline* (multiple allowed)
+
+*\{*
+-	*Name* < string >
+--	Display name
+-	*Desc* < string >
+--	Description
+-	*DescLong* < string >
+--	Long description
+-	*DescFlavor* < string >
+--	Flavor description
+-	*Custom* < string >
+--	Custom (AutoDescOverride) description
+-	*Dev* < string >
+--	Dev mode data (internal power name, error/warning messages)
+-	*Type* < string >
+--	Type (click, toggle, etc)
+-	*ComboRequires* < string >
+--	Requires expression from the parent Combo Power for this child Power
+-	*ComboCharge* < string >
+--	PercentChargeRequired from the parent Combo Power for this child Power
+-	*EnhanceAttach* < string >
+--	EnhanceAttach expression
+-	*EnhanceAttached* < string >
+--	List of Powers being enhanced
+-	*EnhanceApply* < string >
+--	EnhanceAppy expression
+-	*Cost* < string >
+--	Effective Cost expression
+-	*CostPeriodic* < string >
+--	Effective CostPeriodic expression
+-	*Target* < string >
+--	Combination of TargetMain, TargetAffected and MaxTargets fields
+-	*Range* < string >
+--	Combination of effective Range, Radius, Arc, EffectArea and Lunge
+-	*TargetArc* < string >
+--	TargetArc
+-	*TimeCharge* < string >
+--	TimeCharge
+-	*TimeActivate* < string >
+--	TimeActivate
+-	*TimeActivatePeriod* < string >
+--	TimeActivatePeriod
+-	*TimeMaintain* < string >
+--	TimeMaintain (derived from MaxPeriods)
+-	*TimeRecharge* < string >
+--	Effective TimeRecharge
+-	*Charges* < string >
+--	Charges, including charges remaining
+-	*LifetimeUsage* < string >
+--	LifetimeUsage, including usage time remaining
+-	*LifetimeGame* < string >
+--	LifetimeGame, including game time remaining
+-	*LifetimeReal* < string >
+--	LifetimeReal, including real time remaining
+-	*Attribs* < string >
+--	Describes the attribs which modify the duration and/or magnitude of the power
+-	*Footnotes* < string1 >
+-	*Footnotes* < string2 >
+--	Footnotes for this Power and all its child Powers or AttribMods
+-	*PowersCombo* (multiple allowed)
+-	*PowersEnhancements* (multiple allowed)
+-	*AttribMods* (multiple allowed)
+-	*AttribModsEnhancements* (multiple allowed)
+
+*\}*
+
+*Expire* < string >
+-	Description of expiration event
+
+*PowerExpire*
+
+*c* (multiple allowed)
+
+*EnhancementExtension*
+-	Set to true when this is an AttribMod from an Enhancement

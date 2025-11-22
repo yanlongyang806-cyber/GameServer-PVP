@@ -1,0 +1,121 @@
+h4.ItemProgression_GetAdjustedItemXP (AccessLevel 9) [Notes|Command_ItemProgression_GetAdjustedItemXP_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+Returns the amount of XP the item has earned towards its next level, not the total amount earned overall.
+
+
+h4.ItemProgression_GetItemXPRequiredForNextLevel (AccessLevel 9) [Notes|Command_ItemProgression_GetItemXPRequiredForNextLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+Returns the amount of XP the item needs for its next level.
+
+
+h4.ItemProgression_GetItemLevel (AccessLevel 9) [Notes|Command_ItemProgression_GetItemLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.ItemProgression_GetItemXPFoodValue (AccessLevel 9) [Notes|Command_ItemProgression_GetItemXPFoodValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+Returns the base amount of XP this item would be worth when eaten.
+
+
+h4.ItemProgression_GetZeroBasedItemLevel (AccessLevel 9) [Notes|Command_ItemProgression_GetZeroBasedItemLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.GetIngredientValue (AccessLevel 9) [Notes|Command_GetIngredientValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.GetItemChargesAndCount (AccessLevel 9) [Notes|Command_GetItemChargesAndCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+gets the number of charges left on the power and if the item has a stack, 
+it will return the total charges for all items in the stack
+
+
+h4.GetItemChargesLeft (AccessLevel 9) [Notes|Command_GetItemChargesLeft_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.GetItemChargesMax (AccessLevel 9) [Notes|Command_GetItemChargesMax_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.GetItemCount (AccessLevel 9) [Notes|Command_GetItemCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.GetItemMaxOfRechargeAndCooldown (AccessLevel 9) [Notes|Command_GetItemMaxOfRechargeAndCooldown_GameServerLib]
+*Returns: float*
+*Parameter 1: pItem (Item struct)*
+This gets the maximum between the recharge and the cooldown of the first valid power found on the item
+
+
+h4.GetItemPowerValue (AccessLevel 9) [Notes|Command_GetItemPowerValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.ItemHasItemPower (AccessLevel 9) [Notes|Command_ItemHasItemPower_GameServerLib]
+*Returns: bool*
+*Parameter 1: pItem (Item struct)*
+*Parameter 2: pchItemPowerName (string)*
+No comment provided
+
+h4.ItemHasItemPowerCategory (AccessLevel 9) [Notes|Command_ItemHasItemPowerCategory_GameServerLib]
+*Returns: bool*
+*Parameter 1: pItem (Item struct)*
+*Parameter 2: pchCatName (string)*
+No comment provided
+
+h4.ItemIsEquipped (AccessLevel 9) [Notes|Command_ItemIsEquipped_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.ItemVarFromItemDef (AccessLevel 9) [Notes|Command_ItemVarFromItemDef_GameServerLib]
+*Returns: float*
+*Parameter 1: pcTableStem (string)*
+*Parameter 2: pDef (ItemDef struct)*
+look up an item var based on the Def's name
+
+
+h4.ItemVarFromItemPowerDef (AccessLevel 9) [Notes|Command_ItemVarFromItemPowerDef_GameServerLib]
+*Returns: float*
+*Parameter 1: pcTableStem (string)*
+*Parameter 2: pDef (ItemPowerDef struct)*
+look up an item var based on the ItemPowerDef's name
+
+
+h4.PowerTable (AccessLevel 9) [Notes|Command_PowerTable_GameServerLib]
+*Returns: float*
+*Parameter 1: pcTableName (string)*
+*Parameter 2: iIndex (int)*
+No comment provided
+
+h4.PowerTableFromQuality (AccessLevel 9) [Notes|Command_PowerTableFromQuality_GameServerLib]
+*Returns: float*
+*Parameter 1: pcTableStem (string)*
+*Parameter 2: qual (int)*
+*Parameter 3: iIndex (int)*
+look up a power table by its ItemQuality and stem. e.g. ItemEPs_Sp_Weapon_Common
+
+
+h4.PowerTableLerp (AccessLevel 9) [Notes|Command_PowerTableLerp_GameServerLib]
+*Returns: float*
+*Parameter 1: pcTableName (string)*
+*Parameter 2: fIndex (float)*
+No comment provided
+
+h4.scp_GetAltCostumeIdxForEnt (AccessLevel 9) [Notes|Command_scp_GetAltCostumeIdxForEnt_GameServerLib]
+*Returns: int*
+No comment provided
+

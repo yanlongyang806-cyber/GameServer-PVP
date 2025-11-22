@@ -1,0 +1,22 @@
+h4.danimEnableClientRagdoll (AccessLevel 9) [Notes|Command_danimEnableClientRagdoll_GameServerLib]
+*Parameter 1: i (int)*
+No comment provided
+
+h4.enableRagdoll (AccessLevel 9) [Notes|Command_enableRagdoll_GameServerLib]
+*Parameter 1: i (int)*
+No comment provided
+
+h4.Ragdoll (AccessLevel 9) [Notes|Command_Ragdoll_GameServerLib]
+*Parameter 1: i (int)*
+No comment provided
+
+h4.neverStopRagdoll (AccessLevel 9) [Notes|Command_neverStopRagdoll_GameServerLib]
+*Parameter 1: i (int)*
+No comment provided
+
+h4.danimDisableHitPause (int) - (AccessLevel 9) [Notes|Command_danimDisableHitPause_GameServerLib]
+No comment provided
+
+h4.disablePlayerHitReacts (int) - (AccessLevel 7) [Notes|Command_disablePlayerHitReacts_GameServerLib]
+No comment provided
+

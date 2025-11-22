@@ -1,0 +1,12 @@
+h4.channel_description (AccessLevel 0) [Notes|Command_channel_description_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: description (sentence)*
+Set the channel description (operator only)
+
+
+h4.motd (AKA channel_motd) (AccessLevel 0) [Notes|Command_motd_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: motd (sentence)*
+Add a new channel Message of the Day (operator only)
+
+

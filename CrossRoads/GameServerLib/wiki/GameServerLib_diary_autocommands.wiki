@@ -1,0 +1,9 @@
+h4.gslDiary_RemoveComment (AccessLevel 0) [Notes|Command_gslDiary_RemoveComment_GameServerLib]
+*Parameter 1: entryID (int)*
+*Parameter 2: commentID (int)*
+No comment provided
+
+h4.gslDiary_RemoveEntry (AccessLevel 0) [Notes|Command_gslDiary_RemoveEntry_GameServerLib]
+*Parameter 1: entryID (int)*
+No comment provided
+

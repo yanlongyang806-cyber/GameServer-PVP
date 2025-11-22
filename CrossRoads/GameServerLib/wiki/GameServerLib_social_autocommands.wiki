@@ -1,0 +1,71 @@
+h4.create (AKA channel_create) (AccessLevel 0) [Notes|Command_create_GameServerLib]
+*Parameter 1: channel_name (string)*
+Create and join a new channel
+
+
+h4.AcceptFriend (AKA Befriend) (AccessLevel 0) [Notes|Command_AcceptFriend_GameServerLib]
+*Parameter 1: friendHandleOrName (sentence)*
+Accepts a friend request using "<name>" "@<chathandle>" or "<name>@<chathandle>" syntax
+
+
+h4.Friend (AccessLevel 0) [Notes|Command_Friend_GameServerLib]
+*Parameter 1: friendHandleOrName (sentence)*
+Adds a friend to your friends list using "<name>" "@<chathandle>" or "<name>@<chathandle>" syntax
+
+
+h4.FriendComment (AccessLevel 0) [Notes|Command_FriendComment_GameServerLib]
+*Parameter 1: friendHandleOrName (string)*
+*Parameter 2: pcComment (sentence)*
+Adds a friend to your friends list using "<name>" "@<chathandle>" or "<name>@<chathandle>" syntax
+
+
+h4.Ignore (AccessLevel 0) [Notes|Command_Ignore_GameServerLib]
+*Parameter 1: ignoreName (sentence)*
+Ignore a player.
+
+
+h4.Ignore_Spammer (AccessLevel 0) [Notes|Command_Ignore_Spammer_GameServerLib]
+*Parameter 1: ignoreName (sentence)*
+ignore a player and mark them as a spammer
+
+
+h4.RejectFriend (AccessLevel 0) [Notes|Command_RejectFriend_GameServerLib]
+*Parameter 1: friendHandleOrName (sentence)*
+No comment provided
+
+h4.RemoveFriend (AKA Unfriend) (AccessLevel 0) [Notes|Command_RemoveFriend_GameServerLib]
+*Parameter 1: friendHandleOrName (sentence)*
+Removes a friend from your friends list using "<name>" "@<chathandle>" or "<name>@<chathandle>" syntax
+
+
+h4.Unignore (AKA RemoveIgnore) (AccessLevel 0) [Notes|Command_Unignore_GameServerLib]
+*Parameter 1: ignoreName (sentence)*
+Stop ignoring a player.
+
+
+h4.Whitelist_Chat (AccessLevel 0) [Notes|Command_Whitelist_Chat_GameServerLib]
+*Parameter 1: enabled (int)*
+Toggles the whitelist for all chat.  If enabled, you will only receive messages from friends, SG members, and Team members
+
+
+h4.Whitelist_Emails (AccessLevel 0) [Notes|Command_Whitelist_Emails_GameServerLib]
+*Parameter 1: enabled (int)*
+Toggles the whitelist for all chat.  If enabled, you will only receive emails from friends, SG members, and Team members
+
+
+h4.Whitelist_Tells (AccessLevel 0) [Notes|Command_Whitelist_Tells_GameServerLib]
+*Parameter 1: enabled (int)*
+Toggles the whitelist for all chat.  If enabled, you will only receive tells from friends, SG members, and Team members
+
+
+h4.PrimaryMission (AccessLevel 0) [Notes|Command_PrimaryMission_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+*Parameter 2: bMakePrimary (bool)*
+Offer this mission to other nearby members of your team and make it primary
+
+
+h4.mission_ShareMissionCmd (AccessLevel 0) [Notes|Command_mission_ShareMissionCmd_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+Offer this mission to other nearby members of your team.
+
+

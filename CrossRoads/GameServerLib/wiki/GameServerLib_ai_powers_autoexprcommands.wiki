@@ -1,0 +1,48 @@
+h4.TurnOffPowerOnSelf (AccessLevel 9) [Notes|Command_TurnOffPowerOnSelf_GameServerLib]
+*Parameter 1: powerName (string)*
+Turns off the power with the passed in name when it's running on the entity itself
+
+
+h4.TurnOnPowerOnSelf (AccessLevel 9) [Notes|Command_TurnOnPowerOnSelf_GameServerLib]
+*Parameter 1: powerName (string)*
+Turns off the power with the passed in name when it's running on the entity itself
+
+
+h4.QueuePowerOnEnt (AccessLevel 9) [Notes|Command_QueuePowerOnEnt_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: powerName (string)*
+Uses the power of the passed in name on an ent array
+NOTE: the critter needs to already have this power
+NOTE: you can only use a power on one entity, so passing in multiple to this function will cause an error
+
+
+h4.QueuePowerOnEntPos (AccessLevel 9) [Notes|Command_QueuePowerOnEntPos_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: powerName (string)*
+Uses the power of the passed in name on the position of the entity in the entArray
+NOTE: the critter needs to already have this power
+NOTE: you can only use a power on one entity, so passing in multiple to this function will cause an error
+
+
+h4.UsePowerOnEntArray (AccessLevel 9) [Notes|Command_UsePowerOnEntArray_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: powerName (string)*
+Uses the power of the passed in name on an ent array
+NOTE: the critter needs to already have this power
+NOTE: you can only use a power on one entity, so passing in multiple to this function will
+cause an error
+
+
+h4.UsePowerOnPoint (AccessLevel 9) [Notes|Command_UsePowerOnPoint_GameServerLib]
+*Parameter 1: powerName (string)*
+*Parameter 2: matIn (Location)*
+Uses the power with the passed in name on a point
+NOTE: the entity needs to already have this power
+
+
+h4.UsePowerOnSelf (AccessLevel 9) [Notes|Command_UsePowerOnSelf_GameServerLib]
+*Parameter 1: powerName (string)*
+Uses the power with the passed in name on the entity itself
+NOTE: the entity needs to already have this power
+
+

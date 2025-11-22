@@ -1,0 +1,352 @@
+h4.GrantCharSlot (AccessLevel 7) [Notes|Command_GrantCharSlot_GameServerLib]
+Add a CS granted character slot to the account of the given entity
+
+
+h4.DumpAllItemDefs (AccessLevel 9) [Notes|Command_DumpAllItemDefs_GameServerLib]
+*Parameter 1: uBase (U64)*
+Return a list of all ItemDefs.
+
+
+h4.DumpAllLanguages (AccessLevel 9) [Notes|Command_DumpAllLanguages_GameServerLib]
+Return a list of all languages.
+
+
+h4.DumpAllMessages (AccessLevel 9) [Notes|Command_DumpAllMessages_GameServerLib]
+*Parameter 1: uBase (U64)*
+Return a list of all Messages.
+
+
+h4.DumpAllMissionDefs (AccessLevel 9) [Notes|Command_DumpAllMissionDefs_GameServerLib]
+*Parameter 1: uBase (U64)*
+Return a list of all MissionDefs.
+
+
+h4.DumpAllPowerDefs (AccessLevel 9) [Notes|Command_DumpAllPowerDefs_GameServerLib]
+*Parameter 1: uBase (U64)*
+Return a list of all PowerDefs.
+
+
+h4.DumpAllPowerTreeDefs (AccessLevel 9) [Notes|Command_DumpAllPowerTreeDefs_GameServerLib]
+*Parameter 1: uBase (U64)*
+Return a list of all PowerTreeDefs.
+
+
+h4.DumpAllTranslations (AccessLevel 9) [Notes|Command_DumpAllTranslations_GameServerLib]
+*Parameter 1: pLanguageCode (string)*
+*Parameter 2: uBase (U64)*
+Return a list of all Messages.
+
+
+h4.GetMicrotransactionCatalogForCharacter (AccessLevel 9) [Notes|Command_GetMicrotransactionCatalogForCharacter_GameServerLib]
+*Parameter 1: request (MicroTransactionUserCatalogRequest struct)*
+No comment provided
+
+h4.GetMicrotransactionCurrency (AccessLevel 9) [Notes|Command_GetMicrotransactionCurrency_GameServerLib]
+*Parameter 1: request (MicroTransactionCurrencyRequest struct)*
+No comment provided
+
+h4.GetMicrotransactionProducts (AccessLevel 9) [Notes|Command_GetMicrotransactionProducts_GameServerLib]
+*Parameter 1: request (MicroTransactionCatalogRequest struct)*
+Returns all the Microtransaction products for the shard
+
+
+h4.HasProductCatalogChanged (AccessLevel 9) [Notes|Command_HasProductCatalogChanged_GameServerLib]
+*Parameter 1: uLastTimeUpdated (int)*
+No comment provided
+
+h4.IsCharacterSlotAvailableForTransfer (AccessLevel 9) [Notes|Command_IsCharacterSlotAvailableForTransfer_GameServerLib]
+*Parameter 1: accountID (int)*
+*Parameter 2: iVirtualShardID (int)*
+*Parameter 3: allegianceName (string)*
+No comment provided
+
+h4.ListAccountEmailMessages (AccessLevel 9) [Notes|Command_ListAccountEmailMessages_GameServerLib]
+*Parameter 1: id (int)*
+*Parameter 2: iPageSize (int)*
+*Parameter 3: iPageOffset (int)*
+*Parameter 4: iOrder (int)*
+No comment provided
+
+h4.ListCharacterEmailMessages (AccessLevel 9) [Notes|Command_ListCharacterEmailMessages_GameServerLib]
+*Parameter 1: iPageSize (int)*
+*Parameter 2: iPageOffset (int)*
+*Parameter 3: iOrder (int)*
+Return a list of all ItemDefs.
+
+
+h4.MicrotransactionProductPurchase (AccessLevel 9) [Notes|Command_MicrotransactionProductPurchase_GameServerLib]
+*Parameter 1: request (MicroTransactionUserPurchaseRequest struct)*
+No comment provided
+
+h4.MicrotransactionProductPurchaseStatus (AccessLevel 9) [Notes|Command_MicrotransactionProductPurchaseStatus_GameServerLib]
+*Parameter 1: request (MicroTransactionPurchaseStatusRequest struct)*
+No comment provided
+
+h4.PlayerBadNameWebRequest (AccessLevel 9) [Notes|Command_PlayerBadNameWebRequest_GameServerLib]
+*Parameter 1: uEntityID (int)*
+No comment provided
+
+h4.PlayerNameChangeWebRequest (AccessLevel 9) [Notes|Command_PlayerNameChangeWebRequest_GameServerLib]
+*Parameter 1: uEntityID (int)*
+*Parameter 2: rename (string)*
+No comment provided
+
+h4.SendNPCMailWebRequest (AccessLevel 9) [Notes|Command_SendNPCMailWebRequest_GameServerLib]
+*Parameter 1: request (NPCMailRequest struct)*
+No comment provided
+
+h4.UGCExport_GetUGCPatchInfo (AccessLevel 7) [Notes|Command_UGCExport_GetUGCPatchInfo_GameServerLib]
+No comment provided
+
+h4.UGCExport_GetUGCProjectContainer (AccessLevel 7) [Notes|Command_UGCExport_GetUGCProjectContainer_GameServerLib]
+*Parameter 1: uUGCProjectID (int)*
+No comment provided
+
+h4.UGCExport_GetUGCProjectSeriesContainer (AccessLevel 7) [Notes|Command_UGCExport_GetUGCProjectSeriesContainer_GameServerLib]
+*Parameter 1: uUGCProjectSeriesID (int)*
+No comment provided
+
+h4.UGCExport_SearchInit (AccessLevel 7) [Notes|Command_UGCExport_SearchInit_GameServerLib]
+*Parameter 1: bIncludeSaved (bool)*
+*Parameter 2: bIncludePublished (bool)*
+*Parameter 3: strUGCProjectSearchInfo (string)*
+SearchInit should always return a new, unique string for each call. The key is used in subsequent calls to SearchNext in order to iterate over the set of IDs.
+
+TODO: it would be nice to allow recycling a key by passing it in.
+
+
+h4.UGCExport_SearchNext (AccessLevel 7) [Notes|Command_UGCExport_SearchNext_GameServerLib]
+*Parameter 1: searchKey (string)*
+No comment provided
+
+h4.UGCImport_DeleteAllUGC (AccessLevel 7) [Notes|Command_UGCImport_DeleteAllUGC_GameServerLib]
+*Parameter 1: strComment (string)*
+No comment provided
+
+h4.UGCImport_ImportUGCProjectContainerAndData (AccessLevel 7) [Notes|Command_UGCImport_ImportUGCProjectContainerAndData_GameServerLib]
+*Parameter 1: strUGCProject (string)*
+*Parameter 2: strUGCProjectDataPublished (string)*
+*Parameter 3: strUGCProjectDataSaved (string)*
+*Parameter 4: strPreviousShard (string)*
+*Parameter 5: strComment (string)*
+*Parameter 6: forceDelete (bool)*
+No comment provided
+
+h4.UGCImport_ImportUGCProjectSeriesContainer (AccessLevel 7) [Notes|Command_UGCImport_ImportUGCProjectSeriesContainer_GameServerLib]
+*Parameter 1: strUGCProjectSeries (string)*
+*Parameter 2: strPreviousShard (string)*
+*Parameter 3: strComment (string)*
+*Parameter 4: forceDelete (bool)*
+No comment provided
+
+h4.BadCostume (AKA force_character_costume_change) (AccessLevel 4) [Notes|Command_BadCostume_GameServerLib]
+Changes a player's costume to the default and gives them a free costume change
+
+
+h4.Ban (AccessLevel 7) [Notes|Command_Ban_GameServerLib]
+Ban this account
+
+
+h4.list_inventory (AccessLevel 4) [Notes|Command_list_inventory_GameServerLib]
+return the inventory for this character
+
+
+h4.rename_character (AccessLevel 4) [Notes|Command_rename_character_GameServerLib]
+*Parameter 1: pcNewName (string)*
+rename this character
+
+
+h4.Suspend (AccessLevel 4) [Notes|Command_Suspend_GameServerLib]
+*Parameter 1: hoursToSuspend (float)*
+Suspend this account, 0 = forever, -1 no longer suspended, > 0 number of hours
+
+
+h4.UgcPublishBan (AccessLevel 7) [Notes|Command_UgcPublishBan_GameServerLib]
+Ban this account from UGC Publishing
+
+
+h4.UgcPublishUnBan (AccessLevel 4) [Notes|Command_UgcPublishUnBan_GameServerLib]
+Unban this account from UGC Publishing
+
+
+h4.UnBan (AccessLevel 4) [Notes|Command_UnBan_GameServerLib]
+Unban this account
+
+
+h4.gslDiaryWebRequest_AddBlogEntry (AccessLevel 9) [Notes|Command_gslDiaryWebRequest_AddBlogEntry_GameServerLib]
+*Parameter 1: playerHandle (string)*
+*Parameter 2: title (string)*
+*Parameter 3: text (string)*
+No comment provided
+
+h4.gslDiaryWebRequest_AddComment (AccessLevel 9) [Notes|Command_gslDiaryWebRequest_AddComment_GameServerLib]
+*Parameter 1: playerHandle (string)*
+*Parameter 2: entryID (int)*
+*Parameter 3: title (string)*
+*Parameter 4: text (string)*
+No comment provided
+
+h4.gslDiaryWebRequest_GetDisplayComments (AccessLevel 9) [Notes|Command_gslDiaryWebRequest_GetDisplayComments_GameServerLib]
+*Parameter 1: playerHandle (string)*
+*Parameter 2: lang (int)*
+*Parameter 3: entryID (int)*
+No comment provided
+
+h4.gslDiaryWebRequest_GetDisplayHeaders (AccessLevel 9) [Notes|Command_gslDiaryWebRequest_GetDisplayHeaders_GameServerLib]
+*Parameter 1: lang (int)*
+*Parameter 2: first (int)*
+*Parameter 3: count (int)*
+No comment provided
+
+h4.Guild_AcceptGuildMapInvite (AccessLevel 0) [Notes|Command_Guild_AcceptGuildMapInvite_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_AcceptInvite (AccessLevel 0) [Notes|Command_Guild_AcceptInvite_GameServerLib]
+No comment provided
+
+h4.Guild_DeclineGuildMapInvite (AccessLevel 0) [Notes|Command_Guild_DeclineGuildMapInvite_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_DeclineInvite (AccessLevel 0) [Notes|Command_Guild_DeclineInvite_GameServerLib]
+No comment provided
+
+h4.Guild_DeleteCostume (AccessLevel 0) [Notes|Command_Guild_DeleteCostume_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.Guild_Demote (AccessLevel 0) [Notes|Command_Guild_Demote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_Invite (AccessLevel 0) [Notes|Command_Guild_Invite_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_InviteToGuildMap (AccessLevel 0) [Notes|Command_Guild_InviteToGuildMap_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_Kick (AccessLevel 0) [Notes|Command_Guild_Kick_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_KickFromGuildMap (AccessLevel 0) [Notes|Command_Guild_KickFromGuildMap_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_KickFromGuildMapByID (AccessLevel 0) [Notes|Command_Guild_KickFromGuildMapByID_GameServerLib]
+*Parameter 1: uOtherPlayerID (int)*
+No comment provided
+
+h4.Guild_Leave (AccessLevel 0) [Notes|Command_Guild_Leave_GameServerLib]
+No comment provided
+
+h4.Guild_Promote (AccessLevel 0) [Notes|Command_Guild_Promote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_Rename (AccessLevel 0) [Notes|Command_Guild_Rename_GameServerLib]
+*Parameter 1: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RenameBankTab (AccessLevel 0) [Notes|Command_Guild_RenameBankTab_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RenameRank (AccessLevel 0) [Notes|Command_Guild_RenameRank_GameServerLib]
+*Parameter 1: iRank (int)*
+*Parameter 2: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RescueLeader (AccessLevel 0) [Notes|Command_Guild_RescueLeader_GameServerLib]
+No comment provided
+
+h4.Guild_SetBankItemWithdrawLimit (AccessLevel 0) [Notes|Command_Guild_SetBankItemWithdrawLimit_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iCount (int)*
+No comment provided
+
+h4.Guild_SetBankPermission (AccessLevel 0) [Notes|Command_Guild_SetBankPermission_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: pcPermission (string)*
+*Parameter 4: bOn (bool)*
+No comment provided
+
+h4.Guild_SetBankWithdrawLimit (AccessLevel 0) [Notes|Command_Guild_SetBankWithdrawLimit_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iLimit (int)*
+No comment provided
+
+h4.Guild_SetDescription (AccessLevel 0) [Notes|Command_Guild_SetDescription_GameServerLib]
+*Parameter 1: pcDescription (sentence)*
+No comment provided
+
+h4.Guild_SetEmblem (AccessLevel 0) [Notes|Command_Guild_SetEmblem_GameServerLib]
+*Parameter 1: pcEmblem (sentence)*
+No comment provided
+
+h4.Guild_SetMinLevelRecruit (AccessLevel 0) [Notes|Command_Guild_SetMinLevelRecruit_GameServerLib]
+*Parameter 1: iMin (int)*
+No comment provided
+
+h4.Guild_SetMotD (AccessLevel 0) [Notes|Command_Guild_SetMotD_GameServerLib]
+*Parameter 1: pcMotD (sentence)*
+No comment provided
+
+h4.Guild_SetOfficerComment (AccessLevel 0) [Notes|Command_Guild_SetOfficerComment_GameServerLib]
+*Parameter 1: pcOtherPlayer (string)*
+*Parameter 2: pcComment (sentence)*
+No comment provided
+
+h4.Guild_SetPermission (AccessLevel 0) [Notes|Command_Guild_SetPermission_GameServerLib]
+*Parameter 1: iRank (int)*
+*Parameter 2: pcPermission (string)*
+*Parameter 3: bOn (bool)*
+No comment provided
+
+h4.Guild_SetPublicComment (AccessLevel 0) [Notes|Command_Guild_SetPublicComment_GameServerLib]
+*Parameter 1: pcComment (sentence)*
+No comment provided
+
+h4.Guild_SetRecruitCat (AccessLevel 0) [Notes|Command_Guild_SetRecruitCat_GameServerLib]
+*Parameter 1: pcRecruitCat (string)*
+*Parameter 2: bSet (int)*
+No comment provided
+
+h4.Guild_SetRecruitMemberVisibility (AccessLevel 0) [Notes|Command_Guild_SetRecruitMemberVisibility_GameServerLib]
+*Parameter 1: bShow (int)*
+No comment provided
+
+h4.Guild_SetRecruitMessage (AccessLevel 0) [Notes|Command_Guild_SetRecruitMessage_GameServerLib]
+*Parameter 1: pcRecruitMessage (sentence)*
+No comment provided
+
+h4.Guild_SetRecruitVisibility (AccessLevel 0) [Notes|Command_Guild_SetRecruitVisibility_GameServerLib]
+*Parameter 1: bShow (int)*
+No comment provided
+
+h4.Guild_SetUniformPermission (AccessLevel 0) [Notes|Command_Guild_SetUniformPermission_GameServerLib]
+*Parameter 1: pcPermission (string)*
+*Parameter 2: pcUniform (string)*
+*Parameter 3: pcCategory (string)*
+*Parameter 4: bOn (bool)*
+No comment provided
+
+h4.Guild_SetWebSite (AccessLevel 0) [Notes|Command_Guild_SetWebSite_GameServerLib]
+*Parameter 1: pcWebSite (sentence)*
+No comment provided
+
+h4.gslLoginWebRequest_GetCharacterChoices (AccessLevel 9) [Notes|Command_gslLoginWebRequest_GetCharacterChoices_GameServerLib]
+*Parameter 1: accountID (int)*
+No comment provided
+
+h4.BadName (AKA force_rename_character) (AccessLevel 4) [Notes|Command_BadName_GameServerLib]
+Gives the character a default name and forces them to update it on login
+
+

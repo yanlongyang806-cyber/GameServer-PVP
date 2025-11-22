@@ -1,0 +1,19 @@
+h4.CurrentAIState (AccessLevel 9) [Notes|Command_CurrentAIState_GameServerLib]
+*Returns: int*
+*Parameter 1: stateName (string)*
+No comment provided
+
+h4.GetCritterSelf (AccessLevel 9) [Notes|Command_GetCritterSelf_GameServerLib]
+*No Return*
+*Parameter 1: unused (string)*
+No comment provided
+
+h4.critterSwap (AccessLevel 9) [Notes|Command_critterSwap_GameServerLib]
+*No Return*
+*Parameter 1: newCritter (string)*
+*Parameter 2: fsm (string)*
+*Parameter 3: iLevel (int)*
+Destroys the current critter and replaces it with a new critter using critterdef <newCritter>
+running the <fsm> fsm and spawned at <iLevel>
+
+

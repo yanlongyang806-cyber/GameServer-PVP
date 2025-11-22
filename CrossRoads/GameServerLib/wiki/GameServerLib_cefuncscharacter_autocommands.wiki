@@ -1,0 +1,744 @@
+h4.AffectedByAttrib (AccessLevel 9) [Notes|Command_AffectedByAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: 1 if the Character is under the effects of a mod affecting a specific attribute, otherwise 0
+
+
+h4.AffectedByPower (AccessLevel 9) [Notes|Command_AffectedByPower_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+Character
+Inputs: Character, PowerDef name
+Return: 1 if the Character has an AttribMod on them from the named PowerDef, otherwise 0.
+If the PowerDef is Innate, instead returns 1 if the Character has the named PowerDef, otherwise 0 - so it
+is basically like OwnsPower() except it checks external sources like PowerVolumes as well.
+
+
+h4.AffectedByPowerAttrib (AccessLevel 9) [Notes|Command_AffectedByPowerAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+*Parameter 3: attribName (string)*
+Character
+Inputs: Character, PowerDef name, Attrib name
+Return: 1 if the Character has an AttribMod on them from the named PowerDef that is of the specific Attrib, otherwise 0
+
+
+h4.AffectedByPowerCat (AccessLevel 9) [Notes|Command_AffectedByPowerCat_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: categoryName (string)*
+Character
+Inputs: Character, PowerCategory name
+Return: 1 if the Character is under the effects of a mod from a power with the given PowerCategory, otherwise 0
+
+
+h4.AffectedByPowerCount (AccessLevel 9) [Notes|Command_AffectedByPowerCount_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+Character
+Inputs: Character, PowerDef name
+Return: The "stack size" of the a PowerDef affecting a character.
+Returns 0 if no stacks, or PowerDef isn't found or isn't valid (Innate or Combo).
+
+
+h4.AffectedByPowerEx (AccessLevel 9) [Notes|Command_AffectedByPowerEx_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+*Parameter 3: characterSource (Character struct)*
+*Parameter 4: characterOwner (Character struct)*
+Character
+Inputs: Character, PowerDef name, optional source Character, optional owner Character
+Return: The "stack size" of the a PowerDef affecting a character.  If a source or owner is
+specified, only counts mods with that source and/or owner.
+Returns 0 if no stacks, or PowerDef isn't found or isn't valid (Innate or Combo).
+
+
+h4.AffectedByPowerTag (AccessLevel 9) [Notes|Command_AffectedByPowerTag_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tagName (string)*
+Character
+Inputs: Character, PowerTag name
+Return: 1 if the Character is under the effects of an underived AttribMod with the given PowerTag, otherwise 0
+
+
+h4.AffectedByPowerTagCount (AccessLevel 9) [Notes|Command_AffectedByPowerTagCount_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tagName (string)*
+Character
+Inputs: Character, PowerTag name
+Return: Number of underived AttribMods on the Character with the given PowerTag
+
+
+h4.AffectedByPowerTagCountSource (AccessLevel 9) [Notes|Command_AffectedByPowerTagCountSource_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tagName (string)*
+*Parameter 3: characterSource (Character struct)*
+Character
+Inputs: Character, PowerTag name, Character source
+Return: Number of underived AttribMods on the Character with the given PowerTag from a specific source Character.
+Always returns 0 on the Client.
+
+
+h4.AffectedByPowerTagSource (AccessLevel 9) [Notes|Command_AffectedByPowerTagSource_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tagName (string)*
+*Parameter 3: characterSource (Character struct)*
+Character
+Inputs: Character, PowerTag name, Character source
+Return: True if any underived AttribMods on the Character with the given PowerTag from a specific source Character are found.
+Always returns 0 on the Client.
+
+
+h4.AffectedPowerAttribFromOwner (AccessLevel 9) [Notes|Command_AffectedPowerAttribFromOwner_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+*Parameter 3: attribName (string)*
+Character
+Inputs: Character, PowerDef name, Attrib name, Entity attribOwner
+Return: 1 if the Character has an AttribMod on them that is owned by the given entity, from the named PowerDef that is of the specific Attrib, otherwise 0
+
+
+h4.Attrib (AccessLevel 9) [Notes|Command_Attrib_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Character's basic value for the Attrib
+Override: May be overridden to specific values
+
+
+h4.AttribImmune (AccessLevel 9) [Notes|Command_AttribImmune_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: 1 if Character has generic immunity for the Attrib, otherwise 0
+
+
+h4.AttribResist (AccessLevel 9) [Notes|Command_AttribResist_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Character's generic resistance for the Attrib
+
+
+h4.AttribStrength (AccessLevel 9) [Notes|Command_AttribStrength_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Character's generic strength for the Attrib
+
+
+h4.CharIsPlayer (AccessLevel 9) [Notes|Command_CharIsPlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is a Player, otherwise 0
+
+
+h4.CharNodeEnhancementRank (AccessLevel 9) [Notes|Command_CharNodeEnhancementRank_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerTreeNodeDefName (string)*
+*Parameter 3: enhancementPowerDefName (string)*
+Character
+Inputs: Character, PowerTreeNodeDef name, Enhancement PowerDef name
+Return: The rank of the named enhancement for named node if the character owns the node and enhancement,
+0 if the character owns the node but not the enhancement, and -1 if the character doesn't own the node at all
+
+
+h4.CharNodeRank (AccessLevel 9) [Notes|Command_CharNodeRank_GameServerLib]
+*Returns: int*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: powerTreeNodeDefName (string)*
+Character
+Inputs: Character, PowerTreeNodeDef name
+Return: The rank of the named node if the character owns it, otherwise 0
+Override: The output of this function can be overridden
+
+
+h4.CharacterCombatLevel (AccessLevel 9) [Notes|Command_CharacterCombatLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pCharacter (Character struct)*
+Character
+Inputs: Character
+Return: The combat level of the Character, or 0 if the Character is not valid
+
+
+h4.CharacterIsFaction (AccessLevel 9) [Notes|Command_CharacterIsFaction_GameServerLib]
+*Returns: int*
+*Parameter 1: pCharacter (Character struct)*
+*Parameter 2: pchFaction (string)*
+Character
+Inputs: Character, Faction name
+Return: 1 if the Character currently follows the named Faction, otherwise 0
+
+
+h4.CharacterXPLevel (AccessLevel 9) [Notes|Command_CharacterXPLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pCharacter (Character struct)*
+Character
+Inputs: Character
+Return: The XP level of the Character, or 0 if the Character is not valid
+
+
+h4.HasCombatAdvantageOnCharacter (AccessLevel 9) [Notes|Command_HasCombatAdvantageOnCharacter_GameServerLib]
+*Returns: int*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: pTarget (Character struct)*
+Character
+Inputs: Character, Character target
+Return: 1 if the Character has combat advantage against the given character, 0 otherwise
+This is NOT predicted
+
+
+h4.CostumeName (AccessLevel 9) [Notes|Command_CostumeName_GameServerLib]
+*Returns: string*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Returns: Empty string if no costume, otherwise the name of the costume currently active
+
+
+h4.CritterVar (AccessLevel 9) [Notes|Command_CritterVar_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: critterVarName (string)*
+Character
+Inputs: Character, CritterVar name
+Return: The value of the CritterVar for the Character, or 0
+
+
+h4.DDAbilityBonus (AccessLevel 9) [Notes|Command_DDAbilityBonus_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: The D&D Bonus (positive or 0) derived from the base stat
+
+
+h4.DDAbilityMod (AccessLevel 9) [Notes|Command_DDAbilityMod_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: The D&D Modifier derived from the base stat
+
+
+h4.DDAbilityPenalty (AccessLevel 9) [Notes|Command_DDAbilityPenalty_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: The D&D Penality (negative or 0) derived from the base stat
+
+
+h4.DistChar (AccessLevel 9) [Notes|Command_DistChar_GameServerLib]
+*Returns: float*
+*Parameter 1: characterA (Character struct)*
+*Parameter 2: characterB (Character struct)*
+Character
+Inputs: Character A, Character B
+Return: Combat distance between the two Characters, otherwise 0
+
+
+h4.DistCharBase (AccessLevel 9) [Notes|Command_DistCharBase_GameServerLib]
+*Returns: float*
+*Parameter 1: characterA (Character struct)*
+*Parameter 2: characterB (Character struct)*
+Character
+Inputs: Character A, Character B
+Return: Distance between the base positions of the two Characters, otherwise 0
+
+
+h4.DistGround (AccessLevel 9) [Notes|Command_DistGround_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: The Character's distance from the ground
+Prediction: NONE, server wins
+
+
+h4.DistTarget (AccessLevel 9) [Notes|Command_DistTarget_GameServerLib]
+*Returns: float*
+*Parameter 1: source (Character struct)*
+No comment provided
+
+h4.DistTargetBase (AccessLevel 9) [Notes|Command_DistTargetBase_GameServerLib]
+*Returns: float*
+*Parameter 1: source (Character struct)*
+No comment provided
+
+h4.GetTarget (AccessLevel 9) [Notes|Command_GetTarget_GameServerLib]
+*Returns: Character struct*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: the Character's current target Character
+
+
+h4.HasCritterTag (AccessLevel 9) [Notes|Command_HasCritterTag_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tagName (string)*
+Character
+Inputs: Character, CritterTag name
+Return: 1 if the Character is a critter with the named tag, otherwise 0
+
+
+h4.HasModePersonal (AccessLevel 9) [Notes|Command_HasModePersonal_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: modeName (string)*
+*Parameter 3: characterTarget (Character struct)*
+Character
+Inputs: Character, PowerMode name, Character target
+Return: 1 if the Character has the named mode associated with the specified target, otherwise 0
+TODO: This isn't predicted
+
+
+h4.HasModePersonalAnyTarget (AccessLevel 9) [Notes|Command_HasModePersonalAnyTarget_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: modeName (string)*
+Character
+Inputs: Character, PowerMode name, Character target
+Return: 1 if the Character has the named mode associated with the specified target, otherwise 0
+TODO: This isn't predicted
+
+
+h4.HealthPct (AccessLevel 9) [Notes|Command_HealthPct_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: Character's current health divided by their max health
+TODO(JW): Deprecate with change to Attribute system
+
+
+h4.InCombat (AccessLevel 9) [Notes|Command_InCombat_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is considered in combat, otherwise 0
+
+
+h4.IsClass (AccessLevel 9) [Notes|Command_IsClass_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: className (string)*
+Character
+Inputs: Character, CharacterClass name
+Return: 1 if the Character is of the named class, otherwise 0
+
+
+h4.IsClassCategory (AccessLevel 9) [Notes|Command_IsClassCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: classCategoryName (string)*
+Character
+Inputs: Character, CharClassCategory name
+Return: 1 if the Character is of the named class category, otherwise 0
+
+
+h4.IsCritterGroup (AccessLevel 9) [Notes|Command_IsCritterGroup_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: groupName (string)*
+Character
+Inputs: Character, CritterGroup name
+Return: 1 if the Character is a critter with the named group, otherwise 0
+
+
+h4.IsCritterRank (AccessLevel 9) [Notes|Command_IsCritterRank_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: rankName (string)*
+Character
+Inputs: Character, CritterRank name
+Return: 1 if the Character is a critter with the named rank, otherwise 0
+
+
+h4.IsCritterSubRank (AccessLevel 9) [Notes|Command_IsCritterSubRank_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: subrankName (string)*
+Character
+Inputs: Character, CritterSubRank name
+Return: 1 if the Character is a critter with the named subrank, otherwise 0
+
+
+h4.IsGender (AccessLevel 9) [Notes|Command_IsGender_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: genderName (string)*
+Character
+Inputs: Character, Gender name
+Return: 1 if the Character is of the named gender, otherwise 0
+
+
+h4.IsInvulnerable (AccessLevel 9) [Notes|Command_IsInvulnerable_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is flagged as invulnerable, otherwise 0
+
+
+h4.IsNamed (AccessLevel 9) [Notes|Command_IsNamed_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: name (string)*
+Character
+Inputs: Character, name
+Return: 1 if the Character has the given name, otherwise 0
+
+
+h4.IsOfAllegiance (AccessLevel 9) [Notes|Command_IsOfAllegiance_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: pchAllegiance (string)*
+Character
+Inputs: Character, Allegiance name
+Return: 1 if the Character belongs to the named Allegiance, otherwise 0
+
+
+h4.IsSpecies (AccessLevel 9) [Notes|Command_IsSpecies_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: pchSpecies (string)*
+Character
+Inputs: Character, Species name
+Return: 1 if the Character belongs to the named Species, otherwise 0
+
+
+h4.IsTarget (AKA IsHardTarget) (AccessLevel 9) [Notes|Command_IsTarget_GameServerLib]
+*Returns: int*
+*Parameter 1: sourceCharacter (Character struct)*
+*Parameter 2: targetCharacter (Character struct)*
+Character
+Inputs: Character source, Character target
+Return: 1 if the target Character is the hard target of the source Character, otherwise 0
+
+
+h4.IsUnkillable (AccessLevel 9) [Notes|Command_IsUnkillable_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is flagged as unkillable, otherwise 0
+
+
+h4.IsUnstoppable (AccessLevel 9) [Notes|Command_IsUnstoppable_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is flagged as unstoppable, otherwise 0
+
+
+h4.Knocked (AccessLevel 9) [Notes|Command_Knocked_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is currently under the state of knockback/up, otherwise 0
+
+
+h4.LastFallingImpactSpeed (AccessLevel 9) [Notes|Command_LastFallingImpactSpeed_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: character
+Return: The last falling impact speed
+
+
+h4.NotHasCritterTag (AccessLevel 9) [Notes|Command_NotHasCritterTag_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tagName (string)*
+Character
+Inputs: Character, CritterTag name
+Return: 0 if the Character is a critter with the named tag, otherwise 1
+
+
+h4.NotInCombat (AccessLevel 9) [Notes|Command_NotInCombat_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: 1 if the Character is considered in combat, otherwise 0
+
+
+h4.NotIsClass (AccessLevel 9) [Notes|Command_NotIsClass_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: className (string)*
+Character
+Inputs: Character, CharacterClass name
+Return: 0 if the Character is of the named class, otherwise 1
+
+
+h4.NotIsCritterGroup (AccessLevel 9) [Notes|Command_NotIsCritterGroup_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: groupName (string)*
+Character
+Inputs: Character, CritterGroup name
+Return: 0 if the Character is a critter with the named group, otherwise 1
+
+
+h4.NotIsCritterRank (AccessLevel 9) [Notes|Command_NotIsCritterRank_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: rankName (string)*
+Character
+Inputs: Character, CritterRank name
+Return: 0 if the Character is a critter with the named rank, otherwise 1
+
+
+h4.NotIsCritterSubRank (AccessLevel 9) [Notes|Command_NotIsCritterSubRank_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: subrankName (string)*
+Character
+Inputs: Character, CritterSubRank name
+Return: 0 if the Character is a critter with the named subrank, otherwise 1
+
+
+h4.NotIsNamed (AccessLevel 9) [Notes|Command_NotIsNamed_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: name (string)*
+Character
+Inputs: Character, name
+Return: 0 if the Character has the given name, otherwise 1
+
+
+h4.NotOwnsPower (AccessLevel 9) [Notes|Command_NotOwnsPower_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+Character
+Inputs: Character, PowerDef name
+Return: 0 if the Character owns a Power with the named PowerDef, otherwise 1
+
+
+h4.NullChar (AccessLevel 9) [Notes|Command_NullChar_GameServerLib]
+*Returns: Character struct*
+Character
+Return: A NULL Character
+Note: Do not use without talking to Jered about use case
+
+
+h4.OwnsPower (AccessLevel 9) [Notes|Command_OwnsPower_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+Character
+Inputs: Character, PowerDef name
+Return: 1 if the Character owns a Power with the named PowerDef, otherwise 0
+
+
+h4.PowerPct (AccessLevel 9) [Notes|Command_PowerPct_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: Character's current power divided by their max power
+TODO(JW): Deprecate with change to Attribute system
+
+
+h4.ShieldMag (AccessLevel 9) [Notes|Command_ShieldMag_GameServerLib]
+*Returns: float*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: fAngle (float)*
+No comment provided
+
+h4.ShieldPct (AccessLevel 9) [Notes|Command_ShieldPct_GameServerLib]
+*Returns: float*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: fAngle (float)*
+Character
+Inputs: Character, Angle(Degrees)
+Return: Character's shield health at a particular angle
+
+
+h4.SpeedChar (AccessLevel 9) [Notes|Command_SpeedChar_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: The current speed of the Character
+
+
+h4.SpeedPct (AccessLevel 9) [Notes|Command_SpeedPct_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: The current speed percentage of the Character.  If the Character is flying, this
+is relative to the SpeedFlying attribute, whereas if the Character is not flying, this
+is relative to the SpeedRunning attribute.  May return values greater than 1.
+
+
+h4.SpeedXZChar (AccessLevel 9) [Notes|Command_SpeedXZChar_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+Character
+Inputs: Character
+Return: The current XZ (horizontal) speed of the Character
+
+
+h4.StatPointsInAttrib (AccessLevel 9) [Notes|Command_StatPointsInAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Points spent on that attrib in the stats system
+
+
+h4.StringVar (AccessLevel 9) [Notes|Command_StringVar_GameServerLib]
+*Returns: string*
+*Parameter 1: character (Character struct)*
+*Parameter 2: varName (string)*
+Character
+Inputs: Character, PowerVar name
+Return: The string value of the variable according to the Character's class,
+otherwise the generic string value of the variable, otherwise NULL
+
+
+h4.Table (AccessLevel 9) [Notes|Command_Table_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tableName (string)*
+Character
+Inputs: Character, PowerTable name
+Return: The value in the Character's Class's table at the Character's combat level,
+otherwise the generic value of the table at level 1, otherwise 0
+
+
+h4.TableAt (AccessLevel 9) [Notes|Command_TableAt_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tableName (string)*
+*Parameter 3: index (int)*
+Character
+Inputs: Character, PowerTable name, index
+Return: The value in the Character's Class's table at the index,
+otherwise the generic value of the table at the index, otherwise 0
+
+
+h4.TableAtLerp (AccessLevel 9) [Notes|Command_TableAtLerp_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tableName (string)*
+*Parameter 3: index (float)*
+Character
+Inputs: Character, PowerTable name, index
+Return: The value in the Character's Class's table at the index, linearly interpolated, otherwise 0
+
+
+h4.TableWrong (AccessLevel 9) [Notes|Command_TableWrong_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: tableName (string)*
+Character
+Inputs: Character, PowerTable name
+Return: The value in the Character's Class's table at the Character's combat level + 1,
+otherwise the generic value of the table at level 1, otherwise 0.
+Don't use this expression function.  It is wrong.
+
+
+h4.TargetIsNewRecruit (AccessLevel 9) [Notes|Command_TargetIsNewRecruit_GameServerLib]
+*Returns: int*
+*Parameter 1: sourceCharacter (Character struct)*
+*Parameter 2: targetCharacter (Character struct)*
+Character
+Inputs: Character, Character Target
+Returns: 1 if the target character is a new recruit of the source character.  This is the new Referal/Buddy system.
+
+
+h4.TargetIsNewRecruiter (AccessLevel 9) [Notes|Command_TargetIsNewRecruiter_GameServerLib]
+*Returns: int*
+*Parameter 1: sourceCharacter (Character struct)*
+*Parameter 2: targetCharacter (Character struct)*
+Character
+Inputs: Character, Character Target
+Returns: 1 if the target character is a new recruiter of the source character.  This is the new Referal/Buddy system.
+
+
+h4.Var (AccessLevel 9) [Notes|Command_Var_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: varName (string)*
+Character
+Inputs: Character, PowerVar name
+Return: The numerical value of the variable according to the Character's class,
+otherwise the generic numerical value of the variable, otherwise 0.
+
+
+h4.CountOutgoingPersonalPowerMode (AccessLevel 9) [Notes|Command_CountOutgoingPersonalPowerMode_GameServerLib]
+*Returns: int*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: modeName (string)*
+Returns the number of times the character has the specified personal power mode against any target.
+
+
+h4.EntIsActivatingPowerOfCategory (AccessLevel 9) [Notes|Command_EntIsActivatingPowerOfCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: categoryName (string)*
+Returns 1 if the Entity is activating a Power with the given power category, 0 if it's not
+
+
+h4.IsOnUGCMap (AccessLevel 9) [Notes|Command_IsOnUGCMap_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.SecondsSincePowersCreatedEntity (AccessLevel 9) [Notes|Command_SecondsSincePowersCreatedEntity_GameServerLib]
+*Returns: float*
+*Parameter 1: pChar (Character struct)*
+returns the time in seconds since the character was created. 
+Only truly valid for entities created via EntCreate and ProjectileCreate
+
+
+h4.EntGetDistanceFromPoint (AccessLevel 9) [Notes|Command_EntGetDistanceFromPoint_GameServerLib]
+*Returns: float*
+*Parameter 1: fX (float)*
+*Parameter 2: fY (float)*
+*Parameter 3: fZ (float)*
+No comment provided
+
+h4.CharacterGetItemCount (AccessLevel 9) [Notes|Command_CharacterGetItemCount_GameServerLib]
+*Returns: int*
+*Parameter 1: sourceCharacter (Character struct)*
+*Parameter 2: pcItemName (string)*
+Used for reward grant expression
+
+

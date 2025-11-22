@@ -1,0 +1,213 @@
+h4.GetClosestPowerFXNodeToTarget (AccessLevel 9) [Notes|Command_GetClosestPowerFXNodeToTarget_GameServerLib]
+*Returns: string*
+*Parameter 1: pchWildcardSuffix (string)*
+*Parameter 2: pchFrontPrefix (string)*
+*Parameter 3: pchBackPrefix (string)*
+*Parameter 4: iNodeIndex (int)*
+*Parameter 5: bAddVerticalSuffix (bool)*
+*Parameter 6: bAddHorizontalSuffix (bool)*
+Get the closest FX node on the source character to the target character
+Note that iNodeIndex is 1-based
+
+
+h4.GetCostumePartColor (AccessLevel 9) [Notes|Command_GetCostumePartColor_GameServerLib]
+*No Return*
+*Parameter 1: bone (string)*
+*Parameter 2: index (int)*
+*Parameter 3: defaultR (float)*
+*Parameter 4: defaultG (float)*
+*Parameter 5: defaultB (float)*
+*Parameter 6: defaultA (float)*
+Returns the index-th Vec3 color associated with the costume part that is currently selected for the given bone
+Needs to switch to Vec4 once we have support for that.
+Do not change the name of this function without reviewing GenerateAnimFXParam
+
+
+h4.GetCostumePartFxGeo (AccessLevel 9) [Notes|Command_GetCostumePartFxGeo_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+*Parameter 2: defaultGeo (string)*
+Returns the fx geo name associated with the costume part that is currently selected for the given bone
+Do not change the name of this function without reviewing GenerateAnimFXParam
+
+
+h4.GetItemFxGeo (AccessLevel 9) [Notes|Command_GetItemFxGeo_GameServerLib]
+*Returns: string*
+*Parameter 1: defaultGeo (string)*
+Returns the fx geo name associated with the item being used for the activation
+
+
+h4.GetItemFxGeoForSlot (AccessLevel 9) [Notes|Command_GetItemFxGeoForSlot_GameServerLib]
+*Returns: string*
+*Parameter 1: slot (int)*
+No comment provided
+
+h4.GetItemFxOptionalParamForSlot (AccessLevel 9) [Notes|Command_GetItemFxOptionalParamForSlot_GameServerLib]
+*Returns: float*
+*Parameter 1: slot (int)*
+Returns the fx geo name associated with the item being used for the activation
+
+
+h4.HasCostumePartWithSubSkeleton (AccessLevel 9) [Notes|Command_HasCostumePartWithSubSkeleton_GameServerLib]
+*Returns: int*
+*Parameter 1: bone (string)*
+Returns 1 if the the costume part that is currently selected for the given bone has a subskeleton
+This is basically a stripped-down version of GetCostumePartFxGeo that doesn't support
+CostumePartOverrides and does not require the bone be tagged with bPowerFX.  It also doesn't
+add the bone requested to the list of bones the powerart uses, which thus avoids adding the
+bone to the list of customizable bones the player has due to owned powers.
+Do not change the name of this function without reviewing GenerateAnimFXParam
+
+
+h4.ItemArtGeoPrimary (AccessLevel 9) [Notes|Command_ItemArtGeoPrimary_GameServerLib]
+*Returns: string*
+Returns the geo name associated with an ItemArt in its bag's first slot
+No support for active/inactive, bag, or default geo
+
+
+h4.ItemArtGeoSecondary (AccessLevel 9) [Notes|Command_ItemArtGeoSecondary_GameServerLib]
+*Returns: string*
+Returns the geo name associated with an ItemArt in its bag's second slot
+No support for active/inactive, bag, or default geo
+
+
+h4.PowerArtGetCostumePartGeoName (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartGeoName_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+No comment provided
+
+h4.PowerArtGetCostumePartMatName (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartMatName_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+No comment provided
+
+h4.PowerArtGetCostumePartMatNameFromInsideProperties (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartMatNameFromInsideProperties_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+No comment provided
+
+h4.PowerArtGetCostumePartTextureName (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartTextureName_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+*Parameter 2: pcPowerAnimCostumeTexture (string)*
+*Parameter 3: bNew (int)*
+No comment provided
+
+h4.PowerArtGetCostumePartTextureNameExtra (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartTextureNameExtra_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+*Parameter 2: pcPowerAnimCostumeTexture (string)*
+*Parameter 3: pcExtraExtension (string)*
+*Parameter 4: pcDefaultName (string)*
+*Parameter 5: bNew (int)*
+find extra swap new texture that has last characters matching passed in value, otherwise return default
+
+
+h4.PowerArtGetCostumePartTextureNameExtraFromInsideProperties (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartTextureNameExtraFromInsideProperties_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+*Parameter 2: pcPowerAnimCostumeTexture (string)*
+*Parameter 3: pcExtraExtension (string)*
+*Parameter 4: pcDefaultName (string)*
+*Parameter 5: bNew (int)*
+No comment provided
+
+h4.PowerArtGetCostumePartTextureNameFromInsideProperties (AccessLevel 9) [Notes|Command_PowerArtGetCostumePartTextureNameFromInsideProperties_GameServerLib]
+*Returns: string*
+*Parameter 1: bone (string)*
+*Parameter 2: pcPowerAnimCostumeTexture (string)*
+*Parameter 3: bNew (int)*
+No comment provided
+
+h4.PowerArtGetMatNameWithExt (AccessLevel 9) [Notes|Command_PowerArtGetMatNameWithExt_GameServerLib]
+*Returns: string*
+*Parameter 1: pcMatName (string)*
+*Parameter 2: pcExtension (string)*
+No comment provided
+
+h4.PowerFXNode (AccessLevel 9) [Notes|Command_PowerFXNode_GameServerLib]
+*Returns: string*
+*Parameter 1: pchWildcardSuffix (string)*
+*Parameter 2: bIncludeSlotNumber (bool)*
+*Parameter 3: bAddZSuffix (bool)*
+*Parameter 4: bAddXSuffix (bool)*
+Get a power FX node from an item power
+
+
+h4.PowerFXNodePaired (AccessLevel 9) [Notes|Command_PowerFXNodePaired_GameServerLib]
+*Returns: string*
+*Parameter 1: pchWildcardSuffix (string)*
+*Parameter 2: bIncludeSlotNumber (bool)*
+*Parameter 3: bAddZSuffix (bool)*
+*Parameter 4: bRightPair (bool)*
+Get a power FX node from an item power
+
+
+h4.PowerFXNodeTarget (AccessLevel 9) [Notes|Command_PowerFXNodeTarget_GameServerLib]
+*Returns: string*
+*Parameter 1: pchWildcardSuffix (string)*
+*Parameter 2: bIncludeSlotNumber (bool)*
+*Parameter 3: bAddZSuffix (bool)*
+*Parameter 4: bAddXSuffix (bool)*
+Get a power FX node from an item power
+
+
+h4.PowerFXNodeTargetPaired (AccessLevel 9) [Notes|Command_PowerFXNodeTargetPaired_GameServerLib]
+*Returns: string*
+*Parameter 1: pchWildcardSuffix (string)*
+*Parameter 2: bIncludeSlotNumber (bool)*
+*Parameter 3: bAddZSuffix (bool)*
+*Parameter 4: bRightPair (bool)*
+Get a power FX node from an item power
+
+
+h4.SourceAllegiance (AccessLevel 9) [Notes|Command_SourceAllegiance_GameServerLib]
+*Returns: int*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.SourceFaction (AccessLevel 9) [Notes|Command_SourceFaction_GameServerLib]
+*Returns: int*
+*Parameter 1: pchFaction (string)*
+No comment provided
+
+h4.SourceItemEquippedInSlot (AccessLevel 9) [Notes|Command_SourceItemEquippedInSlot_GameServerLib]
+*Returns: bool*
+*Parameter 1: iSlot (int)*
+No comment provided
+
+h4.TestShieldHit (AccessLevel 9) [Notes|Command_TestShieldHit_GameServerLib]
+*Returns: int*
+Simple function to check if the source is likely to hit an active Shield of the target.  Returns 1 on a hit.
+
+
+h4.TestShieldHitSource (AccessLevel 9) [Notes|Command_TestShieldHitSource_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.UseCostumePartColor (AccessLevel 9) [Notes|Command_UseCostumePartColor_GameServerLib]
+*No Return*
+*Parameter 1: bone (string)*
+*Parameter 2: index (int)*
+*Parameter 3: defaultR (float)*
+*Parameter 4: defaultG (float)*
+*Parameter 5: defaultB (float)*
+*Parameter 6: defaultA (float)*
+*Parameter 7: bTryGender (bool)*
+Returns the index-th Vec3 color associated with the costume part that is currently selected for the given bone
+This only checks the actual costume part, not any power effects 
+This does not record th bone index in GenerateAnimFXParam. Use only when the bone index is not required
+
+
+h4.UseCostumePartColorFromInsideProperties (AccessLevel 9) [Notes|Command_UseCostumePartColorFromInsideProperties_GameServerLib]
+*No Return*
+*Parameter 1: bone (string)*
+*Parameter 2: index (int)*
+*Parameter 3: defaultR (float)*
+*Parameter 4: defaultG (float)*
+*Parameter 5: defaultB (float)*
+*Parameter 6: defaultA (float)*
+*Parameter 7: bTryGender (bool)*
+Slight modification to UseCostumePartColor that grabs from the back side for use with capes
+
+

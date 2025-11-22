@@ -1,0 +1,271 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.CanAffect (AccessLevel 9) [Notes|Command_CanAffect_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GetMapVariableFloat (AccessLevel 9) [Notes|Command_GetMapVariableFloat_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a map variable as a float
+
+
+h4.GetMapVariableFloatWithDefault (AccessLevel 9) [Notes|Command_GetMapVariableFloatWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: fDefault (float)*
+No comment provided
+
+h4.GetMapVariableInt (AccessLevel 9) [Notes|Command_GetMapVariableInt_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a map variable as an integer
+
+
+h4.GetMapVariableIntWithDefault (AccessLevel 9) [Notes|Command_GetMapVariableIntWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: iDefault (int)*
+No comment provided
+
+h4.GetMapVariableMessage (AccessLevel 9) [Notes|Command_GetMapVariableMessage_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a map variable as a message key
+
+
+h4.GetMapVariableString (AccessLevel 9) [Notes|Command_GetMapVariableString_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a map variable as a string
+
+
+h4.GetMapVariableStringWithDefault (AccessLevel 9) [Notes|Command_GetMapVariableStringWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: pcDefault (string)*
+No comment provided
+
+h4.LayerFSMGetState (AccessLevel 9) [Notes|Command_LayerFSMGetState_GameServerLib]
+*Returns: string*
+*Parameter 1: pcFSMName (string)*
+Gets the state of a layerFSM
+
+
+h4.LayerFSMGetStateByLogicalName (AccessLevel 9) [Notes|Command_LayerFSMGetStateByLogicalName_GameServerLib]
+*Returns: string*
+*Parameter 1: pcLogicalName (string)*
+Gets the state of a layerFSM by logical name
+
+
+h4.MapOwnerReturnMap (AccessLevel 9) [Notes|Command_MapOwnerReturnMap_GameServerLib]
+*Returns: string*
+
+Expression that designers can use to determine the name of the map that the current map owner
+came from.  Used to determine which texture to use on the view screen in starship bridge interiors.
+
+
+
+h4.PlayerMapStringGet (AccessLevel 9) [Notes|Command_PlayerMapStringGet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+No comment provided
+
+h4.PlayerMapValueGet (AccessLevel 9) [Notes|Command_PlayerMapValueGet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+No comment provided
+
+h4.PlayerMissionCooldownCount (AccessLevel 9) [Notes|Command_PlayerMissionCooldownCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pMissionName (string)*
+returns the cooldown count (number of times mission taken in the current cooldown block).
+
+
+h4.PlayerMissionCooldownLeftSeconds (AccessLevel 9) [Notes|Command_PlayerMissionCooldownLeftSeconds_GameServerLib]
+*Returns: int*
+*Parameter 1: pMissionName (string)*
+return the number of seconds left in the current cooldown block for this mission
+
+
+h4.PlayerMissionInCooldown (AccessLevel 9) [Notes|Command_PlayerMissionInCooldown_GameServerLib]
+*Returns: int*
+*Parameter 1: pMissionName (string)*
+returns true if this mission can no longer be taken as it is in cooldown
+
+
+h4.SendPokeEventEmpty (AccessLevel 9) [Notes|Command_SendPokeEventEmpty_GameServerLib]
+*No Return*
+*Parameter 1: pchMessage (string)*
+Sends an "FSMPoke" Event with no source or target entities
+
+
+h4.SendPokeEventNoSource (AccessLevel 9) [Notes|Command_SendPokeEventNoSource_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: pchMessage (string)*
+Sends an "FSMPoke" Event with no source entity
+
+
+h4.SetMapVariableFloat (AccessLevel 9) [Notes|Command_SetMapVariableFloat_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: fValue (float)*
+Sets the value of a map variable as a float
+
+
+h4.SetMapVariableInt (AccessLevel 9) [Notes|Command_SetMapVariableInt_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: iValue (int)*
+Sets the value of a map variable as an integer
+
+
+h4.SetMapVariableMessage (AccessLevel 9) [Notes|Command_SetMapVariableMessage_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: pchMessageKey (string)*
+Sets the value of a map variable as a message
+
+
+h4.SetMapVariableString (AccessLevel 9) [Notes|Command_SetMapVariableString_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: pcValue (string)*
+Sets the value of a map variable as a string
+
+
+h4.GetCurrentMap (AccessLevel 9) [Notes|Command_GetCurrentMap_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.MapForcedTeamSize (AccessLevel 9) [Notes|Command_MapForcedTeamSize_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.GetMapName (AccessLevel 9) [Notes|Command_GetMapName_GameServerLib]
+*Returns: string*
+Get the public name of the current map
+This is available in the powers context, but it is highly recommended
+that you not use it for anything past prototyping.
+
+
+h4.CheckGuildAllegianceForGroupProjectMap (AccessLevel 9) [Notes|Command_CheckGuildAllegianceForGroupProjectMap_GameServerLib]
+*Parameter 1: allegiance (string)*
+Gets the value of a GroupProjectNumeric associated with the current map.
+
+
+h4.GetGroupProjectNumericValueFromMap (AccessLevel 9) [Notes|Command_GetGroupProjectNumericValueFromMap_GameServerLib]
+*Parameter 1: projectType (int)*
+*Parameter 2: projectName (string)*
+*Parameter 3: numericName (string)*
+Gets the value of a GroupProjectNumeric associated with the current map.
+
+
+h4.GetGroupProjectUnlockFromMap (AccessLevel 9) [Notes|Command_GetGroupProjectUnlockFromMap_GameServerLib]
+*Parameter 1: projectType (int)*
+*Parameter 2: projectName (string)*
+*Parameter 3: unlockName (string)*
+Gets the value of a GroupProjectNumeric associated with the current map.
+
+
+h4.GroupProjectMapDataReady (AccessLevel 9) [Notes|Command_GroupProjectMapDataReady_GameServerLib]
+*Parameter 1: projectType (int)*
+Returns true when the group project data for a map is all set up.
+
+
+h4.GuildProjectMapDataReady (AccessLevel 9) [Notes|Command_GuildProjectMapDataReady_GameServerLib]
+Returns true when the group project data for a map is all set up.
+
+
+h4.GetGuildProjectNumericValueFromMap (AccessLevel 9) [Notes|Command_GetGuildProjectNumericValueFromMap_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+Gets the value of a GroupProjectNumeric associated with the guild owning the current map.
+
+
+h4.GetGuildProjectUnlockFromMap (AccessLevel 9) [Notes|Command_GetGuildProjectUnlockFromMap_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+Gets the value of a GroupProjectNumeric associated with the guild owning the current map.
+
+
+h4.InteriorMapGetOptionChoiceValue (AccessLevel 9) [Notes|Command_InteriorMapGetOptionChoiceValue_GameServerLib]
+*Returns: int*
+*Parameter 1: optionName (string)*
+No comment provided
+
+h4.InteriorMapOwnerReturnMap (AccessLevel 9) [Notes|Command_InteriorMapOwnerReturnMap_GameServerLib]
+*Returns: string*
+
+Expression that designers can use to determine the name of the map that the current map owner
+came from.  Used to determine which texture to use on the view screen in starship bridge interiors.
+
+
+
+h4.IsNotOnMapNamed (AccessLevel 9) [Notes|Command_IsNotOnMapNamed_GameServerLib]
+*Returns: bool*
+*Parameter 1: pMapName (string)*
+No comment provided
+
+h4.IsOnMapNamed (AccessLevel 9) [Notes|Command_IsOnMapNamed_GameServerLib]
+*Returns: bool*
+*Parameter 1: pMapName (string)*
+No comment provided
+
+h4.IsOnUGCMap (AccessLevel 9) [Notes|Command_IsOnUGCMap_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.UpdatePresence (AccessLevel 9) [Notes|Command_UpdatePresence_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.IsAlive (AccessLevel 9) [Notes|Command_IsAlive_GameServerLib]
+*Returns: int*
+*Parameter 1: pchObjectName (string)*
+Expressions for Destructible Objects
+
+
+h4.ArePVPQueuesDisabled (AccessLevel 9) [Notes|Command_ArePVPQueuesDisabled_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.GetMapDifficulty (AccessLevel 9) [Notes|Command_GetMapDifficulty_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.IsMapPaused (AccessLevel 9) [Notes|Command_IsMapPaused_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.MapStringGet (AccessLevel 9) [Notes|Command_MapStringGet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+No comment provided
+
+h4.MapValueGet (AccessLevel 9) [Notes|Command_MapValueGet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+No comment provided
+
+h4.PauseList (AccessLevel 9) [Notes|Command_PauseList_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.PauseTimeRemaining (AccessLevel 9) [Notes|Command_PauseTimeRemaining_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.OpenMissionStateFailed (AccessLevel 9) [Notes|Command_OpenMissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateInProgress (AccessLevel 9) [Notes|Command_OpenMissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateSucceeded (AccessLevel 9) [Notes|Command_OpenMissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.RefreshPlayerWaypoints (AccessLevel 9) [Notes|Command_RefreshPlayerWaypoints_GameServerLib]
+*No Return*
+No comment provided
+

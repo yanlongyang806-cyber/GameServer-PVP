@@ -1,0 +1,5 @@
+h4.HasCompletedMission (AccessLevel 9) [Notes|Command_HasCompletedMission_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+

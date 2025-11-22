@@ -1,0 +1,231 @@
+h4.queue_AutoFill (AccessLevel 7) [Notes|Command_queue_AutoFill_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.queue_DumpInstanceInfo (AccessLevel 7) [Notes|Command_queue_DumpInstanceInfo_GameServerLib]
+*Parameter 1: pcQueueName (string)*
+*Parameter 2: iID (int)*
+get this queueinstance and send to client where it is written out.
+
+
+h4.queue_DumpMyInstanceInfo (AccessLevel 7) [Notes|Command_queue_DumpMyInstanceInfo_GameServerLib]
+get all player queueinstance and send to client where it is written out.
+
+
+h4.queue_DumpQueueInfo (AccessLevel 7) [Notes|Command_queue_DumpQueueInfo_GameServerLib]
+*Parameter 1: pcQueueName (string)*
+get this queueinstance and send to client where it is written out.
+
+
+h4.queue_InstanceJoinPlayerByName (AccessLevel 9) [Notes|Command_queue_InstanceJoinPlayerByName_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uInstanceID (int)*
+*Parameter 3: pchPlayerName (string)*
+No comment provided
+
+h4.queue_JoinPlayerByName (AccessLevel 9) [Notes|Command_queue_JoinPlayerByName_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: pchPlayerName (string)*
+No comment provided
+
+h4.queue_NeverLaunchMaps (AccessLevel 7) [Notes|Command_queue_NeverLaunchMaps_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: bEnabled (bool)*
+No comment provided
+
+h4.queue_AutoFillMyQueues (AccessLevel 7) [Notes|Command_queue_AutoFillMyQueues_GameServerLib]
+No comment provided
+
+h4.queue_ShowMyInfo (AccessLevel 4) [Notes|Command_queue_ShowMyInfo_GameServerLib]
+This auto-command gives more detailed info on the queue(s) the player is joined to
+Hidden as it designed to be used by developers although would be safe to use by anyone
+
+
+h4.queue_abandonqueue (AccessLevel 0) [Notes|Command_queue_abandonqueue_GameServerLib]
+Similar to LeaveMap. Abandon any currently attached queues and maps. Really only useful post
+queue pop when the player is either on the queue map, or has stepped out and has a "return to map" button
+(only when StayInQueueOnMapLeave is true)
+
+
+h4.queue_accept (AccessLevel 0) [Notes|Command_queue_accept_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Transfer to a queue map
+
+
+h4.queue_acceptinstance (AccessLevel 0) [Notes|Command_queue_acceptinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Transfer to a queue map
+
+
+h4.queue_changegroup (AccessLevel 0) [Notes|Command_queue_changegroup_GameServerLib]
+*Parameter 1: uiSubjectID (int)*
+*Parameter 2: iGroupID (int)*
+No comment provided
+
+h4.queue_delay (AccessLevel 0) [Notes|Command_queue_delay_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Delay participating in a full queue
+
+
+h4.queue_delayinstance (AccessLevel 0) [Notes|Command_queue_delayinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Delay participating in a full queue instance
+
+
+h4.queue_invite (AccessLevel 0) [Notes|Command_queue_invite_GameServerLib]
+*Parameter 1: pchInviteeName (string)*
+No comment provided
+
+h4.queue_inviteteam (AccessLevel 0) [Notes|Command_queue_inviteteam_GameServerLib]
+*Parameter 1: pchInviteeName (string)*
+No comment provided
+
+h4.queue_inviteinstance (AccessLevel 0) [Notes|Command_queue_inviteinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: pchInviteeName (string)*
+No comment provided
+
+h4.queue_kick (AccessLevel 0) [Notes|Command_queue_kick_GameServerLib]
+*Parameter 1: pchMemberName (string)*
+No comment provided
+
+h4.queue_kickinstance (AccessLevel 0) [Notes|Command_queue_kickinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: uiMemberID (int)*
+No comment provided
+
+h4.queue_kickid (AccessLevel 0) [Notes|Command_queue_kickid_GameServerLib]
+*Parameter 1: uiMemberID (int)*
+No comment provided
+
+h4.queue_leave (AccessLevel 0) [Notes|Command_queue_leave_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Leave all instances of a queue
+
+
+h4.queue_leaveall (AccessLevel 0) [Notes|Command_queue_leaveall_GameServerLib]
+No comment provided
+
+h4.queue_leaveinstance (AccessLevel 0) [Notes|Command_queue_leaveinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Leave a particular instance of a queue
+
+
+h4.queue_refreshQueues (AccessLevel 0) [Notes|Command_queue_refreshQueues_GameServerLib]
+No comment provided
+
+h4.queue_resumeinstance (AccessLevel 0) [Notes|Command_queue_resumeinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Re-enter a queue after delaying
+
+
+h4.queue_swapgroups (AccessLevel 0) [Notes|Command_queue_swapgroups_GameServerLib]
+*Parameter 1: uiMemberID1 (int)*
+*Parameter 2: uiMemberID2 (int)*
+No comment provided
+
+h4.Queue_TeamJoin (AccessLevel 0) [Notes|Command_Queue_TeamJoin_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Entire team join a queue
+
+
+h4.Queue_TeamJoinInstance (AccessLevel 0) [Notes|Command_Queue_TeamJoinInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.Queue_TeamJoinNextInstance (AccessLevel 0) [Notes|Command_Queue_TeamJoinNextInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.queue_teamleave (AccessLevel 0) [Notes|Command_queue_teamleave_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.queue_challenge (AccessLevel 0) [Notes|Command_queue_challenge_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uInviteEntID (int)*
+No comment provided
+
+h4.queue_challenge_name (AccessLevel 0) [Notes|Command_queue_challenge_name_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: pchChallengeeName (string)*
+No comment provided
+
+h4.queue_changemap (AccessLevel 0) [Notes|Command_queue_changemap_GameServerLib]
+*Parameter 1: pchMapName (string)*
+No comment provided
+
+h4.queue_ChangePassword (AccessLevel 0) [Notes|Command_queue_ChangePassword_GameServerLib]
+*Parameter 1: pchPassword (string)*
+No comment provided
+
+h4.queue_ChangeSetting (AccessLevel 0) [Notes|Command_queue_ChangeSetting_GameServerLib]
+*Parameter 1: pchQueueVarName (string)*
+*Parameter 2: iValue (int)*
+No comment provided
+
+h4.Queue_JoinActiveMap (AccessLevel 0) [Notes|Command_Queue_JoinActiveMap_GameServerLib]
+No comment provided
+
+h4.Queue_JoinBestMap (AccessLevel 0) [Notes|Command_Queue_JoinBestMap_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Joins a map with a guildmate, teammate, or friend - if possible
+
+
+h4.Queue_Join (AccessLevel 0) [Notes|Command_Queue_Join_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.Queue_JoinInstance (AccessLevel 0) [Notes|Command_Queue_JoinInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.Queue_JoinNextInstance (AccessLevel 0) [Notes|Command_Queue_JoinNextInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.Queue_JoinWithPassword (AccessLevel 0) [Notes|Command_Queue_JoinWithPassword_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: pchPassword (string)*
+*Parameter 3: uiInstanceID (int)*
+No comment provided
+
+h4.PrintMatchList (AccessLevel 9) [Notes|Command_PrintMatchList_GameServerLib]
+No comment provided
+
+h4.PrintMatchListAll (AccessLevel 9) [Notes|Command_PrintMatchListAll_GameServerLib]
+No comment provided
+
+h4.queue_return (AccessLevel 0) [Notes|Command_queue_return_GameServerLib]
+Return to the queue map that the player is supposed to be on
+
+
+h4.queue_startgame (AccessLevel 0) [Notes|Command_queue_startgame_GameServerLib]
+No comment provided
+
+h4.Queue_TeamJoinBestMap (AccessLevel 0) [Notes|Command_Queue_TeamJoinBestMap_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Attempts to put you and your team on a map with another guildmate, teammate, or friend
+
+
+h4.queue_SendMessageToChannel (AccessLevel 9) [Notes|Command_queue_SendMessageToChannel_GameServerLib]
+*Parameter 1: uSubjectID (int)*
+*Parameter 2: pchMessageKey (string)*
+No comment provided
+

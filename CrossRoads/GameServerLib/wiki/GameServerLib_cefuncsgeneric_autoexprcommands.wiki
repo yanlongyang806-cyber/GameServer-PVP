@@ -1,0 +1,132 @@
+h4.AttribFromString (AccessLevel 9) [Notes|Command_AttribFromString_GameServerLib]
+*Returns: int*
+*Parameter 1: attribName (string)*
+Generic
+Inputs: Attrib name
+Return: The integer of the attrib, otherwise -1
+If the named attrib is an attrib in the code, return the integer that represents it's off attrib
+
+
+h4.DDAbilityModGeneric (AccessLevel 9) [Notes|Command_DDAbilityModGeneric_GameServerLib]
+*Returns: int*
+*Parameter 1: value (float)*
+Generic
+Inputs: ability value
+Return: The D&D Modifier derived from the base value
+
+
+h4.DDDieRoll (AccessLevel 9) [Notes|Command_DDDieRoll_GameServerLib]
+*Returns: int*
+*Parameter 1: iDieCount (int)*
+*Parameter 2: iDieSize (int)*
+Generic
+Inputs: die count, die size
+Return: the result of rolling dice as given.  Automatically account for criticals if in an Application context.
+
+
+h4.ExpirationReason (AccessLevel 9) [Notes|Command_ExpirationReason_GameServerLib]
+*Returns: int*
+*Parameter 1: mod (AttribMod_ForExpr struct)*
+*Parameter 2: reasonName (string)*
+Generic
+Inputs: AttribMod, ModExpirationReason name
+Return: 1 if the attrib mod is expired and expired for the specified reason, otherwise 0
+
+
+h4.HasPowerTag (AccessLevel 9) [Notes|Command_HasPowerTag_GameServerLib]
+*Returns: int*
+*Parameter 1: tags (PowerTagsStruct struct)*
+*Parameter 2: tagName (string)*
+Generic
+Inputs: PowerTag field (integer), PowerTag name
+Return: 1 if the field includes the named tag, otherwise 0
+
+
+h4.IsAspect (AccessLevel 9) [Notes|Command_IsAspect_GameServerLib]
+*Returns: int*
+*Parameter 1: aspect (int)*
+*Parameter 2: aspectName (string)*
+Generic
+Inputs: Aspect field (integer), Aspect name
+Return: 1 if the field matches the name, otherwise 0
+
+
+h4.IsAttrib (AccessLevel 9) [Notes|Command_IsAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: attrib (int)*
+*Parameter 2: attribName (string)*
+Generic
+Inputs: Attrib field (integer), Attrib name
+Return: 1 if the Attrib field matches the named Attrib, otherwise 0.
+If the named Attrib is an AttribSet then this will return 1 if the field is found in the set.
+
+
+h4.IsAttribPowerMode (AccessLevel 9) [Notes|Command_IsAttribPowerMode_GameServerLib]
+*Returns: int*
+*Parameter 1: modDef (AttribModDef_ForExpr struct)*
+*Parameter 2: powerModeName (string)*
+Generic
+Inputs: AttribModDef, PowerMode name
+Return: 1 if the attrib mod is of type PowerMode, and the granted mode matches the inputed mode
+
+
+h4.NotHasPowerTag (AccessLevel 9) [Notes|Command_NotHasPowerTag_GameServerLib]
+*Returns: int*
+*Parameter 1: tags (PowerTagsStruct struct)*
+*Parameter 2: tagName (string)*
+Generic
+Inputs: PowerTag field (integer), PowerTag name
+Return: 1 if the field includes the named tag, otherwise 0
+
+
+h4.StringVarGeneric (AccessLevel 9) [Notes|Command_StringVarGeneric_GameServerLib]
+*Returns: string*
+*Parameter 1: varName (string)*
+Generic
+Inputs: PowerVar name
+Return: The generic string value of the variable, otherwise NULL
+
+
+h4.TableGeneric (AccessLevel 9) [Notes|Command_TableGeneric_GameServerLib]
+*Returns: float*
+*Parameter 1: tableName (string)*
+*Parameter 2: index (int)*
+Generic
+Inputs: PowerTable name, index
+Return: The value in the generic table at the index (0-based), otherwise 0
+
+
+h4.TableSum (AccessLevel 9) [Notes|Command_TableSum_GameServerLib]
+*Returns: float*
+*Parameter 1: tableName (string)*
+*Parameter 2: iMin_Inclusive (int)*
+*Parameter 3: iMax_Exclusive (int)*
+Generic
+Inputs: PowerTable name, index
+Return: The value in the generic table at the index (0-based), otherwise 0
+
+
+h4.VarGeneric (AccessLevel 9) [Notes|Command_VarGeneric_GameServerLib]
+*Returns: float*
+*Parameter 1: varName (string)*
+Generic
+Inputs: PowerVar name
+Return: The generic numerical value of the variable, otherwise 0
+
+
+h4.GetMapName (AccessLevel 9) [Notes|Command_GetMapName_GameServerLib]
+*Returns: string*
+Get the public name of the current map
+This is available in the powers context, but it is highly recommended
+that you not use it for anything past prototyping.
+
+
+h4.IsOnUGCMap (AccessLevel 9) [Notes|Command_IsOnUGCMap_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.scp_GetAltCostumeIdx (AccessLevel 9) [Notes|Command_scp_GetAltCostumeIdx_GameServerLib]
+*Returns: int*
+*Parameter 1: pPetChar (Character struct)*
+No comment provided
+

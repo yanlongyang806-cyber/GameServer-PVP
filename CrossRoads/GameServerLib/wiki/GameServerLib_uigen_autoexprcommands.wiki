@@ -1,0 +1,899 @@
+h4.AffectedByAttrib (AccessLevel 9) [Notes|Command_AffectedByAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: 1 if the Character is under the effects of a mod affecting a specific attribute, otherwise 0
+
+
+h4.AffectedByPowerCount (AccessLevel 9) [Notes|Command_AffectedByPowerCount_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: powerDefName (string)*
+Character
+Inputs: Character, PowerDef name
+Return: The "stack size" of the a PowerDef affecting a character.
+Returns 0 if no stacks, or PowerDef isn't found or isn't valid (Innate or Combo).
+
+
+h4.Attrib (AccessLevel 9) [Notes|Command_Attrib_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Character's basic value for the Attrib
+Override: May be overridden to specific values
+
+
+h4.AttribImmune (AccessLevel 9) [Notes|Command_AttribImmune_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: 1 if Character has generic immunity for the Attrib, otherwise 0
+
+
+h4.AttribResist (AccessLevel 9) [Notes|Command_AttribResist_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Character's generic resistance for the Attrib
+
+
+h4.AttribStrength (AccessLevel 9) [Notes|Command_AttribStrength_GameServerLib]
+*Returns: float*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Character's generic strength for the Attrib
+
+
+h4.GetCharClassCategorySet (AccessLevel 9) [Notes|Command_GetCharClassCategorySet_GameServerLib]
+*Returns: CharClassCategorySet struct*
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.CheckCharacterClassAgainstKey (AccessLevel 9) [Notes|Command_CheckCharacterClassAgainstKey_GameServerLib]
+*Returns: int*
+*Parameter 1: key (string)*
+No comment provided
+
+h4.DDAbilityBonus (AccessLevel 9) [Notes|Command_DDAbilityBonus_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: The D&D Bonus (positive or 0) derived from the base stat
+
+
+h4.DDAbilityMod (AccessLevel 9) [Notes|Command_DDAbilityMod_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: The D&D Modifier derived from the base stat
+
+
+h4.DDAbilityPenalty (AccessLevel 9) [Notes|Command_DDAbilityPenalty_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: The D&D Penality (negative or 0) derived from the base stat
+
+
+h4.EntGetAngleToTarget (AccessLevel 9) [Notes|Command_EntGetAngleToTarget_GameServerLib]
+*Returns: float*
+Inputs: pEntSource, pEntTarget
+Return: Angle in degrees from the source to the target on XZ plane, 0 if either source or target is NULL
+
+
+h4.EntGetChargingPowerName (AccessLevel 9) [Notes|Command_EntGetChargingPowerName_GameServerLib]
+*Returns: string*
+Entity
+Inputs: Entity
+Return: Name of the current charging power, or "" if invalid.
+
+
+h4.EntGetRemainingChargeTime (AccessLevel 9) [Notes|Command_EntGetRemainingChargeTime_GameServerLib]
+*Returns: float*
+Entity
+Inputs: Entity
+Return: Estimated time to complete the current cast, or -1 if invalid
+
+
+h4.EntGetRewardGatedCooldownSeconds (AccessLevel 9) [Notes|Command_EntGetRewardGatedCooldownSeconds_GameServerLib]
+*Returns: int*
+*Parameter 1: pRewardGatedName (string)*
+Inputs: pPlayerEnt
+Time in seconds remaining for Cooldown
+
+
+h4.EntGetTargetArray (AccessLevel 9) [Notes|Command_EntGetTargetArray_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Get the target from the first ent in erray and push it into the out array. Only one ent will every be returned in the array
+
+
+h4.EntGetTargetFromArray (AccessLevel 9) [Notes|Command_EntGetTargetFromArray_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: playersIn (Entity Array)*
+return an entity pointer that is the target of the first entity in the array passed in.
+
+
+h4.EntGetTotalChargeTime (AccessLevel 9) [Notes|Command_EntGetTotalChargeTime_GameServerLib]
+*Returns: float*
+No comment provided
+
+h4.EntPetCanBeDismissed (AccessLevel 9) [Notes|Command_EntPetCanBeDismissed_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.EntPetCanBeRenamed (AccessLevel 9) [Notes|Command_EntPetCanBeRenamed_GameServerLib]
+*Returns: bool*
+Inputs: PetEnt
+Output: true or false, true if the pet can be is of a type that can be re-named
+
+
+h4.GetBankSizeNumerics (AccessLevel 9) [Notes|Command_GetBankSizeNumerics_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GetGuildNumericItemValue (AccessLevel 9) [Notes|Command_GetGuildNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValue (AccessLevel 9) [Notes|Command_GetNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValueForEnt (AccessLevel 9) [Notes|Command_GetNumericItemValueForEnt_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValueScaled (AccessLevel 9) [Notes|Command_GetNumericItemValueScaled_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.GetNumericItemValueScaledForEnt (AccessLevel 9) [Notes|Command_GetNumericItemValueScaledForEnt_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.PlayerGetRequiredPointsSpentAtRank (AccessLevel 9) [Notes|Command_PlayerGetRequiredPointsSpentAtRank_GameServerLib]
+*Returns: int*
+*Parameter 1: iRank (int)*
+No comment provided
+
+h4.HasToken (AccessLevel 9) [Notes|Command_HasToken_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.FormalName_GetFirstName (AccessLevel 9) [Notes|Command_FormalName_GetFirstName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetFirstNameIfExists (AccessLevel 9) [Notes|Command_FormalName_GetFirstNameIfExists_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetFullName (AccessLevel 9) [Notes|Command_FormalName_GetFullName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetLastName (AccessLevel 9) [Notes|Command_FormalName_GetLastName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetLastNameIfExists (AccessLevel 9) [Notes|Command_FormalName_GetLastNameIfExists_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetMiddleName (AccessLevel 9) [Notes|Command_FormalName_GetMiddleName_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetMiddleNameIfExists (AccessLevel 9) [Notes|Command_FormalName_GetMiddleNameIfExists_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.FormalName_GetNameOrder (AccessLevel 9) [Notes|Command_FormalName_GetNameOrder_GameServerLib]
+*Returns: string*
+Get the first name of a formal name
+
+
+h4.PermToken (AccessLevel 9) [Notes|Command_PermToken_GameServerLib]
+*Returns: int*
+*Parameter 1: pchToken (string)*
+return true if the entity has this token, will return true if game permissions are off
+
+
+h4.PermTokenKeyType (AccessLevel 9) [Notes|Command_PermTokenKeyType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchToken (string)*
+No comment provided
+
+h4.PermTokenType (AccessLevel 9) [Notes|Command_PermTokenType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchToken (string)*
+No comment provided
+
+h4.CanBuyBagPlayer (AccessLevel 9) [Notes|Command_CanBuyBagPlayer_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchBagID (string)*
+No comment provided
+
+h4.GetItemForBagAndSlot (AccessLevel 9) [Notes|Command_GetItemForBagAndSlot_GameServerLib]
+*Returns: Item struct*
+*Parameter 1: invBagName (string)*
+*Parameter 2: slot (int)*
+Inputs: Entity, InvBag name and slot
+Return: Returns pointer to the item in the given bag's slot.
+Returns 0 for failure cases.
+
+
+h4.GetItemPowerIDForBagAndSlot (AccessLevel 9) [Notes|Command_GetItemPowerIDForBagAndSlot_GameServerLib]
+*Returns: int*
+*Parameter 1: invBagName (string)*
+*Parameter 2: slot (int)*
+Inputs: Entity, InvBag name and slot
+Return: Returns the ID of the first Power on the item in the given bag's slot.
+Returns 0 for failure cases.
+
+
+h4.MessageFormatDateTime (AccessLevel 9) [Notes|Command_MessageFormatDateTime_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: uiVal (int)*
+Format a timestamp named "Value".
+
+
+h4.MessageFormatDateTime2 (AccessLevel 9) [Notes|Command_MessageFormatDateTime2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: uiVal1 (int)*
+*Parameter 3: uiVal2 (int)*
+Format timestamps named "Value1" and "Value2".
+
+
+h4.MessageFormatFloat (AccessLevel 9) [Notes|Command_MessageFormatFloat_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: fVal (float)*
+Format a floating point number named "Value".
+
+
+h4.MessageFormatFloat2 (AccessLevel 9) [Notes|Command_MessageFormatFloat2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: fVal1 (float)*
+*Parameter 3: fVal2 (float)*
+Format floating point numbers named "Value1" and "Value2".
+
+
+h4.MessageFormatFloat3 (AccessLevel 9) [Notes|Command_MessageFormatFloat3_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: fVal1 (float)*
+*Parameter 3: fVal2 (float)*
+*Parameter 4: fVal3 (float)*
+Format floating point numbers named "Value1", "Value2", "Value3".
+
+
+h4.MessageFormatInt (AccessLevel 9) [Notes|Command_MessageFormatInt_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: iVal (int)*
+Format an integer named "Value".
+
+
+h4.MessageFormatInt2 (AccessLevel 9) [Notes|Command_MessageFormatInt2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: iVal1 (int)*
+*Parameter 3: iVal2 (int)*
+Format integers named "Value1" and "Value2".
+
+
+h4.MessageFormatInt3 (AccessLevel 9) [Notes|Command_MessageFormatInt3_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: iVal1 (int)*
+*Parameter 3: iVal2 (int)*
+*Parameter 4: iVal3 (int)*
+Format integers named "Value1", "Value2" and "Value3".
+
+
+h4.MessageFormatPlayer (AKA MessageFormatEntity) (AccessLevel 9) [Notes|Command_MessageFormatPlayer_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+Format a text string using the given entity as the "Entity" and "Player" variables.
+
+
+h4.MessageFormatString (AccessLevel 9) [Notes|Command_MessageFormatString_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: pchString (string)*
+Format a string named "Value".
+
+
+h4.MessageFormatString2 (AccessLevel 9) [Notes|Command_MessageFormatString2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: pchVal1 (string)*
+*Parameter 3: pchVal2 (string)*
+Format strings named "Value1" and "Value2".
+
+
+h4.MessageFormatString2Int2 (AccessLevel 9) [Notes|Command_MessageFormatString2Int2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: pchVal (string)*
+*Parameter 3: pchVal1 (string)*
+*Parameter 4: iVal2 (int)*
+*Parameter 5: iVal3 (int)*
+Format a string1 named "Value", string2 named "Value1" and ints named "Value2" and "Value3".
+
+
+h4.MessageFormatString3 (AccessLevel 9) [Notes|Command_MessageFormatString3_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: pchVal1 (string)*
+*Parameter 3: pchVal2 (string)*
+*Parameter 4: pchVal3 (string)*
+Format strings named "Value1", "Value2" and "Value3".
+
+
+h4.MessageFormatStringInt (AccessLevel 9) [Notes|Command_MessageFormatStringInt_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: pchVal (string)*
+*Parameter 3: iVal2 (int)*
+Format a string named "Value1" and an int named "Value2".
+
+
+h4.MessageFormatStringInt2 (AccessLevel 9) [Notes|Command_MessageFormatStringInt2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchMessageKey (string)*
+*Parameter 2: pchVal (string)*
+*Parameter 3: iVal2 (int)*
+*Parameter 4: iVal3 (int)*
+Format a string named "Value1" and ints named "Value2" and "Value3".
+
+
+h4.FormatU32toRGB (AccessLevel 9) [Notes|Command_FormatU32toRGB_GameServerLib]
+*Returns: string*
+*Parameter 1: uiValue (int)*
+No comment provided
+
+h4.FormatU32toRGBA (AccessLevel 9) [Notes|Command_FormatU32toRGBA_GameServerLib]
+*Returns: string*
+*Parameter 1: uiValue (int)*
+No comment provided
+
+h4.FormatDate (AccessLevel 9) [Notes|Command_FormatDate_GameServerLib]
+*Returns: string*
+*Parameter 1: uiValue (int)*
+Format a date using the local short format.
+
+
+h4.FormatDateTime (AccessLevel 9) [Notes|Command_FormatDateTime_GameServerLib]
+*Returns: string*
+*Parameter 1: uiValue (int)*
+Format a date using the local short format.
+
+
+h4.FormatFloat (AccessLevel 9) [Notes|Command_FormatFloat_GameServerLib]
+*Returns: string*
+*Parameter 1: f (float)*
+Format a floating point number.
+
+
+h4.FormatInt (AccessLevel 9) [Notes|Command_FormatInt_GameServerLib]
+*Returns: string*
+*Parameter 1: i (int)*
+Format an integer.
+
+
+h4.FormatMonthAbbrAndDay (AccessLevel 9) [Notes|Command_FormatMonthAbbrAndDay_GameServerLib]
+*Returns: string*
+*Parameter 1: uiValue (int)*
+Format a date using the local short format.
+
+
+h4.FormatSignedInt (AccessLevel 9) [Notes|Command_FormatSignedInt_GameServerLib]
+*Returns: string*
+*Parameter 1: i (int)*
+Format an integer and places the sign in front of the number even if it's positive
+
+
+h4.FormatTime (AccessLevel 9) [Notes|Command_FormatTime_GameServerLib]
+*Returns: string*
+*Parameter 1: uiValue (int)*
+Format a date using the local short format.
+
+
+h4.StringFormatDateTime (AccessLevel 9) [Notes|Command_StringFormatDateTime_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: uiVal (int)*
+Format a timestamp named "Value".
+
+
+h4.StringFormatDateTime2 (AccessLevel 9) [Notes|Command_StringFormatDateTime2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: uiVal1 (int)*
+*Parameter 3: uiVal2 (int)*
+Format timestamps named "Value1" and "Value2".
+
+
+h4.StringFormatFloat (AccessLevel 9) [Notes|Command_StringFormatFloat_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: fVal (float)*
+Format a floating point number named "Value".
+
+
+h4.StringFormatFloat2 (AccessLevel 9) [Notes|Command_StringFormatFloat2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: fVal1 (float)*
+*Parameter 3: fVal2 (float)*
+Format floating point numbers named "Value1" and "Value2".
+
+
+h4.StringFormatFloat3 (AccessLevel 9) [Notes|Command_StringFormatFloat3_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: fVal1 (float)*
+*Parameter 3: fVal2 (float)*
+*Parameter 4: fVal3 (float)*
+Format floating point numbers named "Value1", "Value2" and "Value3".
+
+
+h4.StringFormatInt (AccessLevel 9) [Notes|Command_StringFormatInt_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: iVal (int)*
+Format an integer named "Value".
+
+
+h4.StringFormatInt2 (AccessLevel 9) [Notes|Command_StringFormatInt2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: iVal1 (int)*
+*Parameter 3: iVal2 (int)*
+Format integers named "Value1" and "Value2".
+
+
+h4.StringFormatInt3 (AccessLevel 9) [Notes|Command_StringFormatInt3_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: iVal1 (int)*
+*Parameter 3: iVal2 (int)*
+*Parameter 4: iVal3 (int)*
+Format integers named "Value1", "Value2" and "Value3".
+
+
+h4.StringFormatPlayer (AKA StringFormatEntity) (AccessLevel 9) [Notes|Command_StringFormatPlayer_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+No comment provided
+
+h4.StringFormatString (AccessLevel 9) [Notes|Command_StringFormatString_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchVal (string)*
+Format a string named "Value".
+
+
+h4.StringFormatString2 (AccessLevel 9) [Notes|Command_StringFormatString2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchVal1 (string)*
+*Parameter 3: pchVal2 (string)*
+Format strings named "Value1" and "Value2".
+
+
+h4.StringFormatString3 (AccessLevel 9) [Notes|Command_StringFormatString3_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchVal1 (string)*
+*Parameter 3: pchVal2 (string)*
+*Parameter 4: pchVal3 (string)*
+Format strings named "Value1", "Value2" and "Value3".
+
+
+h4.StringFormatStringInt (AccessLevel 9) [Notes|Command_StringFormatStringInt_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchVal (string)*
+*Parameter 3: iVal2 (int)*
+Format a string named "Value1" and an int named "Value2".
+
+
+h4.StringFormatStringInt2 (AccessLevel 9) [Notes|Command_StringFormatStringInt2_GameServerLib]
+*Returns: string*
+*Parameter 1: pchString (string)*
+*Parameter 2: pchVal (string)*
+*Parameter 3: iVal2 (int)*
+*Parameter 4: iVal3 (int)*
+Format a string named "Value1" and ints named "Value2" and "Value3".
+
+
+h4.PlayerGetPointsSpentUnderLevel (AccessLevel 9) [Notes|Command_PlayerGetPointsSpentUnderLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pchPoints (string)*
+*Parameter 2: iLevel (int)*
+No comment provided
+
+h4.PlayerGetRequiredPointsSpentForRank (AccessLevel 9) [Notes|Command_PlayerGetRequiredPointsSpentForRank_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.SharedBankCanBuySlots (AccessLevel 9) [Notes|Command_SharedBankCanBuySlots_GameServerLib]
+*Returns: bool*
+Returns true if this entity can has more slots available
+
+
+h4.SharedBankGetMaximumDeposit (AccessLevel 9) [Notes|Command_SharedBankGetMaximumDeposit_GameServerLib]
+*Returns: int*
+*Parameter 1: pcNumeric (string)*
+Shared bank, return the maxmimum that this player can deposit
+lower of amount left based on permission or numeric left on player
+
+
+h4.SharedBankIsAvailable (AccessLevel 9) [Notes|Command_SharedBankIsAvailable_GameServerLib]
+*Returns: int*
+Returns true if this entity can access the sharedbank
+
+
+h4.SharedBankIsLegalNumericTransfer (AccessLevel 9) [Notes|Command_SharedBankIsLegalNumericTransfer_GameServerLib]
+*Returns: int*
+*Parameter 1: iToBank (int)*
+*Parameter 2: pcNumeric (string)*
+Shared bank, return true if the amount and type to be transfered is legal
+
+
+h4.SharedBankPlayerCanBuySlots (AccessLevel 9) [Notes|Command_SharedBankPlayerCanBuySlots_GameServerLib]
+*Returns: bool*
+Returns true if this entity can has more slots available
+
+
+h4.StatPointsInAttrib (AccessLevel 9) [Notes|Command_StatPointsInAttrib_GameServerLib]
+*Returns: int*
+*Parameter 1: character (Character struct)*
+*Parameter 2: attribName (string)*
+Character
+Inputs: Character, Attrib name
+Return: Points spent on that attrib in the stats system
+
+
+h4.IsAllegiance (AccessLevel 9) [Notes|Command_IsAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.EntGetTarget (AccessLevel 9) [Notes|Command_EntGetTarget_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.EntHasMode (AKA EntGetHasPowerMode) (AccessLevel 9) [Notes|Command_EntHasMode_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchModeName (string)*
+Returns true if the passed entity has the specified power mode
+
+
+h4.PlayerHasMission (AccessLevel 9) [Notes|Command_PlayerHasMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMissionName (string)*
+No comment provided
+
+h4.PlayerMapStringGet (AccessLevel 9) [Notes|Command_PlayerMapStringGet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+No comment provided
+
+h4.PlayerMapValueGet (AccessLevel 9) [Notes|Command_PlayerMapValueGet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+No comment provided
+
+h4.PlayerMissionCooldownCount (AccessLevel 9) [Notes|Command_PlayerMissionCooldownCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pMissionName (string)*
+returns the cooldown count (number of times mission taken in the current cooldown block).
+
+
+h4.PlayerMissionCooldownLeftSeconds (AccessLevel 9) [Notes|Command_PlayerMissionCooldownLeftSeconds_GameServerLib]
+*Returns: int*
+*Parameter 1: pMissionName (string)*
+return the number of seconds left in the current cooldown block for this mission
+
+
+h4.PlayerMissionInCooldown (AccessLevel 9) [Notes|Command_PlayerMissionInCooldown_GameServerLib]
+*Returns: int*
+*Parameter 1: pMissionName (string)*
+returns true if this mission can no longer be taken as it is in cooldown
+
+
+h4.GamePermissionTimedSecondsLeft (AccessLevel 9) [Notes|Command_GamePermissionTimedSecondsLeft_GameServerLib]
+*Returns: int*
+*Parameter 1: pPath (CharacterPath struct)*
+No comment provided
+
+h4.GamePermissionTimedSecondsLeftByName (AccessLevel 9) [Notes|Command_GamePermissionTimedSecondsLeftByName_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCharacterPathName (string)*
+No comment provided
+
+h4.GetCurrentMap (AccessLevel 9) [Notes|Command_GetCurrentMap_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.EntGetFaction (AccessLevel 9) [Notes|Command_EntGetFaction_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.MapForcedTeamSize (AccessLevel 9) [Notes|Command_MapForcedTeamSize_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.GetMapName (AccessLevel 9) [Notes|Command_GetMapName_GameServerLib]
+*Returns: string*
+Get the public name of the current map
+This is available in the powers context, but it is highly recommended
+that you not use it for anything past prototyping.
+
+
+h4.EntGetSubFaction (AccessLevel 9) [Notes|Command_EntGetSubFaction_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.IsNotOnMapNamed (AccessLevel 9) [Notes|Command_IsNotOnMapNamed_GameServerLib]
+*Returns: bool*
+*Parameter 1: pMapName (string)*
+No comment provided
+
+h4.IsOnMapNamed (AccessLevel 9) [Notes|Command_IsOnMapNamed_GameServerLib]
+*Returns: bool*
+*Parameter 1: pMapName (string)*
+No comment provided
+
+h4.IsOnUGCMap (AccessLevel 9) [Notes|Command_IsOnUGCMap_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.ItemProgression_GetAdjustedItemXP (AccessLevel 9) [Notes|Command_ItemProgression_GetAdjustedItemXP_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+Returns the amount of XP the item has earned towards its next level, not the total amount earned overall.
+
+
+h4.ItemProgression_GetItemXPRequiredForNextLevel (AccessLevel 9) [Notes|Command_ItemProgression_GetItemXPRequiredForNextLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+Returns the amount of XP the item needs for its next level.
+
+
+h4.ItemProgression_GetItemLevel (AccessLevel 9) [Notes|Command_ItemProgression_GetItemLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.ItemProgression_GetItemXPFoodValue (AccessLevel 9) [Notes|Command_ItemProgression_GetItemXPFoodValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+Returns the base amount of XP this item would be worth when eaten.
+
+
+h4.ItemProgression_GetZeroBasedItemLevel (AccessLevel 9) [Notes|Command_ItemProgression_GetZeroBasedItemLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.PlayerGetSpeciesName (AccessLevel 9) [Notes|Command_PlayerGetSpeciesName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.PlayerGetSpeciesSpeciesName (AccessLevel 9) [Notes|Command_PlayerGetSpeciesSpeciesName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.AuctionsDisabled (AccessLevel 9) [Notes|Command_AuctionsDisabled_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.CanDestroyPuppet (AccessLevel 9) [Notes|Command_CanDestroyPuppet_GameServerLib]
+*Returns: bool*
+*Parameter 1: uiPuppetID (int)*
+No comment provided
+
+h4.GetItemChargesAndCount (AccessLevel 9) [Notes|Command_GetItemChargesAndCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+gets the number of charges left on the power and if the item has a stack, 
+it will return the total charges for all items in the stack
+
+
+h4.GetItemChargesLeft (AccessLevel 9) [Notes|Command_GetItemChargesLeft_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.GetItemChargesMax (AccessLevel 9) [Notes|Command_GetItemChargesMax_GameServerLib]
+*Returns: int*
+*Parameter 1: pItem (Item struct)*
+No comment provided
+
+h4.GetItemCount (AccessLevel 9) [Notes|Command_GetItemCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.GetItemMaxOfRechargeAndCooldown (AccessLevel 9) [Notes|Command_GetItemMaxOfRechargeAndCooldown_GameServerLib]
+*Returns: float*
+*Parameter 1: pItem (Item struct)*
+This gets the maximum between the recharge and the cooldown of the first valid power found on the item
+
+
+h4.microtrans_GetBillingURL (AccessLevel 9) [Notes|Command_microtrans_GetBillingURL_GameServerLib]
+*Returns: string*
+returns the billing URL used on this shard
+
+
+h4.microtrans_GetExchangeWithdrawCurrency (AccessLevel 9) [Notes|Command_microtrans_GetExchangeWithdrawCurrency_GameServerLib]
+*Returns: string*
+returns the currency used on this shard
+
+
+h4.microtrans_GetCurrency (AccessLevel 9) [Notes|Command_microtrans_GetCurrency_GameServerLib]
+*Returns: string*
+returns the currency used on this shard
+
+
+h4.HasCompletedMission (AccessLevel 9) [Notes|Command_HasCompletedMission_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.NameGenNext (AccessLevel 9) [Notes|Command_NameGenNext_GameServerLib]
+*No Return*
+*Parameter 1: pcSpecies (string)*
+*Parameter 2: pcCallbackGenName (string)*
+*Parameter 3: pcCallbackMessage (string)*
+*Parameter 4: pcCallbackVar (string)*
+No comment provided
+
+h4.NameGenGetFirstName (AccessLevel 9) [Notes|Command_NameGenGetFirstName_GameServerLib]
+*Returns: string*
+*Parameter 1: pchKey (string)*
+No comment provided
+
+h4.NameGenGetLastName (AccessLevel 9) [Notes|Command_NameGenGetLastName_GameServerLib]
+*Returns: string*
+*Parameter 1: pchKey (string)*
+No comment provided
+
+h4.NameGenGetMiddleName (AccessLevel 9) [Notes|Command_NameGenGetMiddleName_GameServerLib]
+*Returns: string*
+*Parameter 1: pchKey (string)*
+No comment provided
+
+h4.NameGenGetName (AccessLevel 9) [Notes|Command_NameGenGetName_GameServerLib]
+*Returns: string*
+*Parameter 1: pchKey (string)*
+No comment provided
+
+h4.NameGen_GetCurFirstName (AccessLevel 9) [Notes|Command_NameGen_GetCurFirstName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.NameGen_GetCurFirstName2 (AccessLevel 9) [Notes|Command_NameGen_GetCurFirstName2_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.NameGen_GetCurLastName (AccessLevel 9) [Notes|Command_NameGen_GetCurLastName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.NameGen_GetCurLastName2 (AccessLevel 9) [Notes|Command_NameGen_GetCurLastName2_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.NameGen_GetCurMiddleName (AccessLevel 9) [Notes|Command_NameGen_GetCurMiddleName_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.NameGen_GetCurMiddleName2 (AccessLevel 9) [Notes|Command_NameGen_GetCurMiddleName2_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.GetNextRandomName (AccessLevel 9) [Notes|Command_GetNextRandomName_GameServerLib]
+*Returns: string*
+*Parameter 1: pcSpecies (string)*
+No comment provided
+
+h4.GetNextRandomName2 (AccessLevel 9) [Notes|Command_GetNextRandomName2_GameServerLib]
+*Returns: string*
+*Parameter 1: pcSpecies (string)*
+No comment provided
+
+h4.NotifySend (AccessLevel 9) [Notes|Command_NotifySend_GameServerLib]
+*No Return*
+*Parameter 1: pcType (string)*
+*Parameter 2: pcDisplayString (string)*
+*Parameter 3: pcLogicalString (string)*
+*Parameter 4: pcTexture (string)*
+Send a notification.
+
+
+h4.NotifyQueueClearTag (AccessLevel 9) [Notes|Command_NotifyQueueClearTag_GameServerLib]
+*No Return*
+*Parameter 1: pcQueue (string)*
+*Parameter 2: pcTag (string)*
+No comment provided
+
+h4.NotifySendAudio (AccessLevel 9) [Notes|Command_NotifySendAudio_GameServerLib]
+*No Return*
+*Parameter 1: pcType (string)*
+*Parameter 2: pcDisplayString (string)*
+*Parameter 3: pcLogicalString (string)*
+*Parameter 4: pcSound (string)*
+*Parameter 5: pcTexture (string)*
+Send a notification.
+
+
+h4.NotifySendWithTag (AccessLevel 9) [Notes|Command_NotifySendWithTag_GameServerLib]
+*No Return*
+*Parameter 1: pcType (string)*
+*Parameter 2: pcDisplayString (string)*
+*Parameter 3: pcLogicalString (string)*
+*Parameter 4: pcTexture (string)*
+*Parameter 5: pcTag (string)*
+Send a notification with a tag.
+
+
+h4.scp_GetPetStartLevelForPlayerLevel (AccessLevel 9) [Notes|Command_scp_GetPetStartLevelForPlayerLevel_GameServerLib]
+*Returns: int*
+*Parameter 1: playerLevel (int)*
+*Parameter 2: pPetItem (Item struct)*
+EXPRESSION FUNCTIONS /////////////////////////////
+sometimes we want pets to scale to a player's level based on this formula.
+
+

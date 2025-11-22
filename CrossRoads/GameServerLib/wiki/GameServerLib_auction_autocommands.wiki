@@ -1,0 +1,17 @@
+h4.AuctionDeleteLots (AccessLevel 9) [Notes|Command_AuctionDeleteLots_GameServerLib]
+*Parameter 1: uNumToDelete (int)*
+Delete lots in expire order, used for testing
+
+
+h4.AuctionTestRecordPrice (AccessLevel 9) [Notes|Command_AuctionTestRecordPrice_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: price (int)*
+Fake a sale to test the price-history feature
+
+
+h4.gslAuction_FindLostLots (AccessLevel 9) [Notes|Command_gslAuction_FindLostLots_GameServerLib]
+No comment provided
+
+h4.gslAuction_GetAllLots (AccessLevel 9) [Notes|Command_gslAuction_GetAllLots_GameServerLib]
+No comment provided
+

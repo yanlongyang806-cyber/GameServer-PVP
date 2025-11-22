@@ -1,0 +1,237 @@
+h4.BagClear (AccessLevel 4) [Notes|Command_BagClear_GameServerLib]
+*Parameter 1: bagName (string)*
+inventoryclear: Removes all items from your inventory, and equip slots.  For debugging
+
+
+h4.BattleFormForce (AccessLevel 4) [Notes|Command_BattleFormForce_GameServerLib]
+*Parameter 1: enable (int)*
+BattleFormForce <0/1>: Force Disable/Enable BattleForm
+
+
+h4.ExportMessageReplacements (AccessLevel 9) [Notes|Command_ExportMessageReplacements_GameServerLib]
+This dumps all replacements (i.e. {Var}) of the messages in message dictionary, as well
+as which strings use the replacement.
+
+
+h4.CombatLogServer (AccessLevel 9) [Notes|Command_CombatLogServer_GameServerLib]
+*Parameter 1: bEnabled (int)*
+Enables server-side CombatLog.log
+
+
+h4.CombatReactivePowerDebugServer (AccessLevel 9) [Notes|Command_CombatReactivePowerDebugServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.GameStringFormat_Test (AccessLevel 9) [Notes|Command_GameStringFormat_Test_GameServerLib]
+No comment provided
+
+h4.GiveAndEquipItem (AccessLevel 7) [Notes|Command_GiveAndEquipItem_GameServerLib]
+*Parameter 1: pchItemName (string)*
+Give an item to yourself. It is put into your inventory
+
+
+h4.InventoryClear (AccessLevel 4) [Notes|Command_InventoryClear_GameServerLib]
+inventoryclear: Removes all items from your inventory, and equip slots.  For debugging
+
+
+h4.ListRecentClickables (AccessLevel 9) [Notes|Command_ListRecentClickables_GameServerLib]
+List all recently clicked clickables for the current player
+
+
+h4.MapMoveStatic (AKA MapMove) (AccessLevel 4) [Notes|Command_MapMoveStatic_GameServerLib]
+*Parameter 1: zoneName (string)*
+Move to the named map
+
+
+h4.MovementReset (AccessLevel 0) [Notes|Command_MovementReset_GameServerLib]
+Resets your movement state
+
+
+h4.NNOUnFuckery (AccessLevel 9) [Notes|Command_NNOUnFuckery_GameServerLib]
+No comment provided
+
+h4.PowerDisable (AccessLevel 9) [Notes|Command_PowerDisable_GameServerLib]
+*Parameter 1: name (string)*
+*Parameter 2: bDisable (int)*
+No comment provided
+
+h4.PowerTree_AddWithoutRules (AccessLevel 9) [Notes|Command_PowerTree_AddWithoutRules_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iRankEnh (int)*
+PowerTree_AddWithoutRules <PowerTreeName> <Rank> <EnhRank>: Purchases the PowerTree and given rank of all nodes
+and enhancements, ignoring all purchasing rules, including cost.  This command will fail on a live server.
+
+
+h4.Power_Add (AKA Add_Power) (AccessLevel 7) [Notes|Command_Power_Add_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add <PowerName>: Adds the power of the given name to the player, outside of the scope of a tree
+
+
+h4.Power_Add_FromCritter (AccessLevel 9) [Notes|Command_Power_Add_FromCritter_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add_FromCritter <CritterName>: Adds all powers from a critter, outside of the scope of a tree
+
+
+h4.Power_Add_FromTree (AccessLevel 9) [Notes|Command_Power_Add_FromTree_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add_FromTree <PowerTreeName>: Adds all powers from a power tree, outside of the scope of a tree.  Tree "all" will add all trees.
+
+
+h4.Power_Add_FromTreeRank (AccessLevel 9) [Notes|Command_Power_Add_FromTreeRank_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iRank (int)*
+Power_Add_FromTreeRank <PowerTreeName> <Rank>: Adds powers from a power tree at the specific rank, outside of the scope of a tree. Tree "all" adds all trees. Rank 0 adds all ranks.
+
+
+h4.Power_Remove (AKA Remove_Power) (AccessLevel 7) [Notes|Command_Power_Remove_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Remove <PowerName>: Removes the power of the given name from the player, if that power is outside the scope of a tree
+
+
+h4.PowersDebugServer (AccessLevel 9) [Notes|Command_PowersDebugServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.PowersErrorsServer (AccessLevel 9) [Notes|Command_PowersErrorsServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.PowersResetIDs (AccessLevel 7) [Notes|Command_PowersResetIDs_GameServerLib]
+Completely resets all PowerIDs on the Entity and all of its OwnedContainers.  Useful if an Entity gets
+its PowerIDs into a bad state.  Generally should not be run on an online Entity.
+
+
+h4.PowersSelectDebugServer (AccessLevel 9) [Notes|Command_PowersSelectDebugServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.PowersSetGlobalCooldown (AccessLevel 9) [Notes|Command_PowersSetGlobalCooldown_GameServerLib]
+*Parameter 1: time (float)*
+Command to change the global cooldown on the fly
+
+
+h4.PowersSpeedRecharge (AccessLevel 9) [Notes|Command_PowersSpeedRecharge_GameServerLib]
+*Parameter 1: fSpeed (float)*
+PowerSpeedRecharge <speed>: Adjusts the global modifier to recharge speed.  1 is default, larger is faster, negative is invalid.
+
+
+h4.ResetRecentAutoExecuteInteractions (AccessLevel 9) [Notes|Command_ResetRecentAutoExecuteInteractions_GameServerLib]
+Reset recent interaction list
+
+
+h4.ResetRecentClickableList (AccessLevel 9) [Notes|Command_ResetRecentClickableList_GameServerLib]
+Clears the list of recently clicked clickables
+
+
+h4.setexplevel (AKA setlevel) (AccessLevel 7) [Notes|Command_setexplevel_GameServerLib]
+*Parameter 1: iLevelValue (int)*
+Sets yourself to the specified level
+
+
+h4.SetExpLevelUsingCharacterPath (AKA SetExpLevelCharPath) (AccessLevel 7) [Notes|Command_SetExpLevelUsingCharacterPath_GameServerLib]
+*Parameter 1: iLevelValue (int)*
+Sets yourself to the specified level and buys all powers suggested by the character path
+
+
+h4.SetSkillLevel (AccessLevel 7) [Notes|Command_SetSkillLevel_GameServerLib]
+*Parameter 1: value (int)*
+Set the players Skill Level
+
+
+h4.SetSkillLevelCap (AccessLevel 7) [Notes|Command_SetSkillLevelCap_GameServerLib]
+*Parameter 1: value (int)*
+Set the player's Skill Level cap
+
+
+h4.gslAuction_MailBombMyInventoryToAccount (AccessLevel 7) [Notes|Command_gslAuction_MailBombMyInventoryToAccount_GameServerLib]
+*Parameter 1: iAccountID (int)*
+*Parameter 2: iMaxStack (int)*
+*Parameter 3: iItemsPerMail (int)*
+Create Mail auction lots from items in the inventory. It will add at most iMaxStack (minimum 1) items per item in the auction lot and attach at most iItemsPerMail (minimum 1) per auction lot.
+
+
+h4.MapRevealResetAll (AccessLevel 9) [Notes|Command_MapRevealResetAll_GameServerLib]
+Reset the reveal state of all maps.
+
+
+h4.MapRevealResetCurrent (AccessLevel 9) [Notes|Command_MapRevealResetCurrent_GameServerLib]
+Reset the current map's reveal state.
+
+
+h4.AllegianceCompleteMissionWarpRestriction (AccessLevel 9) [Notes|Command_AllegianceCompleteMissionWarpRestriction_GameServerLib]
+No comment provided
+
+h4.GiveAccountGatedReward (AccessLevel 9) [Notes|Command_GiveAccountGatedReward_GameServerLib]
+*Parameter 1: pchRewardTable (string)*
+*Parameter 2: pchGateType (string)*
+No comment provided
+
+h4.pDebugLevel (AccessLevel 9) [Notes|Command_pDebugLevel_GameServerLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.pDebugToggle (AccessLevel 9) [Notes|Command_pDebugToggle_GameServerLib]
+*Parameter 1: str (string)*
+No comment provided
+
+h4.AwayTeam_MapTransferLongWaitTime (int) - (AccessLevel 9) [Notes|Command_AwayTeam_MapTransferLongWaitTime_GameServerLib]
+No comment provided
+
+h4.AwayTeam_MapTransferShortWaitTime (int) - (AccessLevel 9) [Notes|Command_AwayTeam_MapTransferShortWaitTime_GameServerLib]
+No comment provided
+
+h4.AwayTeam_MapTransferWaitTime (int) - (AccessLevel 9) [Notes|Command_AwayTeam_MapTransferWaitTime_GameServerLib]
+No comment provided
+
+h4.BulletinPeriodicUpdateTime (int) - (AccessLevel 9) [Notes|Command_BulletinPeriodicUpdateTime_GameServerLib]
+No comment provided
+
+h4.ClientLinkCorruption (int) - (AccessLevel 9) [Notes|Command_ClientLinkCorruption_GameServerLib]
+No comment provided
+
+h4.CombatCoverEnabled (int) - (AccessLevel 9) [Notes|Command_CombatCoverEnabled_GameServerLib]
+No comment provided
+
+h4.EnableExtraAttribmodProfileData (int) - (AccessLevel 9) [Notes|Command_EnableExtraAttribmodProfileData_GameServerLib]
+Whether to enable extra attribmod data collection when profiling.  Made conditional because it really slows things down.
+
+
+h4.EnableOpenInstancingDuration (int) - (AccessLevel 9) [Notes|Command_EnableOpenInstancingDuration_GameServerLib]
+No comment provided
+
+h4.EnableOpenInstancingTeamSize (int) - (AccessLevel 9) [Notes|Command_EnableOpenInstancingTeamSize_GameServerLib]
+No comment provided
+
+h4.EnemyHitMod (int) - (AccessLevel 9) [Notes|Command_EnemyHitMod_GameServerLib]
+No comment provided
+
+h4.ForceTimeoutNow (int) - (AccessLevel 9) [Notes|Command_ForceTimeoutNow_GameServerLib]
+No comment provided
+
+h4.PlayerHitMod (int) - (AccessLevel 9) [Notes|Command_PlayerHitMod_GameServerLib]
+No comment provided
+
+h4.PowersVariance (int) - (AccessLevel 9) [Notes|Command_PowersVariance_GameServerLib]
+Whether variance is enabled
+
+
+h4.RolloverDisplayTime (float) - (AccessLevel 9) [Notes|Command_RolloverDisplayTime_GameServerLib]
+debug rollover configuration tweaking 
+there should probably be a rollover config instead of being put on the gConf
+
+
+h4.RolloverDistance (float) - (AccessLevel 9) [Notes|Command_RolloverDistance_GameServerLib]
+debug rollover configuration tweaking 
+there should probably be a rollover config instead of being put on the gConf
+
+
+h4.RolloverPickupTime (float) - (AccessLevel 9) [Notes|Command_RolloverPickupTime_GameServerLib]
+No comment provided
+
+h4.danimDisableHitPause (int) - (AccessLevel 9) [Notes|Command_danimDisableHitPause_GameServerLib]
+No comment provided
+
+h4.failAllMapTransfers (int) - (AccessLevel 9) [Notes|Command_failAllMapTransfers_GameServerLib]
+No comment provided
+

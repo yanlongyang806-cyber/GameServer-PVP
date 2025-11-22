@@ -1,0 +1,173 @@
+h4.EntArrayGetLuckyCharmWeightedIndex (AccessLevel 9) [Notes|Command_EntArrayGetLuckyCharmWeightedIndex_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+Returns the lucky charm index for the entity. 
+If there is more than one entity or the entity does not have the given lucky charm, the function returns -1
+
+
+h4.EntCropAffectedByPower (AccessLevel 9) [Notes|Command_EntCropAffectedByPower_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+No comment provided
+
+h4.EntCropAffectedByPowerAttrib (AccessLevel 9) [Notes|Command_EntCropAffectedByPowerAttrib_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+*Parameter 3: attribName (string)*
+Removes all entities from the list that are not affected by the given power's attrib
+
+
+h4.EntCropAffectedByPowerAttribFromOwner (AccessLevel 9) [Notes|Command_EntCropAffectedByPowerAttribFromOwner_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+*Parameter 3: attribName (string)*
+*Parameter 4: bRemoveEntsAffected (bool)*
+Removes all entities from the list that do/do not match the given power's attrib that are owned by the given entity.
+
+
+h4.EntCropCombat (AccessLevel 9) [Notes|Command_EntCropCombat_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes non-combat entities from the ent array
+
+
+h4.EntCropCritterTag (AccessLevel 9) [Notes|Command_EntCropCritterTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: critterTag (string)*
+Removes all critters that do not have the given tag
+
+
+h4.EntCropCurrentlyUsingPower (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPower_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszPowerName (string)*
+No comment provided
+
+h4.EntCropCurrentlyUsingPowerWithCategory (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPowerWithCategory_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszCategory (string)*
+No comment provided
+
+h4.EntCropCurrentlyUsingPowerWithTag (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPowerWithTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszTag (string)*
+No comment provided
+
+h4.EntCropDDTake10 (AccessLevel 9) [Notes|Command_EntCropDDTake10_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+NNO-specific function that crops ents based on a skillcheck.
+
+
+h4.EntCropExcludeLuckyCharm (AccessLevel 9) [Notes|Command_EntCropExcludeLuckyCharm_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+No comment provided
+
+h4.EntCropHasNoLuckyCharm (AccessLevel 9) [Notes|Command_EntCropHasNoLuckyCharm_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+No comment provided
+
+h4.EntCropHighestHealthPct (AccessLevel 9) [Notes|Command_EntCropHighestHealthPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array except for the one with the highest
+percentage health
+
+
+h4.EntCropLowestHealthPct (AccessLevel 9) [Notes|Command_EntCropLowestHealthPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array except for the one with the lowest
+percentage health
+
+
+h4.EntCropLowestShieldPct (AccessLevel 9) [Notes|Command_EntCropLowestShieldPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array except for the one with the lowest
+percentage shields remaining
+
+
+h4.EntCropLuckyCharm (AccessLevel 9) [Notes|Command_EntCropLuckyCharm_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+No comment provided
+
+h4.EntCropNotAffectedByPowerAttrib (AccessLevel 9) [Notes|Command_EntCropNotAffectedByPowerAttrib_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+*Parameter 3: attribName (string)*
+Removes all entities from the list that are affected by the given power's attrib
+
+
+h4.EntCropNotCritterTag (AccessLevel 9) [Notes|Command_EntCropNotCritterTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: critterTag (string)*
+Removes all critters that have the given tag
+
+
+h4.EntCropSortedCount (AccessLevel 9) [Notes|Command_EntCropSortedCount_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: count (int)*
+Removes every entity from the passed in ent array except for <count>, from the beginning
+
+
+h4.EntCropTargettingEnt (AccessLevel 9) [Notes|Command_EntCropTargettingEnt_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppTarget (Entity Array)*
+No comment provided
+
+h4.EntCropVolume (AccessLevel 9) [Notes|Command_EntCropVolume_GameServerLib]
+*Parameter 1: peaEntsOut (Entity Array (modified))*
+*Parameter 2: pcVolName (string)*
+No comment provided
+
+h4.EntCropVolumeIfExists (AccessLevel 9) [Notes|Command_EntCropVolumeIfExists_GameServerLib]
+*Parameter 1: peaEntsOut (Entity Array (modified))*
+*Parameter 2: pcVolName (string)*
+No comment provided
+
+h4.GetEntsInVolume (AccessLevel 9) [Notes|Command_GetEntsInVolume_GameServerLib]
+*Parameter 1: pcVolName (string)*
+Get an entarray of all ents currently inside an encounter layer volume
+
+
+h4.GetEntsInVolumeAll (AccessLevel 9) [Notes|Command_GetEntsInVolumeAll_GameServerLib]
+*Parameter 1: pcVolName (string)*
+No comment provided
+
+h4.StopSound (AccessLevel 9) [Notes|Command_StopSound_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: soundName (string)*
+Ends a sound played with PlaySound() for all players in the passed in ent array
+
+
+h4.MissionEventCount (AccessLevel 9) [Notes|Command_MissionEventCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionEventName (string)*
+Get the event count for the given event.
+
+
+h4.TimeExpired (AccessLevel 9) [Notes|Command_TimeExpired_GameServerLib]
+*Returns: int*
+Returns TRUE if the timer for this mission has expired
+
+
+h4.OpenMissionMapCredit (AccessLevel 9) [Notes|Command_OpenMissionMapCredit_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+

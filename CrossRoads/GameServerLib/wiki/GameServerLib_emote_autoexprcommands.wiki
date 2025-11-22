@@ -1,0 +1,47 @@
+h4.GetMyAllegiance (AccessLevel 9) [Notes|Command_GetMyAllegiance_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.GetMySubAllegiance (AccessLevel 9) [Notes|Command_GetMySubAllegiance_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.AccessLevel (AccessLevel 9) [Notes|Command_AccessLevel_GameServerLib]
+*Returns: int*
+Check the player's access level.
+
+
+h4.AccountAccessLevel (AccessLevel 9) [Notes|Command_AccountAccessLevel_GameServerLib]
+*Returns: int*
+Check the player's account access level.
+
+
+h4.GAD_AttribValue (AccessLevel 9) [Notes|Command_GAD_AttribValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchAttrib (string)*
+No comment provided
+
+h4.Item (AccessLevel 9) [Notes|Command_Item_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItem (string)*
+Return the number of this item the player has.
+
+
+h4.MissionCompleted (AccessLevel 9) [Notes|Command_MissionCompleted_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMission (string)*
+Return the number of times the player has succeeded/completed this mission.
+
+
+h4.MissionInProgress (AccessLevel 9) [Notes|Command_MissionInProgress_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchMission (string)*
+Check if the player is currently working on a mission.
+
+
+h4.NumericItem (AccessLevel 9) [Notes|Command_NumericItem_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItem (string)*
+Return the value of this numeric item the player has.
+
+

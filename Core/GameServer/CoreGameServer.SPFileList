@@ -1,0 +1,15 @@
+//This is a list of all files scanned by StructParser at a given date/time, used for dependency purposes
+11/22/2025 5:41:19:735
+VERSION "Dec 31 201421:03:40"
+SVNBRANCH "(Unknown)"
+"..\..\obj100\CoreGameServer\Debug Win32\"
+"I:\wdym\src\Core\GameServer\..\..\libs\Common\NoUGCInThisProject.c"
+2
+0
+"I:\wdym\src\Core\GameServer\..\Common\CoreCommon.c"
+0
+0
+"I:\wdym\src\Core\GameServer\..\Common\CoreCommon.h"
+0
+0
+END_OF_FILE

@@ -1,0 +1,24 @@
+h4.NemesisLeaderLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+

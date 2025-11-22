@@ -1,0 +1,4 @@
+h4.AddictionMaxPlayTime (int) - (AccessLevel 9) [Notes|Command_AddictionMaxPlayTime_GameServerLib]
+The time in seconds that players subject to anti-addiction rules can play before getting booted.
+
+

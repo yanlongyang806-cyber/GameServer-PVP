@@ -1,0 +1,80 @@
+h4.IsActivityActive (AccessLevel 9) [Notes|Command_IsActivityActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+TODO: Remove this and use Activity_IsActive instead
+
+
+h4.ModConsideredPostApplied (AccessLevel 9) [Notes|Command_ModConsideredPostApplied_GameServerLib]
+*Returns: int*
+*Parameter 1: pmod (AttribMod_ForExpr struct)*
+AttribMod
+Inputs: AttribMod
+Return: True if the attribMod is considered as having already applied itself at least once
+
+
+h4.ModDefFromPowerDef (AccessLevel 9) [Notes|Command_ModDefFromPowerDef_GameServerLib]
+*Returns: int*
+*Parameter 1: modDef (AttribModDef_ForExpr struct)*
+*Parameter 2: powerDefName (string)*
+AttribMod
+Inputs: AttribModDef, PowerDef name
+Return: 1 if the AttribModDef is from named PowerDef, otherwise 0
+
+
+h4.ModFromPowerDef (AccessLevel 9) [Notes|Command_ModFromPowerDef_GameServerLib]
+*Returns: int*
+*Parameter 1: mod (AttribMod_ForExpr struct)*
+*Parameter 2: powerDefName (string)*
+AttribMod
+Inputs: AttribMod, PowerDef name
+Return: 1 if the AttribMod is from named PowerDef, otherwise 0
+
+
+h4.ModGetOwner (AccessLevel 9) [Notes|Command_ModGetOwner_GameServerLib]
+*Returns: Character struct*
+*Parameter 1: pMod (AttribMod_ForExpr struct)*
+Affects
+Inputs: AttribMod
+Return: Owner Character of the AttribMod
+
+
+h4.ModGetSource (AccessLevel 9) [Notes|Command_ModGetSource_GameServerLib]
+*Returns: Character struct*
+*Parameter 1: pMod (AttribMod_ForExpr struct)*
+Affects
+Inputs: AttribMod
+Return: Source Character of the AttribMod
+
+
+h4.ModHealth (AccessLevel 9) [Notes|Command_ModHealth_GameServerLib]
+*Returns: float*
+*Parameter 1: pmod (AttribMod_ForExpr struct)*
+AttribMod
+Inputs: AttribMod
+Return: The health of the AttribMod.  Returns -1 if the AttribMod isn't fragile.
+
+
+h4.ModHealthPct (AccessLevel 9) [Notes|Command_ModHealthPct_GameServerLib]
+*Returns: float*
+*Parameter 1: pmod (AttribMod_ForExpr struct)*
+AttribMod
+Inputs: AttribMod
+Return: The percentage health of the AttribMod.  Returns -1 if the AttribMod isn't fragile.
+
+
+h4.ModMag (AccessLevel 9) [Notes|Command_ModMag_GameServerLib]
+*Returns: float*
+*Parameter 1: pmod (AttribMod_ForExpr struct)*
+AttribMod
+Inputs: AttribMod
+Return: The magnitude of the AttribMod
+
+
+h4.ModPeriod (AccessLevel 9) [Notes|Command_ModPeriod_GameServerLib]
+*Returns: int*
+*Parameter 1: pmod (AttribMod_ForExpr struct)*
+AttribMod
+Inputs: AttribMod
+Return: Gets the current period of the attrib mod
+
+

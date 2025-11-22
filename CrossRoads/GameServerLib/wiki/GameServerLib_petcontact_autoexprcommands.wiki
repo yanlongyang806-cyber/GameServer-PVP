@@ -1,0 +1,11 @@
+h4.IsPetDefNamed (AccessLevel 9) [Notes|Command_IsPetDefNamed_GameServerLib]
+*Returns: int*
+*Parameter 1: pName (string)*
+Checks to see if the current pet has this name
+
+
+h4.IsPetOnAwayTeam (AccessLevel 9) [Notes|Command_IsPetOnAwayTeam_GameServerLib]
+*Returns: int*
+Checks to see if the current pet (saved as the selfPtr) is on the specified player's away team
+
+

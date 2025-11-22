@@ -1,0 +1,146 @@
+h4.NemesisTeamIndexReady (AccessLevel 9) [Notes|Command_NemesisTeamIndexReady_GameServerLib]
+*Returns: bool*
+*Parameter 1: iTeamIndex (int)*
+Returns true if the team index could spawn a nemesis (or minion), will check players in range of the spawn
+Will return true if the team index and can't spawn a nemesis. The spawn code in encounter 2 will use a default nemesis in this case
+This function will set the mapstate nemesis team index if it hasn't been set and the leader is present.
+
+
+h4.NemesisTeamLeaderReady (AccessLevel 9) [Notes|Command_NemesisTeamLeaderReady_GameServerLib]
+*Returns: bool*
+*Parameter 1: bUseAnyMemeber (bool)*
+Returns true if the team leader (or someone on the team if bUseAnyMemeber is true) could spawn a nemesis (or minion), will check players in range of the spawn
+Will return true if the leader has been checked (or whole team) and can't spawn a nemesis. The spawn code in encounter 2 will use a default nemesis in this case
+This function will set the mapstate nemesis team leader if it hasn't been set and the leader is present)
+
+
+h4.NemesisLeaderLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedEntArray (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisLeaderLoadedOrNotEntArray (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisTeamIndexGetLeader (AKA NemesisTeamGetLeader) (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetLeader_GameServerLib]
+*No Return*
+No comment provided
+
+h4.NemesisTeamGetMotivation (AccessLevel 9) [Notes|Command_NemesisTeamGetMotivation_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamIndex (int)*
+*Parameter 2: bUseLeader (bool)*
+Get the nemesis motivation, used for either team index or leader
+
+
+h4.NemesisTeamGetPersonality (AccessLevel 9) [Notes|Command_NemesisTeamGetPersonality_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamIndex (int)*
+*Parameter 2: bUseLeader (bool)*
+Get the nemesis personality, used for either team index or leader
+
+
+h4.NemesisTeamIndexGetNemesis (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetNemesis_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: iIndex (int)*
+Get the nemesis for the team at index. This only works if the team index has already been set by other expressions.
+
+
+h4.NemesisTeamIndexGetPlayer (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetPlayer_GameServerLib]
+*No Return*
+*Parameter 1: iIndex (int)*
+No comment provided
+
+h4.NemesisTeamIndexLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedEntArray (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotEntArray (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamLeaderGetNemesis (AccessLevel 9) [Notes|Command_NemesisTeamLeaderGetNemesis_GameServerLib]
+*Returns: Entity struct*
+Get the nemesis for the team leader. This only works if the team leader has already been set by other commands.
+
+
+h4.EventCountSinceComplete (AccessLevel 9) [Notes|Command_EventCountSinceComplete_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEventName (string)*
+No comment provided
+
+h4.EventCountSinceSpawn (AccessLevel 9) [Notes|Command_EventCountSinceSpawn_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEventName (string)*
+No comment provided
+
+h4.GetNearbyPlayersForEnc (AccessLevel 9) [Notes|Command_GetNearbyPlayersForEnc_GameServerLib]
+*No Return*
+Get players within the spawn radius of the encounter
+
+
+h4.GetNumTimesSpawned (AccessLevel 9) [Notes|Command_GetNumTimesSpawned_GameServerLib]
+*Returns: int*
+Returns the number of times this encounter has spawned critters
+
+
+h4.HasNearbyPlayersForEnc (AccessLevel 9) [Notes|Command_HasNearbyPlayersForEnc_GameServerLib]
+*Returns: bool*
+Checks if there are any nearby players for the encounter.
+
+
+h4.PercentLivingInThisEncounter (AccessLevel 9) [Notes|Command_PercentLivingInThisEncounter_GameServerLib]
+*Returns: int*
+Returns the percentage of entities in the current encounter that are alive
+
+
+h4.RefillHealthPow (AccessLevel 9) [Notes|Command_RefillHealthPow_GameServerLib]
+*Returns: int*
+*Parameter 1: fHealth (float)*
+No comment provided
+
+h4.ShutDownEncounter (AccessLevel 9) [Notes|Command_ShutDownEncounter_GameServerLib]
+*Returns: int*
+Destroy all entities in an encounter (may not actually shut it down)
+
+
+h4.EncounterTimeSinceSpawned (AccessLevel 9) [Notes|Command_EncounterTimeSinceSpawned_GameServerLib]
+Returns timer for when encounter spawned.  Returns -1 on error (used in encounter1 or not spawned ever)
+
+

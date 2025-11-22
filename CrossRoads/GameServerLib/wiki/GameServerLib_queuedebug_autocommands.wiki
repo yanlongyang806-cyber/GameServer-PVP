@@ -1,0 +1,12 @@
+h4.QueueRemoveAllPenalties (AccessLevel 7) [Notes|Command_QueueRemoveAllPenalties_GameServerLib]
+Removes all penalties given to the entity
+
+
+h4.QueueResetAllCooldowns (AccessLevel 7) [Notes|Command_QueueResetAllCooldowns_GameServerLib]
+Resets all cooldowns on the current entity
+
+
+h4.PlaceInGroup (AccessLevel 9) [Notes|Command_PlaceInGroup_GameServerLib]
+*Parameter 1: iTeamIndex (int)*
+No comment provided
+

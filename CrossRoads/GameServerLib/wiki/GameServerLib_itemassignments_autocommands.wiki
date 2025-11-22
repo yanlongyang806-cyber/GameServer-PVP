@@ -1,0 +1,20 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.GetItemAssignmentVar (AccessLevel 9) [Notes|Command_GetItemAssignmentVar_GameServerLib]
+*Returns: float*
+*Parameter 1: pchVarName (string)*
+No comment provided
+

@@ -1,0 +1,16 @@
+h4.queue_Csr_FixAllStalledQueues (AccessLevel 4) [Notes|Command_queue_Csr_FixAllStalledQueues_GameServerLib]
+No comment provided
+
+h4.queue_Csr_FixStalledQueue (AccessLevel 4) [Notes|Command_queue_Csr_FixStalledQueue_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.queue_Csr_ResetQueue (AccessLevel 4) [Notes|Command_queue_Csr_ResetQueue_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.QueueRemoveAllPenaltiesByEntID (AccessLevel 4) [Notes|Command_QueueRemoveAllPenaltiesByEntID_GameServerLib]
+*Parameter 1: uPlayerID (int)*
+Removes all penalties given to the entity specified by the container ID (uPlayerID)
+
+

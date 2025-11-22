@@ -1,0 +1,225 @@
+h4.PlayerIsSpecies (AccessLevel 9) [Notes|Command_PlayerIsSpecies_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchSpecies (string)*
+No comment provided
+
+h4.EntGetNumericItemValue (AccessLevel 9) [Notes|Command_EntGetNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+this expression already exists in the "Player" scope, however the Player pointer is not available in this context
+
+
+h4.EntGetNumericItemValueScaled (AccessLevel 9) [Notes|Command_EntGetNumericItemValueScaled_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+this expression already exists in the "Player" scope, however the Player pointer is not available in this context
+
+
+h4.EntGetOwnerNumericItemValue (AccessLevel 9) [Notes|Command_EntGetOwnerNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.EntGetRespecGroupNumericCost (AccessLevel 9) [Notes|Command_EntGetRespecGroupNumericCost_GameServerLib]
+*Returns: int*
+*Parameter 1: pchRespecGroupTypeName (string)*
+No comment provided
+
+h4.CostOfNodesOfPurpose (AccessLevel 9) [Notes|Command_CostOfNodesOfPurpose_GameServerLib]
+*Parameter 1: pchPurposeName (string)*
+TODO(BH): May need to be split into enhpoints and treepoints or something...
+
+
+h4.CostOfNodesOfType (AccessLevel 9) [Notes|Command_CostOfNodesOfType_GameServerLib]
+*Parameter 1: pchNodeType (string)*
+TODO(BH): May need to be split into enhpoints and treepoints or something...
+
+
+h4.EnhPointsSpent (AccessLevel 9) [Notes|Command_EnhPointsSpent_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.Level (AccessLevel 9) [Notes|Command_Level_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.NodesOfPurpose (AccessLevel 9) [Notes|Command_NodesOfPurpose_GameServerLib]
+*Parameter 1: pchPurposeName (string)*
+No comment provided
+
+h4.NodesOfType (AccessLevel 9) [Notes|Command_NodesOfType_GameServerLib]
+*Parameter 1: pchNodeType (string)*
+No comment provided
+
+h4.TreeNotOwned (AccessLevel 9) [Notes|Command_TreeNotOwned_GameServerLib]
+*Returns: int*
+*Parameter 1: pchPowerTree (string)*
+No comment provided
+
+h4.TreeOwned (AccessLevel 9) [Notes|Command_TreeOwned_GameServerLib]
+*Returns: int*
+*Parameter 1: pchPowerTree (string)*
+No comment provided
+
+h4.PointsSpentIn (AccessLevel 9) [Notes|Command_PointsSpentIn_GameServerLib]
+*Returns: int*
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.TrainingLevel (AccessLevel 9) [Notes|Command_TrainingLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.TrainingLevelIn (AccessLevel 9) [Notes|Command_TrainingLevelIn_GameServerLib]
+*Returns: int*
+*Parameter 1: pchTableName (string)*
+No comment provided
+
+h4.TreePointsSpent (AccessLevel 9) [Notes|Command_TreePointsSpent_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.TreesOwned (AccessLevel 9) [Notes|Command_TreesOwned_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.TreesNotOfType (AccessLevel 9) [Notes|Command_TreesNotOfType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchTreeType (string)*
+No comment provided
+
+h4.TreesOfType (AccessLevel 9) [Notes|Command_TreesOfType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchTreeType (string)*
+No comment provided
+
+h4.HasPuppetOfClass (AccessLevel 9) [Notes|Command_HasPuppetOfClass_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchClassName (string)*
+No comment provided
+
+h4.HasPuppetWithSpecies (AccessLevel 9) [Notes|Command_HasPuppetWithSpecies_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchSpecies (string)*
+No comment provided
+
+h4.IsCritter (AccessLevel 9) [Notes|Command_IsCritter_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.IsOfClass (AccessLevel 9) [Notes|Command_IsOfClass_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchClassName (string)*
+No comment provided
+
+h4.IsOfClassCategory (AccessLevel 9) [Notes|Command_IsOfClassCategory_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchClassCategoryName (string)*
+No comment provided
+
+h4.IsOfClassType (AccessLevel 9) [Notes|Command_IsOfClassType_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchClassTypeName (string)*
+No comment provided
+
+h4.IsOfFaction (AccessLevel 9) [Notes|Command_IsOfFaction_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchFactionName (string)*
+No comment provided
+
+h4.OwnsNode (AccessLevel 9) [Notes|Command_OwnsNode_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchNodeName (string)*
+No comment provided
+
+h4.PointsRemaining (AccessLevel 9) [Notes|Command_PointsRemaining_GameServerLib]
+*Returns: int*
+*Parameter 1: pchPoints (string)*
+Returns the Entity's points remaining of the given point type
+
+
+h4.PointsSpent (AccessLevel 9) [Notes|Command_PointsSpent_GameServerLib]
+*Returns: int*
+*Parameter 1: pchName (string)*
+Returns the Entity's points spent of the given point type
+
+
+h4.PointsSpentPermanent (AccessLevel 9) [Notes|Command_PointsSpentPermanent_GameServerLib]
+*Returns: int*
+*Parameter 1: pchPoints (string)*
+Returns the Entity's points permanently spent of the given point type
+
+
+h4.IsEntAllegiance (AccessLevel 9) [Notes|Command_IsEntAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.EntCharGetLevelCombat (AccessLevel 9) [Notes|Command_EntCharGetLevelCombat_GameServerLib]
+*Returns: int*
+Returns the combat level of the Entity in the expressino context.  Returns 0 on failure.
+
+
+h4.GADAttribInt (AccessLevel 9) [Notes|Command_GADAttribInt_GameServerLib]
+*Returns: int*
+*Parameter 1: pchAttrib (string)*
+No comment provided
+
+h4.GADAttribString (AccessLevel 9) [Notes|Command_GADAttribString_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+No comment provided
+
+h4.GADGetDaysSubscribbed (AccessLevel 9) [Notes|Command_GADGetDaysSubscribbed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GADIsLifetime (AccessLevel 9) [Notes|Command_GADIsLifetime_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GADIsPress (AccessLevel 9) [Notes|Command_GADIsPress_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetNumTimesMissionCompleted (AccessLevel 9) [Notes|Command_EntGetNumTimesMissionCompleted_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMission (string)*
+Returns the number of times an entity has completed a mission.
+
+
+h4.EntIsMissionCompleted (AccessLevel 9) [Notes|Command_EntIsMissionCompleted_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMission (string)*
+Returns whether an entity has completed a mission.  Mission name is not validated statically.
+
+
+h4.EntGuildIsTheme (AccessLevel 9) [Notes|Command_EntGuildIsTheme_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchThemeName (string)*
+Indicates if the guild is assigned the same theme as the given theme
+
+
+h4.EntGuildMemberClassCount (AccessLevel 9) [Notes|Command_EntGuildMemberClassCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pchClassName (string)*
+Returns the number of members from the given class in the player's guild
+
+
+h4.EntGetGuildStat (AccessLevel 9) [Notes|Command_EntGetGuildStat_GameServerLib]
+*Returns: int*
+*Parameter 1: pchStatName (string)*
+No comment provided
+
+h4.HasPermissionToken (AccessLevel 9) [Notes|Command_HasPermissionToken_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchValue (string)*
+Returns true/false if a character's account has a given permission token
+
+
+h4.GetAttrib (AccessLevel 9) [Notes|Command_GetAttrib_GameServerLib]
+*Parameter 1: pchAttrib (string)*
+No comment provided
+

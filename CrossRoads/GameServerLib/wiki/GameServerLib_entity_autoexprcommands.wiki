@@ -1,0 +1,374 @@
+h4.DDEntGetSkillBonus (AccessLevel 9) [Notes|Command_DDEntGetSkillBonus_GameServerLib]
+*Returns: float*
+*Parameter 1: skillName (string)*
+Returns the magnitude of the given character's bonus for a specified skill name.
+
+
+h4.EntGetAngleToTarget (AccessLevel 9) [Notes|Command_EntGetAngleToTarget_GameServerLib]
+*Returns: float*
+Inputs: pEntSource, pEntTarget
+Return: Angle in degrees from the source to the target on XZ plane, 0 if either source or target is NULL
+
+
+h4.EntGetChargingPowerName (AccessLevel 9) [Notes|Command_EntGetChargingPowerName_GameServerLib]
+*Returns: string*
+Entity
+Inputs: Entity
+Return: Name of the current charging power, or "" if invalid.
+
+
+h4.EntGetRemainingChargeTime (AccessLevel 9) [Notes|Command_EntGetRemainingChargeTime_GameServerLib]
+*Returns: float*
+Entity
+Inputs: Entity
+Return: Estimated time to complete the current cast, or -1 if invalid
+
+
+h4.EntGetRewardGatedCooldownSeconds (AccessLevel 9) [Notes|Command_EntGetRewardGatedCooldownSeconds_GameServerLib]
+*Returns: int*
+*Parameter 1: pRewardGatedName (string)*
+Inputs: pPlayerEnt
+Time in seconds remaining for Cooldown
+
+
+h4.EntGetTargetArray (AccessLevel 9) [Notes|Command_EntGetTargetArray_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Get the target from the first ent in erray and push it into the out array. Only one ent will every be returned in the array
+
+
+h4.EntGetTargetFromArray (AccessLevel 9) [Notes|Command_EntGetTargetFromArray_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: playersIn (Entity Array)*
+return an entity pointer that is the target of the first entity in the array passed in.
+
+
+h4.EntGetTotalChargeTime (AccessLevel 9) [Notes|Command_EntGetTotalChargeTime_GameServerLib]
+*Returns: float*
+No comment provided
+
+h4.EntOwnsPower (AccessLevel 9) [Notes|Command_EntOwnsPower_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnt (Entity Array)*
+*Parameter 2: powerDefName (string)*
+No comment provided
+
+h4.EntPetCanBeDismissed (AccessLevel 9) [Notes|Command_EntPetCanBeDismissed_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.EntPetCanBeRenamed (AccessLevel 9) [Notes|Command_EntPetCanBeRenamed_GameServerLib]
+*Returns: bool*
+Inputs: PetEnt
+Output: true or false, true if the pet can be is of a type that can be re-named
+
+
+h4.PermToken (AccessLevel 9) [Notes|Command_PermToken_GameServerLib]
+*Returns: int*
+*Parameter 1: pchToken (string)*
+return true if the entity has this token, will return true if game permissions are off
+
+
+h4.PermTokenKeyType (AccessLevel 9) [Notes|Command_PermTokenKeyType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchToken (string)*
+No comment provided
+
+h4.PermTokenType (AccessLevel 9) [Notes|Command_PermTokenType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchToken (string)*
+No comment provided
+
+h4.OfficerIsOfRankAndAllegiance (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+No comment provided
+
+h4.OfficerIsOfRankAndAllegianceUsingNumeric (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegianceUsingNumeric_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+*Parameter 3: pchNumeric (string)*
+TODO(MK): could make pchAllegiance into a comma delimited list if necessary later on
+
+
+h4.PointFromEntityFacingOffsetAngle (AccessLevel 9) [Notes|Command_PointFromEntityFacingOffsetAngle_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: distanceOffset (float)*
+*Parameter 3: angle (float)*
+Returns a point from the given entity in the direction of the specified yaw angle relative to the entity's facing
+the angle is in degrees
+the point has an orientation of the entity's facing 
+there must only be one entity in the array
+
+
+h4.RewardEntHasPower (AccessLevel 9) [Notes|Command_RewardEntHasPower_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcPower (string)*
+No comment provided
+
+h4.SharedBankCanBuySlots (AccessLevel 9) [Notes|Command_SharedBankCanBuySlots_GameServerLib]
+*Returns: bool*
+Returns true if this entity can has more slots available
+
+
+h4.SharedBankGetMaximumDeposit (AccessLevel 9) [Notes|Command_SharedBankGetMaximumDeposit_GameServerLib]
+*Returns: int*
+*Parameter 1: pcNumeric (string)*
+Shared bank, return the maxmimum that this player can deposit
+lower of amount left based on permission or numeric left on player
+
+
+h4.SharedBankIsAvailable (AccessLevel 9) [Notes|Command_SharedBankIsAvailable_GameServerLib]
+*Returns: int*
+Returns true if this entity can access the sharedbank
+
+
+h4.SharedBankIsLegalNumericTransfer (AccessLevel 9) [Notes|Command_SharedBankIsLegalNumericTransfer_GameServerLib]
+*Returns: int*
+*Parameter 1: iToBank (int)*
+*Parameter 2: pcNumeric (string)*
+Shared bank, return true if the amount and type to be transfered is legal
+
+
+h4.GetAllegiance (AccessLevel 9) [Notes|Command_GetAllegiance_GameServerLib]
+*Returns: AllegianceDef struct*
+No comment provided
+
+h4.GetSubAllegiance (AccessLevel 9) [Notes|Command_GetSubAllegiance_GameServerLib]
+*Returns: AllegianceDef struct*
+No comment provided
+
+h4.IsAllegiance (AccessLevel 9) [Notes|Command_IsAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.MissionCompleted (AccessLevel 9) [Notes|Command_MissionCompleted_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMission (string)*
+Return the number of times the player has succeeded/completed this mission.
+
+
+h4.MissionInProgress (AccessLevel 9) [Notes|Command_MissionInProgress_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchMission (string)*
+Check if the player is currently working on a mission.
+
+
+h4.GetSpawningPlayer (AccessLevel 9) [Notes|Command_GetSpawningPlayer_GameServerLib]
+*No Return*
+Get the player who spawned a critter/encounter, if that player is targetable and alive.
+Note that this player may already have left the area or even the map.
+
+
+h4.GetSpawningPlayerAll (AccessLevel 9) [Notes|Command_GetSpawningPlayerAll_GameServerLib]
+*No Return*
+Get the player who spawned an encounter, even if that player is dead or untargetable for some reason
+
+
+h4.GetSpawningPlayerSilent (AccessLevel 9) [Notes|Command_GetSpawningPlayerSilent_GameServerLib]
+*No Return*
+Get the player who spawned an encounter, even if that player is dead or untargetable for some reason
+This function also doesn't error (Useful for critter expressions)
+
+
+h4.CritterSetOverrideName (AccessLevel 9) [Notes|Command_CritterSetOverrideName_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchNewName (string)*
+No comment provided
+
+h4.EntArrayGetClass (AccessLevel 9) [Notes|Command_EntArrayGetClass_GameServerLib]
+*Returns: string*
+*Parameter 1: peaEnts (Entity Array)*
+get the class from the first entity in the entity array
+
+
+h4.EntGetTarget (AccessLevel 9) [Notes|Command_EntGetTarget_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.CharacterGetProjectileByTag (AccessLevel 9) [Notes|Command_CharacterGetProjectileByTag_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: pchTag (string)*
+returns an entity that is a projectile and optionally 
+
+
+h4.EntCropCritterTag (AccessLevel 9) [Notes|Command_EntCropCritterTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: critterTag (string)*
+Removes all critters that do not have the given tag
+
+
+h4.EntCropCurrentlyUsingPower (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPower_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszPowerName (string)*
+No comment provided
+
+h4.EntCropCurrentlyUsingPowerWithCategory (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPowerWithCategory_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszCategory (string)*
+No comment provided
+
+h4.EntCropCurrentlyUsingPowerWithTag (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPowerWithTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszTag (string)*
+No comment provided
+
+h4.EntCropMapOwner (AccessLevel 9) [Notes|Command_EntCropMapOwner_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes everything EXCEPT the map's owner from the array
+
+
+h4.EntCropNotCritterTag (AccessLevel 9) [Notes|Command_EntCropNotCritterTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: critterTag (string)*
+Removes all critters that have the given tag
+
+
+h4.GetCreatorTarget (AccessLevel 9) [Notes|Command_GetCreatorTarget_GameServerLib]
+*No Return*
+Returns the entity's owner if the entity is a pet or an empty ent array if the entity is not a pet
+
+
+h4.GetLuckyCharmCount (AccessLevel 9) [Notes|Command_GetLuckyCharmCount_GameServerLib]
+*Returns: int*
+*Parameter 1: entIn (Entity Array)*
+Returns the number of lucky charms set by the player or player's team
+
+
+h4.GetLuckyCharmCountOfType (AccessLevel 9) [Notes|Command_GetLuckyCharmCountOfType_GameServerLib]
+*Returns: int*
+*Parameter 1: entIn (Entity Array)*
+*Parameter 2: eType (int)*
+Returns the number of lucky charms of a certain type set by the player or player's team
+
+
+h4.GetMyCreator (AccessLevel 9) [Notes|Command_GetMyCreator_GameServerLib]
+*No Return*
+Returns the entity's creator if the entity is a pet or an empty ent array if the entity is not a pet
+
+
+h4.GetMyCreatorDeadAll (AccessLevel 9) [Notes|Command_GetMyCreatorDeadAll_GameServerLib]
+*No Return*
+Returns the entity's creator if the entity is a pet or an empty ent array if the entity is not a pet
+Will return the owner regardless if it is alive or not
+
+
+h4.GetMyEnt (AccessLevel 9) [Notes|Command_GetMyEnt_GameServerLib]
+*No Return*
+Returns the current entity
+
+
+h4.GetMyOwner (AccessLevel 9) [Notes|Command_GetMyOwner_GameServerLib]
+*No Return*
+Returns the entity's owner if the entity is a pet or an empty ent array if the entity is not a pet
+
+
+h4.GetMyOwnerDeadAll (AccessLevel 9) [Notes|Command_GetMyOwnerDeadAll_GameServerLib]
+*No Return*
+Returns the entity's owner if the entity is a pet or an empty ent array if the entity is not a pet
+Will return the owner regardless if it is alive or not
+
+
+h4.EntGetOwner (AccessLevel 9) [Notes|Command_EntGetOwner_GameServerLib]
+*Parameter 1: entIn (Entity Array)*
+Returns the owner of the given ent
+
+
+h4.HasPreferredTarget (AccessLevel 9) [Notes|Command_HasPreferredTarget_GameServerLib]
+*Returns: bool*
+*Parameter 1: entIn (Entity Array)*
+Returns true if the entity has a preferred target set by a lucky charm
+
+
+h4.PointFromEntityFacingOffset (AccessLevel 9) [Notes|Command_PointFromEntityFacingOffset_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: distanceOffset (float)*
+Returns a point from the given entity in the direction the entity is facing
+the point has an orientation of the entity's facing 
+there must only be one entity in the array
+
+
+h4.SayExternMessageVar (AccessLevel 9) [Notes|Command_SayExternMessageVar_GameServerLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+*Parameter 3: duration (float)*
+Makes the a critter say the message specified by <name> from <category>. This is correctly
+localized for whoever sees it and stays up for <duration> seconds
+
+
+h4.SayExternMessageVarWithBubble (AccessLevel 9) [Notes|Command_SayExternMessageVarWithBubble_GameServerLib]
+*Parameter 1: category (string)*
+*Parameter 2: name (string)*
+*Parameter 3: duration (float)*
+*Parameter 4: chatBubbleName (string)*
+Makes the a critter say the message specified by <name> from <category>. This is correctly
+localized for whoever sees it and stays up for <duration> seconds.
+Uses the chat bubble defined by chatBubbleName
+
+
+h4.SayMessage (AccessLevel 9) [Notes|Command_SayMessage_GameServerLib]
+*No Return*
+*Parameter 1: messageKey (string)*
+*Parameter 2: duration (float)*
+Makes the critter say the message specified by <messageKey> for <duration> seconds
+
+
+h4.SayMessageAbout (AccessLevel 9) [Notes|Command_SayMessageAbout_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: messageKey (string)*
+*Parameter 3: duration (float)*
+No comment provided
+
+h4.SayMessageChance (AccessLevel 9) [Notes|Command_SayMessageChance_GameServerLib]
+*No Return*
+*Parameter 1: messageKey (string)*
+*Parameter 2: duration (float)*
+*Parameter 3: chance (int)*
+<Chance> to makes the critter say the message specified by <messageKey> for <duration> seconds
+
+
+h4.SayMessageWithBubble (AccessLevel 9) [Notes|Command_SayMessageWithBubble_GameServerLib]
+*No Return*
+*Parameter 1: messageKey (string)*
+*Parameter 2: duration (float)*
+*Parameter 3: chatBubbleName (string)*
+Makes the critter say the message specified by <messageKey> for <duration> seconds
+Uses chatBubble <chatBubbleName>
+
+
+h4.SendPokeEvent (AccessLevel 9) [Notes|Command_SendPokeEvent_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: pchMessage (string)*
+Sends an "FSMPoke" Event that references the specified entities
+
+
+h4.EntGetFaction (AccessLevel 9) [Notes|Command_EntGetFaction_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.EntGetSubFaction (AccessLevel 9) [Notes|Command_EntGetSubFaction_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+

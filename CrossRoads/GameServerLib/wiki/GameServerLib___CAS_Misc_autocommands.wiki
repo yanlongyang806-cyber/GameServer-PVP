@@ -1,0 +1,18 @@
+h4.AccessLevelOverrides (string) - (AccessLevel 9) [Notes|Command_AccessLevelOverrides_GameServerLib]
+comma-separated list of GS commands whose AL should be changed to something else, ie "doSomething 7, doThisOtherThing 0"
+
+
+h4.AssetSetIndexForShard (int) - (AccessLevel 9) [Notes|Command_AssetSetIndexForShard_GameServerLib]
+Which asset set this shard is using. 0=default
+
+
+h4.MapTransferSoftCapFix (int) - (AccessLevel 9) [Notes|Command_MapTransferSoftCapFix_GameServerLib]
+__CATEGORY MISC setting
+If true (the default) allow a map transfer to a partition that is over the softCap when a non-team-transfer has a team member on the destination map
+Theoretically we can remove this after it's been on live for a bit. WOLF[6May2013]
+
+
+h4.MissionKillList (string) - (AccessLevel 9) [Notes|Command_MissionKillList_GameServerLib]
+This setting is a comma separated list of missions that should be removed from all players
+
+

@@ -1,0 +1,3217 @@
+h4.ActivityStreamTest (AccessLevel 9) [Notes|Command_ActivityStreamTest_GameServerLib]
+*Parameter 1: privateAccountName (string)*
+*Parameter 2: command (string)*
+*Parameter 3: data (string)*
+Test the logActivity() API.
+
+
+h4.AddTestClient (AccessLevel 9) [Notes|Command_AddTestClient_GameServerLib]
+*Parameter 1: pTestClientType (string)*
+*Parameter 2: pExtraCommandLine (sentence)*
+No comment provided
+
+h4.Add_PowerTree (AccessLevel 9) [Notes|Command_Add_PowerTree_GameServerLib]
+*Parameter 1: pchTree (string)*
+Access level 9 command to add a power tree to a player with out having to follow the rules of purchasing it
+
+
+h4.AllegianceSet (AccessLevel 4) [Notes|Command_AllegianceSet_GameServerLib]
+*Parameter 1: allegianceName (string)*
+Sets your Allegiance, also possibly modifies your faction and species to match
+
+
+h4.AuctionRaider (AccessLevel 9) [Notes|Command_AuctionRaider_GameServerLib]
+*Parameter 1: iAuctionsToAdd (int)*
+No comment provided
+
+h4.AuctionRaiderLevelSearch (AccessLevel 9) [Notes|Command_AuctionRaiderLevelSearch_GameServerLib]
+No comment provided
+
+h4.AuctionRaiderNameSearch (AccessLevel 9) [Notes|Command_AuctionRaiderNameSearch_GameServerLib]
+*Parameter 1: name (string)*
+No comment provided
+
+h4.AuctionRaiderQualitySearch (AccessLevel 9) [Notes|Command_AuctionRaiderQualitySearch_GameServerLib]
+No comment provided
+
+h4.AuctionRaiderResults (AccessLevel 9) [Notes|Command_AuctionRaiderResults_GameServerLib]
+No comment provided
+
+h4.AuctionRaiderRewardTable (AccessLevel 9) [Notes|Command_AuctionRaiderRewardTable_GameServerLib]
+*Parameter 1: pchTableName (string)*
+*Parameter 2: iAuctionsToAdd (int)*
+No comment provided
+
+h4.AuctionRaiderStop (AccessLevel 9) [Notes|Command_AuctionRaiderStop_GameServerLib]
+No comment provided
+
+h4.AutoCalendarEvent (AccessLevel 7) [Notes|Command_AutoCalendarEvent_GameServerLib]
+*Parameter 1: pchEvent (string)*
+No comment provided
+
+h4.AutoLevel (AccessLevel 9) [Notes|Command_AutoLevel_GameServerLib]
+*Parameter 1: iLevelValue (int)*
+iValue is the rel 1 level
+
+
+h4.BagToMainBag (AccessLevel 4) [Notes|Command_BagToMainBag_GameServerLib]
+*Parameter 1: bagIdx (int)*
+This command is used to empty a bag into the players main inventory (there needs to be space)
+Using it on an empty bag will move the bag to the main inventory
+
+
+h4.BroadcastMessageToGameServer (AccessLevel 9) [Notes|Command_BroadcastMessageToGameServer_GameServerLib]
+*Parameter 1: iContainerID (int)*
+*Parameter 2: pMessage (sentence)*
+No comment provided
+
+h4.BroadcastMessageToMachine (AccessLevel 9) [Notes|Command_BroadcastMessageToMachine_GameServerLib]
+*Parameter 1: pMachineName (string)*
+*Parameter 2: pMessage (sentence)*
+No comment provided
+
+h4.Buy_PowerTree (AccessLevel 9) [Notes|Command_Buy_PowerTree_GameServerLib]
+*Parameter 1: pchTree (string)*
+Buy_PowerTree <PowerTree>: If allowed, adds the specific power tree to the character though the transaction server
+
+
+h4.Buy_PowerTreeNode (AccessLevel 0) [Notes|Command_Buy_PowerTreeNode_GameServerLib]
+*Parameter 1: pchTree (string)*
+*Parameter 2: pchNode (string)*
+Buy_PowerTreeNode <PowerTree> <Node>: Purchases the Node in the PowerTree
+
+
+h4.ChangeInstance (AccessLevel 0) [Notes|Command_ChangeInstance_GameServerLib]
+change to an already created instance of the same map. Only works while not in combat.
+
+
+h4.CheckoutFilesForMsgKeyFixup (AccessLevel 9) [Notes|Command_CheckoutFilesForMsgKeyFixup_GameServerLib]
+*Parameter 1: iMaxFixup (int)*
+No comment provided
+
+h4.CombatDeathPredictionDebug (AccessLevel 9) [Notes|Command_CombatDeathPredictionDebug_GameServerLib]
+*Parameter 1: bOn (int)*
+--------------------------------------------------------------------------------------------------------------------
+
+
+h4.CombatForceExit (AccessLevel 9) [Notes|Command_CombatForceExit_GameServerLib]
+Force the player to exit combat immediately
+
+
+h4.Combat_HitOutOfRange (AccessLevel 9) [Notes|Command_Combat_HitOutOfRange_GameServerLib]
+*Parameter 1: bActivate (bool)*
+Command to change the range check on the fly
+
+
+h4.mapname (AccessLevel 9) [Notes|Command_mapname_GameServerLib]
+*Parameter 1: publicName (string)*
+sets zonemap to load
+
+
+h4.smmds (AKA smmonitor) (AccessLevel 9) [Notes|Command_smmds_GameServerLib]
+Memory Monitor
+
+
+h4.scmdsp (AccessLevel 9) [Notes|Command_scmdsp_GameServerLib]
+*Parameter 1: string (string)*
+Print available commands containing <string>
+
+
+h4.ContainerRaider (AccessLevel 9) [Notes|Command_ContainerRaider_GameServerLib]
+*Parameter 1: div (int)*
+*Parameter 2: mod (int)*
+ContainerRaider acquires all player containers whose IDs modulo div are equal to mod.
+This command is used to pull a subset of all the player containers for testing.
+
+
+h4.ContinuousBuilderTestBurialCavesCritter (AccessLevel 9) [Notes|Command_ContinuousBuilderTestBurialCavesCritter_GameServerLib]
+No comment provided
+
+h4.ConvertEncounterDefs (AccessLevel 9) [Notes|Command_ConvertEncounterDefs_GameServerLib]
+No comment provided
+
+h4.ConvertEncounterLayers (AccessLevel 9) [Notes|Command_ConvertEncounterLayers_GameServerLib]
+No comment provided
+
+h4.ConvertEncounterLayers_LevelFromMapVar (AccessLevel 9) [Notes|Command_ConvertEncounterLayers_LevelFromMapVar_GameServerLib]
+*Parameter 1: pchMapVar (string)*
+No comment provided
+
+h4.ConvertEncounterLayers_LevelFromPlayerLevel (AccessLevel 9) [Notes|Command_ConvertEncounterLayers_LevelFromPlayerLevel_GameServerLib]
+No comment provided
+
+h4.ConvertLayersTest (AccessLevel 9) [Notes|Command_ConvertLayersTest_GameServerLib]
+No comment provided
+
+h4.ConvertPatrolRoutes (AccessLevel 9) [Notes|Command_ConvertPatrolRoutes_GameServerLib]
+No comment provided
+
+h4.CopyAllObjectLocations (AccessLevel 9) [Notes|Command_CopyAllObjectLocations_GameServerLib]
+*Parameter 1: objName (string)*
+No comment provided
+
+h4.CostumeConvertMirror (AccessLevel 9) [Notes|Command_CostumeConvertMirror_GameServerLib]
+No comment provided
+
+h4.Costumesets_CreateAllF2P (AccessLevel 9) [Notes|Command_Costumesets_CreateAllF2P_GameServerLib]
+*Parameter 1: pchOutputDir (string)*
+No comment provided
+
+h4.CountEntitiesOfNamedType (AccessLevel 9) [Notes|Command_CountEntitiesOfNamedType_GameServerLib]
+*Parameter 1: pName (string)*
+No comment provided
+
+h4.CreateInteriorFiles (AccessLevel 9) [Notes|Command_CreateInteriorFiles_GameServerLib]
+Makes the interior definition files from the maps directory
+
+
+h4.CreateMapVariableDbg (AccessLevel 9) [Notes|Command_CreateMapVariableDbg_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pchValue (string)*
+testing function only. don't use!
+
+
+h4.CreateMapVariableDbgEx (AccessLevel 9) [Notes|Command_CreateMapVariableDbgEx_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pcType (string)*
+*Parameter 3: pchValue (string)*
+testing function only. don't use!
+
+
+h4.CreatePet (AccessLevel 9) [Notes|Command_CreatePet_GameServerLib]
+No comment provided
+
+h4.DebugCheckContainerLocOnObjectDB (AccessLevel 9) [Notes|Command_DebugCheckContainerLocOnObjectDB_GameServerLib]
+*Parameter 1: pTypeName (string)*
+*Parameter 2: iID (int)*
+No comment provided
+
+h4.DebugRenamePlayer (AccessLevel 9) [Notes|Command_DebugRenamePlayer_GameServerLib]
+*Parameter 1: id (int)*
+*Parameter 2: newName (string)*
+Just for debugging, replace with proper CSR command
+
+
+h4.DeleteNPCEMail (AccessLevel 9) [Notes|Command_DeleteNPCEMail_GameServerLib]
+No comment provided
+
+h4.DestroyPet (AccessLevel 9) [Notes|Command_DestroyPet_GameServerLib]
+No comment provided
+
+h4.DismissAllPets (AccessLevel 9) [Notes|Command_DismissAllPets_GameServerLib]
+No comment provided
+
+h4.DismissPet (AccessLevel 9) [Notes|Command_DismissPet_GameServerLib]
+No comment provided
+
+h4.Drain_HP_POW (AccessLevel 9) [Notes|Command_Drain_HP_POW_GameServerLib]
+No comment provided
+
+h4.EnablePatrolValidation (AccessLevel 9) [Notes|Command_EnablePatrolValidation_GameServerLib]
+*Parameter 1: enable (bool)*
+No comment provided
+
+h4.EntSave (AccessLevel 9) [Notes|Command_EntSave_GameServerLib]
+Saves your entity to disk
+
+
+h4.EventClockGet (AKA ShardClockGet) (AccessLevel 7) [Notes|Command_EventClockGet_GameServerLib]
+Print out the current event/shard clock time
+
+
+h4.EventClockSet (AKA ShardClockSet) (AccessLevel 7) [Notes|Command_EventClockSet_GameServerLib]
+*Parameter 1: clockTime (string)*
+Set the event/shard clock to the given time. Format is ZZZYYYY-MM-DD HH:MM:SS where ZZZ is the time format: either UTC or PAC
+
+
+h4.EventClockUnset (AKA ShardClockUnset) (AccessLevel 7) [Notes|Command_EventClockUnset_GameServerLib]
+Restore the event/shard clock to normal current time
+
+
+h4.ExpLove (AccessLevel 9) [Notes|Command_ExpLove_GameServerLib]
+*Parameter 1: iValue (int)*
+ExpLove <iExpvalue>: Gives everyone exp using horribly inefficient auto_transactions on the GameServer
+
+
+h4.ExpLove2 (AccessLevel 9) [Notes|Command_ExpLove2_GameServerLib]
+*Parameter 1: iValue (int)*
+ExpLove <iExpvalue>: Gives everyone exp using stupid transactions on the ObjectDB
+
+
+h4.ExpLove3 (AccessLevel 9) [Notes|Command_ExpLove3_GameServerLib]
+*Parameter 1: iValue (int)*
+ExpLove <iExpvalue>: Gives XP to all player characters on this gameserver (logged in or not).
+
+
+h4.ExportEntityPlayer (AccessLevel 9) [Notes|Command_ExportEntityPlayer_GameServerLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.ExportSCmds (AccessLevel 9) [Notes|Command_ExportSCmds_GameServerLib]
+Export a list of all commands
+
+
+h4.ExportSCmdsAsCSV (AccessLevel 9) [Notes|Command_ExportSCmdsAsCSV_GameServerLib]
+*Parameter 1: bShowHidden (bool)*
+*Parameter 2: iMinAL (int)*
+*Parameter 3: iMaxAL (int)*
+No comment provided
+
+h4.FindDupMessageKeys (AccessLevel 9) [Notes|Command_FindDupMessageKeys_GameServerLib]
+This command looks at all messages and reports any duplicate keys
+it finds.
+
+
+h4.FixContactForceOnTeamDialogs (AccessLevel 9) [Notes|Command_FixContactForceOnTeamDialogs_GameServerLib]
+Adds Force on Team flag to all special dialog blocks which are not pointed to by another special dialog block
+
+
+h4.FixContactGreetingDialogs (AccessLevel 9) [Notes|Command_FixContactGreetingDialogs_GameServerLib]
+No comment provided
+
+h4.FixContactInfoDialogs (AccessLevel 9) [Notes|Command_FixContactInfoDialogs_GameServerLib]
+No comment provided
+
+h4.FixContactSpecialDialogComplete (AccessLevel 9) [Notes|Command_FixContactSpecialDialogComplete_GameServerLib]
+Clears bSendComplete flag on special dialogs with display name "Cancel" or "Not Now"
+
+
+h4.FixItemDropSystemRate (AccessLevel 9) [Notes|Command_FixItemDropSystemRate_GameServerLib]
+This function fixes up the dropsystem table so that tiers whose DropRateQuality
+entries' weights sum to less than 1 will have an additional dummy quality entry
+(using the 0-value "Base" quality) that fills out the sum to 1; this is necessitated
+by cmiller's change to the dropsystem that forced all weights to be treated strictly
+as weights, whereas before his change, the weight values were treated as percentage
+chances if they did not total to a value greater than 1.
+
+
+h4.FixLoreContacts (AccessLevel 9) [Notes|Command_FixLoreContacts_GameServerLib]
+No comment provided
+
+h4.FixMicroTransactionZenPricing (AccessLevel 9) [Notes|Command_FixMicroTransactionZenPricing_GameServerLib]
+*Parameter 1: bSimulateFixup (bool)*
+Fixup to multiply MicroTransactionDef prices by 1.25 for Zen conversion
+
+
+h4.FixMissionCategories (AccessLevel 9) [Notes|Command_FixMissionCategories_GameServerLib]
+No comment provided
+
+h4.FixMissionUncompleteFlag (AccessLevel 9) [Notes|Command_FixMissionUncompleteFlag_GameServerLib]
+This reports any Missions that have events in them, but can also uncomplete
+
+
+h4.FixStarClusterDoorKeyGameActions (AccessLevel 9) [Notes|Command_FixStarClusterDoorKeyGameActions_GameServerLib]
+*Parameter 1: bSimulateFixup (bool)*
+Fixup to change star cluster missions to use a door key game action instead of a reward table
+
+
+h4.FixStarClusterMaps_RemoveMissionNotInProgress (AccessLevel 9) [Notes|Command_FixStarClusterMaps_RemoveMissionNotInProgress_GameServerLib]
+No comment provided
+
+h4.FixStarClusterMissionCategories (AccessLevel 9) [Notes|Command_FixStarClusterMissionCategories_GameServerLib]
+Fixup to set the category on star cluster missions to Exploration
+
+
+h4.FixStarClusterMissions_CanRepeat (AccessLevel 9) [Notes|Command_FixStarClusterMissions_CanRepeat_GameServerLib]
+Fixup to set CanRepeat on star cluster missions
+
+
+h4.FixUnlinkedMissionItems (AccessLevel 9) [Notes|Command_FixUnlinkedMissionItems_GameServerLib]
+Link Mission Items to the appropriate MissionDef
+
+
+h4.FixupAlgoPetExclusiveCategories (AccessLevel 9) [Notes|Command_FixupAlgoPetExclusiveCategories_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.FixupAutoExecVolumes (AccessLevel 9) [Notes|Command_FixupAutoExecVolumes_GameServerLib]
+No comment provided
+
+h4.FixupBadPropPowers (AccessLevel 9) [Notes|Command_FixupBadPropPowers_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.FixupBeamdownOptActLayers (AccessLevel 9) [Notes|Command_FixupBeamdownOptActLayers_GameServerLib]
+No comment provided
+
+h4.FixupContactMissionOffers (AccessLevel 9) [Notes|Command_FixupContactMissionOffers_GameServerLib]
+*Parameter 1: bModify (bool)*
+*Parameter 2: pchMissionListFilePath (string)*
+Move ContactMissionOffers from contacts to missions 
+
+
+h4.FixupCrittersDeprecatedAIFields (AccessLevel 9) [Notes|Command_FixupCrittersDeprecatedAIFields_GameServerLib]
+*Parameter 1: limit (int)*
+*Parameter 2: bDoCheckout (bool)*
+*Parameter 3: bModify (bool)*
+No comment provided
+
+h4.FixupCurrentOffAngles (AccessLevel 9) [Notes|Command_FixupCurrentOffAngles_GameServerLib]
+This command will look at all rotations and will lock them into the closest multiple of 45 degrees if it is off by less then a degree
+
+
+h4.FixupCutscenesToDefaultUntargetable (AccessLevel 9) [Notes|Command_FixupCutscenesToDefaultUntargetable_GameServerLib]
+*Parameter 1: bModify (bool)*
+*Parameter 2: bBatchCheckout (bool)*
+No comment provided
+
+h4.FixupEventCountSinceSpawn (AccessLevel 9) [Notes|Command_FixupEventCountSinceSpawn_GameServerLib]
+This changes EventCountSinceSpawn to EventCountSinceComplete on Encounter Spawn conditions
+
+
+h4.FixupEventVolumes (AccessLevel 9) [Notes|Command_FixupEventVolumes_GameServerLib]
+No comment provided
+
+h4.FixupFindDuplicateMessages (AccessLevel 9) [Notes|Command_FixupFindDuplicateMessages_GameServerLib]
+No comment provided
+
+h4.FixupHarvestNodes (AccessLevel 9) [Notes|Command_FixupHarvestNodes_GameServerLib]
+Fixup all namespaced genesis layers to enable all harvest nodes
+
+
+h4.FixupInteractableChairFX (AccessLevel 9) [Notes|Command_FixupInteractableChairFX_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.FixupItemAssignmentModifierTypes (AccessLevel 9) [Notes|Command_FixupItemAssignmentModifierTypes_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.FixupItemGenMessages (AccessLevel 9) [Notes|Command_FixupItemGenMessages_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.FixupMsgKeys (AccessLevel 9) [Notes|Command_FixupMsgKeys_GameServerLib]
+*Parameter 1: bDoSave (bool)*
+*Parameter 2: iMaxFixup (int)*
+No comment provided
+
+h4.FixupOffAngles (AccessLevel 9) [Notes|Command_FixupOffAngles_GameServerLib]
+*Parameter 1: filename (string)*
+This command will look at all rotations and will lock them into the closest multiple of 45 degrees if it is off by less then a degree
+
+
+h4.FixupOpenMissionOnSuccessContacts (AccessLevel 9) [Notes|Command_FixupOpenMissionOnSuccessContacts_GameServerLib]
+No comment provided
+
+h4.FixupPersistentCritterPowers (AccessLevel 9) [Notes|Command_FixupPersistentCritterPowers_GameServerLib]
+*Parameter 1: bModify (bool)*
+*Parameter 2: bBatchCheckout (bool)*
+Removes obsolete powers from critters (STO-specific)
+
+
+h4.FixupPersistentWeaponPowers (AccessLevel 9) [Notes|Command_FixupPersistentWeaponPowers_GameServerLib]
+*Parameter 1: bModify (bool)*
+*Parameter 2: bBatchCheckout (bool)*
+Removes obsolete item powers from items (STO-specific)
+
+
+h4.FixupPetStore (AccessLevel 9) [Notes|Command_FixupPetStore_GameServerLib]
+*Parameter 1: bCreateSubDirectories (bool)*
+No comment provided
+
+h4.FixupPowerTreeNodesToUseCostVars (AccessLevel 9) [Notes|Command_FixupPowerTreeNodesToUseCostVars_GameServerLib]
+*Parameter 1: iFindCost (int)*
+*Parameter 2: pchFindCostPool (string)*
+*Parameter 3: pchReplaceWithCostVar (string)*
+*Parameter 4: bModify (bool)*
+No comment provided
+
+h4.FixupPowersAECylinderRadiusToRange (AccessLevel 9) [Notes|Command_FixupPowersAECylinderRadiusToRange_GameServerLib]
+*Parameter 1: bModify (bool)*
+*Parameter 2: bBatchCheckout (bool)*
+*Parameter 3: fAdditionalRange (float)*
+takes all cylinder EffectArea powers and adds the radius of the power to the range. Optionally add an additional range.
+
+
+h4.FixupPowersDeprecatedAIFields (AccessLevel 9) [Notes|Command_FixupPowersDeprecatedAIFields_GameServerLib]
+*Parameter 1: limit (int)*
+*Parameter 2: bDoCheckout (bool)*
+*Parameter 3: bModify (bool)*
+No comment provided
+
+h4.FixupRegionLayers (AccessLevel 9) [Notes|Command_FixupRegionLayers_GameServerLib]
+No comment provided
+
+h4.FixupSTOContactInteractables (AccessLevel 9) [Notes|Command_FixupSTOContactInteractables_GameServerLib]
+*Parameter 1: bModify (bool)*
+STO Fixup to prevent specific clickables from interrupting powers
+
+
+h4.FixupStarClusterEncounterClamping (AccessLevel 9) [Notes|Command_FixupStarClusterEncounterClamping_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.FixupTranslatedMsgKeys (AccessLevel 9) [Notes|Command_FixupTranslatedMsgKeys_GameServerLib]
+*Parameter 1: bDoSave (bool)*
+No comment provided
+
+h4.Fixup_AllMissions_FindBadMessages (AccessLevel 9) [Notes|Command_Fixup_AllMissions_FindBadMessages_GameServerLib]
+Parses through all non-genesis missions, finds bad message keys
+
+
+h4.ForceLogout (AccessLevel 9) [Notes|Command_ForceLogout_GameServerLib]
+*Parameter 1: containerTypeName (string)*
+*Parameter 2: containerID (int)*
+No comment provided
+
+h4.ForceNoTimeout (AccessLevel 9) [Notes|Command_ForceNoTimeout_GameServerLib]
+*Parameter 1: on (int)*
+No comment provided
+
+h4.FullMoonOn (AccessLevel 4) [Notes|Command_FullMoonOn_GameServerLib]
+*Parameter 1: isOn (int)*
+for testing fullmoon
+
+
+h4.FutureSendNPCEMail (AccessLevel 4) [Notes|Command_FutureSendNPCEMail_GameServerLib]
+*Parameter 1: fromName (string)*
+*Parameter 2: subject (string)*
+*Parameter 3: body (string)*
+*Parameter 4: ItemDefName (string)*
+*Parameter 5: uFutureTimeSeconds (int)*
+No comment provided
+
+h4.GatewayServer (AccessLevel 9) [Notes|Command_GatewayServer_GameServerLib]
+*Parameter 1: iDummy (int)*
+No comment provided
+
+h4.GenericContainerRaider (AccessLevel 9) [Notes|Command_GenericContainerRaider_GameServerLib]
+*Parameter 1: pType (string)*
+*Parameter 2: div (int)*
+*Parameter 3: mod (int)*
+No comment provided
+
+h4.GetDumpCmd (AccessLevel 9) [Notes|Command_GetDumpCmd_GameServerLib]
+*Parameter 1: pServerType (string)*
+*Parameter 2: iID (int)*
+No comment provided
+
+h4.GiveExp (AccessLevel 5) [Notes|Command_GiveExp_GameServerLib]
+*Parameter 1: iValue (int)*
+GiveExp <iExpValue>: Gives the character the givin amout of exp, will automaticly level up
+
+
+h4.GiveNumeric (AccessLevel 5) [Notes|Command_GiveNumeric_GameServerLib]
+*Parameter 1: numericType (string)*
+*Parameter 2: iValue (int)*
+Generic command-line to give numeric rewards
+
+
+h4.GuildRaider (AccessLevel 9) [Notes|Command_GuildRaider_GameServerLib]
+*Parameter 1: iDiv (int)*
+*Parameter 2: iBatches (int)*
+*Parameter 3: iFirstBatch (int)*
+*Parameter 4: iGuildSize (int)*
+No comment provided
+
+h4.GuildRaiderDisband (AccessLevel 9) [Notes|Command_GuildRaiderDisband_GameServerLib]
+*Parameter 1: iDiv (int)*
+*Parameter 2: iBatches (int)*
+*Parameter 3: iFirstBatch (int)*
+No comment provided
+
+h4.GuildRaiderDoStuff (AccessLevel 9) [Notes|Command_GuildRaiderDoStuff_GameServerLib]
+*Parameter 1: iDiv (int)*
+*Parameter 2: iBatches (int)*
+*Parameter 3: iFirstBatch (int)*
+No comment provided
+
+h4.GuildRaiderUpdateMemberList (AccessLevel 9) [Notes|Command_GuildRaiderUpdateMemberList_GameServerLib]
+*Parameter 1: iMaxChanges (int)*
+No comment provided
+
+h4.Guild_Test_Log (AccessLevel 9) [Notes|Command_Guild_Test_Log_GameServerLib]
+*Parameter 1: pchNumeric (string)*
+*Parameter 2: iCount (int)*
+No comment provided
+
+h4.InitMapUnsafe (AccessLevel 9) [Notes|Command_InitMapUnsafe_GameServerLib]
+No comment provided
+
+h4.InteractableAddDefaultAnimations (AccessLevel 9) [Notes|Command_InteractableAddDefaultAnimations_GameServerLib]
+*Parameter 1: pchInteractionClass (string)*
+*Parameter 2: pchAnimListName (string)*
+No comment provided
+
+h4.InteractableVisible (AccessLevel 4) [Notes|Command_InteractableVisible_GameServerLib]
+*Parameter 1: val (int)*
+No comment provided
+
+h4.InteractionManager.Debug (AccessLevel 9) [Notes|Command_InteractionManager.Debug_GameServerLib]
+*Parameter 1: i (int)*
+No comment provided
+
+h4.ItemGen_DumpRewardCategoryListToFile (AccessLevel 9) [Notes|Command_ItemGen_DumpRewardCategoryListToFile_GameServerLib]
+*Parameter 1: pchFile (string)*
+No comment provided
+
+h4.ItemGen_GenerateMasterRarityTableByName (AccessLevel 9) [Notes|Command_ItemGen_GenerateMasterRarityTableByName_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.ItemGen_GenerateMasterRarityTables (AccessLevel 9) [Notes|Command_ItemGen_GenerateMasterRarityTables_GameServerLib]
+No comment provided
+
+h4.ItemGen_RemoveDefsFromGen (AccessLevel 9) [Notes|Command_ItemGen_RemoveDefsFromGen_GameServerLib]
+*Parameter 1: pchItemGenDef (string)*
+No comment provided
+
+h4.ItemGen_RunCompareMethodTest (AccessLevel 9) [Notes|Command_ItemGen_RunCompareMethodTest_GameServerLib]
+No comment provided
+
+h4.KillServerCmd (AccessLevel 9) [Notes|Command_KillServerCmd_GameServerLib]
+*Parameter 1: pServerType (string)*
+*Parameter 2: iID (int)*
+No comment provided
+
+h4.KillTarget (AccessLevel 7) [Notes|Command_KillTarget_GameServerLib]
+No comment provided
+
+h4.ListSuspiciousChampionsMissionRewards (AccessLevel 9) [Notes|Command_ListSuspiciousChampionsMissionRewards_GameServerLib]
+List missions with rewards that don't fit Champions's model.  These are less suspicious than
+the missions in ListSuspiciousMissionRewards, but may still help us catch some missions that
+would otherwise slip through the cracks
+
+
+h4.ListSuspiciousMissionClickableOverrides (AccessLevel 9) [Notes|Command_ListSuspiciousMissionClickableOverrides_GameServerLib]
+No comment provided
+
+h4.ListSuspiciousMissionRewards (AccessLevel 9) [Notes|Command_ListSuspiciousMissionRewards_GameServerLib]
+No comment provided
+
+h4.LockAllGameServers (AccessLevel 9) [Notes|Command_LockAllGameServers_GameServerLib]
+*Parameter 1: pMachineName (string)*
+*Parameter 2: iLock (int)*
+No comment provided
+
+h4.LockGameServer (AccessLevel 9) [Notes|Command_LockGameServer_GameServerLib]
+*Parameter 1: iID (int)*
+*Parameter 2: iLock (int)*
+No comment provided
+
+h4.LockMachine (AccessLevel 9) [Notes|Command_LockMachine_GameServerLib]
+*Parameter 1: pMachineName (string)*
+*Parameter 2: iLock (int)*
+No comment provided
+
+h4.LogMapTransferStateChanges (AccessLevel 9) [Notes|Command_LogMapTransferStateChanges_GameServerLib]
+*Parameter 1: iSet (int)*
+No comment provided
+
+h4.LongStringTest (AccessLevel 9) [Notes|Command_LongStringTest_GameServerLib]
+No comment provided
+
+h4.LoreClear (AccessLevel 9) [Notes|Command_LoreClear_GameServerLib]
+No comment provided
+
+h4.LoreGrantAll (AccessLevel 9) [Notes|Command_LoreGrantAll_GameServerLib]
+No comment provided
+
+h4.MapInfo (AccessLevel 9) [Notes|Command_MapInfo_GameServerLib]
+No comment provided
+
+h4.MapMoveContainerAndPartitionID (AccessLevel 9) [Notes|Command_MapMoveContainerAndPartitionID_GameServerLib]
+*Parameter 1: zoneName (string)*
+*Parameter 2: iContainerID (int)*
+*Parameter 3: iPartitionID (int)*
+No comment provided
+
+h4.MapMoveDebug (AccessLevel 7) [Notes|Command_MapMoveDebug_GameServerLib]
+*Parameter 1: zoneName (string)*
+*Parameter 2: vPos (xyz vector)*
+*Parameter 3: vRot (xyz vector)*
+*Parameter 4: mapVariables (string)*
+Request a transfer to a specific point
+
+
+h4.MapMoveIndex (AccessLevel 9) [Notes|Command_MapMoveIndex_GameServerLib]
+*Parameter 1: zoneName (string)*
+*Parameter 2: index (int)*
+No comment provided
+
+h4.MapValuePrintAll (AccessLevel 9) [Notes|Command_MapValuePrintAll_GameServerLib]
+A debug command to print the names and values of all existing map values (but not player map values)
+
+
+h4.ImportMicroTransactions (AccessLevel 9) [Notes|Command_ImportMicroTransactions_GameServerLib]
+*Parameter 1: pchFile (sentence)*
+No comment provided
+
+h4.MuteAlerts (AccessLevel 9) [Notes|Command_MuteAlerts_GameServerLib]
+*Parameter 1: pServerType (string)*
+*Parameter 2: iID (int)*
+No comment provided
+
+h4.NemesisInitPartition (AccessLevel 9) [Notes|Command_NemesisInitPartition_GameServerLib]
+
+
+
+h4.NemesisTestTeamLeader (AccessLevel 4) [Notes|Command_NemesisTestTeamLeader_GameServerLib]
+*Parameter 1: bAnyMember (int)*
+Test the temal leader feature for nemesis
+
+
+h4.ForceSubscribeAllPets (AccessLevel 9) [Notes|Command_ForceSubscribeAllPets_GameServerLib]
+No comment provided
+
+h4.ForceSubscribeAllPuppets (AccessLevel 9) [Notes|Command_ForceSubscribeAllPuppets_GameServerLib]
+No comment provided
+
+h4.PetStay (AccessLevel 9) [Notes|Command_PetStay_GameServerLib]
+No comment provided
+
+h4.PlayerAnimListClear (AccessLevel 9) [Notes|Command_PlayerAnimListClear_GameServerLib]
+No comment provided
+
+h4.PlayerAnimListSet (AccessLevel 9) [Notes|Command_PlayerAnimListSet_GameServerLib]
+*Parameter 1: animList (string)*
+No comment provided
+
+h4.PlayerCreateTestNemesis (AccessLevel 9) [Notes|Command_PlayerCreateTestNemesis_GameServerLib]
+*Parameter 1: pchNemesisName (string)*
+Quick way to create a nemesis for testing.  Picks random options.
+
+
+h4.PlayerMapValuePrintAll (AccessLevel 9) [Notes|Command_PlayerMapValuePrintAll_GameServerLib]
+A debug command to print the names and values of all player map values for the current player
+
+
+h4.Player.ResetFaction (AccessLevel 7) [Notes|Command_Player.ResetFaction_GameServerLib]
+No comment provided
+
+h4.PlayerRespecAsArchetype (AccessLevel 9) [Notes|Command_PlayerRespecAsArchetype_GameServerLib]
+*Parameter 1: pchArchetype (string)*
+No comment provided
+
+h4.Player.SetFactionHack (AccessLevel 7) [Notes|Command_Player.SetFactionHack_GameServerLib]
+*Parameter 1: pchFaction (string)*
+Hack to set your player kind temporarily
+TODO(JW): Hack: Remove this and do real PvP targeting
+Disabled; doesn't drop player from current team correctly
+
+
+h4.PlayerSetPlayerType (AccessLevel 7) [Notes|Command_PlayerSetPlayerType_GameServerLib]
+*Parameter 1: iPlayerType (int)*
+change the player type of the entity
+
+
+h4.PlayerSetPrimaryNemesis (AccessLevel 9) [Notes|Command_PlayerSetPrimaryNemesis_GameServerLib]
+*Parameter 1: pchNemesisName (string)*
+Command for testing; changes the primary nemesis
+
+
+h4.PowerTrees_DisablePurchaseRules (AccessLevel 9) [Notes|Command_PowerTrees_DisablePurchaseRules_GameServerLib]
+*Parameter 1: bDisable (int)*
+Disables most rules for purchasing Powers in PowerTrees
+
+
+h4.PowersCancelAllActivations (AccessLevel 0) [Notes|Command_PowersCancelAllActivations_GameServerLib]
+Manual attempt to cancel all current activations
+
+
+h4.PowersDebugAEEnt (AccessLevel 7) [Notes|Command_PowersDebugAEEnt_GameServerLib]
+*Parameter 1: target (string)*
+------------------------------------------------------------------------------------------------
+
+
+h4.PowersDebugToggleFlags (AccessLevel 7) [Notes|Command_PowersDebugToggleFlags_GameServerLib]
+*Parameter 1: flagname (string)*
+No comment provided
+
+h4.PowersIgnoreSlotting (AccessLevel 9) [Notes|Command_PowersIgnoreSlotting_GameServerLib]
+*Parameter 1: ignore (int)*
+No comment provided
+
+h4.PowersTrackFlashedFX (AccessLevel 9) [Notes|Command_PowersTrackFlashedFX_GameServerLib]
+*Parameter 1: i (int)*
+No comment provided
+
+h4.PrintDependencies (AccessLevel 9) [Notes|Command_PrintDependencies_GameServerLib]
+*Parameter 1: pDictionaryName (string)*
+*Parameter 2: pReferentName (string)*
+No comment provided
+
+h4.PrintMapInfo (AccessLevel 9) [Notes|Command_PrintMapInfo_GameServerLib]
+Prints information about the current map
+
+
+h4.Queue_TestTimer (AccessLevel 9) [Notes|Command_Queue_TestTimer_GameServerLib]
+*Parameter 1: time (int)*
+No comment provided
+
+h4.Refill_HP_POW (AccessLevel 5) [Notes|Command_Refill_HP_POW_GameServerLib]
+Refill character hp/end to max
+
+
+h4.RenamePet (AccessLevel 0) [Notes|Command_RenamePet_GameServerLib]
+*Parameter 1: pcOldName (string)*
+*Parameter 2: pcNewName (string)*
+No comment provided
+
+h4.RenamePetFormal (AccessLevel 0) [Notes|Command_RenamePetFormal_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pcNewFormalName (string)*
+No comment provided
+
+h4.ReplaceStringsInMessages (AccessLevel 9) [Notes|Command_ReplaceStringsInMessages_GameServerLib]
+*Parameter 1: bModify (bool)*
+No comment provided
+
+h4.ReportCostumeAssets (AccessLevel 9) [Notes|Command_ReportCostumeAssets_GameServerLib]
+No comment provided
+
+h4.ReportCostumeFlags (AccessLevel 9) [Notes|Command_ReportCostumeFlags_GameServerLib]
+No comment provided
+
+h4.ReportDumpMissionText (AccessLevel 9) [Notes|Command_ReportDumpMissionText_GameServerLib]
+*Parameter 1: nameFilter (string)*
+*Parameter 2: scopeFilter (string)*
+No comment provided
+
+h4.ReportDumpMissionTextFiltered (AccessLevel 9) [Notes|Command_ReportDumpMissionTextFiltered_GameServerLib]
+*Parameter 1: nameFilter (string)*
+*Parameter 2: scopeFilter (string)*
+This dumps all message text from missions and their contacts to a file so that
+our writer can view all of a mission's text together
+
+
+h4.ReportExternalLayers (AccessLevel 9) [Notes|Command_ReportExternalLayers_GameServerLib]
+No comment provided
+
+h4.ReportExternalLayersWithExcludes (AccessLevel 9) [Notes|Command_ReportExternalLayersWithExcludes_GameServerLib]
+*Parameter 1: exclude_list (string)*
+No comment provided
+
+h4.ReportFailableMissions (AccessLevel 9) [Notes|Command_ReportFailableMissions_GameServerLib]
+No comment provided
+
+h4.ReportMapDisplayNames (AccessLevel 9) [Notes|Command_ReportMapDisplayNames_GameServerLib]
+No comment provided
+
+h4.ReportMapMoveDoorExpressions (AccessLevel 9) [Notes|Command_ReportMapMoveDoorExpressions_GameServerLib]
+Prints out the interact requirement for every door in the game
+
+
+h4.ReportMessages (AccessLevel 9) [Notes|Command_ReportMessages_GameServerLib]
+No comment provided
+
+h4.ReportMismatchedActorRanks (AccessLevel 9) [Notes|Command_ReportMismatchedActorRanks_GameServerLib]
+Find encounters that have actors of different ranks (weak/tough).
+
+
+h4.ReportMissingBaseActors (AccessLevel 9) [Notes|Command_ReportMissingBaseActors_GameServerLib]
+Find actors that are overridden in a static encounter but don't have corresponding actors in the base def.
+
+
+h4.ReportMissionDependencies (AccessLevel 9) [Notes|Command_ReportMissionDependencies_GameServerLib]
+No comment provided
+
+h4.ReportMissionItemsByType (AccessLevel 9) [Notes|Command_ReportMissionItemsByType_GameServerLib]
+No comment provided
+
+h4.ReportMissionsPerLevel (AccessLevel 9) [Notes|Command_ReportMissionsPerLevel_GameServerLib]
+This dumps all message text from missions and their contacts to a file so that
+our writer can view all of a mission's text together
+
+
+h4.ReportNonUGCCostumeParts (AccessLevel 9) [Notes|Command_ReportNonUGCCostumeParts_GameServerLib]
+No comment provided
+
+h4.ReportPerkDiscoverableMissions (AccessLevel 7) [Notes|Command_ReportPerkDiscoverableMissions_GameServerLib]
+No comment provided
+
+h4.ReportShareableMissions (AccessLevel 9) [Notes|Command_ReportShareableMissions_GameServerLib]
+*Parameter 1: iPrintAllNames (int)*
+This dumps a report of how many missions are shareable, and why other missions aren't shareable
+
+
+h4.ReportSuspectedMissionItems (AccessLevel 9) [Notes|Command_ReportSuspectedMissionItems_GameServerLib]
+No comment provided
+
+h4.ReportSuspiciousActorLocs (AccessLevel 9) [Notes|Command_ReportSuspiciousActorLocs_GameServerLib]
+Report actors that are far from their encounters
+
+
+h4.ReportSuspiciousMessages (AccessLevel 9) [Notes|Command_ReportSuspiciousMessages_GameServerLib]
+----------------------------------------------------------------------------
+Message reports
+----------------------------------------------------------------------------
+
+
+h4.ReportSuspiciousMissionEvents (AccessLevel 9) [Notes|Command_ReportSuspiciousMissionEvents_GameServerLib]
+No comment provided
+
+h4.ReportSystemAssets (AccessLevel 9) [Notes|Command_ReportSystemAssets_GameServerLib]
+No comment provided
+
+h4.ReportUncategorizedMissions (AccessLevel 9) [Notes|Command_ReportUncategorizedMissions_GameServerLib]
+This reports any Missions that don't have a Category attached
+
+
+h4.RequestDebugMenu (AccessLevel 9) [Notes|Command_RequestDebugMenu_GameServerLib]
+No comment provided
+
+h4.RequestExprFuncsForServerMonitoring (AccessLevel 9) [Notes|Command_RequestExprFuncsForServerMonitoring_GameServerLib]
+No comment provided
+
+h4.ResDBTest (AccessLevel 9) [Notes|Command_ResDBTest_GameServerLib]
+No comment provided
+
+h4.ResetSpentPointsInTree (AccessLevel 9) [Notes|Command_ResetSpentPointsInTree_GameServerLib]
+*Parameter 1: pchPowerTreeName (string)*
+No comment provided
+
+h4.ResetSpentPointsInTrees (AccessLevel 9) [Notes|Command_ResetSpentPointsInTrees_GameServerLib]
+No comment provided
+
+h4.RewardResetGatedType (AccessLevel 4) [Notes|Command_RewardResetGatedType_GameServerLib]
+*Parameter 1: gateType (string)*
+Reset this gate type to zero, clear time
+
+
+h4.RewardResetGatedTypeAll (AccessLevel 4) [Notes|Command_RewardResetGatedTypeAll_GameServerLib]
+Reset all reward gated types to zero (destroy them)
+
+
+h4.RewardTableOdds (AccessLevel 9) [Notes|Command_RewardTableOdds_GameServerLib]
+*Parameter 1: pchPath (string)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: bUseEnt (bool)*
+Set gated type (by ID) to this value
+
+
+h4.RewardSetGatedType (AccessLevel 4) [Notes|Command_RewardSetGatedType_GameServerLib]
+*Parameter 1: gatedType (int)*
+*Parameter 2: uCount (int)*
+Set gated type (by ID) to this value
+
+
+h4.Ride (AccessLevel 9) [Notes|Command_Ride_GameServerLib]
+No comment provided
+
+h4.SavedPet_RegroupPets (AccessLevel 9) [Notes|Command_SavedPet_RegroupPets_GameServerLib]
+No comment provided
+
+h4.ScanEncLayers (AccessLevel 9) [Notes|Command_ScanEncLayers_GameServerLib]
+No comment provided
+
+h4.SendNPCEMail (AccessLevel 4) [Notes|Command_SendNPCEMail_GameServerLib]
+*Parameter 1: fromName (string)*
+*Parameter 2: subject (string)*
+*Parameter 3: body (string)*
+*Parameter 4: ItemDefName (string)*
+No comment provided
+
+h4.ServerBinner (AccessLevel 9) [Notes|Command_ServerBinner_GameServerLib]
+*Parameter 1: iDummy (int)*
+No comment provided
+
+h4.ServerPrivate (AccessLevel 9) [Notes|Command_ServerPrivate_GameServerLib]
+*Parameter 1: cmd (sentence)*
+Send a private command to the server
+
+
+h4.ServerPublic (AKA ServerCmd) (AccessLevel 9) [Notes|Command_ServerPublic_GameServerLib]
+*Parameter 1: cmd (sentence)*
+Send a public command to the server, needed for commands in libraries
+
+
+h4.SpeciesSet (AccessLevel 9) [Notes|Command_SpeciesSet_GameServerLib]
+*Parameter 1: pchSpecies (string)*
+Sets your Species
+
+
+h4.StartActivity (AccessLevel 7) [Notes|Command_StartActivity_GameServerLib]
+*Parameter 1: pchActivity (string)*
+No comment provided
+
+h4.StartActivity_Local (AccessLevel 9) [Notes|Command_StartActivity_Local_GameServerLib]
+*Parameter 1: pchActivity (string)*
+No comment provided
+
+h4.StartCalendarEvent (AccessLevel 7) [Notes|Command_StartCalendarEvent_GameServerLib]
+*Parameter 1: pchEvent (string)*
+No comment provided
+
+h4.StopActivity (AccessLevel 7) [Notes|Command_StopActivity_GameServerLib]
+*Parameter 1: pchActivity (string)*
+No comment provided
+
+h4.StopActivity_Local (AccessLevel 9) [Notes|Command_StopActivity_Local_GameServerLib]
+*Parameter 1: pchActivity (string)*
+No comment provided
+
+h4.StopCalendarEvent (AccessLevel 7) [Notes|Command_StopCalendarEvent_GameServerLib]
+*Parameter 1: pchEvent (string)*
+No comment provided
+
+h4.SummonAllPets (AccessLevel 9) [Notes|Command_SummonAllPets_GameServerLib]
+No comment provided
+
+h4.SummonPrimaryPet (AccessLevel 9) [Notes|Command_SummonPrimaryPet_GameServerLib]
+No comment provided
+
+h4.TeamRaider (AccessLevel 9) [Notes|Command_TeamRaider_GameServerLib]
+No comment provided
+
+h4.TeamRaiderStop (AccessLevel 9) [Notes|Command_TeamRaiderStop_GameServerLib]
+No comment provided
+
+h4.ugc_TempBanProject (AccessLevel 4) [Notes|Command_ugc_TempBanProject_GameServerLib]
+*Parameter 1: bBan (bool)*
+No comment provided
+
+h4.ugc_TempBanProjectByID (AccessLevel 4) [Notes|Command_ugc_TempBanProjectByID_GameServerLib]
+*Parameter 1: pIDString (string)*
+*Parameter 2: bBan (bool)*
+No comment provided
+
+h4.TestCritter (AKA Spawn, SpawnCritter) (AccessLevel 9) [Notes|Command_TestCritter_GameServerLib]
+*Parameter 1: testStr (string)*
+Spawn a test critter
+
+
+h4.TestCritterFSM (AccessLevel 9) [Notes|Command_TestCritterFSM_GameServerLib]
+*Parameter 1: critter (string)*
+*Parameter 2: fsm (string)*
+No comment provided
+
+h4.TestCritterGrid (AccessLevel 9) [Notes|Command_TestCritterGrid_GameServerLib]
+*Parameter 1: testStr (string)*
+*Parameter 2: iSide (int)*
+*Parameter 3: fDistBetween (float)*
+No comment provided
+
+h4.TestCritterLevel (AccessLevel 7) [Notes|Command_TestCritterLevel_GameServerLib]
+*Parameter 1: level (int)*
+*Parameter 2: testStr (string)*
+No comment provided
+
+h4.TestCritterPos (AccessLevel 9) [Notes|Command_TestCritterPos_GameServerLib]
+*Parameter 1: testStr (string)*
+*Parameter 2: pos (xyz vector)*
+No comment provided
+
+h4.CritterSearch (AKA TestCritterSearch) (AccessLevel 9) [Notes|Command_CritterSearch_GameServerLib]
+*Parameter 1: substring (sentence)*
+No comment provided
+
+h4.TestFullContainerLock (AccessLevel 9) [Notes|Command_TestFullContainerLock_GameServerLib]
+No comment provided
+
+h4.TestSpawnIn (AccessLevel 9) [Notes|Command_TestSpawnIn_GameServerLib]
+No comment provided
+
+h4.TestTransactionPerf (AccessLevel 9) [Notes|Command_TestTransactionPerf_GameServerLib]
+No comment provided
+
+h4.Test_AddRewardModifier (AccessLevel 9) [Notes|Command_Test_AddRewardModifier_GameServerLib]
+*Parameter 1: pKey (string)*
+No comment provided
+
+h4.Test_RemoveRewardModifier (AccessLevel 9) [Notes|Command_Test_RemoveRewardModifier_GameServerLib]
+*Parameter 1: pKey (string)*
+No comment provided
+
+h4.Test_SetRespectConversions (AccessLevel 9) [Notes|Command_Test_SetRespectConversions_GameServerLib]
+*Parameter 1: iEntID (int)*
+*Parameter 2: iVal (int)*
+No comment provided
+
+h4.TimerRecordStartAutoRemotely (AccessLevel 9) [Notes|Command_TimerRecordStartAutoRemotely_GameServerLib]
+*Parameter 1: iContainerID (int)*
+No comment provided
+
+h4.ToggleGoldenPath (AccessLevel 0) [Notes|Command_ToggleGoldenPath_GameServerLib]
+No comment provided
+
+h4.UGCPublishAndQuitNotifyEntity (AccessLevel 9) [Notes|Command_UGCPublishAndQuitNotifyEntity_GameServerLib]
+*Parameter 1: shardName (string)*
+*Parameter 2: ent (int)*
+No comment provided
+
+h4.UnMuteAlerts (AccessLevel 9) [Notes|Command_UnMuteAlerts_GameServerLib]
+*Parameter 1: pServerType (string)*
+*Parameter 2: iID (int)*
+No comment provided
+
+h4.UpdateAllMessageKeys (AccessLevel 9) [Notes|Command_UpdateAllMessageKeys_GameServerLib]
+Update all message keys across all layers
+
+
+h4.UpdateLayerMessageKeys (AccessLevel 9) [Notes|Command_UpdateLayerMessageKeys_GameServerLib]
+*Parameter 1: layerFName (string)*
+Update all the message keys in a specific layer
+
+
+h4.VolumeFixupMissionGrants (AccessLevel 9) [Notes|Command_VolumeFixupMissionGrants_GameServerLib]
+No comment provided
+
+h4.WebRequestServer (AccessLevel 9) [Notes|Command_WebRequestServer_GameServerLib]
+*Parameter 1: iDummy (int)*
+dummy... the actual parsing happens in GameServerMain.c because it has to be super-first
+
+
+h4.ZoneMapReportIndoorLightingOnSpaceMaps (AccessLevel 9) [Notes|Command_ZoneMapReportIndoorLightingOnSpaceMaps_GameServerLib]
+No comment provided
+
+h4.bcnLogBeacons (AccessLevel 9) [Notes|Command_bcnLogBeacons_GameServerLib]
+No comment provided
+
+h4.bcnRebuild (AccessLevel 9) [Notes|Command_bcnRebuild_GameServerLib]
+No comment provided
+
+h4.bcnRebuildEnable (AccessLevel 9) [Notes|Command_bcnRebuildEnable_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.beaconDebugResetPathSend (AccessLevel 9) [Notes|Command_beaconDebugResetPathSend_GameServerLib]
+No comment provided
+
+h4.beaconDebugSetEndPoint (AccessLevel 9) [Notes|Command_beaconDebugSetEndPoint_GameServerLib]
+*Parameter 1: pos (xyz vector)*
+No comment provided
+
+h4.beaconDebugSetPathEntHeight (AccessLevel 9) [Notes|Command_beaconDebugSetPathEntHeight_GameServerLib]
+*Parameter 1: height (float)*
+No comment provided
+
+h4.beaconDebugSetPathJumpHeight (AccessLevel 9) [Notes|Command_beaconDebugSetPathJumpHeight_GameServerLib]
+*Parameter 1: height (float)*
+No comment provided
+
+h4.beaconDebugSetStartPoint (AccessLevel 9) [Notes|Command_beaconDebugSetStartPoint_GameServerLib]
+*Parameter 1: pos (xyz vector)*
+No comment provided
+
+h4.bcnCheckFile (AccessLevel 9) [Notes|Command_bcnCheckFile_GameServerLib]
+No comment provided
+
+h4.beaconIsCurrentMapUptoDateRemote (AccessLevel 9) [Notes|Command_beaconIsCurrentMapUptoDateRemote_GameServerLib]
+No comment provided
+
+h4.bmr (AccessLevel 9) [Notes|Command_bmr_GameServerLib]
+No comment provided
+
+h4.bmse (AccessLevel 9) [Notes|Command_bmse_GameServerLib]
+No comment provided
+
+h4.bmss (AccessLevel 9) [Notes|Command_bmss_GameServerLib]
+No comment provided
+
+h4.beaconSetBeaconSpeed (AccessLevel 9) [Notes|Command_beaconSetBeaconSpeed_GameServerLib]
+*Parameter 1: KBpf (float)*
+No comment provided
+
+h4.beaconSetRebuildFlag (AccessLevel 9) [Notes|Command_beaconSetRebuildFlag_GameServerLib]
+No comment provided
+
+h4.beaconWriteDetailedCRC (AccessLevel 9) [Notes|Command_beaconWriteDetailedCRC_GameServerLib]
+No comment provided
+
+h4.calculateDependenciesAndExit (AccessLevel 9) [Notes|Command_calculateDependenciesAndExit_GameServerLib]
+*Parameter 1: filename (string)*
+Calculate dependencies and exit
+
+
+h4.character_ModifyStatPoints (AccessLevel 9) [Notes|Command_character_ModifyStatPoints_GameServerLib]
+*Parameter 1: pchAttrib (string)*
+*Parameter 2: iPoints (int)*
+No comment provided
+
+h4.character_ModifyStatPointsEx (AccessLevel 9) [Notes|Command_character_ModifyStatPointsEx_GameServerLib]
+*Parameter 1: pchStatPointPoolName (string)*
+*Parameter 2: pchAttrib (string)*
+*Parameter 3: iPoints (int)*
+No comment provided
+
+h4.choice_ChooseValueForEditor (AccessLevel 9) [Notes|Command_choice_ChooseValueForEditor_GameServerLib]
+*Parameter 1: table (ChoiceTable struct)*
+*Parameter 2: name (string)*
+*Parameter 3: seed (int)*
+Server Command to request a roll of a choice table
+
+
+h4.IAmAnArtist (AKA Artist, ArtistMode) (AccessLevel 9) [Notes|Command_IAmAnArtist_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.CreateSyntheticLogData (AccessLevel 9) [Notes|Command_CreateSyntheticLogData_GameServerLib]
+No comment provided
+
+h4.CreateSyntheticLogDataUsingGameServers (AccessLevel 9) [Notes|Command_CreateSyntheticLogDataUsingGameServers_GameServerLib]
+No comment provided
+
+h4.CreateSyntheticLogDataWithFolderID (AccessLevel 9) [Notes|Command_CreateSyntheticLogDataWithFolderID_GameServerLib]
+*Parameter 1: iFolderID (int)*
+No comment provided
+
+h4.SetGameBranch (AccessLevel 9) [Notes|Command_SetGameBranch_GameServerLib]
+*Parameter 1: pchBranch (string)*
+No comment provided
+
+h4.FindMessageUsages (AccessLevel 9) [Notes|Command_FindMessageUsages_GameServerLib]
+*Parameter 1: pchPrefix (string)*
+No comment provided
+
+h4.pm_PrintCurrentRegion (AccessLevel 9) [Notes|Command_pm_PrintCurrentRegion_GameServerLib]
+No comment provided
+
+h4.pm_PrintCurrentPuppet (AccessLevel 9) [Notes|Command_pm_PrintCurrentPuppet_GameServerLib]
+No comment provided
+
+h4.pm_PrintOwnedPets (AccessLevel 9) [Notes|Command_pm_PrintOwnedPets_GameServerLib]
+No comment provided
+
+h4.pm_PrintOwnedPuppets (AccessLevel 9) [Notes|Command_pm_PrintOwnedPuppets_GameServerLib]
+No comment provided
+
+h4.ReloadSyntheticLogData (AccessLevel 9) [Notes|Command_ReloadSyntheticLogData_GameServerLib]
+No comment provided
+
+h4.ReplaySyntheticLogData (AccessLevel 9) [Notes|Command_ReplaySyntheticLogData_GameServerLib]
+No comment provided
+
+h4.ReplaySyntheticLogDataUsingGameServers (AccessLevel 9) [Notes|Command_ReplaySyntheticLogDataUsingGameServers_GameServerLib]
+No comment provided
+
+h4.ReplaySyntheticLogDataWithFolderID (AccessLevel 9) [Notes|Command_ReplaySyntheticLogDataWithFolderID_GameServerLib]
+*Parameter 1: iFolderID (int)*
+No comment provided
+
+h4.ResetFirstEnterVolumeData (AccessLevel 7) [Notes|Command_ResetFirstEnterVolumeData_GameServerLib]
+No comment provided
+
+h4.sendPacketVerifyData (AccessLevel 9) [Notes|Command_sendPacketVerifyData_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.channel_decline_invite (AccessLevel 0) [Notes|Command_channel_decline_invite_GameServerLib]
+*Parameter 1: channel_name (string)*
+No comment provided
+
+h4.chandemote (AccessLevel 0) [Notes|Command_chandemote_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: targetHandle (string)*
+Demote a user in a channel (operator only)
+
+
+h4.channel_destroy (AccessLevel 0) [Notes|Command_channel_destroy_GameServerLib]
+*Parameter 1: channel_name (string)*
+Unmute a user in a channel (operator only).
+
+
+h4.cinvite (AKA chaninvite, channel_invite) (AccessLevel 0) [Notes|Command_cinvite_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: chatHandle (string)*
+Invite a user to join the channel (operator and above only)
+
+
+h4.channel_kick (AccessLevel 0) [Notes|Command_channel_kick_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: chatHandle (sentence)*
+Kick a user from a channel (operator only).
+
+
+h4.clevel (AccessLevel 0) [Notes|Command_clevel_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: eLevel (enum)*
+*Parameter 3: uPermissions (int)*
+Set the channel's permission levels
+
+
+h4.mute (AccessLevel 0) [Notes|Command_mute_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: chatHandle (sentence)*
+Mute a user in a channel (operator only).
+
+
+h4.chanpromote (AccessLevel 0) [Notes|Command_chanpromote_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: targetHandle (string)*
+Promote a user in a channel (operator only)
+
+
+h4.caccess (AKA chanaccess, channel_access) (AccessLevel 0) [Notes|Command_caccess_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: accessString (string)*
+Set the channel's access level (operator only)
+
+
+h4.ChatFriendsOnly (AKA FriendsOnly) (AccessLevel 0) [Notes|Command_ChatFriendsOnly_GameServerLib]
+No comment provided
+
+h4.ChatHidden (AKA anon, hide) (AccessLevel 0) [Notes|Command_ChatHidden_GameServerLib]
+Toggle anonymous status
+
+
+h4.LFGDifficulty_Mode (AccessLevel 0) [Notes|Command_LFGDifficulty_Mode_GameServerLib]
+*Parameter 1: pcMode (string)*
+No comment provided
+
+h4.LFG_Mode (AccessLevel 0) [Notes|Command_LFG_Mode_GameServerLib]
+*Parameter 1: pcMode (string)*
+No comment provided
+
+h4.ChatVisible (AKA unanon, unhide) (AccessLevel 0) [Notes|Command_ChatVisible_GameServerLib]
+No comment provided
+
+h4.lfg (AKA lft) (AccessLevel 0) [Notes|Command_lfg_GameServerLib]
+Toggle Looking For Group status
+
+
+h4.channel_uninvite (AccessLevel 0) [Notes|Command_channel_uninvite_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: chatHandle (string)*
+No comment provided
+
+h4.unmute (AccessLevel 0) [Notes|Command_unmute_GameServerLib]
+*Parameter 1: channel_name (string)*
+*Parameter 2: chatHandle (sentence)*
+Unmute a user in a channel (operator only).
+
+
+h4.social_allow_superuser (AccessLevel 9) [Notes|Command_social_allow_superuser_GameServerLib]
+*Parameter 1: allow (int)*
+No comment provided
+
+h4.combatDebugEntServer (AccessLevel 7) [Notes|Command_combatDebugEntServer_GameServerLib]
+*Parameter 1: erTarget (int)*
+No comment provided
+
+h4.PlayerSetTrackedContact (AccessLevel 9) [Notes|Command_PlayerSetTrackedContact_GameServerLib]
+*Parameter 1: pcContactDef (string)*
+No comment provided
+
+h4.ContactDialog (AccessLevel 9) [Notes|Command_ContactDialog_GameServerLib]
+*Parameter 1: contactName (string)*
+Talk to a contact even if there is no contact critter
+
+
+h4.ContactDialog2 (AccessLevel 9) [Notes|Command_ContactDialog2_GameServerLib]
+*Parameter 1: contactName (string)*
+*Parameter 2: dialogName (string)*
+No comment provided
+
+h4.costumeGetAndApplyDyePack (AccessLevel 9) [Notes|Command_costumeGetAndApplyDyePack_GameServerLib]
+*Parameter 1: DyePack (string)*
+*Parameter 2: pName (string)*
+No comment provided
+
+h4.costumeGetDyePackNames (AccessLevel 9) [Notes|Command_costumeGetDyePackNames_GameServerLib]
+No comment provided
+
+h4.ChangeCostume (AccessLevel 9) [Notes|Command_ChangeCostume_GameServerLib]
+*Parameter 1: costumeName (string)*
+No comment provided
+
+h4.ChangeMood (AccessLevel 0) [Notes|Command_ChangeMood_GameServerLib]
+*Parameter 1: pcMood (string)*
+No comment provided
+
+h4.SetActiveCostume (AccessLevel 0) [Notes|Command_SetActiveCostume_GameServerLib]
+*Parameter 1: eCostumeType (enum)*
+*Parameter 2: iIndex (int)*
+Sets active costume
+
+
+h4.SetPetActiveCostume (AccessLevel 0) [Notes|Command_SetPetActiveCostume_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iIndex (int)*
+Sets active costume
+
+
+h4.TestCostumeFromInteraction (AccessLevel 9) [Notes|Command_TestCostumeFromInteraction_GameServerLib]
+No comment provided
+
+h4.cutsceneStartFromClientCommand (AccessLevel 9) [Notes|Command_cutsceneStartFromClientCommand_GameServerLib]
+*Parameter 1: cutsceneName (string)*
+No comment provided
+
+h4.cutsceneStartFromClientCommand_ForcePartition (AccessLevel 9) [Notes|Command_cutsceneStartFromClientCommand_ForcePartition_GameServerLib]
+*Parameter 1: cutsceneName (string)*
+*Parameter 2: iPartitionIdx (int)*
+This is for testing purposes only
+
+
+h4.SetMapValue (AccessLevel 9) [Notes|Command_SetMapValue_GameServerLib]
+*Parameter 1: pcMapValue (string)*
+*Parameter 2: iValue (int)*
+Set a map value to a specific value
+
+
+h4.debugSetScoreboard (AccessLevel 9) [Notes|Command_debugSetScoreboard_GameServerLib]
+*Parameter 1: pcScoreboardName (string)*
+Show the scoreboard with the given name to all players in the entarray
+
+
+h4.debugSetScoreboardState (AccessLevel 9) [Notes|Command_debugSetScoreboardState_GameServerLib]
+*Parameter 1: pcState (string)*
+Show the scoreboard with the given name to all players in the entarray
+
+
+h4.dumpEntityStats (AccessLevel 9) [Notes|Command_dumpEntityStats_GameServerLib]
+No comment provided
+
+h4.egDebugEnt (AccessLevel 9) [Notes|Command_egDebugEnt_GameServerLib]
+No comment provided
+
+h4.egPrintEntries (AccessLevel 9) [Notes|Command_egPrintEntries_GameServerLib]
+No comment provided
+
+h4.EnableInteractionDebugLog (AccessLevel 9) [Notes|Command_EnableInteractionDebugLog_GameServerLib]
+*Parameter 1: enable (int)*
+No comment provided
+
+h4.movePlayerToSpawn (AccessLevel 9) [Notes|Command_movePlayerToSpawn_GameServerLib]
+*Parameter 1: pcSpawnPointName (string)*
+moveToSpawn: moves the player to the specified spawn point
+
+
+h4.EncounterForceSpawn (AccessLevel 9) [Notes|Command_EncounterForceSpawn_GameServerLib]
+*Parameter 1: pcEncounterName (string)*
+No comment provided
+
+h4.encounter_RequestActorIndexUpdates (AccessLevel 9) [Notes|Command_encounter_RequestActorIndexUpdates_GameServerLib]
+Used by a client in edit mode to request updated actor indices (for fillActorsInOrder encounters)
+
+
+h4.encounter_RequestEncounterActorEntityRef (AccessLevel 9) [Notes|Command_encounter_RequestEncounterActorEntityRef_GameServerLib]
+*Parameter 1: pcEncounterName (string)*
+*Parameter 2: pcActorName (string)*
+Used by a client in edit mode to request the EntityRef for an Encounter Actor
+
+
+h4.bcnNoEncError (AccessLevel 9) [Notes|Command_bcnNoEncError_GameServerLib]
+*Parameter 1: unused (int)*
+No comment provided
+
+h4.EncounterBeacons (AccessLevel 9) [Notes|Command_EncounterBeacons_GameServerLib]
+*Parameter 1: bEnable (bool)*
+No comment provided
+
+h4.Encountersystemdebug_AllowAllInteractions (AKA AllowAllInteractions) (AccessLevel 9) [Notes|Command_Encountersystemdebug_AllowAllInteractions_GameServerLib]
+*Parameter 1: enable (int)*
+No comment provided
+
+h4.entCmd_CancelUpgradeJob (AccessLevel 0) [Notes|Command_entCmd_CancelUpgradeJob_GameServerLib]
+No comment provided
+
+h4.entCmd_TestGemSystem (AccessLevel 9) [Notes|Command_entCmd_TestGemSystem_GameServerLib]
+No comment provided
+
+h4.entCmd_TestItemUpgrade (AccessLevel 9) [Notes|Command_entCmd_TestItemUpgrade_GameServerLib]
+*Parameter 1: pchItemDef (string)*
+No comment provided
+
+h4.entCmd_testUnGemSystem (AccessLevel 9) [Notes|Command_entCmd_testUnGemSystem_GameServerLib]
+No comment provided
+
+h4.ec (AccessLevel 7) [Notes|Command_ec_GameServerLib]
+*Parameter 1: target (string)*
+*Parameter 2: ecCmdData (sentence)*
+No comment provided
+
+h4.ecCreateSet (AccessLevel 9) [Notes|Command_ecCreateSet_GameServerLib]
+*Parameter 1: expression (sentence)*
+No comment provided
+
+h4.ecCreateSetFriendlies (AccessLevel 9) [Notes|Command_ecCreateSetFriendlies_GameServerLib]
+No comment provided
+
+h4.mmTestInteractionSitOffset (AccessLevel 9) [Notes|Command_mmTestInteractionSitOffset_GameServerLib]
+*Parameter 1: vecOffset (xyz vector)*
+No comment provided
+
+h4.recordevent (AccessLevel 9) [Notes|Command_recordevent_GameServerLib]
+*Parameter 1: pcEventString (string)*
+No comment provided
+
+h4.EventLogSetFilter (AccessLevel 9) [Notes|Command_EventLogSetFilter_GameServerLib]
+*Parameter 1: pcEventAsString (string)*
+No comment provided
+
+h4.expLoveMe (AccessLevel 9) [Notes|Command_expLoveMe_GameServerLib]
+*Parameter 1: count (int)*
+No comment provided
+
+h4.PVPFillFakeTeamInfo (AccessLevel 9) [Notes|Command_PVPFillFakeTeamInfo_GameServerLib]
+No comment provided
+
+h4.exprDebug (AccessLevel 9) [Notes|Command_exprDebug_GameServerLib]
+*Parameter 1: cmd (sentence)*
+No comment provided
+
+h4.fixupCheckoutFiles (AccessLevel 9) [Notes|Command_fixupCheckoutFiles_GameServerLib]
+*Parameter 1: fileList (string)*
+Checkout a list of files from Gimme in bulk.
+
+
+h4.forceFullEntityUpdate (AccessLevel 9) [Notes|Command_forceFullEntityUpdate_GameServerLib]
+No comment provided
+
+h4.sleepServer (AccessLevel 9) [Notes|Command_sleepServer_GameServerLib]
+*Parameter 1: milliseconds (int)*
+No comment provided
+
+h4.genesisDebugRebuild (AccessLevel 9) [Notes|Command_genesisDebugRebuild_GameServerLib]
+No comment provided
+
+h4.genesisFreezeMaps (AccessLevel 9) [Notes|Command_genesisFreezeMaps_GameServerLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.genesisFreezeVistaMaps (AccessLevel 9) [Notes|Command_genesisFreezeVistaMaps_GameServerLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.genesisReseedMaps (AccessLevel 9) [Notes|Command_genesisReseedMaps_GameServerLib]
+*Parameter 1: fileName (string)*
+*Parameter 2: reseedAll (bool)*
+No comment provided
+
+h4.genesisScanForBadStarClusterMissions (AccessLevel 9) [Notes|Command_genesisScanForBadStarClusterMissions_GameServerLib]
+Not strictly genesis, but needed only for genesis maps
+
+
+h4.genesisSetMapsType (AccessLevel 9) [Notes|Command_genesisSetMapsType_GameServerLib]
+*Parameter 1: fileName (string)*
+*Parameter 2: zmtype (enum)*
+No comment provided
+
+h4.genesisTransmogrifyMaps (AccessLevel 9) [Notes|Command_genesisTransmogrifyMaps_GameServerLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.genesisUnfreezeMaps (AccessLevel 9) [Notes|Command_genesisUnfreezeMaps_GameServerLib]
+*Parameter 1: fileName (string)*
+No comment provided
+
+h4.afk (AccessLevel 0) [Notes|Command_afk_GameServerLib]
+*Parameter 1: pchMessage (sentence)*
+Mark yourself as away from the keyboard.
+
+
+h4.GetSubbedDays (AccessLevel 9) [Notes|Command_GetSubbedDays_GameServerLib]
+No comment provided
+
+h4.GiveMeCPoints (AccessLevel 9) [Notes|Command_GiveMeCPoints_GameServerLib]
+*Parameter 1: iPoints (S64)*
+No comment provided
+
+h4.TakeMyCPoints (AccessLevel 9) [Notes|Command_TakeMyCPoints_GameServerLib]
+*Parameter 1: iPoints (S64)*
+No comment provided
+
+h4.AccountProxy (AccessLevel 9) [Notes|Command_AccountProxy_GameServerLib]
+*Parameter 1: cmd (sentence)*
+No comment provided
+
+h4.AddNewPet (AccessLevel 9) [Notes|Command_AddNewPet_GameServerLib]
+*Parameter 1: pchPetName (string)*
+*Parameter 2: iLevel (int)*
+No comment provided
+
+h4.AddNewPuppet (AccessLevel 9) [Notes|Command_AddNewPuppet_GameServerLib]
+*Parameter 1: pchPetName (string)*
+*Parameter 2: iLevel (int)*
+No comment provided
+
+h4.AddPetToPuppetShelf (AccessLevel 9) [Notes|Command_AddPetToPuppetShelf_GameServerLib]
+*Parameter 1: PetContainerType (int)*
+*Parameter 2: iPetContainterID (int)*
+*Parameter 3: pchType (string)*
+*Parameter 4: pchName (string)*
+No comment provided
+
+h4.ApplyVOTXTFile (AccessLevel 9) [Notes|Command_ApplyVOTXTFile_GameServerLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.gslAuction_MigrateMailAuctionLotsToEmailV3 (AccessLevel 7) [Notes|Command_gslAuction_MigrateMailAuctionLotsToEmailV3_GameServerLib]
+Force the auction server to convert any unconverted mail auction lots to EmailV3 mails.
+
+
+h4.away (AccessLevel 0) [Notes|Command_away_GameServerLib]
+*Parameter 1: pchMessage (sentence)*
+Mark yourself as away from the keyboard.
+
+
+h4.BecomePet (AccessLevel 9) [Notes|Command_BecomePet_GameServerLib]
+*Parameter 1: iPetID (int)*
+No comment provided
+
+h4.BecomeSelf (AccessLevel 9) [Notes|Command_BecomeSelf_GameServerLib]
+No comment provided
+
+h4.BulletinsForceUpdate (AccessLevel 9) [Notes|Command_BulletinsForceUpdate_GameServerLib]
+No comment provided
+
+h4.ChatBanUser (AccessLevel 4) [Notes|Command_ChatBanUser_GameServerLib]
+*Parameter 1: handle (sentence)*
+No comment provided
+
+h4.ChatAccessLevel (AccessLevel 4) [Notes|Command_ChatAccessLevel_GameServerLib]
+*Parameter 1: uAccessLevel (int)*
+No comment provided
+
+h4.gslChat_RunCommandAsUser (AccessLevel 9) [Notes|Command_gslChat_RunCommandAsUser_GameServerLib]
+*Parameter 1: displayName (string)*
+*Parameter 2: command (string)*
+*Parameter 3: parameterString (sentence)*
+No comment provided
+
+h4.ChatUnbanUser (AccessLevel 4) [Notes|Command_ChatUnbanUser_GameServerLib]
+*Parameter 1: handle (sentence)*
+No comment provided
+
+h4.entSendInterval (AccessLevel 9) [Notes|Command_entSendInterval_GameServerLib]
+*Parameter 1: interval (float)*
+No comment provided
+
+h4.UIForgetPositions (AccessLevel 0) [Notes|Command_UIForgetPositions_GameServerLib]
+Forget all saved UI positions/sizes
+
+
+h4.Whitelist_Invites (AccessLevel 0) [Notes|Command_Whitelist_Invites_GameServerLib]
+*Parameter 1: bEnabled (bool)*
+No comment provided
+
+h4.ControlPuppet (AccessLevel 9) [Notes|Command_ControlPuppet_GameServerLib]
+*Parameter 1: iPuppetContainerID (int)*
+No comment provided
+
+h4.ControlSelf (AccessLevel 9) [Notes|Command_ControlSelf_GameServerLib]
+No comment provided
+
+h4.ControlTempPuppet (AccessLevel 9) [Notes|Command_ControlTempPuppet_GameServerLib]
+*Parameter 1: pchPetName (string)*
+No comment provided
+
+h4.CreateOfflineCopyForPets_Server (AccessLevel 9) [Notes|Command_CreateOfflineCopyForPets_Server_GameServerLib]
+No comment provided
+
+h4.dnd (AccessLevel 0) [Notes|Command_dnd_GameServerLib]
+*Parameter 1: pchMessage (sentence)*
+Mark yourself as "Do Not Disturb".
+
+
+h4.DeleteVOTXTFile (AccessLevel 9) [Notes|Command_DeleteVOTXTFile_GameServerLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.PlayTransitionSequenceByName (AccessLevel 9) [Notes|Command_PlayTransitionSequenceByName_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.IgnoreLogoutTimers (AccessLevel 9) [Notes|Command_IgnoreLogoutTimers_GameServerLib]
+*Parameter 1: ignoreLogoutTimers (int)*
+Toggle the IngnoreBootTimer on or off. Used in gslMechanics.c
+
+
+h4.SetGADDaysSubscribed (AccessLevel 7) [Notes|Command_SetGADDaysSubscribed_GameServerLib]
+*Parameter 1: iDays (int)*
+Set number of days subscribed (override for testing rewards based on subscribed days)
+
+
+h4.ForceActivePuppet (AccessLevel 9) [Notes|Command_ForceActivePuppet_GameServerLib]
+*Parameter 1: iPuppetID (int)*
+No comment provided
+
+h4.ForceSkipCutscene (AccessLevel 9) [Notes|Command_ForceSkipCutscene_GameServerLib]
+This allows a player to force skip a cutscene.
+
+
+h4.GameAccount_AddRecruit (AccessLevel 9) [Notes|Command_GameAccount_AddRecruit_GameServerLib]
+*Parameter 1: iAccountID (int)*
+No comment provided
+
+h4.GameAccount_AddRecruitDate (AccessLevel 9) [Notes|Command_GameAccount_AddRecruitDate_GameServerLib]
+*Parameter 1: iAccountID (int)*
+*Parameter 2: pchDate (string)*
+No comment provided
+
+h4.GameAccount_AddRecruiter (AccessLevel 9) [Notes|Command_GameAccount_AddRecruiter_GameServerLib]
+*Parameter 1: iAccountID (int)*
+No comment provided
+
+h4.GameAccount_AddRecruiterDate (AccessLevel 9) [Notes|Command_GameAccount_AddRecruiterDate_GameServerLib]
+*Parameter 1: iAccountID (int)*
+*Parameter 2: pchDate (string)*
+No comment provided
+
+h4.GameAccount_SetAttrib (AccessLevel 9) [Notes|Command_GameAccount_SetAttrib_GameServerLib]
+*Parameter 1: pchKey (string)*
+*Parameter 2: pchValue (sentence)*
+No comment provided
+
+h4.GameAccount_SetRecruitState (AccessLevel 9) [Notes|Command_GameAccount_SetRecruitState_GameServerLib]
+*Parameter 1: iAccountID (int)*
+*Parameter 2: eRecruitState (int)*
+No comment provided
+
+h4.GameAccount_UnlockCostumeItem (AccessLevel 9) [Notes|Command_GameAccount_UnlockCostumeItem_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.GameAccount_UnlockCostumeRef (AccessLevel 9) [Notes|Command_GameAccount_UnlockCostumeRef_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.GameAccount_AddPermission (AccessLevel 9) [Notes|Command_GameAccount_AddPermission_GameServerLib]
+*Parameter 1: pchName (sentence)*
+No comment provided
+
+h4.GameAccount_AddPermissionAndTokens (AccessLevel 9) [Notes|Command_GameAccount_AddPermissionAndTokens_GameServerLib]
+*Parameter 1: pchName (sentence)*
+No comment provided
+
+h4.GameAccount_ClearPermissions (AccessLevel 9) [Notes|Command_GameAccount_ClearPermissions_GameServerLib]
+*Parameter 1: bTokensToo (int)*
+No comment provided
+
+h4.GameAccount_RemovePermission (AccessLevel 9) [Notes|Command_GameAccount_RemovePermission_GameServerLib]
+*Parameter 1: pchName (sentence)*
+No comment provided
+
+h4.GameAccount_RemovePermissionAndTokens (AccessLevel 9) [Notes|Command_GameAccount_RemovePermissionAndTokens_GameServerLib]
+*Parameter 1: pchName (sentence)*
+No comment provided
+
+h4.SetHudShowDamageFloaters (AccessLevel 0) [Notes|Command_SetHudShowDamageFloaters_GameServerLib]
+*Parameter 1: bShowDamageFloaters (bool)*
+*Parameter 2: bShowPetDamageFloaters (bool)*
+*Parameter 3: bShowUnrelatedDamageFloaters (bool)*
+Sets player damage floaters flag.
+
+
+h4.SetHudShowInteractionIcons (AccessLevel 0) [Notes|Command_SetHudShowInteractionIcons_GameServerLib]
+*Parameter 1: bShowInteractionIcons (bool)*
+Sets player interaction icons flag.
+
+
+h4.SetHudShowPlayerTitles (AccessLevel 0) [Notes|Command_SetHudShowPlayerTitles_GameServerLib]
+*Parameter 1: bShowPlayerTitles (bool)*
+Sets player titles flag.
+
+
+h4.SetHudShowReticlesAs (AccessLevel 0) [Notes|Command_SetHudShowReticlesAs_GameServerLib]
+*Parameter 1: eShowReticlesAs (enum)*
+Sets player reticle display.
+
+
+h4.gslInterior_Randomize (AKA Hideout_Randomize) (AccessLevel 9) [Notes|Command_gslInterior_Randomize_GameServerLib]
+No comment provided
+
+h4.gslInterior_ClearData (AccessLevel 9) [Notes|Command_gslInterior_ClearData_GameServerLib]
+No comment provided
+
+h4.ItemAssignmentsBypassFilters (AccessLevel 9) [Notes|Command_ItemAssignmentsBypassFilters_GameServerLib]
+*Parameter 1: bUnfilterActive (bool)*
+No comment provided
+
+h4.ItemAssignmentsDumpRarityCounts (AccessLevel 9) [Notes|Command_ItemAssignmentsDumpRarityCounts_GameServerLib]
+No comment provided
+
+h4.ItemAssignmentsForceAddAssignment (AccessLevel 9) [Notes|Command_ItemAssignmentsForceAddAssignment_GameServerLib]
+*Parameter 1: pchForceAssignmment (string)*
+No comment provided
+
+h4.ItemAssignmentsForceAddPersonalAssignment (AccessLevel 9) [Notes|Command_ItemAssignmentsForceAddPersonalAssignment_GameServerLib]
+*Parameter 1: pchForceAssignmment (string)*
+No comment provided
+
+h4.ItemAssignmentsResetCooldowns (AccessLevel 9) [Notes|Command_ItemAssignmentsResetCooldowns_GameServerLib]
+No comment provided
+
+h4.ItemAssignmentsUnforceAddAssignments (AccessLevel 9) [Notes|Command_ItemAssignmentsUnforceAddAssignments_GameServerLib]
+No comment provided
+
+h4.ItemAssignmentsForceCompleteAll (AccessLevel 9) [Notes|Command_ItemAssignmentsForceCompleteAll_GameServerLib]
+No comment provided
+
+h4.ItemAssignmentsForceCompleteAllWithOutcome (AccessLevel 9) [Notes|Command_ItemAssignmentsForceCompleteAllWithOutcome_GameServerLib]
+*Parameter 1: pchOutcome (string)*
+No comment provided
+
+h4.ItemAssignmentsForceCompleteByID (AccessLevel 9) [Notes|Command_ItemAssignmentsForceCompleteByID_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+No comment provided
+
+h4.ItemAssignmentsForceCompleteByName (AccessLevel 9) [Notes|Command_ItemAssignmentsForceCompleteByName_GameServerLib]
+*Parameter 1: pchAssignmentName (string)*
+No comment provided
+
+h4.ItemAssignmentsForceCompleteByNameWithOutcome (AccessLevel 9) [Notes|Command_ItemAssignmentsForceCompleteByNameWithOutcome_GameServerLib]
+*Parameter 1: pchAssignmentName (string)*
+*Parameter 2: pchOutcome (string)*
+Completes all assignments with the given name
+
+
+h4.ItemAssignmentsForceCompleteWithOutcome (AccessLevel 9) [Notes|Command_ItemAssignmentsForceCompleteWithOutcome_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+*Parameter 2: pchOutcome (string)*
+No comment provided
+
+h4.ItemAssignmentsForceMap (AccessLevel 9) [Notes|Command_ItemAssignmentsForceMap_GameServerLib]
+*Parameter 1: pchOverrideMap (string)*
+No comment provided
+
+h4.ItemAssignmentsForceUpdate (AccessLevel 9) [Notes|Command_ItemAssignmentsForceUpdate_GameServerLib]
+No comment provided
+
+h4.ItemAssignmentsForceVolume (AccessLevel 9) [Notes|Command_ItemAssignmentsForceVolume_GameServerLib]
+*Parameter 1: pchOverrideVolume (string)*
+No comment provided
+
+h4.MakeMeAPuppetMaster (AccessLevel 9) [Notes|Command_MakeMeAPuppetMaster_GameServerLib]
+No comment provided
+
+h4.MakeVOTXTFiles (AccessLevel 9) [Notes|Command_MakeVOTXTFiles_GameServerLib]
+Debug command to make .vo.txt files as if the builder was running.
+Should only be run in dev mode for testing.
+
+
+h4.ComputePointsBasedOnMapPopulation (AccessLevel 4) [Notes|Command_ComputePointsBasedOnMapPopulation_GameServerLib]
+*Parameter 1: mapName (string)*
+*Parameter 2: opposingMapName (string)*
+*Parameter 3: basePointsToAward (int)*
+No comment provided
+
+h4.NoLongerInterestedInMapPopulationData (AccessLevel 4) [Notes|Command_NoLongerInterestedInMapPopulationData_GameServerLib]
+*Parameter 1: mapName (string)*
+No comment provided
+
+h4.RegisterInterestInMapPopulation (AccessLevel 4) [Notes|Command_RegisterInterestInMapPopulation_GameServerLib]
+*Parameter 1: mapName (string)*
+No comment provided
+
+h4.gslOpenFile (AccessLevel 9) [Notes|Command_gslOpenFile_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pcType (string)*
+No comment provided
+
+h4.ServerPatchInfo (AccessLevel 9) [Notes|Command_ServerPatchInfo_GameServerLib]
+No comment provided
+
+h4.gslPlayer_GetRewardGatedCooldownSeconds (AccessLevel 4) [Notes|Command_gslPlayer_GetRewardGatedCooldownSeconds_GameServerLib]
+*Parameter 1: gatedType (int)*
+Used for testing gated commands (cooldown left)
+
+
+h4.gslPromoGameCurrency_ClaimDebug (AccessLevel 9) [Notes|Command_gslPromoGameCurrency_ClaimDebug_GameServerLib]
+*Parameter 1: quantity (int)*
+No comment provided
+
+h4.QueueStopTrackingMapOnQueueServer (AccessLevel 9) [Notes|Command_QueueStopTrackingMapOnQueueServer_GameServerLib]
+No comment provided
+
+h4.gslSavedPet_FixPetContainerID (AccessLevel 9) [Notes|Command_gslSavedPet_FixPetContainerID_GameServerLib]
+*Parameter 1: uiContainerID (int)*
+THIS WILL BREAK YOUR CHARACTER IF YOU USE THIS INCORRECTLY. This is used to fix a specific database corruption. If you don't know what you are doing, DO NOT USE THIS
+
+
+h4.gslSavedPet_StompPetContainerID (AccessLevel 9) [Notes|Command_gslSavedPet_StompPetContainerID_GameServerLib]
+*Parameter 1: uiPetID (int)*
+THIS WILL BREAK YOUR CHARACTER IF YOU USE THIS. Used for testing a database corruption in which pets could lose their container IDs.
+
+
+h4.gslSearchResources (AccessLevel 9) [Notes|Command_gslSearchResources_GameServerLib]
+*Parameter 1: pRequest (ResourceSearchRequest struct)*
+No comment provided
+
+h4.SetActivePuppetByName (AccessLevel 9) [Notes|Command_SetActivePuppetByName_GameServerLib]
+*Parameter 1: pchPupName (string)*
+No comment provided
+
+h4.SetPuppetOffline (AccessLevel 7) [Notes|Command_SetPuppetOffline_GameServerLib]
+*Parameter 1: uEntID (int)*
+*Parameter 2: uPuppetID (int)*
+This command forcibly sets an entity's active puppet as offline. Used to fix a
+rare case where a player could get two active puppets of the same type
+
+
+h4.SetDebugPos (AccessLevel 9) [Notes|Command_SetDebugPos_GameServerLib]
+*Parameter 1: mapName (string)*
+*Parameter 2: vPos (xyz vector)*
+*Parameter 3: vRot (xyz vector)*
+No comment provided
+
+h4.SetDebugPosEx (AccessLevel 9) [Notes|Command_SetDebugPosEx_GameServerLib]
+*Parameter 1: mapName (string)*
+*Parameter 2: vPos (xyz vector)*
+*Parameter 3: vRot (xyz vector)*
+*Parameter 4: mapVariables (string)*
+No comment provided
+
+h4.Whitelist_Duels (AKA Whitelist_PvPInvites) (AccessLevel 0) [Notes|Command_Whitelist_Duels_GameServerLib]
+*Parameter 1: enabled (bool)*
+Set the Whitelist for duels
+
+
+h4.SkipCutscene (AccessLevel 0) [Notes|Command_SkipCutscene_GameServerLib]
+This allows a player to skip a cutscene.  This is only supported for single-player cutscenes such as zone flyovers.
+
+
+h4.gslSocialCrypticSetUrl (AccessLevel 9) [Notes|Command_gslSocialCrypticSetUrl_GameServerLib]
+*Parameter 1: url (string)*
+No comment provided
+
+h4.SummonCritterPetExisting (AccessLevel 9) [Notes|Command_SummonCritterPetExisting_GameServerLib]
+*Parameter 1: iPetNum (int)*
+No comment provided
+
+h4.SummonCritterPet (AccessLevel 9) [Notes|Command_SummonCritterPet_GameServerLib]
+*Parameter 1: pchPetDef (string)*
+No comment provided
+
+h4.CheckMapOwnership (AccessLevel 9) [Notes|Command_CheckMapOwnership_GameServerLib]
+A console command for checking map ownership
+
+
+h4.gslUGCResetMap (AccessLevel 2) [Notes|Command_gslUGCResetMap_GameServerLib]
+*Parameter 1: ugc_proj (UGCProjectData struct)*
+No comment provided
+
+h4.UGCAchievementEventSend_PlayerReviewer (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_PlayerReviewer_GameServerLib]
+No comment provided
+
+h4.UGCAchievementEventSend_ProjectFeatured (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_ProjectFeatured_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCProjectID (int)*
+No comment provided
+
+h4.UGCAchievementEventSend_ProjectPlayed (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_ProjectPlayed_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCProjectID (int)*
+No comment provided
+
+h4.UGCAchievementEventSend_ProjectPublished (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_ProjectPublished_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCProjectID (int)*
+No comment provided
+
+h4.UGCAchievementEventSend_ProjectReviewed (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_ProjectReviewed_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCProjectID (int)*
+*Parameter 3: fRating (float)*
+*Parameter 4: fHighestPreviousRating (float)*
+*Parameter 5: iTotalReviews (int)*
+*Parameter 6: iTotalStars (int)*
+*Parameter 7: fAverageRating (float)*
+*Parameter 8: fAdjustedRating (float)*
+*Parameter 9: bBetaReviewing (bool)*
+No comment provided
+
+h4.UGCAchievementEventSend_ProjectTipped (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_ProjectTipped_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCProjectID (int)*
+*Parameter 3: uTipAmount (int)*
+No comment provided
+
+h4.UGCAchievementEventSend_SeriesPublished (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_SeriesPublished_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCSeriesID (int)*
+No comment provided
+
+h4.UGCAchievementEventSend_SeriesReviewed (AccessLevel 7) [Notes|Command_UGCAchievementEventSend_SeriesReviewed_GameServerLib]
+*Parameter 1: uUGCAuthorAccountID (int)*
+*Parameter 2: uUGCSeriesID (int)*
+*Parameter 3: fRating (float)*
+*Parameter 4: fHighestPreviousRating (float)*
+*Parameter 5: iTotalReviews (int)*
+*Parameter 6: iTotalStars (int)*
+*Parameter 7: fAverageRating (float)*
+*Parameter 8: fAdjustedRating (float)*
+No comment provided
+
+h4.UGCAchievementsGrant (AccessLevel 7) [Notes|Command_UGCAchievementsGrant_GameServerLib]
+*Parameter 1: uUGCProjectID (int)*
+*Parameter 2: uUGCSeriesID (int)*
+*Parameter 3: ugcAchievementName (string)*
+No comment provided
+
+h4.UGCAchievementsReset (AccessLevel 7) [Notes|Command_UGCAchievementsReset_GameServerLib]
+No comment provided
+
+h4.ugcFeatured_AddProject (AccessLevel 4) [Notes|Command_ugcFeatured_AddProject_GameServerLib]
+*Parameter 1: projectId (int)*
+*Parameter 2: strDetails (string)*
+*Parameter 3: startTime (string)*
+*Parameter 4: endTime (string)*
+
+Mark PROJECT-ID as featured.  If START-TIME or END-TIME is
+the string "NOW", use the current time.  END-TIME can be "", which
+will make it not expire.
+
+
+h4.ugcFeatured_ArchiveProject (AccessLevel 4) [Notes|Command_ugcFeatured_ArchiveProject_GameServerLib]
+*Parameter 1: projectID (int)*
+*Parameter 2: endTime (string)*
+
+Forcably end PROJECT-ID from being featured at END-TIME.
+
+If PROJECT-ID has already ended and END-TIMESTAMP would change the
+end time, this instead does nothing.
+
+
+h4.ugcFeatured_CopyProject (AccessLevel 4) [Notes|Command_ugcFeatured_CopyProject_GameServerLib]
+*Parameter 1: projectId (int)*
+*Parameter 2: strDetails_unnormalized (string)*
+*Parameter 3: startTime_unnormalized (string)*
+*Parameter 4: endTime_unnormalized (string)*
+
+Copy PROJECT-ID into a new project (saving rating, reviews, etc.)
+and mark the copy as featured.
+
+Other parameters are the same as ugcFeatured_AddProject.
+
+
+h4.ugcFeatured_RemoveProject (AccessLevel 4) [Notes|Command_ugcFeatured_RemoveProject_GameServerLib]
+*Parameter 1: projectId (int)*
+
+Remove PROJECT-ID from featured and featured archives.
+
+If this is a copy project, then it also deletes the project (which
+will hide it).
+
+
+h4.ugcFeatured_SaveAuthorAllowsFeaturedList (AccessLevel 4) [Notes|Command_ugcFeatured_SaveAuthorAllowsFeaturedList_GameServerLib]
+
+Save a list of projects that the author has allowed to be
+featured.
+
+
+h4.ugcFeatured_SaveState (AccessLevel 4) [Notes|Command_ugcFeatured_SaveState_GameServerLib]
+
+Save the state of Featured/Featured Archives into a file (on the
+client).
+
+
+h4.ugcFeatured_SetAverageDurationInMinutesOverride (AccessLevel 4) [Notes|Command_ugcFeatured_SetAverageDurationInMinutesOverride_GameServerLib]
+*Parameter 1: projectId (int)*
+*Parameter 2: averageDurationInMinutes (float)*
+
+Force the average duration in minutes to be the specified value.
+
+
+h4.ugcFeatured_ShowAuthorAllowsFeaturedList (AccessLevel 4) [Notes|Command_ugcFeatured_ShowAuthorAllowsFeaturedList_GameServerLib]
+
+Show a list of projects that the author has allowed to be
+featured.
+
+
+h4.gslUGC_SynchronizeAchievements (AccessLevel 7) [Notes|Command_gslUGC_SynchronizeAchievements_GameServerLib]
+No comment provided
+
+h4.unaway (AKA back) (AccessLevel 0) [Notes|Command_unaway_GameServerLib]
+Mark yourself as back at the keyboard.
+
+
+h4.WarpToRecruitReset (AccessLevel 9) [Notes|Command_WarpToRecruitReset_GameServerLib]
+No comment provided
+
+h4.WarpToRecruit (AccessLevel 0) [Notes|Command_WarpToRecruit_GameServerLib]
+*Parameter 1: iAccountID (int)*
+No comment provided
+
+h4.gsl_SetMailMessageCount (AccessLevel 7) [Notes|Command_gsl_SetMailMessageCount_GameServerLib]
+No comment provided
+
+h4.gsl_TransferMail (AccessLevel 9) [Notes|Command_gsl_TransferMail_GameServerLib]
+No comment provided
+
+h4.im_RespawnAll (AccessLevel 9) [Notes|Command_im_RespawnAll_GameServerLib]
+No comment provided
+
+h4.interactable_PrintDebugLogByName (AccessLevel 4) [Notes|Command_interactable_PrintDebugLogByName_GameServerLib]
+*Parameter 1: pchInteractableName (string)*
+Prints the debug log from a specific named interactable
+
+
+h4.interactable_PrintInfoByName (AccessLevel 4) [Notes|Command_interactable_PrintInfoByName_GameServerLib]
+*Parameter 1: pchInteractableName (string)*
+Dumps a bunch of potentially useful info about a specific named interactable
+
+
+h4.interactable_ResetAll (AccessLevel 9) [Notes|Command_interactable_ResetAll_GameServerLib]
+Resets all Interactables on the map (like initencounters, but only resets interactables)
+
+
+h4.interactable_WarpToDoor (AccessLevel 9) [Notes|Command_interactable_WarpToDoor_GameServerLib]
+*Parameter 1: pMap (string)*
+No comment provided
+
+h4.itemDebug (AccessLevel 4) [Notes|Command_itemDebug_GameServerLib]
+*Parameter 1: bEnable (bool)*
+enable extended item tooltip info
+
+
+h4.power_exec_svr_loc (AccessLevel 9) [Notes|Command_power_exec_svr_loc_GameServerLib]
+*Parameter 1: powerName (string)*
+Cause a power to be activated at your location
+
+
+h4.makeBinsAndExit (AccessLevel 9) [Notes|Command_makeBinsAndExit_GameServerLib]
+*Parameter 1: bSet (bool)*
+Make bins and exit
+
+
+h4.makeBinsAndExitForNamespace (AccessLevel 9) [Notes|Command_makeBinsAndExitForNamespace_GameServerLib]
+*Parameter 1: ns (string)*
+Make bins and exit for a single namespace
+
+
+h4.GetMapVariable (AccessLevel 9) [Notes|Command_GetMapVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+Gets a map variable
+ACMD_NAMELIST("ZoneMap",REFDICTIONARY)
+
+
+h4.SetMapVariable (AccessLevel 9) [Notes|Command_SetMapVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pcValue (string)*
+Sets a map variable
+
+
+h4.SetMapVariableEarly (AccessLevel 9) [Notes|Command_SetMapVariableEarly_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pchVarType (string)*
+*Parameter 3: pchValue (string)*
+Sets a map variable
+TODO_PARTITION: SetMapVariableEarly command
+
+
+h4.InitEncounters (AccessLevel 9) [Notes|Command_InitEncounters_GameServerLib]
+No comment provided
+
+h4.AmbushTimerReset (AccessLevel 9) [Notes|Command_AmbushTimerReset_GameServerLib]
+Reset the player's ambush timer for testing
+
+
+h4.ContactsThatGrantMission (AccessLevel 9) [Notes|Command_ContactsThatGrantMission_GameServerLib]
+*Parameter 1: pchPath (string)*
+*Parameter 2: bShowAll (bool)*
+Prints a list of all contacts that grant missions (and have a display name)
+
+
+h4.DumpMissionInfo (AccessLevel 9) [Notes|Command_DumpMissionInfo_GameServerLib]
+No comment provided
+
+h4.MissionAdd (AccessLevel 5) [Notes|Command_MissionAdd_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+missionadd <missionName>: Adds a mission of the given name to the player
+
+
+h4.MissionChainReport (AccessLevel 9) [Notes|Command_MissionChainReport_GameServerLib]
+*Parameter 1: pchPath (string)*
+DO NOT RUN THIS ON LIVE SERVERS! Outputs a report of all mission chains to a text file.
+This command is dangerous due to the chance that it can produce a stack overflow.
+Run this on local servers only.
+
+
+h4.MissionCheckMultipleContacts (AccessLevel 9) [Notes|Command_MissionCheckMultipleContacts_GameServerLib]
+Prints a list of all Missions that are granted from multiple contacts
+
+
+h4.MissionComplete (AccessLevel 4) [Notes|Command_MissionComplete_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+missioncomplete <missionName>: Completes mission of the given name
+To complete a sub-mission, use "missioncomplete missionname::submissionname"
+
+
+h4.MissionCompleteAll (AccessLevel 4) [Notes|Command_MissionCompleteAll_GameServerLib]
+missioncompleteall: Completes all non-perk missions on the player. For perk missions use MissionCompleteAllPerks.
+
+
+h4.MissionCompleteAllPerks (AccessLevel 9) [Notes|Command_MissionCompleteAllPerks_GameServerLib]
+No comment provided
+
+h4.MissionCompleteCurrentPhase (AccessLevel 9) [Notes|Command_MissionCompleteCurrentPhase_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+OpenMissionCompleteCurrentPhase: Completes the current phase of the open mission on the player
+Current phase is defined as the first InProgress mission.
+
+
+h4.MissionCooldownClear (AccessLevel 5) [Notes|Command_MissionCooldownClear_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+missionCooldownClear <missionName>: Clears the cooldown for this mission
+
+
+h4.MissionInfoReset (AccessLevel 7) [Notes|Command_MissionInfoReset_GameServerLib]
+missioninforeset: Resets a players mission info if they were just created
+
+
+h4.MissionTriggerCurrentEvent (AccessLevel 9) [Notes|Command_MissionTriggerCurrentEvent_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+MissionTriggerCurrentEvent: Attempts to trigger the events listened to by the current mission
+Sets the triggering player as the source ent.  Might not work correctly for events requiring
+a target entity
+
+
+h4.RepeatMissions (AccessLevel 9) [Notes|Command_RepeatMissions_GameServerLib]
+repeatmissions: Completed missions can be re-granted
+
+
+h4.SetSecondaryMissionCooldownHours (AccessLevel 9) [Notes|Command_SetSecondaryMissionCooldownHours_GameServerLib]
+*Parameter 1: fTimeInHours (float)*
+No comment provided
+
+h4.UseDoorFromMission (AccessLevel 9) [Notes|Command_UseDoorFromMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+This command exists for automated testing purposes
+It takes a mission, finds the first interaction property added by the mission that is of type "Door"
+and then acts like the player is directly interacting with that property.
+
+
+h4.Mission_WriteListToFile (AccessLevel 9) [Notes|Command_Mission_WriteListToFile_GameServerLib]
+*Parameter 1: pchPath (string)*
+*Parameter 2: bHTML (bool)*
+Outputs a table with the display and internal names of all the missions to a file in either Wiki or HTML format.
+The table is formatted as follows:
+[Display Name | Internal Name | Target map(s) display name(s) ]
+[			 | Sub-mission display string | Sub-mission internal name | Sub-mission target map(s) display name(s)]
+
+
+h4.MissionDebug (AccessLevel 9) [Notes|Command_MissionDebug_GameServerLib]
+*Parameter 1: iSet (int)*
+missiondebug <0/1>: Turns on mission debugging information
+
+
+h4.missionDebugMenuEnable (AccessLevel 9) [Notes|Command_missionDebugMenuEnable_GameServerLib]
+*Parameter 1: bEnabled (int)*
+Populate the full mission list in mmm
+
+
+h4.mmAlwaysSetCurrentView (AccessLevel 9) [Notes|Command_mmAlwaysSetCurrentView_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmClientOnlyCreate (AccessLevel 9) [Notes|Command_mmClientOnlyCreate_GameServerLib]
+*Parameter 1: pos (xyz vector)*
+*Parameter 2: posTarget (xyz vector)*
+No comment provided
+
+h4.mmClientOnlyDestroy (AccessLevel 9) [Notes|Command_mmClientOnlyDestroy_GameServerLib]
+No comment provided
+
+h4.mmLogManagedResourcesClient (AccessLevel 9) [Notes|Command_mmLogManagedResourcesClient_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogOnClientAttach (AccessLevel 9) [Notes|Command_mmLogOnClientAttach_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogOnCreate (AccessLevel 9) [Notes|Command_mmLogOnCreate_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogOnCreateAtPos (AccessLevel 9) [Notes|Command_mmLogOnCreateAtPos_GameServerLib]
+*Parameter 1: enabled (int)*
+*Parameter 2: pos (xyz vector)*
+*Parameter 3: radius (float)*
+No comment provided
+
+h4.mmLogUnmanagedResourcesClient (AccessLevel 9) [Notes|Command_mmLogUnmanagedResourcesClient_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogUnmanagedResourcesServer (AccessLevel 9) [Notes|Command_mmLogUnmanagedResourcesServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmOpenPerEntityTimerClient (AccessLevel 9) [Notes|Command_mmOpenPerEntityTimerClient_GameServerLib]
+*Parameter 1: index (int)*
+No comment provided
+
+h4.mmOpenPerEntityTimerServer (AccessLevel 9) [Notes|Command_mmOpenPerEntityTimerServer_GameServerLib]
+*Parameter 1: index (int)*
+No comment provided
+
+h4.mmPerEntityTimersClient (AccessLevel 9) [Notes|Command_mmPerEntityTimersClient_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmPerEntityTimersServer (AccessLevel 9) [Notes|Command_mmPerEntityTimersServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogManagedResourcesServer (AccessLevel 9) [Notes|Command_mmLogManagedResourcesServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmSendFullRotations (AccessLevel 9) [Notes|Command_mmSendFullRotations_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmSetInputBufferSize (AccessLevel 9) [Notes|Command_mmSetInputBufferSize_GameServerLib]
+*Parameter 1: size (int)*
+No comment provided
+
+h4.Physics.NoDisable (AKA mmNoDisable) (AccessLevel 9) [Notes|Command_Physics.NoDisable_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.Physics.NoSync (AKA mmNoSync) (AccessLevel 9) [Notes|Command_Physics.NoSync_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.Physics.Predict (AKA mmPredict) (AccessLevel 9) [Notes|Command_Physics.Predict_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogSkeletons (AccessLevel 9) [Notes|Command_mmLogSkeletons_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmCreateTestDynamicWCO (AccessLevel 9) [Notes|Command_mmCreateTestDynamicWCO_GameServerLib]
+*Parameter 1: count (int)*
+*Parameter 2: pos (xyz vector)*
+No comment provided
+
+h4.mmCreateTestStaticWCO (AccessLevel 9) [Notes|Command_mmCreateTestStaticWCO_GameServerLib]
+*Parameter 1: count (int)*
+*Parameter 2: pos (xyz vector)*
+No comment provided
+
+h4.mmDisableAnimAssert (AccessLevel 9) [Notes|Command_mmDisableAnimAssert_GameServerLib]
+*Parameter 1: disable (int)*
+No comment provided
+
+h4.mmDisableNetBufferAdjustment (AccessLevel 9) [Notes|Command_mmDisableNetBufferAdjustment_GameServerLib]
+*Parameter 1: set (int)*
+No comment provided
+
+h4.mmForceSim (AccessLevel 9) [Notes|Command_mmForceSim_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmLogOutputs (AccessLevel 9) [Notes|Command_mmLogOutputs_GameServerLib]
+*Parameter 1: enableText (int)*
+*Parameter 2: enable3D (int)*
+*Parameter 3: enableNetText (int)*
+*Parameter 4: enableNet3D (int)*
+No comment provided
+
+h4.mmNetAutoDebugStartCollectingData (AccessLevel 9) [Notes|Command_mmNetAutoDebugStartCollectingData_GameServerLib]
+No comment provided
+
+h4.mmNetBufferSkipSeconds (AccessLevel 9) [Notes|Command_mmNetBufferSkipSeconds_GameServerLib]
+*Parameter 1: seconds (float)*
+No comment provided
+
+h4.mmNoLocalProcessing (AccessLevel 9) [Notes|Command_mmNoLocalProcessing_GameServerLib]
+*Parameter 1: set (int)*
+No comment provided
+
+h4.mmPrintAllocationCounts (AccessLevel 9) [Notes|Command_mmPrintAllocationCounts_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.mmPrintAllocationsPerManager (AccessLevel 9) [Notes|Command_mmPrintAllocationsPerManager_GameServerLib]
+No comment provided
+
+h4.mmPrintRemoveStatesToBG (AccessLevel 9) [Notes|Command_mmPrintRemoveStatesToBG_GameServerLib]
+No comment provided
+
+h4.mmSendTriggerID (AccessLevel 9) [Notes|Command_mmSendTriggerID_GameServerLib]
+*Parameter 1: triggerID (int)*
+No comment provided
+
+h4.mmcFlightDontUseStickyGround (AccessLevel 9) [Notes|Command_mmcFlightDontUseStickyGround_GameServerLib]
+*Parameter 1: val (bool)*
+No comment provided
+
+h4.mmcFlightGravityMaxSpeedFactor (AccessLevel 9) [Notes|Command_mmcFlightGravityMaxSpeedFactor_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcFlightGravityPitchOffset (AccessLevel 9) [Notes|Command_mmcFlightGravityPitchOffset_GameServerLib]
+*Parameter 1: val1 (float)*
+*Parameter 2: val2 (float)*
+No comment provided
+
+h4.mmcFlightGravityTractionFactor (AccessLevel 9) [Notes|Command_mmcFlightGravityTractionFactor_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcFlightGroundMaxSpeedFrictionFactor (AccessLevel 9) [Notes|Command_mmcFlightGroundMaxSpeedFrictionFactor_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcFlightGroundTractionFactor (AccessLevel 9) [Notes|Command_mmcFlightGroundTractionFactor_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingAccelMaxSpeedFactor (AccessLevel 9) [Notes|Command_mmcSwingAccelMaxSpeedFactor_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingAnchorCooldown (AccessLevel 9) [Notes|Command_mmcSwingAnchorCooldown_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingClearHeight (AccessLevel 9) [Notes|Command_mmcSwingClearHeight_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingPitchMin (AccessLevel 9) [Notes|Command_mmcSwingPitchMin_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingPitchMinRange (AccessLevel 9) [Notes|Command_mmcSwingPitchMinRange_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingPitchRangeMin (AccessLevel 9) [Notes|Command_mmcSwingPitchRangeMin_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingPitchRangeRange (AccessLevel 9) [Notes|Command_mmcSwingPitchRangeRange_GameServerLib]
+*Parameter 1: val (float)*
+No comment provided
+
+h4.mmcSwingUseNewLogic (AccessLevel 9) [Notes|Command_mmcSwingUseNewLogic_GameServerLib]
+*Parameter 1: val (int)*
+No comment provided
+
+h4.GenerateListRandomNames (AccessLevel 9) [Notes|Command_GenerateListRandomNames_GameServerLib]
+*Parameter 1: pcSpecies (string)*
+No comment provided
+
+h4.objectLibraryFixupAllFiles (AccessLevel 9) [Notes|Command_objectLibraryFixupAllFiles_GameServerLib]
+*Parameter 1: dry_run (bool)*
+No comment provided
+
+h4.EncounterLayerKill (AccessLevel 9) [Notes|Command_EncounterLayerKill_GameServerLib]
+*Parameter 1: layerName (string)*
+No comment provided
+
+h4.encounterIgnoreLayer (AccessLevel 9) [Notes|Command_encounterIgnoreLayer_GameServerLib]
+*Parameter 1: layerName (string)*
+No comment provided
+
+h4.encounterIgnoreAllLayersExcept (AccessLevel 9) [Notes|Command_encounterIgnoreAllLayersExcept_GameServerLib]
+*Parameter 1: layerName (string)*
+No comment provided
+
+h4.encounterUnignoreAllLayers (AccessLevel 9) [Notes|Command_encounterUnignoreAllLayers_GameServerLib]
+No comment provided
+
+h4.MissionResetOpenMissions (AccessLevel 9) [Notes|Command_MissionResetOpenMissions_GameServerLib]
+MissionResetOpenMissions: Closes all running open missions and restarts any auto-start ones
+
+
+h4.OpenMissionComplete (AccessLevel 7) [Notes|Command_OpenMissionComplete_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+openmissioncomplete <missionName>: Completes the named open mission
+
+
+h4.OpenMissionCompleteCurrent (AccessLevel 7) [Notes|Command_OpenMissionCompleteCurrent_GameServerLib]
+openmissioncompletecurrent: Completes the player's current open mission
+
+
+h4.OpenMissionCompleteCurrentPhase (AccessLevel 7) [Notes|Command_OpenMissionCompleteCurrentPhase_GameServerLib]
+OpenMissionCompleteCurrentPhase: Completes the current phase of the open mission on the player
+Current phase is defined as the first InProgress mission.
+
+
+h4.OpenMissionTriggerCurrentEvent (AccessLevel 9) [Notes|Command_OpenMissionTriggerCurrentEvent_GameServerLib]
+No comment provided
+
+h4.SetMapDifficulty (AccessLevel 9) [Notes|Command_SetMapDifficulty_GameServerLib]
+*Parameter 1: iDifficulty (int)*
+A debug command for setting the map's difficulty.
+
+
+h4.playerChangeNemesisState (AccessLevel 9) [Notes|Command_playerChangeNemesisState_GameServerLib]
+*Parameter 1: pchNemesisName (string)*
+*Parameter 2: pchNewState (string)*
+Changes a nemesis state
+
+
+h4.playerDeleteNemesis (AccessLevel 9) [Notes|Command_playerDeleteNemesis_GameServerLib]
+*Parameter 1: pcName (sentence)*
+No comment provided
+
+h4.GodMode (AccessLevel 4) [Notes|Command_GodMode_GameServerLib]
+*Parameter 1: iSet (int)*
+This sets the player to be invincible and untargetable.  It's just an easily-remembered shorthand.
+
+
+h4.played (AccessLevel 0) [Notes|Command_played_GameServerLib]
+No comment provided
+
+h4.SetAllegiance (AccessLevel 9) [Notes|Command_SetAllegiance_GameServerLib]
+*Parameter 1: pcAllegiance (string)*
+Gives the character a default name and forces them to update it on login
+
+
+h4.SetRetconConversions (AccessLevel 7) [Notes|Command_SetRetconConversions_GameServerLib]
+*Parameter 1: iVal (int)*
+No comment provided
+
+h4.stuck (AKA unstuck) (AccessLevel 0) [Notes|Command_stuck_GameServerLib]
+Attempt to fix your character that is currently stuck inside something
+
+
+h4.playerstats_Liststats (AccessLevel 9) [Notes|Command_playerstats_Liststats_GameServerLib]
+Display all PlayerStats values for the current player
+
+
+h4.playerstats_Reset (AccessLevel 9) [Notes|Command_playerstats_Reset_GameServerLib]
+Resets all PlayerStats for the current player
+
+
+h4.playerstats_SetByName (AccessLevel 9) [Notes|Command_playerstats_SetByName_GameServerLib]
+*Parameter 1: pchStatName (string)*
+*Parameter 2: uValue (int)*
+Sets the value of a specific stat
+
+
+h4.pmToggleFXCollision (AccessLevel 9) [Notes|Command_pmToggleFXCollision_GameServerLib]
+No comment provided
+
+h4.CombatDebugPerfEnable (AccessLevel 9) [Notes|Command_CombatDebugPerfEnable_GameServerLib]
+*Parameter 1: bEnable (int)*
+No comment provided
+
+h4.CombatDebugPerfReset (AccessLevel 9) [Notes|Command_CombatDebugPerfReset_GameServerLib]
+No comment provided
+
+h4.printEntityList (AccessLevel 9) [Notes|Command_printEntityList_GameServerLib]
+No comment provided
+
+h4.printEntityReport (AccessLevel 9) [Notes|Command_printEntityReport_GameServerLib]
+No comment provided
+
+h4.pvpGame_End (AccessLevel 9) [Notes|Command_pvpGame_End_GameServerLib]
+No comment provided
+
+h4.pvpGame_setScore (AccessLevel 9) [Notes|Command_pvpGame_setScore_GameServerLib]
+*Parameter 1: iGroup (int)*
+*Parameter 2: iScore (int)*
+Debug commands
+
+
+h4.PetLevelToMe (AccessLevel 7) [Notes|Command_PetLevelToMe_GameServerLib]
+set summoned pet's level based on your level.
+
+
+h4.SetPetLevel (AccessLevel 7) [Notes|Command_SetPetLevel_GameServerLib]
+*Parameter 1: iLevel (int)*
+set summoned pet's level.  Should be used only for debugging and testing.
+
+
+h4.SetPetQuality (AccessLevel 7) [Notes|Command_SetPetQuality_GameServerLib]
+*Parameter 1: iQuality (int)*
+set summoned pet's quality.  Should be used only for debugging and testing.
+
+
+h4.sendCRCToOtherServer (AccessLevel 9) [Notes|Command_sendCRCToOtherServer_GameServerLib]
+*Parameter 1: cid (int)*
+No comment provided
+
+h4.serverTimerRecordEnd (AccessLevel 9) [Notes|Command_serverTimerRecordEnd_GameServerLib]
+No comment provided
+
+h4.serverTimerRecordStart (AccessLevel 9) [Notes|Command_serverTimerRecordStart_GameServerLib]
+*Parameter 1: filename (string)*
+No comment provided
+
+h4.GetShardVariable (AccessLevel 9) [Notes|Command_GetShardVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+Gets a shard variable
+
+
+h4.IncrementShardVariableFloat (AccessLevel 9) [Notes|Command_IncrementShardVariableFloat_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: fValue (float)*
+Increment a shard variable
+
+
+h4.IncrementShardVariableInt (AccessLevel 9) [Notes|Command_IncrementShardVariableInt_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: iValue (int)*
+Increment a shard variable
+
+
+h4.ResetAllShardVariables (AccessLevel 9) [Notes|Command_ResetAllShardVariables_GameServerLib]
+Resets all shard variables. Resets even if the map does not subscribe to MapRequested vars
+
+
+h4.ResetShardVariable (AccessLevel 9) [Notes|Command_ResetShardVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+Resets a shard variable
+
+
+h4.SetShardVariable (AccessLevel 9) [Notes|Command_SetShardVariable_GameServerLib]
+*Parameter 1: pcName (string)*
+*Parameter 2: pcValue (string)*
+Sets a shard variable
+
+
+h4.SetShardVariableToSS2000 (AccessLevel 9) [Notes|Command_SetShardVariableToSS2000_GameServerLib]
+*Parameter 1: pcName (string)*
+Sets a shard variable to the current time
+
+
+h4.showPathPerf (AccessLevel 9) [Notes|Command_showPathPerf_GameServerLib]
+No comment provided
+
+h4.showPathPerfLivingOnly (AccessLevel 9) [Notes|Command_showPathPerfLivingOnly_GameServerLib]
+No comment provided
+
+h4.showServerFPS (AccessLevel 9) [Notes|Command_showServerFPS_GameServerLib]
+*Parameter 1: show (bool)*
+No comment provided
+
+h4.respawnAtStart (AccessLevel 7) [Notes|Command_respawnAtStart_GameServerLib]
+respawnAtStart: moves the player to the start spawn
+
+
+h4.respawn (AccessLevel 9) [Notes|Command_respawn_GameServerLib]
+respawn: moves the player to the nearest spawn without having them be dead first
+
+
+h4.spawnActivateReset (AccessLevel 9) [Notes|Command_spawnActivateReset_GameServerLib]
+spawnActivateReset: Reset a player's activated spawn points
+
+
+h4.GenerateSpeciesData (AccessLevel 9) [Notes|Command_GenerateSpeciesData_GameServerLib]
+*Parameter 1: pcSpeciesGenData (string)*
+No comment provided
+
+h4.survey_Test (AccessLevel 9) [Notes|Command_survey_Test_GameServerLib]
+No comment provided
+
+h4.survey_log_generate (AccessLevel 9) [Notes|Command_survey_log_generate_GameServerLib]
+*Parameter 1: iCnt (int)*
+No comment provided
+
+h4.testHeatmap (AccessLevel 9) [Notes|Command_testHeatmap_GameServerLib]
+No comment provided
+
+h4.timescale (AccessLevel 9) [Notes|Command_timescale_GameServerLib]
+*Parameter 1: newtime (float)*
+sets/displays the server time scale
+
+
+h4.time (AKA timeSet) (AccessLevel 9) [Notes|Command_time_GameServerLib]
+*Parameter 1: newtime (float)*
+sets/displays the server time
+
+
+h4.timeStepPause (AccessLevel 9) [Notes|Command_timeStepPause_GameServerLib]
+Toggles the time step scale between paused and not paused.
+
+
+h4.timeStepScaleDebug (AKA timeStepScale) (AccessLevel 9) [Notes|Command_timeStepScaleDebug_GameServerLib]
+*Parameter 1: newtime (float)*
+sets/displays the time step scale
+
+
+h4.pause (AccessLevel 0) [Notes|Command_pause_GameServerLib]
+No comment provided
+
+h4.unpause (AccessLevel 0) [Notes|Command_unpause_GameServerLib]
+No comment provided
+
+h4.tpsBytes (AccessLevel 9) [Notes|Command_tpsBytes_GameServerLib]
+No comment provided
+
+h4.tpsDisableLog (AccessLevel 9) [Notes|Command_tpsDisableLog_GameServerLib]
+No comment provided
+
+h4.tpsEnableLog (AccessLevel 9) [Notes|Command_tpsEnableLog_GameServerLib]
+No comment provided
+
+h4.tpsStructs (AccessLevel 9) [Notes|Command_tpsStructs_GameServerLib]
+No comment provided
+
+h4.Whitelist_Trades (AccessLevel 0) [Notes|Command_Whitelist_Trades_GameServerLib]
+*Parameter 1: enabled (bool)*
+Enable Trade Whitelist
+
+
+h4.ugcSearchCacheDumpStats (AccessLevel 9) [Notes|Command_ugcSearchCacheDumpStats_GameServerLib]
+No comment provided
+
+h4.ugc_KillTarget (AccessLevel 2) [Notes|Command_ugc_KillTarget_GameServerLib]
+No comment provided
+
+h4.MissionRefreshAllWaypoints (AccessLevel 9) [Notes|Command_MissionRefreshAllWaypoints_GameServerLib]
+MissionRefreshAllWaypoints: Flags a player's mission waypoints to reset
+
+
+h4.wcPrintActorsS (AccessLevel 9) [Notes|Command_wcPrintActorsS_GameServerLib]
+*Parameter 1: cellx (int)*
+*Parameter 2: cellz (int)*
+No comment provided
+
+h4.wcRayCapPerfTest (AccessLevel 9) [Notes|Command_wcRayCapPerfTest_GameServerLib]
+No comment provided
+
+h4.APCachingDebug (int) - (AccessLevel 9) [Notes|Command_APCachingDebug_GameServerLib]
+No comment provided
+
+h4.AccountDataCacheDiscountsTime (int) - (AccessLevel 9) [Notes|Command_AccountDataCacheDiscountsTime_GameServerLib]
+Number of seconds the AccountDataCache discounts cache is considered "fresh"
+
+
+h4.AccountDataCacheProductsTime (int) - (AccessLevel 9) [Notes|Command_AccountDataCacheProductsTime_GameServerLib]
+Number of seconds the AccountDataCache products cache is considered "fresh"
+
+
+h4.AdForce (int) - (AccessLevel 9) [Notes|Command_AdForce_GameServerLib]
+No comment provided
+
+h4.AllowExpLove (int) - (AccessLevel 9) [Notes|Command_AllowExpLove_GameServerLib]
+No comment provided
+
+h4.AllowUGCProjResend (int) - (AccessLevel 9) [Notes|Command_AllowUGCProjResend_GameServerLib]
+No comment provided
+
+h4.ArmamentSwapAlways (int) - (AccessLevel 9) [Notes|Command_ArmamentSwapAlways_GameServerLib]
+No comment provided
+
+h4.AssertOnSoloClientHang (int) - (AccessLevel 9) [Notes|Command_AssertOnSoloClientHang_GameServerLib]
+No comment provided
+
+h4.AssetSetIndexOverride (int) - (AccessLevel 9) [Notes|Command_AssetSetIndexOverride_GameServerLib]
+Allow overriding the asset set index.  -1 means does not override.
+
+
+h4.AuctionRaiderSearchesPerSecond (int) - (AccessLevel 9) [Notes|Command_AuctionRaiderSearchesPerSecond_GameServerLib]
+No comment provided
+
+h4.AuctionRaidsPerFrame (int) - (AccessLevel 9) [Notes|Command_AuctionRaidsPerFrame_GameServerLib]
+No comment provided
+
+h4.CivilianCalloutChance (float) - (AccessLevel 9) [Notes|Command_CivilianCalloutChance_GameServerLib]
+No comment provided
+
+h4.CombatDamageInventory (int) - (AccessLevel 9) [Notes|Command_CombatDamageInventory_GameServerLib]
+No comment provided
+
+h4.CombatDeathPrediction (int) - (AccessLevel 9) [Notes|Command_CombatDeathPrediction_GameServerLib]
+No comment provided
+
+h4.CombatSleep (int) - (AccessLevel 9) [Notes|Command_CombatSleep_GameServerLib]
+No comment provided
+
+h4.ContainerRaidsPerFrame (int) - (AccessLevel 9) [Notes|Command_ContainerRaidsPerFrame_GameServerLib]
+No comment provided
+
+h4.CopyDictCacheSize (int) - (AccessLevel 0) [Notes|Command_CopyDictCacheSize_GameServerLib]
+No comment provided
+
+h4.DataDump (int) - (AccessLevel 9) [Notes|Command_DataDump_GameServerLib]
+No comment provided
+
+h4.DebugDependentMissions (int) - (AccessLevel 9) [Notes|Command_DebugDependentMissions_GameServerLib]
+No comment provided
+
+h4.DebugF2P (int) - (AccessLevel 9) [Notes|Command_DebugF2P_GameServerLib]
+No comment provided
+
+h4.DebugF2PPremium (int) - (AccessLevel 9) [Notes|Command_DebugF2PPremium_GameServerLib]
+No comment provided
+
+h4.DebugMapProject (int) - (AccessLevel 9) [Notes|Command_DebugMapProject_GameServerLib]
+No comment provided
+
+h4.DebugQueueServer (int) - (AccessLevel 9) [Notes|Command_DebugQueueServer_GameServerLib]
+No comment provided
+
+h4.DebugUnlockAllInteriors (int) - (AccessLevel 9) [Notes|Command_DebugUnlockAllInteriors_GameServerLib]
+if true, everyone has access to all hideouts
+
+
+h4.DebugUnlockNotify (int) - (AccessLevel 9) [Notes|Command_DebugUnlockNotify_GameServerLib]
+No comment provided
+
+h4.Debug_PowerStats (int) - (AccessLevel 9) [Notes|Command_Debug_PowerStats_GameServerLib]
+No comment provided
+
+h4.Debug_PowerTree_Server (int) - (AccessLevel 9) [Notes|Command_Debug_PowerTree_Server_GameServerLib]
+Implements the game-specific parts of the gslCommandParse.h header file
+
+
+h4.DelayBeforeForceSavingOnTransfer (float) - (AccessLevel 9) [Notes|Command_DelayBeforeForceSavingOnTransfer_GameServerLib]
+No comment provided
+
+h4.DetectionMult (float) - (AccessLevel 9) [Notes|Command_DetectionMult_GameServerLib]
+No comment provided
+
+h4.DisableAllCutscenes (int) - (AccessLevel 7) [Notes|Command_DisableAllCutscenes_GameServerLib]
+No comment provided
+
+h4.DisableClassStances (int) - (AccessLevel 9) [Notes|Command_DisableClassStances_GameServerLib]
+No comment provided
+
+h4.DisableCutscenes (int) - (AccessLevel 9) [Notes|Command_DisableCutscenes_GameServerLib]
+Commandline option to disable cutscenes
+
+
+h4.DisableEncounterLoading (int) - (AccessLevel 9) [Notes|Command_DisableEncounterLoading_GameServerLib]
+No comment provided
+
+h4.DisableSocial (int) - (AccessLevel 9) [Notes|Command_DisableSocial_GameServerLib]
+No comment provided
+
+h4.DoNotDeleteNamespaceFiles (int) - (AccessLevel 9) [Notes|Command_DoNotDeleteNamespaceFiles_GameServerLib]
+No comment provided
+
+h4.DoSyncAtEndOfPublishing (int) - (AccessLevel 9) [Notes|Command_DoSyncAtEndOfPublishing_GameServerLib]
+No comment provided
+
+h4.DynamicRespawn (int) - (AccessLevel 9) [Notes|Command_DynamicRespawn_GameServerLib]
+----------------------------------------------------------------------------------
+Debug commands
+----------------------------------------------------------------------------------
+
+
+h4.DynamicRespawnScale (float) - (AccessLevel 9) [Notes|Command_DynamicRespawnScale_GameServerLib]
+No comment provided
+
+h4.EnableDebuggingQueues (int) - (AccessLevel 9) [Notes|Command_EnableDebuggingQueues_GameServerLib]
+No comment provided
+
+h4.EnablePetTransactionDebug (int) - (AccessLevel 9) [Notes|Command_EnablePetTransactionDebug_GameServerLib]
+No comment provided
+
+h4.EnablePowerFXNodePrint (int) - (AccessLevel 9) [Notes|Command_EnablePowerFXNodePrint_GameServerLib]
+No comment provided
+
+h4.EncCritterPref (string) - (AccessLevel 9) [Notes|Command_EncCritterPref_GameServerLib]
+No comment provided
+
+h4.ExpLoveTransPerFrame (int) - (AccessLevel 9) [Notes|Command_ExpLoveTransPerFrame_GameServerLib]
+No comment provided
+
+h4.FailAllPlayerTransfers (int) - (AccessLevel 9) [Notes|Command_FailAllPlayerTransfers_GameServerLib]
+No comment provided
+
+h4.FastEntityUpdates (int) - (AccessLevel 9) [Notes|Command_FastEntityUpdates_GameServerLib]
+No comment provided
+
+h4.FileForWritingMissionWikiAndExiting (string) - (AccessLevel 9) [Notes|Command_FileForWritingMissionWikiAndExiting_GameServerLib]
+if set, then write the mission wiki to a file and then quit
+
+
+h4.ForceFullMoonOff (int) - (AccessLevel 9) [Notes|Command_ForceFullMoonOff_GameServerLib]
+No comment provided
+
+h4.ForceFullMoonOn (int) - (AccessLevel 9) [Notes|Command_ForceFullMoonOn_GameServerLib]
+No comment provided
+
+h4.ForceMapEncounterDifficulty (int) - (AccessLevel 9) [Notes|Command_ForceMapEncounterDifficulty_GameServerLib]
+No comment provided
+
+h4.ForceMapLevel (int) - (AccessLevel 9) [Notes|Command_ForceMapLevel_GameServerLib]
+No comment provided
+
+h4.GroupProjectMapSubAlertTime (int) - (AccessLevel 9) [Notes|Command_GroupProjectMapSubAlertTime_GameServerLib]
+If the container hasn't arrived by this time, then alert.
+
+
+h4.GroupProjectMapSubInitialWait (int) - (AccessLevel 9) [Notes|Command_GroupProjectMapSubInitialWait_GameServerLib]
+How long to wait after setting up the container subscription before asking if the container exists.
+
+
+h4.GuildRaidsPerFrame (int) - (AccessLevel 9) [Notes|Command_GuildRaidsPerFrame_GameServerLib]
+No comment provided
+
+h4.IDForBogDownTest (int) - (AccessLevel 9) [Notes|Command_IDForBogDownTest_GameServerLib]
+No comment provided
+
+h4.InactivityTimeoutMinutes (int) - (AccessLevel 9) [Notes|Command_InactivityTimeoutMinutes_GameServerLib]
+No comment provided
+
+h4.LockLogicSpawn (int) - (AccessLevel 9) [Notes|Command_LockLogicSpawn_GameServerLib]
+No comment provided
+
+h4.LogToConsole (int) - (AccessLevel 9) [Notes|Command_LogToConsole_GameServerLib]
+Debugging flag that causes logging to be sent to the console.
+
+
+h4.MaxSyntheticReplayTransactionsPerFrame (int) - (AccessLevel 9) [Notes|Command_MaxSyntheticReplayTransactionsPerFrame_GameServerLib]
+If non-zero, throttles synthetic replicated log replay running at 30 FPS. This value is ignored if ReplaySyntheticLogDataInRealtime is true. Can be toggled during replay.
+
+
+h4.MemLeakCorrectionPerPartition (int) - (AccessLevel 9) [Notes|Command_MemLeakCorrectionPerPartition_GameServerLib]
+minus this much per partition greater than 1
+
+
+h4.MemLeakCorrectionPerPlayer (int) - (AccessLevel 9) [Notes|Command_MemLeakCorrectionPerPlayer_GameServerLib]
+check for mem leaks with a corrected RAM amount consisting of actual RAM amount 
+minus this much per player
+
+
+h4.MemLeakTrackingIncreaseAmount (int) - (AccessLevel 9) [Notes|Command_MemLeakTrackingIncreaseAmount_GameServerLib]
+memory increase that triggers a mem leak tracking alert
+
+
+h4.MemLeakTrackingInterval (int) - (AccessLevel 9) [Notes|Command_MemLeakTrackingInterval_GameServerLib]
+how often to do a mem leak tracking check
+
+
+h4.Microtrans_PointBuyDebugging (int) - (AccessLevel 9) [Notes|Command_Microtrans_PointBuyDebugging_GameServerLib]
+No comment provided
+
+h4.NoPublishing (int) - (AccessLevel 9) [Notes|Command_NoPublishing_GameServerLib]
+set by map manager when it launches this gameserver if the player is banned from publishing
+
+
+h4.NumSlowFramesToAlertOn (int) - (AccessLevel 9) [Notes|Command_NumSlowFramesToAlertOn_GameServerLib]
+No comment provided
+
+h4.OldReplayLogsMode (int) - (AccessLevel 9) [Notes|Command_OldReplayLogsMode_GameServerLib]
+No comment provided
+
+h4.PlayerMatchStatsDebug (int) - (AccessLevel 9) [Notes|Command_PlayerMatchStatsDebug_GameServerLib]
+No comment provided
+
+h4.PowersAEClientView (int) - (AccessLevel 9) [Notes|Command_PowersAEClientView_GameServerLib]
+No comment provided
+
+h4.PowersPostBinningValidateThrowWarnings (int) - (AccessLevel 9) [Notes|Command_PowersPostBinningValidateThrowWarnings_GameServerLib]
+No comment provided
+
+h4.PrintfTransferLogs (int) - (AccessLevel 9) [Notes|Command_PrintfTransferLogs_GameServerLib]
+No comment provided
+
+h4.ProgressionValidateMaps (int) - (AccessLevel 9) [Notes|Command_ProgressionValidateMaps_GameServerLib]
+No comment provided
+
+h4.PublishSkipBeaconizing (int) - (AccessLevel 9) [Notes|Command_PublishSkipBeaconizing_GameServerLib]
+No comment provided
+
+h4.ReplaySyntheticLogDataInRealtime (int) - (AccessLevel 9) [Notes|Command_ReplaySyntheticLogDataInRealtime_GameServerLib]
+If true, synthetic replicated logs are played back in real-time using original log line timestamps. Can be toggled during replay.
+
+
+h4.RewardLog (int) - (AccessLevel 9) [Notes|Command_RewardLog_GameServerLib]
+No comment provided
+
+h4.ServerBinnerDoRegenerate (int) - (AccessLevel 9) [Notes|Command_ServerBinnerDoRegenerate_GameServerLib]
+No comment provided
+
+h4.ServerBinnerProjectInfo (string) - (AccessLevel 9) [Notes|Command_ServerBinnerProjectInfo_GameServerLib]
+No comment provided
+
+h4.ServerDisableClassStances (int) - (AccessLevel 9) [Notes|Command_ServerDisableClassStances_GameServerLib]
+No comment provided
+
+h4.ServerIgnoreLogoutTimer (int) - (AccessLevel 9) [Notes|Command_ServerIgnoreLogoutTimer_GameServerLib]
+No comment provided
+
+h4.ServerInactivityTimeoutMinutes (int) - (AccessLevel 9) [Notes|Command_ServerInactivityTimeoutMinutes_GameServerLib]
+No comment provided
+
+h4.SetMapRevealDistance (int) - (AccessLevel 9) [Notes|Command_SetMapRevealDistance_GameServerLib]
+No comment provided
+
+h4.SetTestingMode (int) - (AccessLevel 9) [Notes|Command_SetTestingMode_GameServerLib]
+No comment provided
+
+h4.ShowSurvey (int) - (AccessLevel 9) [Notes|Command_ShowSurvey_GameServerLib]
+No comment provided
+
+h4.SimulateContainerMoves (int) - (AccessLevel 9) [Notes|Command_SimulateContainerMoves_GameServerLib]
+No comment provided
+
+h4.SimulateProductMapLifecycle (int) - (AccessLevel 9) [Notes|Command_SimulateProductMapLifecycle_GameServerLib]
+No comment provided
+
+h4.SlowFrameAlertThrottle (int) - (AccessLevel 9) [Notes|Command_SlowFrameAlertThrottle_GameServerLib]
+No comment provided
+
+h4.SlowFrameSeconds (float) - (AccessLevel 9) [Notes|Command_SlowFrameSeconds_GameServerLib]
+a frame longer than this is "slow"
+
+
+h4.SlowFramesWithinWindowToAlert (int) - (AccessLevel 9) [Notes|Command_SlowFramesWithinWindowToAlert_GameServerLib]
+No comment provided
+
+h4.StopSyntheticReplayAt (string) - (AccessLevel 9) [Notes|Command_StopSyntheticReplayAt_GameServerLib]
+If non-empty string, all replaying GameServers will stop at the first transaction they encounter with a timestamp greater than or equal to this value.
+Useful for running the GameServers flat out until a certain time, then playing them in realtime afterwards.
+
+
+h4.Survey_ShowReal (int) - (AccessLevel 9) [Notes|Command_Survey_ShowReal_GameServerLib]
+No comment provided
+
+h4.SyntheticLogDataFile (string) - (AccessLevel 9) [Notes|Command_SyntheticLogDataFile_GameServerLib]
+No comment provided
+
+h4.TeamRaiderDisband (int) - (AccessLevel 9) [Notes|Command_TeamRaiderDisband_GameServerLib]
+No comment provided
+
+h4.TeamRaiderRepeat (int) - (AccessLevel 9) [Notes|Command_TeamRaiderRepeat_GameServerLib]
+No comment provided
+
+h4.TeamRaiderRequest (int) - (AccessLevel 9) [Notes|Command_TeamRaiderRequest_GameServerLib]
+No comment provided
+
+h4.TeamRaidsPerFrame (int) - (AccessLevel 9) [Notes|Command_TeamRaidsPerFrame_GameServerLib]
+No comment provided
+
+h4.TimeBeforeStartingMemLeakTracking (int) - (AccessLevel 9) [Notes|Command_TimeBeforeStartingMemLeakTracking_GameServerLib]
+time (seconds) after gslrunning begins before mem leak tracking begins (time to get into "normal" running mode))
+
+
+h4.TreatExpirationTimeAsNowForAllAuctionLots (int) - (AccessLevel 9) [Notes|Command_TreatExpirationTimeAsNowForAllAuctionLots_GameServerLib]
+Causes all auction lots to immediately expire. Will award the item to the highest bidder, if any.
+
+
+h4.UGCAchievementNotificationsEnable (int) - (AccessLevel 9) [Notes|Command_UGCAchievementNotificationsEnable_GameServerLib]
+No comment provided
+
+h4.UGCAchievementRewardsEnable (int) - (AccessLevel 9) [Notes|Command_UGCAchievementRewardsEnable_GameServerLib]
+No comment provided
+
+h4.UGCConfidenceValueForLowerBoundOfConfidenceInterval (float) - (AccessLevel 9) [Notes|Command_UGCConfidenceValueForLowerBoundOfConfidenceInterval_GameServerLib]
+No comment provided
+
+h4.UGCGenerallyEnabled (int) - (AccessLevel 9) [Notes|Command_UGCGenerallyEnabled_GameServerLib]
+Indicates if UGC has been turned on via shard launcher config for this shard. It will be false from MCP unless set via cmdline.
+
+
+h4.UGCImportProjectOnStart (string) - (AccessLevel 9) [Notes|Command_UGCImportProjectOnStart_GameServerLib]
+No comment provided
+
+h4.UGCPublishAndQuit (int) - (AccessLevel 9) [Notes|Command_UGCPublishAndQuit_GameServerLib]
+No comment provided
+
+h4.UGCZValueForLowerBoundOfConfidenceInterval (float) - (AccessLevel 9) [Notes|Command_UGCZValueForLowerBoundOfConfidenceInterval_GameServerLib]
+No comment provided
+
+h4.UsePresentButNullCheck (int) - (AccessLevel 9) [Notes|Command_UsePresentButNullCheck_GameServerLib]
+No comment provided
+
+h4.ValidateDependencyCheck (int) - (AccessLevel 9) [Notes|Command_ValidateDependencyCheck_GameServerLib]
+if true and MakeBinsAndExit is set, validate the fast dependency checker before binning
+
+
+h4.VerbosePublishUpdatesToClient (int) - (AccessLevel 9) [Notes|Command_VerbosePublishUpdatesToClient_GameServerLib]
+No comment provided
+
+h4.VerboseTransferLogs (int) - (AccessLevel 9) [Notes|Command_VerboseTransferLogs_GameServerLib]
+No comment provided
+
+h4.WriteMemdumpBetweenMaps (int) - (AccessLevel 9) [Notes|Command_WriteMemdumpBetweenMaps_GameServerLib]
+if true and MakeBinsAndExit is set, write a memory dump between each map binning
+
+
+h4.aiGlobalOverrideAggroRadius (float) - (AccessLevel 9) [Notes|Command_aiGlobalOverrideAggroRadius_GameServerLib]
+No comment provided
+
+h4.aiGlobalOverrideAwareRatio (float) - (AccessLevel 9) [Notes|Command_aiGlobalOverrideAwareRatio_GameServerLib]
+No comment provided
+
+h4.aiGlobalOverrideEnterCombatWaitTime (float) - (AccessLevel 9) [Notes|Command_aiGlobalOverrideEnterCombatWaitTime_GameServerLib]
+No comment provided
+
+h4.aiGlobalOverrideStealth (float) - (AccessLevel 9) [Notes|Command_aiGlobalOverrideStealth_GameServerLib]
+No comment provided
+
+h4.aiUsePowersAggroRadii (int) - (AccessLevel 9) [Notes|Command_aiUsePowersAggroRadii_GameServerLib]
+No comment provided
+
+h4.ambushChance (int) - (AccessLevel 9) [Notes|Command_ambushChance_GameServerLib]
+No comment provided
+
+h4.ambushCooldown (int) - (AccessLevel 9) [Notes|Command_ambushCooldown_GameServerLib]
+No comment provided
+
+h4.ambushDebug (int) - (AccessLevel 9) [Notes|Command_ambushDebug_GameServerLib]
+No comment provided
+
+h4.ambushSkipChance (int) - (AccessLevel 9) [Notes|Command_ambushSkipChance_GameServerLib]
+No comment provided
+
+h4.checkEncounterExternVars (int) - (AccessLevel 9) [Notes|Command_checkEncounterExternVars_GameServerLib]
+----------------------------------------------------------------------------------
+Debugging Commands
+----------------------------------------------------------------------------------
+
+
+h4.clickabledebug (int) - (AccessLevel 9) [Notes|Command_clickabledebug_GameServerLib]
+----------------------------------------------------------------------------------
+Debug commands
+----------------------------------------------------------------------------------
+
+
+h4.disableClientPerfLog (int) - (AccessLevel 9) [Notes|Command_disableClientPerfLog_GameServerLib]
+No comment provided
+
+h4.disableEntityInactive (int) - (AccessLevel 9) [Notes|Command_disableEntityInactive_GameServerLib]
+No comment provided
+
+h4.doSkelFixup (int) - (AccessLevel 9) [Notes|Command_doSkelFixup_GameServerLib]
+automatically generates skel_fixup.info files from costume data
+
+
+h4.egUseQTrunc (int) - (AccessLevel 9) [Notes|Command_egUseQTrunc_GameServerLib]
+No comment provided
+
+h4.encounterDisableSleeping (int) - (AccessLevel 9) [Notes|Command_encounterDisableSleeping_GameServerLib]
+No comment provided
+
+h4.encounterIgnoreProximity (int) - (AccessLevel 9) [Notes|Command_encounterIgnoreProximity_GameServerLib]
+No comment provided
+
+h4.encounterprocessing (int) - (AccessLevel 9) [Notes|Command_encounterprocessing_GameServerLib]
+----------------------------------------------------------------------------------
+Simple Debug Commands
+----------------------------------------------------------------------------------
+
+
+h4.eventlog_Debug (int) - (AccessLevel 9) [Notes|Command_eventlog_Debug_GameServerLib]
+Turns on debugging information for the event system
+
+
+h4.eventlog_Test (int) - (AccessLevel 9) [Notes|Command_eventlog_Test_GameServerLib]
+No comment provided
+
+h4.forceteamsize (int) - (AccessLevel 9) [Notes|Command_forceteamsize_GameServerLib]
+No comment provided
+
+h4.generalUpdateThreadCount (int) - (AccessLevel 9) [Notes|Command_generalUpdateThreadCount_GameServerLib]
+No comment provided
+
+h4.gslSendTrigger (int) - (AccessLevel 9) [Notes|Command_gslSendTrigger_GameServerLib]
+No comment provided
+
+h4.gslSendWaitForTrigger (int) - (AccessLevel 9) [Notes|Command_gslSendWaitForTrigger_GameServerLib]
+No comment provided
+
+h4.gslTestDebugLogStuckClient (int) - (AccessLevel 9) [Notes|Command_gslTestDebugLogStuckClient_GameServerLib]
+No comment provided
+
+h4.interactabledebug (int) - (AccessLevel 9) [Notes|Command_interactabledebug_GameServerLib]
+No comment provided
+
+h4.maxEntityDiffPacketBytesToKeep (int) - (AccessLevel 9) [Notes|Command_maxEntityDiffPacketBytesToKeep_GameServerLib]
+No comment provided
+
+h4.maxSendPacket (int) - (AccessLevel 9) [Notes|Command_maxSendPacket_GameServerLib]
+No comment provided
+
+h4.mmDebugDrawValidPointAttemps (int) - (AccessLevel 9) [Notes|Command_mmDebugDrawValidPointAttemps_GameServerLib]
+No comment provided
+
+h4.mmDoResetAnims (int) - (AccessLevel 9) [Notes|Command_mmDoResetAnims_GameServerLib]
+No comment provided
+
+h4.mmNetPosEncodeThreshold (int) - (AccessLevel 9) [Notes|Command_mmNetPosEncodeThreshold_GameServerLib]
+No comment provided
+
+h4.mmThreadCount (int) - (AccessLevel 9) [Notes|Command_mmThreadCount_GameServerLib]
+No comment provided
+
+h4.mmrFxTimeoutIsDestroy (int) - (AccessLevel 9) [Notes|Command_mmrFxTimeoutIsDestroy_GameServerLib]
+No comment provided
+
+h4.mrInteractionDistToFaceNextWaypoint (float) - (AccessLevel 9) [Notes|Command_mrInteractionDistToFaceNextWaypoint_GameServerLib]
+No comment provided
+
+h4.mrJumpApexTrim (float) - (AccessLevel 9) [Notes|Command_mrJumpApexTrim_GameServerLib]
+No comment provided
+
+h4.mrJumpStationaryVelocity (float) - (AccessLevel 9) [Notes|Command_mrJumpStationaryVelocity_GameServerLib]
+No comment provided
+
+h4.mrPhysicsCheatDistance (float) - (AccessLevel 9) [Notes|Command_mrPhysicsCheatDistance_GameServerLib]
+No comment provided
+
+h4.mrSurfaceFaceFastRotScale (float) - (AccessLevel 9) [Notes|Command_mrSurfaceFaceFastRotScale_GameServerLib]
+No comment provided
+
+h4.mrSurfaceFaceMaxTurnRate (float) - (AccessLevel 9) [Notes|Command_mrSurfaceFaceMaxTurnRate_GameServerLib]
+No comment provided
+
+h4.mrSurfaceFaceMinTurnRate (float) - (AccessLevel 9) [Notes|Command_mrSurfaceFaceMinTurnRate_GameServerLib]
+No comment provided
+
+h4.mrSurfaceFaceNormalBasis (float) - (AccessLevel 9) [Notes|Command_mrSurfaceFaceNormalBasis_GameServerLib]
+No comment provided
+
+h4.mrSurfaceFaceTurnRate (float) - (AccessLevel 9) [Notes|Command_mrSurfaceFaceTurnRate_GameServerLib]
+No comment provided
+
+h4.mrSurfaceRotYawScale (float) - (AccessLevel 9) [Notes|Command_mrSurfaceRotYawScale_GameServerLib]
+No comment provided
+
+h4.mrTacticalRollFaceTurnRate (float) - (AccessLevel 9) [Notes|Command_mrTacticalRollFaceTurnRate_GameServerLib]
+No comment provided
+
+h4.mrTacticalRollIsExactDirection (int) - (AccessLevel 9) [Notes|Command_mrTacticalRollIsExactDirection_GameServerLib]
+No comment provided
+
+h4.mrTacticalRollStepUpScaleXZ (float) - (AccessLevel 9) [Notes|Command_mrTacticalRollStepUpScaleXZ_GameServerLib]
+No comment provided
+
+h4.mrTestAnimName (string) - (AccessLevel 9) [Notes|Command_mrTestAnimName_GameServerLib]
+No comment provided
+
+h4.mrTestFlagName (string) - (AccessLevel 9) [Notes|Command_mrTestFlagName_GameServerLib]
+No comment provided
+
+h4.mrTestSecondsToDestroy (float) - (AccessLevel 9) [Notes|Command_mrTestSecondsToDestroy_GameServerLib]
+No comment provided
+
+h4.mrTestSecondsToPlayFlag (float) - (AccessLevel 9) [Notes|Command_mrTestSecondsToPlayFlag_GameServerLib]
+No comment provided
+
+h4.netTimingGraphPaused (int) - (AccessLevel 0) [Notes|Command_netTimingGraphPaused_GameServerLib]
+No comment provided
+
+h4.pvpGameAutoStart (int) - (AccessLevel 9) [Notes|Command_pvpGameAutoStart_GameServerLib]
+No comment provided
+
+h4.pvpIgnoreMapType (int) - (AccessLevel 9) [Notes|Command_pvpIgnoreMapType_GameServerLib]
+No comment provided
+
+h4.readyChime (int) - (AccessLevel 9) [Notes|Command_readyChime_GameServerLib]
+No comment provided
+
+h4.reward_trace (int) - (AccessLevel 9) [Notes|Command_reward_trace_GameServerLib]
+print a trace of what the reward system did during a given reward
+
+
+h4.serverMaxFPS (float) - (AccessLevel 9) [Notes|Command_serverMaxFPS_GameServerLib]
+No comment provided
+
+h4.setPriorityAtStartup (int) - (AccessLevel 9) [Notes|Command_setPriorityAtStartup_GameServerLib]
+No comment provided
+
+h4.showAllLocalFX (int) - (AccessLevel 7) [Notes|Command_showAllLocalFX_GameServerLib]
+No comment provided
+
+h4.simulateUpdate (int) - (AccessLevel 9) [Notes|Command_simulateUpdate_GameServerLib]
+By default, simulate updating message keys. 
+
+
+h4.survey_MissionLevelMax (int) - (AccessLevel 9) [Notes|Command_survey_MissionLevelMax_GameServerLib]
+No comment provided
+
+h4.survey_MissionLevelMin (int) - (AccessLevel 9) [Notes|Command_survey_MissionLevelMin_GameServerLib]
+No comment provided
+
+h4.survey_MissionNeedsReturn (int) - (AccessLevel 9) [Notes|Command_survey_MissionNeedsReturn_GameServerLib]
+No comment provided
+
+h4.survey_MissionRewardScaleMin (float) - (AccessLevel 9) [Notes|Command_survey_MissionRewardScaleMin_GameServerLib]
+No comment provided
+
+h4.survey_Show (int) - (AccessLevel 9) [Notes|Command_survey_Show_GameServerLib]
+No comment provided
+
+h4.threadPriority (int) - (AccessLevel 9) [Notes|Command_threadPriority_GameServerLib]
+No comment provided
+

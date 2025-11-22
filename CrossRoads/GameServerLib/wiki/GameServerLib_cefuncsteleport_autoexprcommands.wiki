@@ -1,0 +1,13 @@
+h4.TeleportGetNearestChildEntity (AccessLevel 9) [Notes|Command_TeleportGetNearestChildEntity_GameServerLib]
+*Parameter 1: sourceChar (Character struct)*
+*Parameter 2: pchTag (string)*
+gets the nearest created entity by searching through all entCreated and projectileCreated attribs to find those entities.
+
+
+h4.TeleportGetNearestSiblingEntityWithPowerTag (AccessLevel 9) [Notes|Command_TeleportGetNearestSiblingEntityWithPowerTag_GameServerLib]
+*Parameter 1: sourceChar (Character struct)*
+*Parameter 2: pchTag (string)*
+gets the nearest sibling entity to the given entity by looking at the entity's creator and searching
+through all entCreated and projectileCreated attribs to find those entities.
+
+

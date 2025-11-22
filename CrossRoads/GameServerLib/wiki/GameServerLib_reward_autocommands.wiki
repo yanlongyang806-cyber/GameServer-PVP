@@ -1,0 +1,52 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.GrantMissionRewards (AccessLevel 9) [Notes|Command_GrantMissionRewards_GameServerLib]
+*Parameter 1: RewardTableName (string)*
+*Parameter 2: ChoiceName (string)*
+This is a debug command to test the granting of mission rewards
+the inputs are a reward table name, and an optional choice item name
+this debug routine only supports sending a single choice
+
+
+h4.GrantRewardTable (AccessLevel 5) [Notes|Command_GrantRewardTable_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+Execute a reward table.  Uses the power GrantReward context.
+
+
+h4.GrantRewardTableDirect (AccessLevel 5) [Notes|Command_GrantRewardTableDirect_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+give the reward table directly into your inventory
+
+
+h4.RewardGrant (AccessLevel 7) [Notes|Command_RewardGrant_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+*Parameter 2: iDifficulty (int)*
+Execute a reward table.  Uses the power GrantReward context.
+used for testing more complex tables
+
+
+h4.RewardGrantWithScale (AccessLevel 7) [Notes|Command_RewardGrantWithScale_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+*Parameter 2: fScale (float)*
+Execute a reaward table with a scaled value. Uses the power GrantReward context.
+used for testing tables with scaleable values.
+
+
+h4.RemoveMissionItems (AccessLevel 9) [Notes|Command_RemoveMissionItems_GameServerLib]
+*Parameter 1: MissionName (string)*
+This is a debug command to test removing mission items from an ent
+
+

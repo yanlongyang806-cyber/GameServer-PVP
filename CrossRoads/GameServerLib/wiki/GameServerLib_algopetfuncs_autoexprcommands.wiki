@@ -1,0 +1,11 @@
+h4.AlgoPetIsSpecies (AccessLevel 9) [Notes|Command_AlgoPetIsSpecies_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchSpecies (string)*
+No comment provided
+
+h4.PowersWithAlgoCategory (AccessLevel 9) [Notes|Command_PowersWithAlgoCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pchAlgoCat (string)*
+Find all the currently chosen powers with the category requested
+
+

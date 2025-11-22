@@ -1,0 +1,68 @@
+h4.AutoPlacementFitnessToCorner (AccessLevel 9) [Notes|Command_AutoPlacementFitnessToCorner_GameServerLib]
+*Returns: float*
+*Parameter 1: fMinDistance (float)*
+*Parameter 2: fMaxDistance (float)*
+*Parameter 3: strict (int)*
+Description: Returns a heuristic of how close the given potential position is to a corner.
+If the potential position is within the fMinDistance, 1.0 is returned.
+If the potential position is further than the fMaxDistance, 0.0 is returned.
+Otherwise a value between 0 and 1 is returned. The closer to 0, the further the corner is from the position.
+Param: strict - signifies how strictly it determines if something is an appropriate corner/edge. 
+A value of zero disables strict. 
+
+
+h4.AutoPlacementFitnessToEdge (AccessLevel 9) [Notes|Command_AutoPlacementFitnessToEdge_GameServerLib]
+*Returns: float*
+*Parameter 1: fMinDistance (float)*
+*Parameter 2: fMaxDistance (float)*
+*Parameter 3: strict (int)*
+Description: Returns a heuristic of how close the given potential position is to an edge.
+If the potential position is within the fMinDistance, 1.0 is returned.
+If the potential position is further than the fMaxDistance, 0.0 is returned.
+Otherwise a value between 0 and 1 is returned. The closer to 0, the further the corner is from the position.
+Param: strict - signifies how strictly it determines if something is an appropriate corner/edge. 
+
+
+h4.AutoPlacementFitnessToEncounter (AccessLevel 9) [Notes|Command_AutoPlacementFitnessToEncounter_GameServerLib]
+*Returns: float*
+*Parameter 1: fMinDistance (float)*
+*Parameter 2: fMaxDistance (float)*
+Description: Returns a heuristic of how close the given potential position is to an encounter.
+If the potential position is within the fMinDistance, 1.0 is returned.
+If the potential position is further than the fMaxDistance, 0.0 is returned.
+
+
+h4.AutoPlacementIsOnCorner (AccessLevel 9) [Notes|Command_AutoPlacementIsOnCorner_GameServerLib]
+*Returns: int*
+*Parameter 1: strict (int)*
+Description: Returns true/false if the potential position is actually on a corner
+Param: strict - signifies how strictly it determines if something is an appropriate corner/edge. 
+A value of zero disables strict. 
+
+
+h4.AutoPlacementIsOnEdge (AccessLevel 9) [Notes|Command_AutoPlacementIsOnEdge_GameServerLib]
+*Returns: int*
+*Parameter 1: strict (int)*
+Description: Returns true/false if the potential position is actually on an edge
+Param: strict - signifies how strictly it determines if something is an appropriate corner/edge. 
+A value of zero disables strict. 
+
+
+h4.AutoPlacementProximityToCorner (AccessLevel 9) [Notes|Command_AutoPlacementProximityToCorner_GameServerLib]
+*Returns: int*
+*Parameter 1: fDistToCorner (float)*
+*Parameter 2: strict (int)*
+Description: Returns true/false if the potential position is within a given distance to a corner. 
+Param: strict - signifies how strictly it determines if something is an appropriate corner/edge. 
+A value of zero disables strict. 
+
+
+h4.AutoPlacementProximityToEdge (AccessLevel 9) [Notes|Command_AutoPlacementProximityToEdge_GameServerLib]
+*Returns: int*
+*Parameter 1: fDistToEdge (float)*
+*Parameter 2: strict (int)*
+Description: Returns true/false if the potential position is within a given distance to an edge. 
+Param: strict - signifies how strictly it determines if something is an appropriate corner/edge. 
+A value of zero disables strict. 
+
+

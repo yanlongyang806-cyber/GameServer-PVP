@@ -1,0 +1,26 @@
+h4.CharLevel (AccessLevel 9) [Notes|Command_CharLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.IsCharClass (AccessLevel 9) [Notes|Command_IsCharClass_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchClassName (string)*
+No comment provided
+
+h4.Stat (AccessLevel 9) [Notes|Command_Stat_GameServerLib]
+*Returns: float*
+No comment provided
+
+h4.StatMax (AccessLevel 9) [Notes|Command_StatMax_GameServerLib]
+*Returns: float*
+No comment provided
+
+h4.StatNodeRank (AccessLevel 9) [Notes|Command_StatNodeRank_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.StatTable (AccessLevel 9) [Notes|Command_StatTable_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: fValue (float)*
+No comment provided
+

@@ -1,0 +1,117 @@
+h4.Team_AcceptInvite (AccessLevel 0) [Notes|Command_Team_AcceptInvite_GameServerLib]
+No comment provided
+
+h4.Team_AcceptInviteSidekick (AccessLevel 0) [Notes|Command_Team_AcceptInviteSidekick_GameServerLib]
+No comment provided
+
+h4.Team_AcceptRequest (AccessLevel 0) [Notes|Command_Team_AcceptRequest_GameServerLib]
+*Parameter 1: iEntID (int)*
+No comment provided
+
+h4.Team_CancelRequest (AccessLevel 0) [Notes|Command_Team_CancelRequest_GameServerLib]
+No comment provided
+
+h4.Team_DefaultMode (AccessLevel 0) [Notes|Command_Team_DefaultMode_GameServerLib]
+*Parameter 1: pcMode (string)*
+No comment provided
+
+h4.Team_ChangeDifficulty (AccessLevel 0) [Notes|Command_Team_ChangeDifficulty_GameServerLib]
+*Parameter 1: iDifficulty (int)*
+
+Set the team difficulty
+
+
+
+h4.Team_Mode (AccessLevel 0) [Notes|Command_Team_Mode_GameServerLib]
+*Parameter 1: pcMode (string)*
+No comment provided
+
+h4.Team_DeclineInvite (AccessLevel 0) [Notes|Command_Team_DeclineInvite_GameServerLib]
+No comment provided
+
+h4.Team_DeclineRequest (AccessLevel 0) [Notes|Command_Team_DeclineRequest_GameServerLib]
+*Parameter 1: iEntID (int)*
+No comment provided
+
+h4.Team_ReleaseOwned (AccessLevel 9) [Notes|Command_Team_ReleaseOwned_GameServerLib]
+No comment provided
+
+h4.Team_Invite (AKA Invite) (AccessLevel 0) [Notes|Command_Team_Invite_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+Invite another player to your team.
+
+
+h4.Team_JoinVoiceChat (AccessLevel 9) [Notes|Command_Team_JoinVoiceChat_GameServerLib]
+No comment provided
+
+h4.Team_Kick (AccessLevel 0) [Notes|Command_Team_Kick_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+Kick a player off your team
+
+
+h4.Team_Leave (AccessLevel 0) [Notes|Command_Team_Leave_GameServerLib]
+No comment provided
+
+h4.Team_LeaveVoiceChat (AccessLevel 9) [Notes|Command_Team_LeaveVoiceChat_GameServerLib]
+No comment provided
+
+h4.Team_Promote (AKA Promote) (AccessLevel 0) [Notes|Command_Team_Promote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+Promote team leader
+
+
+h4.Team_Request (AKA Request) (AccessLevel 0) [Notes|Command_Team_Request_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Team_SetChampion (AKA Champion) (AccessLevel 0) [Notes|Command_Team_SetChampion_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Team_SetDefaultLootMode (AccessLevel 0) [Notes|Command_Team_SetDefaultLootMode_GameServerLib]
+*Parameter 1: pcMode (string)*
+No comment provided
+
+h4.Team_SetDefaultLootModeQuality (AccessLevel 0) [Notes|Command_Team_SetDefaultLootModeQuality_GameServerLib]
+*Parameter 1: pcQuality (string)*
+No comment provided
+
+h4.Team_SetLootMode (AccessLevel 0) [Notes|Command_Team_SetLootMode_GameServerLib]
+*Parameter 1: pcMode (string)*
+Sets the team loot mode
+
+
+h4.Team_SetLootModeQuality (AccessLevel 0) [Notes|Command_Team_SetLootModeQuality_GameServerLib]
+*Parameter 1: pcQuality (string)*
+Sets the minimum quality for team looting
+
+
+h4.Team_Sidekicking (AccessLevel 0) [Notes|Command_Team_Sidekicking_GameServerLib]
+*Parameter 1: bSidekicking (bool)*
+No comment provided
+
+h4.Team_SetSpokesman (AccessLevel 0) [Notes|Command_Team_SetSpokesman_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+Set team spokesman
+
+
+h4.Team_SetStatusMessage (AccessLevel 0) [Notes|Command_Team_SetStatusMessage_GameServerLib]
+*Parameter 1: pchStatusMessage (string)*
+Sets the team status message
+
+
+h4.Team_SetXSessionInfo (AccessLevel 9) [Notes|Command_Team_SetXSessionInfo_GameServerLib]
+*Parameter 1: pXSessionInfo (CrypticXSessionInfo struct)*
+No comment provided
+
+h4.Team_VoteKick (AccessLevel 0) [Notes|Command_Team_VoteKick_GameServerLib]
+*Parameter 1: pName (string)*
+*Parameter 2: pcReason (sentence)*
+Start a vote to kick a player off your team. Called from uigens
+
+
+h4.Team_VoteKickRegisterOneVote (AccessLevel 0) [Notes|Command_Team_VoteKickRegisterOneVote_GameServerLib]
+*Parameter 1: bKickConfirm (bool)*
+Start a vote to kick a player off your team. Called from uigens
+
+

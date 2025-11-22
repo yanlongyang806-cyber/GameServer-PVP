@@ -1,0 +1,128 @@
+{anchor:EProjectileType}
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\Entity\ProjectileEntity.h_
+h3. Enumerated type *EProjectileType* - (null)
+*Default*
+*Beam*
+{anchor:EProjectileAttachOnCreate}
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\Entity\ProjectileEntity.h_
+h3. Enumerated type *EProjectileAttachOnCreate* - (null)
+*Default*
+*Owner*
+*Target*
+{anchor:ProjectileEntityDef}
+
+_auto-generated from I:\wdym\src\CrossRoads\GameServerLib\..\Common\Entity\ProjectileEntity.h_
+
+h3.ProjectileEntityDef
+
+*Costume* < PlayerCostumeRef >
+-	the costume of the projectile
+
+*Speed* < float >
+-	the initial speed the projectile will start at, if negative will start at TargetSpeed
+
+*Acceleration* < float >
+-	the feet per second acceleration to get to target speed
+
+*TargetSpeed* < float >
+-	the target speed of the projectile
+
+*Range* < float >
+-	the range of the projectile before it destroys itself
+
+*Lifetime* < float >
+-	the time before the projectile will kill itself
+
+*Gravity* < float >
+-	the gravity applied. Gravity is applied downwards. A negative gravity will cause it to go upwards.
+
+*EntityCollisionRadius* < float >
+-	the collision radius that is used to detect collision with other entities
+
+*WorldCollisionRadius* < float >
+-	the radius used for collision against the world
+
+*MaxHitEntities* < int >
+-	the maximum number of entities this projectile can hit. 0 or less will make it hit every entity
+
+*SurfaceObstructAngle* < float >
+-	(degrees) the angle threshold at which the projectile will report an OnCollideWorld
+
+*StepHeight* < float >
+-	the height in feet the projectile will attempt to step over small curbs in the geometry
+
+*HitsFriendlies*
+-	if true, will collide vs friendlies
+
+*HitsEnemies*
+-	defaults to true- if true, will collide vs enemies
+
+*LinearVelocity*
+-	uses a linear velocity movement model, which better preserves velocity when hitting surfaces
+-	and instantly turns towards targets
+
+*HugGround*
+-	If set, the projectile will attempt to snap downwards to make contact with the ground
+
+*WallsObstruct*
+-	walls are classified as 45 degrees of a vertical wall. 
+-	walls always cause obstructions (onCollideWorld)
+
+*HitsOwner*
+-	if set the projectile will detect hits on the owner
+
+*IgnoreHitWhileStationary*
+-	if set, will not detect hits while not moving
+
+*PowerOnHitEnt* < PowerDefRef >
+-	the power that will fire when it hits another entity
+-	targets hit entity
+
+*PowerOnCollideWorld* < PowerDefRef >
+-	the power that will fire when it hits a wall
+-	targets nothing
+
+*PowerOnExpire* < PowerDefRef >
+-	the power that will fire when it expires due to range or lifetime
+-	targets nothing
+
+*PowerOnHitGotoEnt* < PowerDefRef >
+-	the power that will fire when it expires due to range or lifetime
+-	targets hit entity
+
+*PowerOnDeath* < PowerDefRef >
+-	the power that will fire when it expires due to range or lifetime
+-	targets creator
+
+*OnQueuedDeath* (multiple allowed)
+-	expression that is called when the projectile would be queued for death
+
+*OnExpire* (multiple allowed)
+-	expression is called when the projectile expires due to range, lifetime,
+
+*OnCollideWorld* (multiple allowed)
+-	called when the projectile hits a wall that obstructs it
+
+*OnHitEntity* (multiple allowed)
+-	Called for each entity that is hit
+
+*OnHitGotoEnt* (multiple allowed)
+-	called on when the projectile hits the entity it was going towards
+
+*ResetHitEntsTimer* < float >
+-	the period at which the projectile will reset its hit list and re-hit entities
+
+*DecrementNumEntitiesHitCounterOnReset* < int >
+-	when fResetHitEntsTimer pops and removes an entity, also decrement the hit counter
+-	this is default behavior
+
+*InitialEntityHitDelay* < float >
+-	an initial delay when the projectile gets created before it will start hitting entities
+
+*ProjectileType* < Default | Beam > [#EProjectileType]
+
+-	a new type of projectile that is a (currently)stationary beam
+
+*AttachOnCreate* < Default | Owner | Target > [#EProjectileAttachOnCreate]
+
+-	on creation, it attaches to

@@ -1,0 +1,69 @@
+h4.UGCDurationAndCompletionStatsResetAfterPublish (int) - (AccessLevel 9) [Notes|Command_UGCDurationAndCompletionStatsResetAfterPublish_GameServerLib]
+No comment provided
+
+h4.UGCEnableSearchCache (int) - (AccessLevel 9) [Notes|Command_UGCEnableSearchCache_GameServerLib]
+If non-zero, then the search cache is enabled for all GameServers
+
+
+h4.UGCEnterPreviewStallySeconds (int) - (AccessLevel 9) [Notes|Command_UGCEnterPreviewStallySeconds_GameServerLib]
+No comment provided
+
+h4.UGCImportantProjectAdjustedRating (float) - (AccessLevel 9) [Notes|Command_UGCImportantProjectAdjustedRating_GameServerLib]
+No comment provided
+
+h4.UGCImportantProjectNumPlays (int) - (AccessLevel 9) [Notes|Command_UGCImportantProjectNumPlays_GameServerLib]
+No comment provided
+
+h4.UGCLeavePreviewStallySeconds (int) - (AccessLevel 9) [Notes|Command_UGCLeavePreviewStallySeconds_GameServerLib]
+Expected length of stalls for resource uploading paths
+
+
+h4.UGCPlayingEnabled (int) - (AccessLevel 9) [Notes|Command_UGCPlayingEnabled_GameServerLib]
+__CATEGORY UGC settings
+If zero, then playing UGC content is disabled. This is accomplished by GameServers returning empty UGC search results and players auto-dropping their UGC missions.
+
+
+h4.UGCPlayingTimeFractionOfAverageAllowed (float) - (AccessLevel 9) [Notes|Command_UGCPlayingTimeFractionOfAverageAllowed_GameServerLib]
+The fraction of the average playing time where UGC rewards will be nerf-ed down to the player's playing time, instead of using the average playing time.
+This is to prevent exploits by author and friends that use hidden (or non-hidden) early exits from a mission.
+
+
+h4.UGCPreviewMinTimeBetweenAutosavesInSeconds (int) - (AccessLevel 9) [Notes|Command_UGCPreviewMinTimeBetweenAutosavesInSeconds_GameServerLib]
+Send an autosave if user enters Preview mode with unsaved changes
+and it's been at least this amount of time since last autosave
+(user disconnect always makes an autosave)
+
+
+h4.UGCPreviewTransferStallySeconds (int) - (AccessLevel 9) [Notes|Command_UGCPreviewTransferStallySeconds_GameServerLib]
+No comment provided
+
+h4.UGCPublishEnabled (int) - (AccessLevel 9) [Notes|Command_UGCPublishEnabled_GameServerLib]
+__CATEGORY UGC settings
+If zero, then author initiated UGC publishing is disabled. Otherwise, enabled.
+
+
+h4.UGCPublishStallySeconds (int) - (AccessLevel 9) [Notes|Command_UGCPublishStallySeconds_GameServerLib]
+No comment provided
+
+h4.UGCReviewingEnabled (int) - (AccessLevel 9) [Notes|Command_UGCReviewingEnabled_GameServerLib]
+__CATEGORY UGC settings
+If zero, then adding or changing UGC mission reviews is disabled. 
+
+
+h4.UGCSaveStallySeconds (int) - (AccessLevel 9) [Notes|Command_UGCSaveStallySeconds_GameServerLib]
+No comment provided
+
+h4.UGCSearchCacheDurationInSeconds (int) - (AccessLevel 9) [Notes|Command_UGCSearchCacheDurationInSeconds_GameServerLib]
+The duration in seconds that we will return a cached result
+
+
+h4.UGCSearchCacheMaxWaitingEntities (int) - (AccessLevel 9) [Notes|Command_UGCSearchCacheMaxWaitingEntities_GameServerLib]
+If non-zero, maximum number of waiting entities for a cached UGC search. After this number, we start returning empty results for the default search.
+This only ever occurs during a login burst when GameServers are starting up for the first time. Once there exists cached search results,
+they will always be returned instead of timing out any entities.
+
+
+h4.UGCSearchCacheTimeoutInSeconds (int) - (AccessLevel 9) [Notes|Command_UGCSearchCacheTimeoutInSeconds_GameServerLib]
+If non-zero, then the search cache will have a timeout on it where any waiting Entities are sent an empty search result
+
+

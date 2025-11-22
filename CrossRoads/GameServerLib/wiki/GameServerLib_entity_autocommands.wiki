@@ -1,0 +1,133 @@
+h4.EntGetAngleToTarget (AccessLevel 9) [Notes|Command_EntGetAngleToTarget_GameServerLib]
+*Returns: float*
+Inputs: pEntSource, pEntTarget
+Return: Angle in degrees from the source to the target on XZ plane, 0 if either source or target is NULL
+
+
+h4.EntGetChargingPowerName (AccessLevel 9) [Notes|Command_EntGetChargingPowerName_GameServerLib]
+*Returns: string*
+Entity
+Inputs: Entity
+Return: Name of the current charging power, or "" if invalid.
+
+
+h4.EntGetRemainingChargeTime (AccessLevel 9) [Notes|Command_EntGetRemainingChargeTime_GameServerLib]
+*Returns: float*
+Entity
+Inputs: Entity
+Return: Estimated time to complete the current cast, or -1 if invalid
+
+
+h4.EntGetRewardGatedCooldownSeconds (AccessLevel 9) [Notes|Command_EntGetRewardGatedCooldownSeconds_GameServerLib]
+*Returns: int*
+*Parameter 1: pRewardGatedName (string)*
+Inputs: pPlayerEnt
+Time in seconds remaining for Cooldown
+
+
+h4.EntGetTotalChargeTime (AccessLevel 9) [Notes|Command_EntGetTotalChargeTime_GameServerLib]
+*Returns: float*
+No comment provided
+
+h4.EntPetCanBeDismissed (AccessLevel 9) [Notes|Command_EntPetCanBeDismissed_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.EntPetCanBeRenamed (AccessLevel 9) [Notes|Command_EntPetCanBeRenamed_GameServerLib]
+*Returns: bool*
+Inputs: PetEnt
+Output: true or false, true if the pet can be is of a type that can be re-named
+
+
+h4.PermToken (AccessLevel 9) [Notes|Command_PermToken_GameServerLib]
+*Returns: int*
+*Parameter 1: pchToken (string)*
+return true if the entity has this token, will return true if game permissions are off
+
+
+h4.PermTokenKeyType (AccessLevel 9) [Notes|Command_PermTokenKeyType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchToken (string)*
+No comment provided
+
+h4.PermTokenType (AccessLevel 9) [Notes|Command_PermTokenType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchToken (string)*
+No comment provided
+
+h4.OfficerIsOfRankAndAllegiance (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+No comment provided
+
+h4.OfficerIsOfRankAndAllegianceUsingNumeric (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegianceUsingNumeric_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+*Parameter 3: pchNumeric (string)*
+TODO(MK): could make pchAllegiance into a comma delimited list if necessary later on
+
+
+h4.SharedBankCanBuySlots (AccessLevel 9) [Notes|Command_SharedBankCanBuySlots_GameServerLib]
+*Returns: bool*
+Returns true if this entity can has more slots available
+
+
+h4.SharedBankGetMaximumDeposit (AccessLevel 9) [Notes|Command_SharedBankGetMaximumDeposit_GameServerLib]
+*Returns: int*
+*Parameter 1: pcNumeric (string)*
+Shared bank, return the maxmimum that this player can deposit
+lower of amount left based on permission or numeric left on player
+
+
+h4.SharedBankIsAvailable (AccessLevel 9) [Notes|Command_SharedBankIsAvailable_GameServerLib]
+*Returns: int*
+Returns true if this entity can access the sharedbank
+
+
+h4.SharedBankIsLegalNumericTransfer (AccessLevel 9) [Notes|Command_SharedBankIsLegalNumericTransfer_GameServerLib]
+*Returns: int*
+*Parameter 1: iToBank (int)*
+*Parameter 2: pcNumeric (string)*
+Shared bank, return true if the amount and type to be transfered is legal
+
+
+h4.CritterSetOverrideName (AccessLevel 9) [Notes|Command_CritterSetOverrideName_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchNewName (string)*
+No comment provided
+
+h4.EntGetTarget (AccessLevel 9) [Notes|Command_EntGetTarget_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.CharacterGetProjectileByTag (AccessLevel 9) [Notes|Command_CharacterGetProjectileByTag_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: pchTag (string)*
+returns an entity that is a projectile and optionally 
+
+
+h4.EntGetFaction (AccessLevel 9) [Notes|Command_EntGetFaction_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.EntGetSubFaction (AccessLevel 9) [Notes|Command_EntGetSubFaction_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+

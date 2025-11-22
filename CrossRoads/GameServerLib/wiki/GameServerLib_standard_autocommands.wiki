@@ -1,0 +1,230 @@
+h4.AlgoGenItemFromDef (AccessLevel 9) [Notes|Command_AlgoGenItemFromDef_GameServerLib]
+*Parameter 1: level (int)*
+*Parameter 2: quality_name (string)*
+*Parameter 3: item_def_name (string)*
+gen an algo item from the given itemdef base. the magic word 'last' can be used with the itemdef
+
+
+h4.BagClear (AccessLevel 4) [Notes|Command_BagClear_GameServerLib]
+*Parameter 1: bagName (string)*
+inventoryclear: Removes all items from your inventory, and equip slots.  For debugging
+
+
+h4.BindItem (AccessLevel 4) [Notes|Command_BindItem_GameServerLib]
+*Parameter 1: pchItemName (string)*
+*Parameter 2: ulItemID (U64)*
+Binds an item named ItemName and optionally provide an itemID
+
+
+h4.GiveAlgoItem (AccessLevel 7) [Notes|Command_GiveAlgoItem_GameServerLib]
+*Parameter 1: level (int)*
+*Parameter 2: quality_name (string)*
+*Parameter 3: item_def_name (string)*
+*Parameter 4: primary_name (string)*
+*Parameter 5: secondary_name (string)*
+<level> <quality> <itemdef> <primary> <secondary (opt)> construct an algorithmic item as it may be created from any particular drop. the magic word 'last' can be used with the itemdef and primary/secondary if you want to use the previous invocation's version of this
+
+
+h4.GiveAlgoItem2 (AccessLevel 7) [Notes|Command_GiveAlgoItem2_GameServerLib]
+*Parameter 1: level (int)*
+*Parameter 2: quality_name (string)*
+*Parameter 3: item_def_name (string)*
+*Parameter 4: powerfactor (int)*
+*Parameter 5: power1_name (string)*
+*Parameter 6: power2_name (string)*
+*Parameter 7: power3_name (string)*
+<level> <quality> <itemdef> <powerfactor> <power1 (opt)> <power2 (opt)> <power3 (opt)> construct an algorithmic item as it may be created from any particular drop.
+
+
+h4.GiveAndEquipItem (AccessLevel 7) [Notes|Command_GiveAndEquipItem_GameServerLib]
+*Parameter 1: pchItemName (string)*
+Give an item to yourself. It is put into your inventory
+
+
+h4.GiveItem (AccessLevel 5) [Notes|Command_GiveItem_GameServerLib]
+*Parameter 1: pchItemName (string)*
+Give an item to yourself. It is put into your inventory
+
+
+h4.GiveItemCount (AccessLevel 5) [Notes|Command_GiveItemCount_GameServerLib]
+*Parameter 1: pchItemName (string)*
+*Parameter 2: iCount (int)*
+Give multiple items to yourself. They are put into your inventory
+
+
+h4.GiveItemLevelQuality (AccessLevel 5) [Notes|Command_GiveItemLevelQuality_GameServerLib]
+*Parameter 1: pchItemName (string)*
+*Parameter 2: iLevel (int)*
+*Parameter 3: pchQuality (string)*
+Give an item to yourself. It is put into your inventory
+
+
+h4.GiveRandomAlgoItem (AccessLevel 9) [Notes|Command_GiveRandomAlgoItem_GameServerLib]
+*Parameter 1: iQuality (int)*
+*Parameter 2: iLevel (int)*
+Give a random algorithmic item to yourself. It is put into your inventory
+
+
+h4.GrantMissionRewards (AccessLevel 9) [Notes|Command_GrantMissionRewards_GameServerLib]
+*Parameter 1: RewardTableName (string)*
+*Parameter 2: ChoiceName (string)*
+This is a debug command to test the granting of mission rewards
+the inputs are a reward table name, and an optional choice item name
+this debug routine only supports sending a single choice
+
+
+h4.GrantRewardTable (AccessLevel 5) [Notes|Command_GrantRewardTable_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+Execute a reward table.  Uses the power GrantReward context.
+
+
+h4.GrantRewardTableDirect (AccessLevel 5) [Notes|Command_GrantRewardTableDirect_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+give the reward table directly into your inventory
+
+
+h4.RewardGrant (AccessLevel 7) [Notes|Command_RewardGrant_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+*Parameter 2: iDifficulty (int)*
+Execute a reward table.  Uses the power GrantReward context.
+used for testing more complex tables
+
+
+h4.RewardGrantWithScale (AccessLevel 7) [Notes|Command_RewardGrantWithScale_GameServerLib]
+*Parameter 1: reward_table_name (string)*
+*Parameter 2: fScale (float)*
+Execute a reaward table with a scaled value. Uses the power GrantReward context.
+used for testing tables with scaleable values.
+
+
+h4.InventoryClear (AccessLevel 4) [Notes|Command_InventoryClear_GameServerLib]
+inventoryclear: Removes all items from your inventory, and equip slots.  For debugging
+
+
+h4.InventoryClearAll (AccessLevel 7) [Notes|Command_InventoryClearAll_GameServerLib]
+inventoryclear: Removes all items from your all bags in your inventory.  For debugging
+
+
+h4.InventoryPrintItemsWithPowers (AccessLevel 9) [Notes|Command_InventoryPrintItemsWithPowers_GameServerLib]
+No comment provided
+
+h4.InventoryPrintNumerics (AccessLevel 9) [Notes|Command_InventoryPrintNumerics_GameServerLib]
+No comment provided
+
+h4.Item_Add_FromCritter (AccessLevel 9) [Notes|Command_Item_Add_FromCritter_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.NumericValue (AccessLevel 4) [Notes|Command_NumericValue_GameServerLib]
+*Parameter 1: pchNumericItem (string)*
+No comment provided
+
+h4.NumericsClear (AccessLevel 9) [Notes|Command_NumericsClear_GameServerLib]
+NumericsClear: Removes all items from your numerics bag.  For debugging
+
+
+h4.RemoveMissionItems (AccessLevel 9) [Notes|Command_RemoveMissionItems_GameServerLib]
+*Parameter 1: MissionName (string)*
+This is a debug command to test removing mission items from an ent
+
+
+h4.SetInvBagHideMode (AccessLevel 0) [Notes|Command_SetInvBagHideMode_GameServerLib]
+*Parameter 1: eBagID (enum)*
+*Parameter 2: bHide (int)*
+Sets the hide costume mode for an inventory bag
+This command is not hidden or private due to the possibility - however remote - that a player
+might wish to have a macro show/hide their helmet or whatever. It seems harmless to leave it exposed.
+
+
+h4.SetInvSlotHideMode (AccessLevel 0) [Notes|Command_SetInvSlotHideMode_GameServerLib]
+*Parameter 1: eBagID (enum)*
+*Parameter 2: iSlot (int)*
+*Parameter 3: bHide (bool)*
+Sets the hide costume mode for an inventory slot
+This command is not hidden or private due to the possibility - however remote - that a player
+might wish to have a macro show/hide their helmet or whatever. It seems harmless to leave it exposed.
+
+
+h4.SetInvSlotHideModeForEnt (AccessLevel 0) [Notes|Command_SetInvSlotHideModeForEnt_GameServerLib]
+*Parameter 1: eEntType (int)*
+*Parameter 2: uEntID (int)*
+*Parameter 3: eBagID (enum)*
+*Parameter 4: iSlot (int)*
+*Parameter 5: bHide (bool)*
+No comment provided
+
+h4.SetPetInvBagHideMode (AccessLevel 0) [Notes|Command_SetPetInvBagHideMode_GameServerLib]
+*Parameter 1: eEntType (int)*
+*Parameter 2: uEntID (int)*
+*Parameter 3: eBagID (enum)*
+*Parameter 4: bHide (int)*
+Sets the hide costume mode for an inventory bag on a pet
+
+
+h4.SetSkillLevel (AccessLevel 7) [Notes|Command_SetSkillLevel_GameServerLib]
+*Parameter 1: value (int)*
+Set the players Skill Level
+
+
+h4.SetSkillLevelCap (AccessLevel 7) [Notes|Command_SetSkillLevelCap_GameServerLib]
+*Parameter 1: value (int)*
+Set the player's Skill Level cap
+
+
+h4.UnbindItem (AccessLevel 4) [Notes|Command_UnbindItem_GameServerLib]
+*Parameter 1: pchItemName (string)*
+*Parameter 2: ulItemID (U64)*
+Unbinds an item named ItemName and optionally provide an itemID
+
+
+h4.BagSort (AccessLevel 0) [Notes|Command_BagSort_GameServerLib]
+*Parameter 1: eBagID (int)*
+*Parameter 2: bCombineStacks (int)*
+No comment provided
+
+h4.DemoBagFlush (AccessLevel 9) [Notes|Command_DemoBagFlush_GameServerLib]
+Remove All Items from inventory bags
+
+
+h4.player_DropMission (AccessLevel 0) [Notes|Command_player_DropMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Drop the named mission, if you have it
+
+
+h4.player_ForceDropMission (AccessLevel 4) [Notes|Command_player_ForceDropMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Drop the named mission, if you have it
+
+
+h4.player_MissionToggleTracked (AccessLevel 0) [Notes|Command_player_MissionToggleTracked_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Track/untrack mission in the HUD UI
+
+
+h4.PrimaryMission (AccessLevel 0) [Notes|Command_PrimaryMission_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+*Parameter 2: bMakePrimary (bool)*
+Offer this mission to other nearby members of your team and make it primary
+
+
+h4.mission_ShareMissionCmd (AccessLevel 0) [Notes|Command_mission_ShareMissionCmd_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+Offer this mission to other nearby members of your team.
+
+
+h4.store_CancelResearch (AccessLevel 0) [Notes|Command_store_CancelResearch_GameServerLib]
+No comment provided
+
+h4.store_StartResearch (AccessLevel 0) [Notes|Command_store_StartResearch_GameServerLib]
+*Parameter 1: pchStoreName (string)*
+*Parameter 2: uStoreItemIndex (int)*
+No comment provided
+
+h4.timerRecordStartAuto (AccessLevel 9) [Notes|Command_timerRecordStartAuto_GameServerLib]
+No comment provided
+
+h4.trade_AddSavedPet (AccessLevel 0) [Notes|Command_trade_AddSavedPet_GameServerLib]
+*Parameter 1: srcPetID (int)*
+*Parameter 2: iTargetSlot (int)*
+No comment provided
+

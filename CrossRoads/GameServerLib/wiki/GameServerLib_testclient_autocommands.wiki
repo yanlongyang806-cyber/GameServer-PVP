@@ -1,0 +1,4 @@
+h4.TestClient (AccessLevel 9) [Notes|Command_TestClient_GameServerLib]
+*Parameter 1: cmd (sentence)*
+No comment provided
+

@@ -1,0 +1,94 @@
+h4.SortTrayByCooldown (AccessLevel 9) [Notes|Command_SortTrayByCooldown_GameServerLib]
+Sorts the contents of the entity's Tray 0 by their base cooldown timers.
+
+
+h4.TrayDestroy (AccessLevel 0) [Notes|Command_TrayDestroy_GameServerLib]
+*Parameter 1: iTray (int)*
+TrayElemDestroy <Tray> <Slot>: Destroys the element in the tray at the slot
+
+
+h4.TrayElemDestroy (AccessLevel 0) [Notes|Command_TrayElemDestroy_GameServerLib]
+*Parameter 1: iTray (int)*
+*Parameter 2: iSlot (int)*
+TrayElemDestroy <Tray> <Slot>: Destroys the element in the tray at the slot
+
+
+h4.TrayElemMove (AccessLevel 0) [Notes|Command_TrayElemMove_GameServerLib]
+*Parameter 1: iTray (int)*
+*Parameter 2: iSlot (int)*
+*Parameter 3: iTrayNew (int)*
+*Parameter 4: iSlotNew (int)*
+TrayElemMove <Tray> <Slot> <NewTray> <NewSlot>: Moves the element in the tray at the slot to the new location.
+Performs a swap if the new location is not empty.
+
+
+h4.TraySetIndex (AccessLevel 0) [Notes|Command_TraySetIndex_GameServerLib]
+*Parameter 1: iUITray (int)*
+*Parameter 2: iTray (int)*
+ServerCmd for saving an Entity's ui tray data
+
+
+h4.TraySetIndexRange (AccessLevel 0) [Notes|Command_TraySetIndexRange_GameServerLib]
+*Parameter 1: iUITrayStart (int)*
+*Parameter 2: iUITrayEnd (int)*
+*Parameter 3: iTrayStart (int)*
+*Parameter 4: iTrayEnd (int)*
+ServerCmd for saving an Entity's ui tray data
+
+
+h4.TraySetLocked (AccessLevel 0) [Notes|Command_TraySetLocked_GameServerLib]
+*Parameter 1: bLocked (bool)*
+No comment provided
+
+h4.emote_notext (AccessLevel 0) [Notes|Command_emote_notext_GameServerLib]
+*Parameter 1: pchName (string)*
+Emote, but without text.
+
+
+h4.emote (AccessLevel 0) [Notes|Command_emote_GameServerLib]
+*Parameter 1: pchName (string)*
+Emote, failing if a preset emote is not found.
+
+
+h4.em (AKA me, e) (AccessLevel 0) [Notes|Command_em_GameServerLib]
+*Parameter 1: pchName (sentence)*
+Emote, using a plain text string if the emote is not found.
+
+
+h4.Genesis.MakeVistas (AccessLevel 9) [Notes|Command_Genesis.MakeVistas_GameServerLib]
+*Parameter 1: count (int)*
+*Parameter 2: ecosystem_name (string)*
+*Parameter 3: geotype_name (string)*
+No comment provided
+
+h4.gslEntity_SetCostumeSetIndexToShow (AccessLevel 0) [Notes|Command_gslEntity_SetCostumeSetIndexToShow_GameServerLib]
+*Parameter 1: iCostumeSetIndexToShow (int)*
+No comment provided
+
+h4.gslGuild_AllowInvites (AccessLevel 0) [Notes|Command_gslGuild_AllowInvites_GameServerLib]
+*Parameter 1: bAllowInvites (bool)*
+No comment provided
+
+h4.gslPlayerUI_SetLastLevelPowersMenuOpenAt (AccessLevel 0) [Notes|Command_gslPlayerUI_SetLastLevelPowersMenuOpenAt_GameServerLib]
+*Parameter 1: iLevel (int)*
+No comment provided
+
+h4.gslPlayerUI_SetLevelUpWizardDismissedAt (AccessLevel 0) [Notes|Command_gslPlayerUI_SetLevelUpWizardDismissedAt_GameServerLib]
+*Parameter 1: iLevel (int)*
+No comment provided
+
+h4.queue_accept (AccessLevel 0) [Notes|Command_queue_accept_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Transfer to a queue map
+
+
+h4.queue_acceptinstance (AccessLevel 0) [Notes|Command_queue_acceptinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Transfer to a queue map
+
+
+h4.gslStickerBook_SetHasUnviewedChanges (AccessLevel 0) [Notes|Command_gslStickerBook_SetHasUnviewedChanges_GameServerLib]
+*Parameter 1: bHasUnviewedChanges (bool)*
+No comment provided
+

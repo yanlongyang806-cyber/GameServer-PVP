@@ -1,0 +1,40 @@
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.UGCProject_IsImportant (AccessLevel 9) [Notes|Command_UGCProject_IsImportant_GameServerLib]
+*Returns: bool*
+*Parameter 1: project (UGCProject struct)*
+No comment provided
+
+h4.GetCurrentMapType (AccessLevel 9) [Notes|Command_GetCurrentMapType_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.GetTime (AccessLevel 9) [Notes|Command_GetTime_GameServerLib]
+*Returns: float*
+Gets the server time (not to be confused with the absolute time).  0 is midnight, 12 is noon
+
+
+h4.GamePermissionTimedSecondsLeft (AccessLevel 9) [Notes|Command_GamePermissionTimedSecondsLeft_GameServerLib]
+*Returns: int*
+*Parameter 1: pPath (CharacterPath struct)*
+No comment provided
+
+h4.GamePermissionTimedSecondsLeftByName (AccessLevel 9) [Notes|Command_GamePermissionTimedSecondsLeftByName_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCharacterPathName (string)*
+No comment provided
+
+h4.IsFullMoon (AccessLevel 9) [Notes|Command_IsFullMoon_GameServerLib]
+*Returns: bool*
+Is this the full moon
+
+
+h4.IsFullMoonRange (AccessLevel 9) [Notes|Command_IsFullMoonRange_GameServerLib]
+*Returns: bool*
+*Parameter 1: uDaysRange (int)*
+Is this the full moon with a number of days in the range
+
+

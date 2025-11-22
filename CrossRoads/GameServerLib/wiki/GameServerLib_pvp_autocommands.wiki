@@ -1,0 +1,6 @@
+h4.AddPointsToPlayer (AccessLevel 9) [Notes|Command_AddPointsToPlayer_GameServerLib]
+*No Return*
+*Parameter 1: iPoints (int)*
+*Parameter 2: pchMessageKey (string)*
+No comment provided
+

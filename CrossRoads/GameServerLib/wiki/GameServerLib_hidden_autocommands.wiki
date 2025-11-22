@@ -1,0 +1,1041 @@
+h4.scmdlist (AccessLevel 0) [Notes|Command_scmdlist_GameServerLib]
+Print available commands
+
+
+h4.scmds (AccessLevel 0) [Notes|Command_scmds_GameServerLib]
+*Parameter 1: string (string)*
+Print available commands containing <string>
+
+
+h4.ContactCreateTrainerFromPlayer (AccessLevel 0) [Notes|Command_ContactCreateTrainerFromPlayer_GameServerLib]
+No comment provided
+
+h4.AccessLibraryComputer (AccessLevel 0) [Notes|Command_AccessLibraryComputer_GameServerLib]
+Hacky, hardcoded command to start the "library computer" contact.  This breaks the dependence
+of the client on an access level 9 command.
+
+
+h4.CurrencyExchange_ClaimMTC (AccessLevel 0) [Notes|Command_CurrencyExchange_ClaimMTC_GameServerLib]
+*Parameter 1: quantity (int)*
+No comment provided
+
+h4.CurrencyExchange_ClaimTC (AccessLevel 0) [Notes|Command_CurrencyExchange_ClaimTC_GameServerLib]
+*Parameter 1: quantity (int)*
+No comment provided
+
+h4.CurrencyExchange_CreateBuyOrder (AccessLevel 0) [Notes|Command_CurrencyExchange_CreateBuyOrder_GameServerLib]
+*Parameter 1: quantity (int)*
+*Parameter 2: price (int)*
+No comment provided
+
+h4.CurrencyExchange_CreateSellOrder (AccessLevel 0) [Notes|Command_CurrencyExchange_CreateSellOrder_GameServerLib]
+*Parameter 1: quantity (int)*
+*Parameter 2: price (int)*
+No comment provided
+
+h4.CurrencyExchange_WithdrawOrder (AccessLevel 0) [Notes|Command_CurrencyExchange_WithdrawOrder_GameServerLib]
+*Parameter 1: orderID (int)*
+No comment provided
+
+h4.Enhance_PowerTreeNode (AccessLevel 0) [Notes|Command_Enhance_PowerTreeNode_GameServerLib]
+*Parameter 1: pchTree (string)*
+*Parameter 2: pchNode (string)*
+*Parameter 3: pchEnhancement (string)*
+*Parameter 4: bAdd (int)*
+Enhance_PowerTreeNode <PowerTree> <Node> <Enhancement> <1/0: Increment/Decrement>
+
+
+h4.EntitySetPreferredPet (AccessLevel 0) [Notes|Command_EntitySetPreferredPet_GameServerLib]
+*Parameter 1: uiPetID (int)*
+*Parameter 2: iIndex (int)*
+No comment provided
+
+h4.FillPetTeamList (AccessLevel 0) [Notes|Command_FillPetTeamList_GameServerLib]
+No comment provided
+
+h4.InitMap (AccessLevel 0) [Notes|Command_InitMap_GameServerLib]
+No comment provided
+
+h4.MapMoveConfirm (AccessLevel 0) [Notes|Command_MapMoveConfirm_GameServerLib]
+*Parameter 1: confirm (int)*
+No comment provided
+
+h4.MicroTrans_ShardCategory (AccessLevel 0) [Notes|Command_MicroTrans_ShardCategory_GameServerLib]
+*Parameter 1: pCategory (string)*
+No comment provided
+
+h4.MovementReset (AccessLevel 0) [Notes|Command_MovementReset_GameServerLib]
+Resets your movement state
+
+
+h4.PetCommands_RequestResurrection (AccessLevel 0) [Notes|Command_PetCommands_RequestResurrection_GameServerLib]
+No comment provided
+
+h4.PetCommands_SetAllPetsStance (AccessLevel 0) [Notes|Command_PetCommands_SetAllPetsStance_GameServerLib]
+*Parameter 1: stanceType (int)*
+*Parameter 2: stance (string)*
+No comment provided
+
+h4.PetCommands_SetAllPetsState (AccessLevel 0) [Notes|Command_PetCommands_SetAllPetsState_GameServerLib]
+*Parameter 1: state (string)*
+No comment provided
+
+h4.PetCommands_SetAllToFollowOwner (AccessLevel 0) [Notes|Command_PetCommands_SetAllToFollowOwner_GameServerLib]
+No comment provided
+
+h4.PetCommands_SetAllToHoldPosition (AccessLevel 0) [Notes|Command_PetCommands_SetAllToHoldPosition_GameServerLib]
+No comment provided
+
+h4.PetCommands_SetAllToOwnerAttackTarget (AccessLevel 0) [Notes|Command_PetCommands_SetAllToOwnerAttackTarget_GameServerLib]
+No comment provided
+
+h4.PlayerChangeDifficulty (AccessLevel 0) [Notes|Command_PlayerChangeDifficulty_GameServerLib]
+*Parameter 1: iDifficulty (int)*
+No comment provided
+
+h4.PlayerExpireNearDeath (AccessLevel 0) [Notes|Command_PlayerExpireNearDeath_GameServerLib]
+No comment provided
+
+h4.PlayerRespawn (AccessLevel 0) [Notes|Command_PlayerRespawn_GameServerLib]
+Respawns a player if all the conditions needed for respawn are met
+
+
+h4.Powers.NewAttributeSystem (AccessLevel 9) [Notes|Command_Powers.NewAttributeSystem_GameServerLib]
+*Parameter 1: bOn (int)*
+No comment provided
+
+h4.RenamePetByID (AccessLevel 0) [Notes|Command_RenamePetByID_GameServerLib]
+*Parameter 1: iPetID (int)*
+*Parameter 2: pcNewName (string)*
+No comment provided
+
+h4.ReportAudioAssets_ProcessOnServer (AccessLevel 9) [Notes|Command_ReportAudioAssets_ProcessOnServer_GameServerLib]
+*Parameter 1: clientEntityRef (int)*
+No comment provided
+
+h4.RespecPowerTrees (AccessLevel 0) [Notes|Command_RespecPowerTrees_GameServerLib]
+*Parameter 1: steps (int)*
+Respecs a number of steps of your PowerTrees
+
+
+h4.RespecPowerTreesGroupNoCost (AccessLevel 0) [Notes|Command_RespecPowerTreesGroupNoCost_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs as many steps as possible that are free
+
+
+h4.RespecPowerTreesInvalid (AccessLevel 0) [Notes|Command_RespecPowerTreesInvalid_GameServerLib]
+Respecs your PowerTrees to nothing if they are currently invalid for some reason
+
+
+h4.ReturnFromMissionMap (AccessLevel 0) [Notes|Command_ReturnFromMissionMap_GameServerLib]
+No comment provided
+
+h4.ReturnFromPVPMatch (AccessLevel 0) [Notes|Command_ReturnFromPVPMatch_GameServerLib]
+No comment provided
+
+h4.SafeLoad (AccessLevel 9) [Notes|Command_SafeLoad_GameServerLib]
+*Parameter 1: not_used (int)*
+Dummy command, is handled below
+
+
+h4.SavedPet_Remove (AccessLevel 0) [Notes|Command_SavedPet_Remove_GameServerLib]
+*Parameter 1: uiPetID (int)*
+No comment provided
+
+h4.MailCheck (AccessLevel 0) [Notes|Command_MailCheck_GameServerLib]
+Check for unread mail.
+
+
+h4.MailGet (AccessLevel 0) [Notes|Command_MailGet_GameServerLib]
+Check for new mail.
+
+
+h4.LifetimeChannelJoin (AccessLevel 4) [Notes|Command_LifetimeChannelJoin_GameServerLib]
+No comment provided
+
+h4.SpecialChannelJoin (AccessLevel 4) [Notes|Command_SpecialChannelJoin_GameServerLib]
+*Parameter 1: channel_name (string)*
+No comment provided
+
+h4.SpecialChannelLeave (AccessLevel 4) [Notes|Command_SpecialChannelLeave_GameServerLib]
+*Parameter 1: channel_name (string)*
+No comment provided
+
+h4.MailTakeItems (AccessLevel 0) [Notes|Command_MailTakeItems_GameServerLib]
+*Parameter 1: uLotID (int)*
+*Parameter 2: iNPCEmailID (int)*
+Transfer items from the given mail item lot to your inventory including NPC mail items
+
+
+h4.AccessLevel (AccessLevel 0) [Notes|Command_AccessLevel_GameServerLib]
+*Parameter 1: iNewLevel (int)*
+No comment provided
+
+h4.SetInvSlotHideModeForEnt (AccessLevel 0) [Notes|Command_SetInvSlotHideModeForEnt_GameServerLib]
+*Parameter 1: eEntType (int)*
+*Parameter 2: uEntID (int)*
+*Parameter 3: eBagID (enum)*
+*Parameter 4: iSlot (int)*
+*Parameter 5: bHide (bool)*
+No comment provided
+
+h4.SetPetInvBagHideMode (AccessLevel 0) [Notes|Command_SetPetInvBagHideMode_GameServerLib]
+*Parameter 1: eEntType (int)*
+*Parameter 2: uEntID (int)*
+*Parameter 3: eBagID (enum)*
+*Parameter 4: bHide (int)*
+Sets the hide costume mode for an inventory bag on a pet
+
+
+h4.TestAddReviewsUGCProjectByID (AccessLevel 9) [Notes|Command_TestAddReviewsUGCProjectByID_GameServerLib]
+*Parameter 1: iProjectID (int)*
+*Parameter 2: iNumReviews (int)*
+No comment provided
+
+h4.TestReviewUGCProject (AccessLevel 9) [Notes|Command_TestReviewUGCProject_GameServerLib]
+*Parameter 1: fRating (float)*
+*Parameter 2: pComment_unnormalized (string)*
+No comment provided
+
+h4.TrayDestroy (AccessLevel 0) [Notes|Command_TrayDestroy_GameServerLib]
+*Parameter 1: iTray (int)*
+TrayElemDestroy <Tray> <Slot>: Destroys the element in the tray at the slot
+
+
+h4.TrayElemDestroy (AccessLevel 0) [Notes|Command_TrayElemDestroy_GameServerLib]
+*Parameter 1: iTray (int)*
+*Parameter 2: iSlot (int)*
+TrayElemDestroy <Tray> <Slot>: Destroys the element in the tray at the slot
+
+
+h4.TrayElemMove (AccessLevel 0) [Notes|Command_TrayElemMove_GameServerLib]
+*Parameter 1: iTray (int)*
+*Parameter 2: iSlot (int)*
+*Parameter 3: iTrayNew (int)*
+*Parameter 4: iSlotNew (int)*
+TrayElemMove <Tray> <Slot> <NewTray> <NewSlot>: Moves the element in the tray at the slot to the new location.
+Performs a swap if the new location is not empty.
+
+
+h4.TraySetIndex (AccessLevel 0) [Notes|Command_TraySetIndex_GameServerLib]
+*Parameter 1: iUITray (int)*
+*Parameter 2: iTray (int)*
+ServerCmd for saving an Entity's ui tray data
+
+
+h4.TraySetIndexRange (AccessLevel 0) [Notes|Command_TraySetIndexRange_GameServerLib]
+*Parameter 1: iUITrayStart (int)*
+*Parameter 2: iUITrayEnd (int)*
+*Parameter 3: iTrayStart (int)*
+*Parameter 4: iTrayEnd (int)*
+ServerCmd for saving an Entity's ui tray data
+
+
+h4.TraySetLocked (AccessLevel 0) [Notes|Command_TraySetLocked_GameServerLib]
+*Parameter 1: bLocked (bool)*
+No comment provided
+
+h4.Character_UseFreeRespec (AccessLevel 0) [Notes|Command_Character_UseFreeRespec_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing
+
+
+h4.Character_UseGameAccountRespec (AccessLevel 0) [Notes|Command_Character_UseGameAccountRespec_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing using a game account key
+
+
+h4.Character_UseItemOrGameAccountRespec (AccessLevel 0) [Notes|Command_Character_UseItemOrGameAccountRespec_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.Character_UseItemRespec (AccessLevel 0) [Notes|Command_Character_UseItemRespec_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.Character_UseItemRespecEx (AccessLevel 0) [Notes|Command_Character_UseItemRespecEx_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.Character_UseNumericRespec (AccessLevel 0) [Notes|Command_Character_UseNumericRespec_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.buildClass (AccessLevel 0) [Notes|Command_buildClass_GameServerLib]
+*Parameter 1: uiBuild (int)*
+*Parameter 2: pchClass (sentence)*
+Sets the class of a build
+
+
+h4.buildCopyFromCurrent (AccessLevel 0) [Notes|Command_buildCopyFromCurrent_GameServerLib]
+*Parameter 1: uiDestBuild (int)*
+*Parameter 2: bCopyClass (int)*
+*Parameter 3: bCopyCostume (int)*
+*Parameter 4: bCopyItems (int)*
+*Parameter 5: bCopyPowers (int)*
+No comment provided
+
+h4.buildCreate (AccessLevel 0) [Notes|Command_buildCreate_GameServerLib]
+Makes a new build based on your current state
+
+
+h4.buildName (AccessLevel 0) [Notes|Command_buildName_GameServerLib]
+*Parameter 1: uiBuild (int)*
+*Parameter 2: pchName (sentence)*
+Names a build
+
+
+h4.buildSet (AccessLevel 0) [Notes|Command_buildSet_GameServerLib]
+*Parameter 1: uiBuild (int)*
+Sets your build to the specified index
+
+
+h4.buildSetItem (AccessLevel 0) [Notes|Command_buildSetItem_GameServerLib]
+*Parameter 1: uiBuild (int)*
+*Parameter 2: iInvBag (int)*
+*Parameter 3: iSlot (int)*
+*Parameter 4: ilItemID (U64)*
+*Parameter 5: iSrcBag (int)*
+*Parameter 6: iSrcSlot (int)*
+Sets the item in iInvBag, iSlot to ilItemID which came from iSrcBag, iSrcSlot
+
+
+h4.StatsPreset_Load (AccessLevel 0) [Notes|Command_StatsPreset_Load_GameServerLib]
+*Parameter 1: pchPresetName (string)*
+No comment provided
+
+h4.StatsPreset_Reset (AccessLevel 0) [Notes|Command_StatsPreset_Reset_GameServerLib]
+*Parameter 1: pchPresetName (string)*
+No comment provided
+
+h4.StatsPreset_Save (AccessLevel 0) [Notes|Command_StatsPreset_Save_GameServerLib]
+*Parameter 1: pchPresetName (string)*
+No comment provided
+
+h4.GetCritterDescription (AccessLevel 0) [Notes|Command_GetCritterDescription_GameServerLib]
+*Parameter 1: iRef (int)*
+No comment provided
+
+h4.GetCritterGroupDescription (AccessLevel 0) [Notes|Command_GetCritterGroupDescription_GameServerLib]
+*Parameter 1: iRef (int)*
+No comment provided
+
+h4.EntSetDescription (AccessLevel 0) [Notes|Command_EntSetDescription_GameServerLib]
+*Parameter 1: pchDescription (sentence)*
+No comment provided
+
+h4.schemes_Reset (AccessLevel 0) [Notes|Command_schemes_Reset_GameServerLib]
+No comment provided
+
+h4.EventInteractWithContact (AccessLevel 0) [Notes|Command_EventInteractWithContact_GameServerLib]
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.SpawnAtEvent (AccessLevel 0) [Notes|Command_SpawnAtEvent_GameServerLib]
+*Parameter 1: pchEventName (string)*
+*Parameter 2: bIncludeTeammates (bool)*
+No comment provided
+
+h4.ArmamentSwapActiveWeapon (AccessLevel 0) [Notes|Command_ArmamentSwapActiveWeapon_GameServerLib]
+*Parameter 1: iBagID (int)*
+*Parameter 2: iIndex (int)*
+*Parameter 3: iNewActiveSlot (int)*
+------------------------------------------------------------------------------------------------------------
+
+
+h4.ArmamentSwapClass (AccessLevel 0) [Notes|Command_ArmamentSwapClass_GameServerLib]
+*Parameter 1: pchClassName (string)*
+------------------------------------------------------------------------------------------------------------
+
+
+h4.ArmamentSwapClearActiveItemSlots (AccessLevel 0) [Notes|Command_ArmamentSwapClearActiveItemSlots_GameServerLib]
+------------------------------------------------------------------------------------------------------------
+
+
+h4.ArmamentSwapClearClass (AccessLevel 0) [Notes|Command_ArmamentSwapClearClass_GameServerLib]
+------------------------------------------------------------------------------------------------------------
+
+
+h4.AutoAFK (AccessLevel 0) [Notes|Command_AutoAFK_GameServerLib]
+No comment provided
+
+h4.gslAwayPoke (AccessLevel 0) [Notes|Command_gslAwayPoke_GameServerLib]
+Poke the server so it doesn't mark this entity as AFK.
+Not ACMD_PRIVATE because then the gslUnaway return string doesn't
+get sent back down to the client.
+
+
+h4.BagSort (AccessLevel 0) [Notes|Command_BagSort_GameServerLib]
+*Parameter 1: eBagID (int)*
+*Parameter 2: bCombineStacks (int)*
+No comment provided
+
+h4.AutoAFKReturn (AccessLevel 0) [Notes|Command_AutoAFKReturn_GameServerLib]
+No comment provided
+
+h4.Puppet_DestroyAllOfType (AccessLevel 9) [Notes|Command_Puppet_DestroyAllOfType_GameServerLib]
+*Parameter 1: pchType (string)*
+No comment provided
+
+h4.Puppet_Destroy (AccessLevel 0) [Notes|Command_Puppet_Destroy_GameServerLib]
+*Parameter 1: iPuppetID (int)*
+No comment provided
+
+h4.gslDiary_RemoveComment (AccessLevel 0) [Notes|Command_gslDiary_RemoveComment_GameServerLib]
+*Parameter 1: entryID (int)*
+*Parameter 2: commentID (int)*
+No comment provided
+
+h4.gslDiary_RemoveEntry (AccessLevel 0) [Notes|Command_gslDiary_RemoveEntry_GameServerLib]
+*Parameter 1: entryID (int)*
+No comment provided
+
+h4.gslEntity_SetCostumeSetIndexToShow (AccessLevel 0) [Notes|Command_gslEntity_SetCostumeSetIndexToShow_GameServerLib]
+*Parameter 1: iCostumeSetIndexToShow (int)*
+No comment provided
+
+h4.gslGrabEntityTarget (AccessLevel 0) [Notes|Command_gslGrabEntityTarget_GameServerLib]
+No comment provided
+
+h4.gslGuild_AllowInvites (AccessLevel 0) [Notes|Command_gslGuild_AllowInvites_GameServerLib]
+*Parameter 1: bAllowInvites (bool)*
+No comment provided
+
+h4.Guild_AcceptGuildMapInvite (AccessLevel 0) [Notes|Command_Guild_AcceptGuildMapInvite_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_ClaimLeadership (AccessLevel 0) [Notes|Command_Guild_ClaimLeadership_GameServerLib]
+No comment provided
+
+h4.Guild_Create (AccessLevel 0) [Notes|Command_Guild_Create_GameServerLib]
+*Parameter 1: iColor1 (int)*
+*Parameter 2: iColor2 (int)*
+*Parameter 3: pcEmblem (string)*
+*Parameter 4: pcDescription (string)*
+*Parameter 5: pcName (sentence)*
+No comment provided
+
+h4.Guild_CreateEx (AccessLevel 0) [Notes|Command_Guild_CreateEx_GameServerLib]
+*Parameter 1: iColor1 (int)*
+*Parameter 2: iColor2 (int)*
+*Parameter 3: pcEmblem (string)*
+*Parameter 4: pcDescription (string)*
+*Parameter 5: pchThemeName (string)*
+*Parameter 6: pcName (sentence)*
+No comment provided
+
+h4.Guild_DeclineGuildMapInvite (AccessLevel 0) [Notes|Command_Guild_DeclineGuildMapInvite_GameServerLib]
+*Parameter 1: iGuildID (int)*
+No comment provided
+
+h4.Guild_DeleteCostume (AccessLevel 0) [Notes|Command_Guild_DeleteCostume_GameServerLib]
+*Parameter 1: pchName (string)*
+No comment provided
+
+h4.Guild_Demote (AccessLevel 0) [Notes|Command_Guild_Demote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_InviteToGuildMap (AccessLevel 0) [Notes|Command_Guild_InviteToGuildMap_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.GuildJoinAuto (AccessLevel 0) [Notes|Command_GuildJoinAuto_GameServerLib]
+No comment provided
+
+h4.Guild_KickFromGuildMap (AccessLevel 0) [Notes|Command_Guild_KickFromGuildMap_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_KickFromGuildMapByID (AccessLevel 0) [Notes|Command_Guild_KickFromGuildMapByID_GameServerLib]
+*Parameter 1: uOtherPlayerID (int)*
+No comment provided
+
+h4.Guild_Promote (AccessLevel 0) [Notes|Command_Guild_Promote_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+No comment provided
+
+h4.Guild_Rename (AccessLevel 0) [Notes|Command_Guild_Rename_GameServerLib]
+*Parameter 1: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RenameBankTab (AccessLevel 0) [Notes|Command_Guild_RenameBankTab_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RenameRank (AccessLevel 0) [Notes|Command_Guild_RenameRank_GameServerLib]
+*Parameter 1: iRank (int)*
+*Parameter 2: pcNewName (sentence)*
+No comment provided
+
+h4.Guild_RescueLeader (AccessLevel 0) [Notes|Command_Guild_RescueLeader_GameServerLib]
+No comment provided
+
+h4.Guild_SetAllegiance (AccessLevel 0) [Notes|Command_Guild_SetAllegiance_GameServerLib]
+*Parameter 1: pcNewAllegiance (string)*
+No comment provided
+
+h4.Guild_SetBankItemWithdrawLimit (AccessLevel 0) [Notes|Command_Guild_SetBankItemWithdrawLimit_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iCount (int)*
+No comment provided
+
+h4.Guild_SetBankPermission (AccessLevel 0) [Notes|Command_Guild_SetBankPermission_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: pcPermission (string)*
+*Parameter 4: bOn (bool)*
+No comment provided
+
+h4.Guild_SetBankWithdrawLimit (AccessLevel 0) [Notes|Command_Guild_SetBankWithdrawLimit_GameServerLib]
+*Parameter 1: pcBagName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iLimit (int)*
+No comment provided
+
+h4.Guild_SetDescription (AccessLevel 0) [Notes|Command_Guild_SetDescription_GameServerLib]
+*Parameter 1: pcDescription (sentence)*
+No comment provided
+
+h4.Guild_SetEmblem (AccessLevel 0) [Notes|Command_Guild_SetEmblem_GameServerLib]
+*Parameter 1: pcEmblem (sentence)*
+No comment provided
+
+h4.Guild_SetMinLevelRecruit (AccessLevel 0) [Notes|Command_Guild_SetMinLevelRecruit_GameServerLib]
+*Parameter 1: iMin (int)*
+No comment provided
+
+h4.Guild_SetOfficerComment (AccessLevel 0) [Notes|Command_Guild_SetOfficerComment_GameServerLib]
+*Parameter 1: pcOtherPlayer (string)*
+*Parameter 2: pcComment (sentence)*
+No comment provided
+
+h4.Guild_SetPermission (AccessLevel 0) [Notes|Command_Guild_SetPermission_GameServerLib]
+*Parameter 1: iRank (int)*
+*Parameter 2: pcPermission (string)*
+*Parameter 3: bOn (bool)*
+No comment provided
+
+h4.Guild_SetPublicComment (AccessLevel 0) [Notes|Command_Guild_SetPublicComment_GameServerLib]
+*Parameter 1: pcComment (sentence)*
+No comment provided
+
+h4.Guild_SetRecruitCat (AccessLevel 0) [Notes|Command_Guild_SetRecruitCat_GameServerLib]
+*Parameter 1: pcRecruitCat (string)*
+*Parameter 2: bSet (int)*
+No comment provided
+
+h4.Guild_SetRecruitMemberVisibility (AccessLevel 0) [Notes|Command_Guild_SetRecruitMemberVisibility_GameServerLib]
+*Parameter 1: bShow (int)*
+No comment provided
+
+h4.Guild_SetRecruitMessage (AccessLevel 0) [Notes|Command_Guild_SetRecruitMessage_GameServerLib]
+*Parameter 1: pcRecruitMessage (sentence)*
+No comment provided
+
+h4.Guild_SetRecruitVisibility (AccessLevel 0) [Notes|Command_Guild_SetRecruitVisibility_GameServerLib]
+*Parameter 1: bShow (int)*
+No comment provided
+
+h4.Guild_SetUniformPermission (AccessLevel 0) [Notes|Command_Guild_SetUniformPermission_GameServerLib]
+*Parameter 1: pcPermission (string)*
+*Parameter 2: pcUniform (string)*
+*Parameter 3: pcCategory (string)*
+*Parameter 4: bOn (bool)*
+No comment provided
+
+h4.Guild_SetWebSite (AccessLevel 0) [Notes|Command_Guild_SetWebSite_GameServerLib]
+*Parameter 1: pcWebSite (sentence)*
+No comment provided
+
+h4.SetNotifyAudioMode (AccessLevel 0) [Notes|Command_SetNotifyAudioMode_GameServerLib]
+*Parameter 1: eMode (int)*
+Set the notification sound type for the HUD
+
+
+h4.SetPowerLevelsMode (AccessLevel 0) [Notes|Command_SetPowerLevelsMode_GameServerLib]
+*Parameter 1: uiMode (int)*
+Set the power levels mode
+
+
+h4.SetTrayMode (AccessLevel 0) [Notes|Command_SetTrayMode_GameServerLib]
+*Parameter 1: uiMode (int)*
+Set the tray mode
+
+
+h4.gslInterior_AcceptInvite (AccessLevel 0) [Notes|Command_gslInterior_AcceptInvite_GameServerLib]
+No comment provided
+
+h4.gslInterior_DeclineInvite (AccessLevel 0) [Notes|Command_gslInterior_DeclineInvite_GameServerLib]
+No comment provided
+
+h4.gslInterior_Invite (AKA InteriorInvite, HideoutInvite) (AccessLevel 0) [Notes|Command_gslInterior_Invite_GameServerLib]
+*Parameter 1: pcOtherPlayer (sentence)*
+Invite another player to your hideout/bridge
+
+
+h4.ItemAssignmentCancelActiveAssignment (AccessLevel 0) [Notes|Command_ItemAssignmentCancelActiveAssignment_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+No comment provided
+
+h4.ItemAssignmentCollectRewards (AccessLevel 0) [Notes|Command_ItemAssignmentCollectRewards_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+No comment provided
+
+h4.ItemAssignmentsCompleteNowByID (AccessLevel 0) [Notes|Command_ItemAssignmentsCompleteNowByID_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+No comment provided
+
+h4.ItemAssignmentMarkCompletedAsRead (AccessLevel 0) [Notes|Command_ItemAssignmentMarkCompletedAsRead_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+Mark a recently completed assignment as having been seen by the user
+
+
+h4.ItemAssignmentRemoveSlottedItem (AccessLevel 0) [Notes|Command_ItemAssignmentRemoveSlottedItem_GameServerLib]
+*Parameter 1: uAssignmentID (int)*
+*Parameter 2: uItemID (U64)*
+Test function to remove a slotted item from an active assignment
+
+
+h4.gslLogoutTimer_LeaveNow (AccessLevel 0) [Notes|Command_gslLogoutTimer_LeaveNow_GameServerLib]
+Leave the map immediately, if you have a map logout timer counting down or if you're on a PvP map
+AUTO_COMMAND ACMD_ACCESSLEVEL(0) ACMD_SERVERCMD ACMD_SERVERONLY ACMD_NAME(LeaveNow);
+void gslLogoutTimer_LeaveNow(Entity *pPlayerEnt);
+
+
+h4.MailDeleteCompleteLog (AccessLevel 0) [Notes|Command_MailDeleteCompleteLog_GameServerLib]
+*Parameter 1: uMailID (int)*
+*Parameter 2: iNPCEMailID (int)*
+*Parameter 3: uAuctionLotID (int)*
+Delete a mail message. Deletes NPC email on characters. Logs email if lot id > 0
+
+
+h4.notify_ChangeSetting (AccessLevel 0) [Notes|Command_notify_ChangeSetting_GameServerLib]
+*Parameter 1: pchNotifyGroupName (string)*
+*Parameter 2: eFlags (enum)*
+No comment provided
+
+h4.notify_ResetSettings (AccessLevel 0) [Notes|Command_notify_ResetSettings_GameServerLib]
+*Parameter 1: pchNotifyGroupName (string)*
+*Parameter 2: eFlags (enum)*
+No comment provided
+
+h4.gslPlayerUI_SetLastLevelPowersMenuOpenAt (AccessLevel 0) [Notes|Command_gslPlayerUI_SetLastLevelPowersMenuOpenAt_GameServerLib]
+*Parameter 1: iLevel (int)*
+No comment provided
+
+h4.gslPlayerUI_SetLevelUpWizardDismissedAt (AccessLevel 0) [Notes|Command_gslPlayerUI_SetLevelUpWizardDismissedAt_GameServerLib]
+*Parameter 1: iLevel (int)*
+No comment provided
+
+h4.ProgressionClearSkippedMissions (AccessLevel 0) [Notes|Command_ProgressionClearSkippedMissions_GameServerLib]
+Remove all skipped progression missions
+
+
+h4.ProgressionRemoveSkippedMission (AccessLevel 0) [Notes|Command_ProgressionRemoveSkippedMission_GameServerLib]
+*Parameter 1: pchMissionName (string)*
+Remove a specific skipped progression mission
+
+
+h4.ProgressionSkipMission (AccessLevel 0) [Notes|Command_ProgressionSkipMission_GameServerLib]
+*Parameter 1: pchMissionName (string)*
+Skip a progression mission
+
+
+h4.queue_abandonqueue (AccessLevel 0) [Notes|Command_queue_abandonqueue_GameServerLib]
+Similar to LeaveMap. Abandon any currently attached queues and maps. Really only useful post
+queue pop when the player is either on the queue map, or has stepped out and has a "return to map" button
+(only when StayInQueueOnMapLeave is true)
+
+
+h4.queue_accept (AccessLevel 0) [Notes|Command_queue_accept_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Transfer to a queue map
+
+
+h4.queue_acceptinstance (AccessLevel 0) [Notes|Command_queue_acceptinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Transfer to a queue map
+
+
+h4.queue_changegroup (AccessLevel 0) [Notes|Command_queue_changegroup_GameServerLib]
+*Parameter 1: uiSubjectID (int)*
+*Parameter 2: iGroupID (int)*
+No comment provided
+
+h4.queue_delay (AccessLevel 0) [Notes|Command_queue_delay_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Delay participating in a full queue
+
+
+h4.queue_delayinstance (AccessLevel 0) [Notes|Command_queue_delayinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Delay participating in a full queue instance
+
+
+h4.queue_invite (AccessLevel 0) [Notes|Command_queue_invite_GameServerLib]
+*Parameter 1: pchInviteeName (string)*
+No comment provided
+
+h4.queue_inviteteam (AccessLevel 0) [Notes|Command_queue_inviteteam_GameServerLib]
+*Parameter 1: pchInviteeName (string)*
+No comment provided
+
+h4.queue_inviteinstance (AccessLevel 0) [Notes|Command_queue_inviteinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: pchInviteeName (string)*
+No comment provided
+
+h4.queue_kick (AccessLevel 0) [Notes|Command_queue_kick_GameServerLib]
+*Parameter 1: pchMemberName (string)*
+No comment provided
+
+h4.queue_kickinstance (AccessLevel 0) [Notes|Command_queue_kickinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: uiMemberID (int)*
+No comment provided
+
+h4.queue_kickid (AccessLevel 0) [Notes|Command_queue_kickid_GameServerLib]
+*Parameter 1: uiMemberID (int)*
+No comment provided
+
+h4.queue_leave (AccessLevel 0) [Notes|Command_queue_leave_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Leave all instances of a queue
+
+
+h4.queue_leaveall (AccessLevel 0) [Notes|Command_queue_leaveall_GameServerLib]
+No comment provided
+
+h4.queue_leaveinstance (AccessLevel 0) [Notes|Command_queue_leaveinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Leave a particular instance of a queue
+
+
+h4.queue_refreshQueues (AccessLevel 0) [Notes|Command_queue_refreshQueues_GameServerLib]
+No comment provided
+
+h4.queue_resumeinstance (AccessLevel 0) [Notes|Command_queue_resumeinstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Re-enter a queue after delaying
+
+
+h4.queue_swapgroups (AccessLevel 0) [Notes|Command_queue_swapgroups_GameServerLib]
+*Parameter 1: uiMemberID1 (int)*
+*Parameter 2: uiMemberID2 (int)*
+No comment provided
+
+h4.Queue_TeamJoin (AccessLevel 0) [Notes|Command_Queue_TeamJoin_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+Entire team join a queue
+
+
+h4.Queue_TeamJoinInstance (AccessLevel 0) [Notes|Command_Queue_TeamJoinInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.Queue_TeamJoinNextInstance (AccessLevel 0) [Notes|Command_Queue_TeamJoinNextInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.queue_teamleave (AccessLevel 0) [Notes|Command_queue_teamleave_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.queue_challenge (AccessLevel 0) [Notes|Command_queue_challenge_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uInviteEntID (int)*
+No comment provided
+
+h4.queue_challenge_name (AccessLevel 0) [Notes|Command_queue_challenge_name_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: pchChallengeeName (string)*
+No comment provided
+
+h4.queue_changemap (AccessLevel 0) [Notes|Command_queue_changemap_GameServerLib]
+*Parameter 1: pchMapName (string)*
+No comment provided
+
+h4.queue_ChangePassword (AccessLevel 0) [Notes|Command_queue_ChangePassword_GameServerLib]
+*Parameter 1: pchPassword (string)*
+No comment provided
+
+h4.queue_ChangeSetting (AccessLevel 0) [Notes|Command_queue_ChangeSetting_GameServerLib]
+*Parameter 1: pchQueueVarName (string)*
+*Parameter 2: iValue (int)*
+No comment provided
+
+h4.Queue_JoinActiveMap (AccessLevel 0) [Notes|Command_Queue_JoinActiveMap_GameServerLib]
+No comment provided
+
+h4.Queue_JoinBestMap (AccessLevel 0) [Notes|Command_Queue_JoinBestMap_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Joins a map with a guildmate, teammate, or friend - if possible
+
+
+h4.Queue_Join (AccessLevel 0) [Notes|Command_Queue_Join_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+No comment provided
+
+h4.Queue_JoinInstance (AccessLevel 0) [Notes|Command_Queue_JoinInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.Queue_JoinNextInstance (AccessLevel 0) [Notes|Command_Queue_JoinNextInstance_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+*Parameter 3: iMapKey (S64)*
+No comment provided
+
+h4.Queue_JoinWithPassword (AccessLevel 0) [Notes|Command_Queue_JoinWithPassword_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: pchPassword (string)*
+*Parameter 3: uiInstanceID (int)*
+No comment provided
+
+h4.queue_return (AccessLevel 0) [Notes|Command_queue_return_GameServerLib]
+Return to the queue map that the player is supposed to be on
+
+
+h4.queue_startgame (AccessLevel 0) [Notes|Command_queue_startgame_GameServerLib]
+No comment provided
+
+h4.Queue_TeamJoinBestMap (AccessLevel 0) [Notes|Command_Queue_TeamJoinBestMap_GameServerLib]
+*Parameter 1: pchQueueName (string)*
+*Parameter 2: uiInstanceID (int)*
+Attempts to put you and your team on a map with another guildmate, teammate, or friend
+
+
+h4.PetIntroWarp (AccessLevel 0) [Notes|Command_PetIntroWarp_GameServerLib]
+*Parameter 1: uPetID (int)*
+No comment provided
+
+h4.ScanForClickies (AccessLevel 0) [Notes|Command_ScanForClickies_GameServerLib]
+Counts all "Harvest" nodes and plays an effect on the requesting
+player that points toward the closest interesting object.
+NOTE: This looks for destructibles in addition to clickables
+
+
+h4.SetActivePuppet (AKA SetActiveStarship) (AccessLevel 0) [Notes|Command_SetActivePuppet_GameServerLib]
+*Parameter 1: iPuppetID (int)*
+No comment provided
+
+h4.gslStickerBook_SetHasUnviewedChanges (AccessLevel 0) [Notes|Command_gslStickerBook_SetHasUnviewedChanges_GameServerLib]
+*Parameter 1: bHasUnviewedChanges (bool)*
+No comment provided
+
+h4.gslStoreCredentials (AccessLevel 0) [Notes|Command_gslStoreCredentials_GameServerLib]
+*Parameter 1: service (string)*
+*Parameter 2: user (string)*
+*Parameter 3: token (string)*
+*Parameter 4: secret (string)*
+Store a user's token and secret to the account server.
+
+
+h4.TeamUp_GroupRequest (AccessLevel 0) [Notes|Command_TeamUp_GroupRequest_GameServerLib]
+*Parameter 1: iGroupIdx (int)*
+No comment provided
+
+h4.TeamUp_Join (AccessLevel 0) [Notes|Command_TeamUp_Join_GameServerLib]
+No comment provided
+
+h4.TeamUp_Leave (AccessLevel 0) [Notes|Command_TeamUp_Leave_GameServerLib]
+No comment provided
+
+h4.TeamUp_NewGroupRequest (AccessLevel 0) [Notes|Command_TeamUp_NewGroupRequest_GameServerLib]
+No comment provided
+
+h4.Team_AcceptInviteSidekick (AccessLevel 0) [Notes|Command_Team_AcceptInviteSidekick_GameServerLib]
+No comment provided
+
+h4.Team_ChangeDifficulty (AccessLevel 0) [Notes|Command_Team_ChangeDifficulty_GameServerLib]
+*Parameter 1: iDifficulty (int)*
+
+Set the team difficulty
+
+
+
+h4.Team_VoteKickRegisterOneVote (AccessLevel 0) [Notes|Command_Team_VoteKickRegisterOneVote_GameServerLib]
+*Parameter 1: bKickConfirm (bool)*
+Start a vote to kick a player off your team. Called from uigens
+
+
+h4.gslUGC_FreecamMode (AccessLevel 2) [Notes|Command_gslUGC_FreecamMode_GameServerLib]
+*Parameter 1: enable (bool)*
+No comment provided
+
+h4.gslUGC_GodMode (AccessLevel 2) [Notes|Command_gslUGC_GodMode_GameServerLib]
+*Parameter 1: enable (bool)*
+No comment provided
+
+h4.ugc_ReportTest (AccessLevel 9) [Notes|Command_ugc_ReportTest_GameServerLib]
+*Parameter 1: pchNamespace_unnormalized (string)*
+*Parameter 2: eReason (int)*
+*Parameter 3: pchDetails_unnormalized (string)*
+No comment provided
+
+h4.gslUGC_RespawnAtFullHealth (AccessLevel 2) [Notes|Command_gslUGC_RespawnAtFullHealth_GameServerLib]
+No comment provided
+
+h4.gslUGC_UntargetableMode (AccessLevel 2) [Notes|Command_gslUGC_UntargetableMode_GameServerLib]
+*Parameter 1: enable (bool)*
+No comment provided
+
+h4.DebugPrintOveridesSlow (AccessLevel 8) [Notes|Command_DebugPrintOveridesSlow_GameServerLib]
+No comment provided
+
+h4.mission_ClearTeamMissions (AccessLevel 0) [Notes|Command_mission_ClearTeamMissions_GameServerLib]
+Clear the list of your team mate's missions
+
+
+h4.player_DropMission (AccessLevel 0) [Notes|Command_player_DropMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Drop the named mission, if you have it
+
+
+h4.player_ForceDropMission (AccessLevel 4) [Notes|Command_player_ForceDropMission_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Drop the named mission, if you have it
+
+
+h4.mission_GetTeamMissions (AccessLevel 0) [Notes|Command_mission_GetTeamMissions_GameServerLib]
+Fetch a list of your team mate's missions
+
+
+h4.player_MissionToggleTracked (AccessLevel 0) [Notes|Command_player_MissionToggleTracked_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+Track/untrack mission in the HUD UI
+
+
+h4.PrimaryMission (AccessLevel 0) [Notes|Command_PrimaryMission_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+*Parameter 2: bMakePrimary (bool)*
+Offer this mission to other nearby members of your team and make it primary
+
+
+h4.Mission_SetAllMissionHidden (AccessLevel 0) [Notes|Command_Mission_SetAllMissionHidden_GameServerLib]
+*Parameter 1: bHidden (int)*
+Set all missions to hidden (for the hud), bHidden: 1==hide, 0==don't hide, -1==toggle
+
+
+h4.Mission_SetMissionHidden (AccessLevel 0) [Notes|Command_Mission_SetMissionHidden_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: bHidden (int)*
+Set this mission to hidden (for the hud), bHidden: 1==hide, 0==don't hide, -1==toggle
+
+
+h4.mission_ShareMissionCmd (AccessLevel 0) [Notes|Command_mission_ShareMissionCmd_GameServerLib]
+*Parameter 1: pcMissionDefName (string)*
+Offer this mission to other nearby members of your team.
+
+
+h4.playerReactivateNemesis (AccessLevel 0) [Notes|Command_playerReactivateNemesis_GameServerLib]
+*Parameter 1: uNemesisID (int)*
+Reactivates a Nemesis that has been defeated
+
+
+h4.player_ClientStopInteracting (AccessLevel 0) [Notes|Command_player_ClientStopInteracting_GameServerLib]
+A version of player_StopInteracting that can always be called by the client.
+This always forces the interaction to fail.
+
+
+h4.player_SetPlayedTime (AccessLevel 0) [Notes|Command_player_SetPlayedTime_GameServerLib]
+No comment provided
+
+h4.PowerTree_SendListToClient (AccessLevel 0) [Notes|Command_PowerTree_SendListToClient_GameServerLib]
+*Parameter 1: bOnlyIfCanBuy (bool)*
+Send the client a list of all player power trees.
+If necessary this can be filtered even more later.
+
+
+h4.scp_RevivePet (AccessLevel 0) [Notes|Command_scp_RevivePet_GameServerLib]
+*Parameter 1: idx (int)*
+No comment provided
+
+h4.scp_UnbindPet (AccessLevel 0) [Notes|Command_scp_UnbindPet_GameServerLib]
+*Parameter 1: iBag (int)*
+*Parameter 2: iSlot (int)*
+No comment provided
+
+h4.store_CancelResearch (AccessLevel 0) [Notes|Command_store_CancelResearch_GameServerLib]
+No comment provided
+
+h4.store_StartResearch (AccessLevel 0) [Notes|Command_store_StartResearch_GameServerLib]
+*Parameter 1: pchStoreName (string)*
+*Parameter 2: uStoreItemIndex (int)*
+No comment provided
+
+h4.timecontrol_set (AccessLevel 0) [Notes|Command_timecontrol_set_GameServerLib]
+*Parameter 1: bPause (bool)*
+No comment provided
+
+h4.timecontrol (AKA timecontrol_toggle) (AccessLevel 0) [Notes|Command_timecontrol_GameServerLib]
+No comment provided
+
+h4.trade_Accept (AccessLevel 0) [Notes|Command_trade_Accept_GameServerLib]
+Accept the current trade offer. A trade completes when both players accept.
+
+
+h4.trade_AddSavedPet (AccessLevel 0) [Notes|Command_trade_AddSavedPet_GameServerLib]
+*Parameter 1: srcPetID (int)*
+*Parameter 2: iTargetSlot (int)*
+No comment provided
+
+h4.trade_Cancel (AccessLevel 0) [Notes|Command_trade_Cancel_GameServerLib]
+Cancel the current trading session.
+
+
+h4.trade_ClearAcceptance (AccessLevel 0) [Notes|Command_trade_ClearAcceptance_GameServerLib]
+Clear the trade acceptance flag for this player and his trade partner, if any
+
+
+h4.ugcSearchCacheClear (AccessLevel 4) [Notes|Command_ugcSearchCacheClear_GameServerLib]
+No comment provided
+
+h4.EnableDebuggingQueues (int) - (AccessLevel 9) [Notes|Command_EnableDebuggingQueues_GameServerLib]
+No comment provided
+
+h4.ServerDisableClassStances (int) - (AccessLevel 9) [Notes|Command_ServerDisableClassStances_GameServerLib]
+No comment provided
+
+h4.ShowSurvey (int) - (AccessLevel 9) [Notes|Command_ShowSurvey_GameServerLib]
+No comment provided
+
+h4.Survey_ShowReal (int) - (AccessLevel 9) [Notes|Command_Survey_ShowReal_GameServerLib]
+No comment provided
+
+h4.netTimingGraphPaused (int) - (AccessLevel 0) [Notes|Command_netTimingGraphPaused_GameServerLib]
+No comment provided
+
+h4.survey_MissionLevelMax (int) - (AccessLevel 9) [Notes|Command_survey_MissionLevelMax_GameServerLib]
+No comment provided
+
+h4.survey_MissionLevelMin (int) - (AccessLevel 9) [Notes|Command_survey_MissionLevelMin_GameServerLib]
+No comment provided
+
+h4.survey_MissionNeedsReturn (int) - (AccessLevel 9) [Notes|Command_survey_MissionNeedsReturn_GameServerLib]
+No comment provided
+
+h4.survey_MissionRewardScaleMin (float) - (AccessLevel 9) [Notes|Command_survey_MissionRewardScaleMin_GameServerLib]
+No comment provided
+
+h4.survey_Show (int) - (AccessLevel 9) [Notes|Command_survey_Show_GameServerLib]
+No comment provided
+

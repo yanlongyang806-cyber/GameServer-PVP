@@ -1,0 +1,671 @@
+h4.Activity_IsActive (AccessLevel 9) [Notes|Command_Activity_IsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.Activity_TimeRunning (AccessLevel 9) [Notes|Command_Activity_TimeRunning_GameServerLib]
+*Returns: int*
+*Parameter 1: pchActivityName (string)*
+No comment provided
+
+h4.GetBankSizeNumerics (AccessLevel 9) [Notes|Command_GetBankSizeNumerics_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GetNumericItemValue (AccessLevel 9) [Notes|Command_GetNumericItemValue_GameServerLib]
+*Returns: int*
+*Parameter 1: pchItemName (string)*
+No comment provided
+
+h4.PermTokenKeyTypePlayer (AccessLevel 9) [Notes|Command_PermTokenKeyTypePlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchKey (string)*
+*Parameter 3: pchToken (string)*
+No comment provided
+
+h4.PermTokenTypePlayer (AccessLevel 9) [Notes|Command_PermTokenTypePlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+*Parameter 2: pchToken (string)*
+No comment provided
+
+h4.PermTokenPlayer (AccessLevel 9) [Notes|Command_PermTokenPlayer_GameServerLib]
+*Returns: int*
+*Parameter 1: pchToken (string)*
+No comment provided
+
+h4.CanBuyBagPlayer (AccessLevel 9) [Notes|Command_CanBuyBagPlayer_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchBagID (string)*
+No comment provided
+
+h4.OfficerRequiredPointsForPlayerRank (AccessLevel 9) [Notes|Command_OfficerRequiredPointsForPlayerRank_GameServerLib]
+*Returns: int*
+*Parameter 1: iRank (int)*
+No comment provided
+
+h4.OfficerRequiredPointsForPlayerRankUsingNumeric (AccessLevel 9) [Notes|Command_OfficerRequiredPointsForPlayerRankUsingNumeric_GameServerLib]
+*Returns: int*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchNumeric (string)*
+No comment provided
+
+h4.PlayerHasCharacterPath (AccessLevel 9) [Notes|Command_PlayerHasCharacterPath_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasPrimaryNemesisLoadedOrNot (AccessLevel 9) [Notes|Command_PlayerHasPrimaryNemesisLoadedOrNot_GameServerLib]
+*Returns: bool*
+TRUE if the player has a Primary Nemesis (even if the Nemesis is not loaded yet), FALSE otherwise.
+
+
+h4.SharedBankPlayerCanBuySlots (AccessLevel 9) [Notes|Command_SharedBankPlayerCanBuySlots_GameServerLib]
+*Returns: bool*
+Returns true if this entity can has more slots available
+
+
+h4.TailorCostumeIndex (AccessLevel 9) [Notes|Command_TailorCostumeIndex_GameServerLib]
+*No Return*
+*Parameter 1: index (int)*
+Tells the Player to attempt to Tailor a specific costume index, if they can edit their costume at this time
+
+
+h4.IsPlayerAllegiance (AccessLevel 9) [Notes|Command_IsPlayerAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+No comment provided
+
+h4.IsPlayerGuildAllegiance (AccessLevel 9) [Notes|Command_IsPlayerGuildAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchAllegiance (string)*
+Check the player's guild's allegiance
+
+
+h4.RefillHealthPow (AccessLevel 9) [Notes|Command_RefillHealthPow_GameServerLib]
+*Returns: int*
+*Parameter 1: fHealth (float)*
+No comment provided
+
+h4.EntGetAccountFirstPlayed (AccessLevel 9) [Notes|Command_EntGetAccountFirstPlayed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetAccountTotalPlayed (AccessLevel 9) [Notes|Command_EntGetAccountTotalPlayed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntityHasSteamLogin (AccessLevel 9) [Notes|Command_EntityHasSteamLogin_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.AllegianceSet (AccessLevel 9) [Notes|Command_AllegianceSet_GameServerLib]
+*No Return*
+*Parameter 1: allegianceName (string)*
+Runs the transaction that sets Player's Allegiance PERMANENTLY, also possibly modifies faction and species to match
+
+
+h4.ClearMusic (AccessLevel 9) [Notes|Command_ClearMusic_GameServerLib]
+*No Return*
+Resets all music for all entities within proximity range
+
+
+h4.EndMusic (AccessLevel 9) [Notes|Command_EndMusic_GameServerLib]
+*No Return*
+Ends music for all entities within proximity range
+
+
+h4.NemesisCount (AccessLevel 9) [Notes|Command_NemesisCount_GameServerLib]
+*Returns: int*
+Gets the number of Nemeses that the player currently has
+
+
+h4.NemesisDefeatCountMax (AccessLevel 9) [Notes|Command_NemesisDefeatCountMax_GameServerLib]
+*Returns: int*
+Gets the highest number of times that the player has defeated a single Nemesis
+
+
+h4.NemesisDefeatCountTotal (AccessLevel 9) [Notes|Command_NemesisDefeatCountTotal_GameServerLib]
+*Returns: int*
+Gets the total number of times a player has defeated a Nemesis
+
+
+h4.PlayMusic (AccessLevel 9) [Notes|Command_PlayMusic_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays the specified music event for every entity within proximity range
+
+
+h4.PlayerHasAnyNemesis (AccessLevel 9) [Notes|Command_PlayerHasAnyNemesis_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasCompletedMission (AccessLevel 9) [Notes|Command_PlayerHasCompletedMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMissionName (string)*
+No comment provided
+
+h4.PlayerHasGuildPermission (AccessLevel 9) [Notes|Command_PlayerHasGuildPermission_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcPermission (string)*
+Check guild permission on the player
+
+
+h4.PlayerHasMission (AccessLevel 9) [Notes|Command_PlayerHasMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pchMissionName (string)*
+No comment provided
+
+h4.PlayerXPLevel (AccessLevel 9) [Notes|Command_PlayerXPLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.ReplaceMusic (AccessLevel 9) [Notes|Command_ReplaceMusic_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Replaces the currently playing music with the passed in music event for all entities
+within proximity range
+
+
+h4.SpeciesSet (AccessLevel 9) [Notes|Command_SpeciesSet_GameServerLib]
+*No Return*
+*Parameter 1: pchSpecies (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementConsecutiveCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementConsecutiveCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementConsecutiveMultipleSetCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementConsecutiveMultipleSetCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAchievementMaximumConsecutiveCount (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAchievementMaximumConsecutiveCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_AccountAvailable (AccessLevel 9) [Notes|Command_ugcAuthor_AccountAvailable_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.ugcAuthor_ProjectAchievementCount (AccessLevel 9) [Notes|Command_ugcAuthor_ProjectAchievementCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+*Parameter 2: count (int)*
+No comment provided
+
+h4.ugcAuthor_ProjectAchievementLargestCount (AccessLevel 9) [Notes|Command_ugcAuthor_ProjectAchievementLargestCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.ugcAuthor_SeriesAchievementCount (AccessLevel 9) [Notes|Command_ugcAuthor_SeriesAchievementCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+*Parameter 2: count (int)*
+No comment provided
+
+h4.ugcAuthor_SeriesAchievementLargestCount (AccessLevel 9) [Notes|Command_ugcAuthor_SeriesAchievementLargestCount_GameServerLib]
+*Returns: int*
+*Parameter 1: ugcAchievementName (string)*
+No comment provided
+
+h4.GetPlayerGroupProjectTaskAcceptingDonations (AccessLevel 9) [Notes|Command_GetPlayerGroupProjectTaskAcceptingDonations_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskName (string)*
+Is a personal group project task in the "Accepting Donations" state.
+
+
+h4.GetPlayerGroupProjectTaskCompleted (AccessLevel 9) [Notes|Command_GetPlayerGroupProjectTaskCompleted_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskName (string)*
+Has a personal group project task been completed?  Note that this only works for non-repeatable tasks.
+
+
+h4.GetPlayerGroupProjectTaskFinalized (AccessLevel 9) [Notes|Command_GetPlayerGroupProjectTaskFinalized_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskName (string)*
+Is a personal group project task in the "Finalized" state.
+
+
+h4.GetPlayerGroupProjectTaskRewardPending (AccessLevel 9) [Notes|Command_GetPlayerGroupProjectTaskRewardPending_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: taskName (string)*
+Is a personal group project task in the "Reward Pending" state.
+
+
+h4.GetPlayerProjectNumericValueFromPlayer (AccessLevel 9) [Notes|Command_GetPlayerProjectNumericValueFromPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: numericName (string)*
+Gets the value of a Player GroupProjectNumeric from a player.
+
+
+h4.GetPlayerProjectUnlockFromPlayer (AccessLevel 9) [Notes|Command_GetPlayerProjectUnlockFromPlayer_GameServerLib]
+*Parameter 1: projectName (string)*
+*Parameter 2: unlockName (string)*
+Gets the value of a Player GroupProjectUnlock from a player.
+
+
+h4.InteriorMapGetOptionChoiceValue (AccessLevel 9) [Notes|Command_InteriorMapGetOptionChoiceValue_GameServerLib]
+*Returns: int*
+*Parameter 1: optionName (string)*
+No comment provided
+
+h4.PlayerCompareClassName (AccessLevel 9) [Notes|Command_PlayerCompareClassName_GameServerLib]
+*Returns: bool*
+*Parameter 1: className (string)*
+No comment provided
+
+h4.SetSkill (AccessLevel 9) [Notes|Command_SetSkill_GameServerLib]
+*No Return*
+*Parameter 1: iSkillType (int)*
+No comment provided
+
+h4.UpdatePresence (AccessLevel 9) [Notes|Command_UpdatePresence_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntSetAccountDataValue (AccessLevel 9) [Notes|Command_EntSetAccountDataValue_GameServerLib]
+*No Return*
+*Parameter 1: pchAttrib (string)*
+*Parameter 2: pchValue (string)*
+Set the value associated with a GameAccountData attribute.
+
+
+h4.PlayerGetAccountDataValue (AccessLevel 9) [Notes|Command_PlayerGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.CanPlayerAffordGuildAllegianceChange (AccessLevel 9) [Notes|Command_CanPlayerAffordGuildAllegianceChange_GameServerLib]
+*Returns: bool*
+Player/Mission expression to determine if the player can afford the allegiance change
+
+
+h4.queue_PlayerHasQueueInfo (AccessLevel 9) [Notes|Command_queue_PlayerHasQueueInfo_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.team_LowestMemberExpLevel (AccessLevel 9) [Notes|Command_team_LowestMemberExpLevel_GameServerLib]
+*Returns: int*
+Player/Mission expression to determine the lowest exp level on the team (including disconnecteds)
+
+
+h4.team_TeammateIsInDifferentPartition (AccessLevel 9) [Notes|Command_team_TeammateIsInDifferentPartition_GameServerLib]
+*Returns: bool*
+Player/Mission expression to determine if the player is on a team and a team member is on the same map but a different partition
+
+
+h4.PlayerGetGuildMemberClassCount (AccessLevel 9) [Notes|Command_PlayerGetGuildMemberClassCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcClassName (string)*
+Returns the number of members from the given class in the player's guild
+
+
+h4.PlayerGetGuildStat (AccessLevel 9) [Notes|Command_PlayerGetGuildStat_GameServerLib]
+*Returns: int*
+*Parameter 1: pcStatName (string)*
+No comment provided
+
+h4.PlayerGuildIsTheme (AccessLevel 9) [Notes|Command_PlayerGuildIsTheme_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcThemeName (string)*
+Indicates if the guild is assigned the same theme as the given theme
+
+
+h4.CanAcceptMission (AccessLevel 9) [Notes|Command_CanAcceptMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.GetEntMissionVariableFloat (AccessLevel 9) [Notes|Command_GetEntMissionVariableFloat_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pcMissionName (string)*
+*Parameter 3: pcVarName (string)*
+No comment provided
+
+h4.GetEntMissionVariableInt (AccessLevel 9) [Notes|Command_GetEntMissionVariableInt_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pcMissionName (string)*
+*Parameter 3: pcVarName (string)*
+No comment provided
+
+h4.GetEntMissionVariableString (AccessLevel 9) [Notes|Command_GetEntMissionVariableString_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pcMissionName (string)*
+*Parameter 3: pcVarName (string)*
+No comment provided
+
+h4.GetMissionVariableFloat (AccessLevel 9) [Notes|Command_GetMissionVariableFloat_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a mission variable as a float
+
+
+h4.GetMissionVariableFloatWithDefault (AccessLevel 9) [Notes|Command_GetMissionVariableFloatWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: fDefault (int)*
+No comment provided
+
+h4.GetMissionVariableInt (AccessLevel 9) [Notes|Command_GetMissionVariableInt_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a mission variable as an integer
+
+
+h4.GetMissionVariableIntWithDefault (AccessLevel 9) [Notes|Command_GetMissionVariableIntWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: iDefault (int)*
+No comment provided
+
+h4.GetMissionVariableString (AccessLevel 9) [Notes|Command_GetMissionVariableString_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a mission variable as a string
+
+
+h4.GetMissionVariableStringWithDefault (AccessLevel 9) [Notes|Command_GetMissionVariableStringWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: pcDefault (string)*
+No comment provided
+
+h4.GetNumCompletedMissions (AccessLevel 9) [Notes|Command_GetNumCompletedMissions_GameServerLib]
+*Returns: int*
+*Parameter 1: bIgnoreRepeats (bool)*
+*Parameter 2: bIgnoreInvisible (bool)*
+Gets the number of regular Missions a player has completed.  Does not count Perks, etc.
+
+
+h4.GetNumCompletedMissionsByCategory (AccessLevel 9) [Notes|Command_GetNumCompletedMissionsByCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCategoryName (string)*
+*Parameter 2: bIgnoreRepeats (bool)*
+*Parameter 3: bIgnoreInvisible (bool)*
+Gets the number of regular Missions a player has completed from the given category.  Does not count Perks, etc.
+
+
+h4.GetNumCompletedPerks (AccessLevel 9) [Notes|Command_GetNumCompletedPerks_GameServerLib]
+*Returns: int*
+Gets the number of Perks the player has completed.
+
+
+h4.GetNumCompletedPerksByCategory (AccessLevel 9) [Notes|Command_GetNumCompletedPerksByCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCategoryName (string)*
+Gets the number of Perks a player has completed from the given category.
+
+
+h4.GetPlayerMissionVariableFloat (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableFloat_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+Gets the value of a mission variable as a float
+
+
+h4.GetPlayerMissionVariableFloatWithDefault (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableFloatWithDefault_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: fDefault (int)*
+No comment provided
+
+h4.GetPlayerMissionVariableInt (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableInt_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+Gets the value of a mission variable as an integer
+
+
+h4.GetPlayerMissionVariableIntWithDefault (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableIntWithDefault_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: iDefault (int)*
+No comment provided
+
+h4.GetPlayerMissionVariableString (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableString_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+No comment provided
+
+h4.GetPlayerMissionVariableStringWithDefault (AccessLevel 9) [Notes|Command_GetPlayerMissionVariableStringWithDefault_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: pcDefault (string)*
+No comment provided
+
+h4.GetTrackedMission (AccessLevel 9) [Notes|Command_GetTrackedMission_GameServerLib]
+No comment provided
+
+h4.HasCompletedAllMissionGrants (AccessLevel 9) [Notes|Command_HasCompletedAllMissionGrants_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.HasCompletedMission (AccessLevel 9) [Notes|Command_HasCompletedMission_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.HasCompletedMissionByTime (AccessLevel 9) [Notes|Command_HasCompletedMissionByTime_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: uTime (int)*
+
+Return true if the player has completed the mission before the given time
+
+
+
+h4.HasNoRecordOfMission (AccessLevel 9) [Notes|Command_HasNoRecordOfMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionDeprecatedEventCount (AccessLevel 9) [Notes|Command_MissionDeprecatedEventCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionEventName (string)*
+Get the event count for the given event.  This version doesn't verify that the event actually exists,
+which is useful in a few situations where the data has changed.
+
+
+h4.MissionEventCount (AccessLevel 9) [Notes|Command_MissionEventCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionEventName (string)*
+Get the event count for the given event.
+
+
+h4.PerformedEmote (AccessLevel 9) [Notes|Command_PerformedEmote_GameServerLib]
+*Returns: int*
+*Parameter 1: pchEmoteName (string)*
+*Parameter 2: uiTime (int)*
+No comment provided
+
+h4.MissionStateFailed (AccessLevel 9) [Notes|Command_MissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionStateInProgress (AccessLevel 9) [Notes|Command_MissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionStateInProgressByTag (AccessLevel 9) [Notes|Command_MissionStateInProgressByTag_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionTagName (string)*
+No comment provided
+
+h4.MissionStateSucceeded (AccessLevel 9) [Notes|Command_MissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.MissionStateSucceededByTag (AccessLevel 9) [Notes|Command_MissionStateSucceededByTag_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionTagName (string)*
+No comment provided
+
+h4.PlayerGetPointsSpent (AccessLevel 9) [Notes|Command_PlayerGetPointsSpent_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.PlayerHasItemWithGemSlot (AccessLevel 9) [Notes|Command_PlayerHasItemWithGemSlot_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerHasNemesisGrantItem (AccessLevel 9) [Notes|Command_PlayerHasNemesisGrantItem_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerSlottedGem (AccessLevel 9) [Notes|Command_PlayerSlottedGem_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerStatCount (AccessLevel 9) [Notes|Command_PlayerStatCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcStatName (string)*
+Returns the value of a named PlayerStat for the current player.
+
+
+h4.SetPlayerMissionVariableFloat (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableFloat_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: fValue (float)*
+No comment provided
+
+h4.SetPlayerMissionVariableInt (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableInt_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: iValue (int)*
+No comment provided
+
+h4.SetPlayerMissionVariableMessage (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableMessage_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: pchMessageKey (string)*
+Set a message type mission variable by message key
+
+
+h4.SetPlayerMissionVariableString (AccessLevel 9) [Notes|Command_SetPlayerMissionVariableString_GameServerLib]
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pcVarName (string)*
+*Parameter 3: pchString (string)*
+No comment provided
+
+h4.TeamHasCompletedMission (AccessLevel 9) [Notes|Command_TeamHasCompletedMission_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has completed this Mission
+
+
+h4.TeamMissionStateFailed (AccessLevel 9) [Notes|Command_TeamMissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has this Mission Failed
+
+
+h4.TeamMissionStateInProgress (AccessLevel 9) [Notes|Command_TeamMissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has this Mission in progress
+
+
+h4.TeamMissionStateSucceeded (AccessLevel 9) [Notes|Command_TeamMissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+True if anyone on the team has this Mission Succeeded
+
+
+h4.TimeExpired (AccessLevel 9) [Notes|Command_TimeExpired_GameServerLib]
+*Returns: int*
+Returns TRUE if the timer for this mission has expired
+
+
+h4.GiveAccountRewardGate (AccessLevel 9) [Notes|Command_GiveAccountRewardGate_GameServerLib]
+*Returns: int*
+*Parameter 1: pchRewardTable (string)*
+*Parameter 2: pchGateType (string)*
+No comment provided
+
+h4.PlayerOnMissionLockoutList (AccessLevel 9) [Notes|Command_PlayerOnMissionLockoutList_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionRefString (string)*
+Returns TRUE if the player is on the Lockout List for the given MissionDef
+
+
+h4.HasCompletedAllRequests (AccessLevel 9) [Notes|Command_HasCompletedAllRequests_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.MissionIsRequested (AccessLevel 9) [Notes|Command_MissionIsRequested_GameServerLib]
+*Returns: int*
+Returns TRUE if this mission is currently being requested by another mission
+
+
+h4.OpenMissionMapCredit (AccessLevel 9) [Notes|Command_OpenMissionMapCredit_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateFailed (AccessLevel 9) [Notes|Command_OpenMissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateInProgress (AccessLevel 9) [Notes|Command_OpenMissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateSucceeded (AccessLevel 9) [Notes|Command_OpenMissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.CountBagItems (AccessLevel 9) [Notes|Command_CountBagItems_GameServerLib]
+*Returns: int*
+*Parameter 1: pcBagType (string)*
+No comment provided
+
+h4.CountBagItemsWithCategory (AccessLevel 9) [Notes|Command_CountBagItemsWithCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: pcBag (string)*
+*Parameter 2: pcCategory (string)*
+No comment provided
+
+h4.PlayerItemCount (AccessLevel 9) [Notes|Command_PlayerItemCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.PlayerGetDaysSubscribed (AccessLevel 9) [Notes|Command_PlayerGetDaysSubscribed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerIsLifetimeSubscription (AccessLevel 9) [Notes|Command_PlayerIsLifetimeSubscription_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerIsPressSubscription (AccessLevel 9) [Notes|Command_PlayerIsPressSubscription_GameServerLib]
+*Returns: int*
+No comment provided
+

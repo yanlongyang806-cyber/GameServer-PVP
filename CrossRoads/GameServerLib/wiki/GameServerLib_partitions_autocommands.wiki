@@ -1,0 +1,14 @@
+h4.PartitionDestroyByIdx (AccessLevel 9) [Notes|Command_PartitionDestroyByIdx_GameServerLib]
+*Parameter 1: iPartitionIdx (int)*
+Destroys an existing partition by index.  Returns the index destroyed, or -1 on failure.
+
+
+h4.PartitionDestroyCurrent (AccessLevel 9) [Notes|Command_PartitionDestroyCurrent_GameServerLib]
+Destroys the current partition for a player
+
+
+h4.PartitionDumpLogs (AccessLevel 9) [Notes|Command_PartitionDumpLogs_GameServerLib]
+*Parameter 1: iPartitionIdx (int)*
+dump out all partition debug logs to a file. specify the partition IDX, 0 means all
+
+

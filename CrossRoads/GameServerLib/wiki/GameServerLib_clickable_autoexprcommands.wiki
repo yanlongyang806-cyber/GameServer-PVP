@@ -1,0 +1,70 @@
+h4.ActivatePowerAtEnts (AccessLevel 9) [Notes|Command_ActivatePowerAtEnts_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: peaEnts (Entity Array)*
+Hit all ents in the entarray with a power from the clickable
+
+
+h4.ActivatePowerAtPoint (AccessLevel 9) [Notes|Command_ActivatePowerAtPoint_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: mPoint (Location)*
+Activate a power from a clickable to a point
+
+
+h4.ActivatePowerAtPlayers (AccessLevel 9) [Notes|Command_ActivatePowerAtPlayers_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+Activate a power from a clickable to the player using the clickable
+
+
+h4.ActivatePowerPointBlank (AccessLevel 9) [Notes|Command_ActivatePowerPointBlank_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+Activate a power from a clickable targeted at the clickable's location
+
+
+h4.ActivatePowerPointBlankLevel (AccessLevel 9) [Notes|Command_ActivatePowerPointBlankLevel_GameServerLib]
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: iLevel (int)*
+No comment provided
+
+h4.HasRecentlyCompletedClickableSelf (AKA HasRecentlyCompletedInteractSelf) (AccessLevel 9) [Notes|Command_HasRecentlyCompletedClickableSelf_GameServerLib]
+No comment provided
+
+h4.HasRecentlyCompletedInteractWithEntityInEncounter (AccessLevel 9) [Notes|Command_HasRecentlyCompletedInteractWithEntityInEncounter_GameServerLib]
+*Parameter 1: pchEncounterName (string)*
+No comment provided
+
+h4.HasRecentlyCompletedClickable (AKA HasRecentlyCompletedInteractWithObject) (AccessLevel 9) [Notes|Command_HasRecentlyCompletedClickable_GameServerLib]
+*Parameter 1: pchObjectName (string)*
+No comment provided
+
+h4.HasRecentlyCompletedInteractWithVolume (AccessLevel 9) [Notes|Command_HasRecentlyCompletedInteractWithVolume_GameServerLib]
+*Parameter 1: pchVolumeName (string)*
+No comment provided
+
+h4.TriggerConditionState (AccessLevel 9) [Notes|Command_TriggerConditionState_GameServerLib]
+*Parameter 1: pcCondName (string)*
+Gets the state of a trigger condition on an encounter layer
+
+
+h4.UGCGetDetailSelectionInt (AccessLevel 9) [Notes|Command_UGCGetDetailSelectionInt_GameServerLib]
+*Parameter 1: iDefault (int)*
+No comment provided
+
+h4.GetAssetSetIndex (AccessLevel 9) [Notes|Command_GetAssetSetIndex_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.ShowUGCFinder (AccessLevel 9) [Notes|Command_ShowUGCFinder_GameServerLib]
+*No Return*
+returns whether the user has requested to search for UGC since this was last called.
+polled each frame by 
+
+

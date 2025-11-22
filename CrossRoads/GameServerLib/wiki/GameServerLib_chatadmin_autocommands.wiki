@@ -1,0 +1,49 @@
+h4.announce (AccessLevel 4) [Notes|Command_announce_GameServerLib]
+*Parameter 1: msg (sentence)*
+Send a shard-wide announcement
+
+
+h4.broadcast (AccessLevel 4) [Notes|Command_broadcast_GameServerLib]
+*Parameter 1: msg (sentence)*
+Send a zone-wide broadcast
+
+
+h4.deaf (AccessLevel 4) [Notes|Command_deaf_GameServerLib]
+Blocks incoming private messages
+
+
+h4.silence (AccessLevel 4) [Notes|Command_silence_GameServerLib]
+Prevent the player from talking in chat
+
+
+h4.silenceuser (AccessLevel 4) [Notes|Command_silenceuser_GameServerLib]
+*Parameter 1: displayName (sentence)*
+Prevent the player from talking in chat
+
+
+h4.spy (AccessLevel 4) [Notes|Command_spy_GameServerLib]
+*Parameter 1: handleOrCharacterName (string)*
+Spy on another player's chat
+
+
+h4.spylist (AccessLevel 4) [Notes|Command_spylist_GameServerLib]
+List all the people you're spying on
+
+
+h4.spystop (AccessLevel 4) [Notes|Command_spystop_GameServerLib]
+*Parameter 1: handleOrCharacterName (string)*
+Stop spying on another player's chat
+
+
+h4.undeaf (AccessLevel 4) [Notes|Command_undeaf_GameServerLib]
+Stops blocking incoming private messages
+
+
+h4.unsilence (AccessLevel 4) [Notes|Command_unsilence_GameServerLib]
+Allow the player to talk in chat again
+
+
+h4.unsilenceuser (AccessLevel 4) [Notes|Command_unsilenceuser_GameServerLib]
+*Parameter 1: displayName (sentence)*
+No comment provided
+

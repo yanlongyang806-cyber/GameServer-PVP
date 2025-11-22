@@ -1,0 +1,1945 @@
+h4.NemesisTeamIndexReady (AccessLevel 9) [Notes|Command_NemesisTeamIndexReady_GameServerLib]
+*Returns: bool*
+*Parameter 1: iTeamIndex (int)*
+Returns true if the team index could spawn a nemesis (or minion), will check players in range of the spawn
+Will return true if the team index and can't spawn a nemesis. The spawn code in encounter 2 will use a default nemesis in this case
+This function will set the mapstate nemesis team index if it hasn't been set and the leader is present.
+
+
+h4.NemesisTeamLeaderReady (AccessLevel 9) [Notes|Command_NemesisTeamLeaderReady_GameServerLib]
+*Returns: bool*
+*Parameter 1: bUseAnyMemeber (bool)*
+Returns true if the team leader (or someone on the team if bUseAnyMemeber is true) could spawn a nemesis (or minion), will check players in range of the spawn
+Will return true if the leader has been checked (or whole team) and can't spawn a nemesis. The spawn code in encounter 2 will use a default nemesis in this case
+This function will set the mapstate nemesis team leader if it hasn't been set and the leader is present)
+
+
+h4.EntityBuildForceCurrentBuild (AccessLevel 9) [Notes|Command_EntityBuildForceCurrentBuild_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: buildIndex (int)*
+Forces the given entities into a current build by index
+
+
+h4.EntityBuildGetCurrentBuildIndex (AccessLevel 9) [Notes|Command_EntityBuildGetCurrentBuildIndex_GameServerLib]
+*Returns: int*
+*Parameter 1: entsIn (Entity Array)*
+Returns the current build index of the given entity,
+entsIn must only be 1 entity, 
+returns -1 on error or no build 
+
+
+h4.NemesisLeaderLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedEntArray (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisLeaderLoadedOrNotEntArray (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisTeamIndexGetLeader (AKA NemesisTeamGetLeader) (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetLeader_GameServerLib]
+*No Return*
+No comment provided
+
+h4.NemesisTeamGetMotivation (AccessLevel 9) [Notes|Command_NemesisTeamGetMotivation_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamIndex (int)*
+*Parameter 2: bUseLeader (bool)*
+Get the nemesis motivation, used for either team index or leader
+
+
+h4.NemesisTeamGetPersonality (AccessLevel 9) [Notes|Command_NemesisTeamGetPersonality_GameServerLib]
+*Returns: int*
+*Parameter 1: iTeamIndex (int)*
+*Parameter 2: bUseLeader (bool)*
+Get the nemesis personality, used for either team index or leader
+
+
+h4.NemesisTeamIndexGetNemesis (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetNemesis_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: iIndex (int)*
+Get the nemesis for the team at index. This only works if the team index has already been set by other expressions.
+
+
+h4.NemesisTeamIndexGetPlayer (AccessLevel 9) [Notes|Command_NemesisTeamIndexGetPlayer_GameServerLib]
+*No Return*
+*Parameter 1: iIndex (int)*
+No comment provided
+
+h4.NemesisTeamIndexLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedEntArray (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotEntArray (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotEntArray_GameServerLib]
+*Returns: bool*
+*Parameter 1: playersIn (Entity Array)*
+*Parameter 2: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamLeaderGetNemesis (AccessLevel 9) [Notes|Command_NemesisTeamLeaderGetNemesis_GameServerLib]
+*Returns: Entity struct*
+Get the nemesis for the team leader. This only works if the team leader has already been set by other commands.
+
+
+h4.SendMiniContactCritterGroup (AccessLevel 9) [Notes|Command_SendMiniContactCritterGroup_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pchMessageKey (string)*
+*Parameter 3: pchSound (string)*
+*Parameter 4: pchHeadshotStyle (string)*
+*Parameter 5: pchCritterGroupName (string)*
+*Parameter 6: pchContactName (string)*
+Send a mini contact notification
+
+
+h4.SendMiniContactMapVarCritterGroup (AccessLevel 9) [Notes|Command_SendMiniContactMapVarCritterGroup_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pchMessageKey (string)*
+*Parameter 3: pchSound (string)*
+*Parameter 4: pchHeadshotStyle (string)*
+*Parameter 5: pchMapVariableName (string)*
+*Parameter 6: pchContactName (string)*
+Send a mini contact notification
+
+
+h4.SendMiniContactPetContact (AccessLevel 9) [Notes|Command_SendMiniContactPetContact_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pchMessageKey (string)*
+*Parameter 3: pchSound (string)*
+*Parameter 4: pchHeadshotStyle (string)*
+*Parameter 5: pchPetContactListName (string)*
+Send a mini contact notification
+
+
+h4.SendMiniContactPlayer (AccessLevel 9) [Notes|Command_SendMiniContactPlayer_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pchMessageKey (string)*
+*Parameter 3: pchSound (string)*
+*Parameter 4: pchHeadshotStyle (string)*
+Send a mini contact notification
+
+
+h4.SendMiniContactSpecifiedCritter (AccessLevel 9) [Notes|Command_SendMiniContactSpecifiedCritter_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pchMessageKey (string)*
+*Parameter 3: pchSound (string)*
+*Parameter 4: pchHeadshotStyle (string)*
+*Parameter 5: pchCostumeName (string)*
+Send a mini contact notification
+
+
+h4.SetAllPetsState (AccessLevel 9) [Notes|Command_SetAllPetsState_GameServerLib]
+*No Return*
+*Parameter 1: state (string)*
+No comment provided
+
+h4.SetSafe (AccessLevel 9) [Notes|Command_SetSafe_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the "safe" state for this Entity on or off
+
+
+h4.GetMyAllegiance (AccessLevel 9) [Notes|Command_GetMyAllegiance_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.GetMySubAllegiance (AccessLevel 9) [Notes|Command_GetMySubAllegiance_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.ShowContactDialogToEntArray (AccessLevel 9) [Notes|Command_ShowContactDialogToEntArray_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcContactName (string)*
+*Parameter 3: pcDialogName (string)*
+No comment provided
+
+h4.ShowContactToEntArray (AccessLevel 9) [Notes|Command_ShowContactToEntArray_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcContactName (string)*
+No comment provided
+
+h4.critterSwap (AccessLevel 9) [Notes|Command_critterSwap_GameServerLib]
+*No Return*
+*Parameter 1: newCritter (string)*
+*Parameter 2: fsm (string)*
+*Parameter 3: iLevel (int)*
+Destroys the current critter and replaces it with a new critter using critterdef <newCritter>
+running the <fsm> fsm and spawned at <iLevel>
+
+
+h4.EncounterGroupReset (AccessLevel 9) [Notes|Command_EncounterGroupReset_GameServerLib]
+*No Return*
+*Parameter 1: pcGroupName (string)*
+Reset all encounters in an encounter group (kill all entities and allow to respawn)
+
+
+h4.EncounterGroupSpawn (AccessLevel 9) [Notes|Command_EncounterGroupSpawn_GameServerLib]
+*No Return*
+*Parameter 1: pcGroupName (string)*
+Spawn all encounters in an encounter group (unless they have already spawned)
+
+
+h4.EncounterReset (AccessLevel 9) [Notes|Command_EncounterReset_GameServerLib]
+*No Return*
+*Parameter 1: pcEncounterName (string)*
+Reset an encounter (kill all entities and allow to respawn)
+
+
+h4.EncounterResetAll (AccessLevel 9) [Notes|Command_EncounterResetAll_GameServerLib]
+*No Return*
+Reset all encounters (kill all entities and allow to respawn)
+
+
+h4.EncounterSpawn (AccessLevel 9) [Notes|Command_EncounterSpawn_GameServerLib]
+*No Return*
+*Parameter 1: pcEncounterName (string)*
+Force an encounter to spawn (unless it has already spawned)
+
+
+h4.EncounterSpawnForPlayer (AccessLevel 9) [Notes|Command_EncounterSpawnForPlayer_GameServerLib]
+*No Return*
+*Parameter 1: pcEncounterName (string)*
+*Parameter 2: eaEntsIn (Entity Array)*
+Force an encounter to spawn (unless it has already spawned), with the passed in entity as the spawning player
+
+
+h4.GetNearbyPlayersForEnc (AccessLevel 9) [Notes|Command_GetNearbyPlayersForEnc_GameServerLib]
+*No Return*
+Get players within the spawn radius of the encounter
+
+
+h4.GetNumLivingInEncounterGroup (AccessLevel 9) [Notes|Command_GetNumLivingInEncounterGroup_GameServerLib]
+*Returns: int*
+*Parameter 1: pcGroupName (string)*
+Returns the number of living ents in the encounter group
+
+
+h4.GetSpawningPlayer (AccessLevel 9) [Notes|Command_GetSpawningPlayer_GameServerLib]
+*No Return*
+Get the player who spawned a critter/encounter, if that player is targetable and alive.
+Note that this player may already have left the area or even the map.
+
+
+h4.GetSpawningPlayerAll (AccessLevel 9) [Notes|Command_GetSpawningPlayerAll_GameServerLib]
+*No Return*
+Get the player who spawned an encounter, even if that player is dead or untargetable for some reason
+
+
+h4.GetSpawningPlayerSilent (AccessLevel 9) [Notes|Command_GetSpawningPlayerSilent_GameServerLib]
+*No Return*
+Get the player who spawned an encounter, even if that player is dead or untargetable for some reason
+This function also doesn't error (Useful for critter expressions)
+
+
+h4.HasNearbyPlayersForEnc (AccessLevel 9) [Notes|Command_HasNearbyPlayersForEnc_GameServerLib]
+*Returns: bool*
+Checks if there are any nearby players for the encounter.
+
+
+h4.PercentLivingInEncounter (AccessLevel 9) [Notes|Command_PercentLivingInEncounter_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Returns the percentage of entities in the passed in static encounter that are alive
+
+
+h4.EncounterFailure (AccessLevel 9) [Notes|Command_EncounterFailure_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Returns whether the specified static encounter has failed
+
+
+h4.StaticEncFailure (AccessLevel 9) [Notes|Command_StaticEncFailure_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Alias expression for following function
+
+
+h4.EncounterIsComplete (AccessLevel 9) [Notes|Command_EncounterIsComplete_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Returns whether the specified encounter has completed
+
+
+h4.StaticEncIsComplete (AccessLevel 9) [Notes|Command_StaticEncIsComplete_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Alias expression for following function
+
+
+h4.StaticEncSuccess (AccessLevel 9) [Notes|Command_StaticEncSuccess_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Alias expression for following function
+
+
+h4.EncounterSuccess (AccessLevel 9) [Notes|Command_EncounterSuccess_GameServerLib]
+*Returns: int*
+*Parameter 1: pcEncounterName (string)*
+Returns whether the specified encounter has succeeded
+
+
+h4.EntArrayGetLuckyCharmWeightedIndex (AccessLevel 9) [Notes|Command_EntArrayGetLuckyCharmWeightedIndex_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+Returns the lucky charm index for the entity. 
+If there is more than one entity or the entity does not have the given lucky charm, the function returns -1
+
+
+h4.ActivateInteractable (AccessLevel 9) [Notes|Command_ActivateInteractable_GameServerLib]
+*Parameter 1: pcInteractable (string)*
+*Parameter 2: iIndex (int)*
+Triggers the normal operation of an interactable as if the player had clicked on it
+
+
+h4.ActivatePowerCompletePointAtEnts (AccessLevel 9) [Notes|Command_ActivatePowerCompletePointAtEnts_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: mSrcPoint (Location)*
+*Parameter 4: peaEnts (Entity Array)*
+Completely activates (as in charge, activate, deactivate) a power from a named point to an entarray
+
+
+h4.ActivatePowerCompletePointToPoint (AccessLevel 9) [Notes|Command_ActivatePowerCompletePointToPoint_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: mSrcPoint (Location)*
+*Parameter 4: mTargetPoint (Location)*
+Completely activates (as in charge, activate, deactivate) a power from one point to another
+
+
+h4.ActivatePowerCompletePointToPointDelay (AccessLevel 9) [Notes|Command_ActivatePowerCompletePointToPointDelay_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: mSrcPoint (Location)*
+*Parameter 4: mTargetPoint (Location)*
+*Parameter 5: fDelay (float)*
+Completely activates (as in charge, activate, deactivate) a power from one point to another after a given delay
+
+
+h4.ActivatePowerEntAtPoint (AccessLevel 9) [Notes|Command_ActivatePowerEntAtPoint_GameServerLib]
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: peaEnts (Entity Array)*
+*Parameter 4: mTargetPoint (Location)*
+Activates a power from one entity to a named point.  The entarray can only have one entity in it
+
+
+h4.ActivatePowerEnts (AccessLevel 9) [Notes|Command_ActivatePowerEnts_GameServerLib]
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: peaEnts (Entity Array)*
+Activates a power on all entities, targeting themselves
+
+
+h4.ActivatePowerInVolume (AccessLevel 9) [Notes|Command_ActivatePowerInVolume_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: pcVolName (string)*
+Hit every entity in a volume with a power
+
+
+h4.ActivatePowerPointAtEnts (AccessLevel 9) [Notes|Command_ActivatePowerPointAtEnts_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: mSrcPoint (Location)*
+*Parameter 4: peaEnts (Entity Array)*
+Fire a power from a named point at an entarray
+
+
+h4.ActivatePowerPointToPoint (AccessLevel 9) [Notes|Command_ActivatePowerPointToPoint_GameServerLib]
+*No Return*
+*Parameter 1: pcPowerName (string)*
+*Parameter 2: pcStrength (string)*
+*Parameter 3: mSrcPoint (Location)*
+*Parameter 4: mTargetPoint (Location)*
+Activate a power from one  point to another
+
+
+h4.AddCostumeFx (AccessLevel 9) [Notes|Command_AddCostumeFx_GameServerLib]
+*No Return*
+*Parameter 1: fxName (string)*
+No comment provided
+
+h4.AddFxPointToPoint (AccessLevel 9) [Notes|Command_AddFxPointToPoint_GameServerLib]
+*Parameter 1: posSource (Location)*
+*Parameter 2: posTarget (Location)*
+*Parameter 3: fxName (string)*
+*Parameter 4: hue (float)*
+No comment provided
+
+h4.AddFxPointToTarget (AccessLevel 9) [Notes|Command_AddFxPointToTarget_GameServerLib]
+*Parameter 1: posSource (Location)*
+*Parameter 2: entIn (Entity Array)*
+*Parameter 3: fxName (string)*
+*Parameter 4: hue (float)*
+No comment provided
+
+h4.AffectedByPowerAI (AccessLevel 9) [Notes|Command_AffectedByPowerAI_GameServerLib]
+*Returns: int*
+*Parameter 1: powerName (string)*
+No comment provided
+
+h4.AnimListSet (AccessLevel 9) [Notes|Command_AnimListSet_GameServerLib]
+*No Return*
+*Parameter 1: animList (string)*
+Plays the specified anim list on the current entity
+Can be specified as either OnEntry/OnFirstEntry or in the Action, and will play until the
+state switches
+
+
+h4.CanUsePowerOnEntArray (AccessLevel 9) [Notes|Command_CanUsePowerOnEntArray_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: powerName (string)*
+Returns whether the critter can use the power of the passed in name on an ent array
+NOTE: the entity needs to already have this power
+NOTE: you can only use a power on one entity, so passing in multiple to this function will
+cause an error
+
+
+h4.CheckMode (AccessLevel 9) [Notes|Command_CheckMode_GameServerLib]
+*Returns: int*
+*Parameter 1: modeName (string)*
+*Parameter 2: time (float)*
+Returns true if the current entity has a particular (powers) mode on it and it was placed on that
+entity in the past <time> seconds
+
+
+h4.ClearAutoExecForVolume (AccessLevel 9) [Notes|Command_ClearAutoExecForVolume_GameServerLib]
+*No Return*
+*Parameter 1: pchVolumeName (string)*
+Clear the auto-exec optional actions for a particular volume, making eligible to be automatically executed again
+
+
+h4.ClearContactOverride (AccessLevel 9) [Notes|Command_ClearContactOverride_GameServerLib]
+*No Return*
+Removes any ContactDef override from a Critter, resetting it to its original ContactDef
+
+
+h4.ClearMusic (AccessLevel 9) [Notes|Command_ClearMusic_GameServerLib]
+*No Return*
+Resets all music for all entities within proximity range
+
+
+h4.ClickableGetVisibleChild (AccessLevel 9) [Notes|Command_ClickableGetVisibleChild_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+This function returns which geometry is visible for a given interactable
+
+
+h4.ClickableInUse (AccessLevel 9) [Notes|Command_ClickableInUse_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+Returns TRUE if any interactable with the given name is currently being used
+
+
+h4.ClickableIsActive (AccessLevel 9) [Notes|Command_ClickableIsActive_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+Returns TRUE if any interactable with the given name is currently Active
+
+
+h4.ClickableIsUsable (AccessLevel 9) [Notes|Command_ClickableIsUsable_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+Returns TRUE if the interactable is not hidden, in use, on cooldown, etc.
+
+
+h4.ClickableIsVisible (AccessLevel 9) [Notes|Command_ClickableIsVisible_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+Returns TRUE if any interactable with the given name is currently visible
+
+
+h4.ClickableSetVisibleChild (AccessLevel 9) [Notes|Command_ClickableSetVisibleChild_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+*Parameter 2: child (int)*
+This function changes which geometry is visible for a given interactable
+
+
+h4.CutsceneDefStart (AccessLevel 9) [Notes|Command_CutsceneDefStart_GameServerLib]
+*No Return*
+*Parameter 1: cutsceneName (string)*
+No comment provided
+
+h4.CutsceneDefStartEntArray (AccessLevel 9) [Notes|Command_CutsceneDefStartEntArray_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: cutsceneName (string)*
+No comment provided
+
+h4.CutsceneInProgress (AccessLevel 9) [Notes|Command_CutsceneInProgress_GameServerLib]
+*Returns: bool*
+*Parameter 1: cutsceneName (string)*
+No comment provided
+
+h4.DismissAllDeadPets (AccessLevel 9) [Notes|Command_DismissAllDeadPets_GameServerLib]
+*No Return*
+No comment provided
+
+h4.DismissAllPets (AccessLevel 9) [Notes|Command_DismissAllPets_GameServerLib]
+*No Return*
+No comment provided
+
+h4.DragonUserPowerAtEntPosOverrideTargetFacing (AccessLevel 9) [Notes|Command_DragonUserPowerAtEntPosOverrideTargetFacing_GameServerLib]
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pchPowerName (string)*
+No comment provided
+
+h4.DragonUserPowerOnEntArrayOverrideTargetFacing (AccessLevel 9) [Notes|Command_DragonUserPowerOnEntArrayOverrideTargetFacing_GameServerLib]
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pchPowerName (string)*
+
+
+
+h4.EndJob (AccessLevel 9) [Notes|Command_EndJob_GameServerLib]
+*No Return*
+exit current job
+
+
+h4.EndMusic (AccessLevel 9) [Notes|Command_EndMusic_GameServerLib]
+*No Return*
+Ends music for all entities within proximity range
+
+
+h4.EntCropAffectedByPower (AccessLevel 9) [Notes|Command_EntCropAffectedByPower_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+No comment provided
+
+h4.EntCropAffectedByPowerAttrib (AccessLevel 9) [Notes|Command_EntCropAffectedByPowerAttrib_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+*Parameter 3: attribName (string)*
+Removes all entities from the list that are not affected by the given power's attrib
+
+
+h4.EntCropAffectedByPowerAttribFromOwner (AccessLevel 9) [Notes|Command_EntCropAffectedByPowerAttribFromOwner_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+*Parameter 3: attribName (string)*
+*Parameter 4: bRemoveEntsAffected (bool)*
+Removes all entities from the list that do/do not match the given power's attrib that are owned by the given entity.
+
+
+h4.EntCropAffectedByPowerWithTag (AccessLevel 9) [Notes|Command_EntCropAffectedByPowerWithTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszTag (string)*
+No comment provided
+
+h4.EntCropCanSpotInsideArcEntArray (AccessLevel 9) [Notes|Command_EntCropCanSpotInsideArcEntArray_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: entsIn (Entity Array)*
+*Parameter 3: arc (float)*
+*Parameter 4: visibleToAny (bool)*
+removes inoutents that can't see inent(s)
+If visibleToAny is set, then crop the entities can't see any inent
+otherwise crop the entities that can't see all inents
+
+
+h4.EntCropCombat (AccessLevel 9) [Notes|Command_EntCropCombat_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes non-combat entities from the ent array
+
+
+h4.EntCropCreatedByEnt (AccessLevel 9) [Notes|Command_EntCropCreatedByEnt_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes all entities that were not created by the given entity
+
+
+h4.EntCropCritterTag (AccessLevel 9) [Notes|Command_EntCropCritterTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: critterTag (string)*
+Removes all critters that do not have the given tag
+
+
+h4.EntCropCurrentlyUsingPower (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPower_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszPowerName (string)*
+No comment provided
+
+h4.EntCropCurrentlyUsingPowerWithCategory (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPowerWithCategory_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszCategory (string)*
+No comment provided
+
+h4.EntCropCurrentlyUsingPowerWithTag (AccessLevel 9) [Notes|Command_EntCropCurrentlyUsingPowerWithTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszTag (string)*
+No comment provided
+
+h4.EntCropDDTake10 (AccessLevel 9) [Notes|Command_EntCropDDTake10_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+NNO-specific function that crops ents based on a skillcheck.
+
+
+h4.EntCropExcludeLuckyCharm (AccessLevel 9) [Notes|Command_EntCropExcludeLuckyCharm_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+No comment provided
+
+h4.EntCropGreaterThanHealthPct (AccessLevel 9) [Notes|Command_EntCropGreaterThanHealthPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: healthPct (float)*
+keeps all entity healths greater than or equal to healthPct
+
+
+h4.EntCropHasActiveItemAssignment (AccessLevel 9) [Notes|Command_EntCropHasActiveItemAssignment_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pchDefName (string)*
+No comment provided
+
+h4.EntCropHasNoLuckyCharm (AccessLevel 9) [Notes|Command_EntCropHasNoLuckyCharm_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+No comment provided
+
+h4.EntCropHasRecentlyCompletedItemAssignment (AccessLevel 9) [Notes|Command_EntCropHasRecentlyCompletedItemAssignment_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pchDefName (string)*
+*Parameter 3: pchOutcome (string)*
+No comment provided
+
+h4.EntCropHighestHealthPct (AccessLevel 9) [Notes|Command_EntCropHighestHealthPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array except for the one with the highest
+percentage health
+
+
+h4.EntCropInsideArc (AccessLevel 9) [Notes|Command_EntCropInsideArc_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: arc (float)*
+Removes critters that are not inside the specified arc (relative to facing)
+
+
+h4.EntCropInsideArcEntArray (AccessLevel 9) [Notes|Command_EntCropInsideArcEntArray_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: entsIn (Entity Array)*
+*Parameter 3: arc (float)*
+*Parameter 4: visibleToAny (bool)*
+Removes critters that are *outside* the specified arc range relative to the front of the source entities
+If visibleToAny is set, then crop the entities that are not within the arc of any of the source entities,
+otherwise crop the entities that are not within the arc of all of the source entities.
+
+
+h4.EntCropLessThanHealthPct (AccessLevel 9) [Notes|Command_EntCropLessThanHealthPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: healthPct (float)*
+keeps all entity healths less than or equal to healthPct
+
+
+h4.EntCropLowestHealthPct (AccessLevel 9) [Notes|Command_EntCropLowestHealthPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array except for the one with the lowest
+percentage health
+
+
+h4.EntCropLowestShieldPct (AccessLevel 9) [Notes|Command_EntCropLowestShieldPct_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Removes every entity from the passed in ent array except for the one with the lowest
+percentage shields remaining
+
+
+h4.EntCropLuckyCharm (AccessLevel 9) [Notes|Command_EntCropLuckyCharm_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+No comment provided
+
+h4.EntCropLuckyCharmHighestPriority (AccessLevel 9) [Notes|Command_EntCropLuckyCharmHighestPriority_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eType (int)*
+No comment provided
+
+h4.EntCropNotAffectedByPower (AccessLevel 9) [Notes|Command_EntCropNotAffectedByPower_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+No comment provided
+
+h4.EntCropNotAffectedByPowerAttrib (AccessLevel 9) [Notes|Command_EntCropNotAffectedByPowerAttrib_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array (modified))*
+*Parameter 2: powerName (string)*
+*Parameter 3: attribName (string)*
+Removes all entities from the list that are affected by the given power's attrib
+
+
+h4.EntCropNotAffectedByPowerWithTag (AccessLevel 9) [Notes|Command_EntCropNotAffectedByPowerWithTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pszTag (string)*
+No comment provided
+
+h4.EntCropNotCritterTag (AccessLevel 9) [Notes|Command_EntCropNotCritterTag_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: critterTag (string)*
+Removes all critters that have the given tag
+
+
+h4.EntCropOutsideArc (AccessLevel 9) [Notes|Command_EntCropOutsideArc_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: arc (float)*
+Removes critters that are not outside the specified arc (relative to facing)
+
+
+h4.EntCropOutsideRootArcWithOffset (AccessLevel 9) [Notes|Command_EntCropOutsideRootArcWithOffset_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: fArc (float)*
+*Parameter 3: fCenterAngle (float)*
+crops the list to only include entities that are within the specified arc with an offset, from the entity's root rotation (not its facing)
+
+
+h4.EntCropSortedCount (AccessLevel 9) [Notes|Command_EntCropSortedCount_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: count (int)*
+Removes every entity from the passed in ent array except for <count>, from the beginning
+
+
+h4.EntCropTargettingEnt (AccessLevel 9) [Notes|Command_EntCropTargettingEnt_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: pppTarget (Entity Array)*
+No comment provided
+
+h4.EntCropVolume (AccessLevel 9) [Notes|Command_EntCropVolume_GameServerLib]
+*Parameter 1: peaEntsOut (Entity Array (modified))*
+*Parameter 2: pcVolName (string)*
+No comment provided
+
+h4.EntCropVolumeIfExists (AccessLevel 9) [Notes|Command_EntCropVolumeIfExists_GameServerLib]
+*Parameter 1: peaEntsOut (Entity Array (modified))*
+*Parameter 2: pcVolName (string)*
+No comment provided
+
+h4.EntCropWatchingCutscene (AccessLevel 9) [Notes|Command_EntCropWatchingCutscene_GameServerLib]
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: cutsceneName (string)*
+No comment provided
+
+h4.EntCropWithinOffcenterArc (AccessLevel 9) [Notes|Command_EntCropWithinOffcenterArc_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+*Parameter 2: arc (float)*
+*Parameter 3: centerAngle (float)*
+Crops the list to only include entities who are within the specified arc from the source entity.
+
+
+h4.EntGetUniqueID (AccessLevel 9) [Notes|Command_EntGetUniqueID_GameServerLib]
+*Returns: int*
+Returns a unique identifier from the entity (i.e. the entRef for now)
+
+
+h4.EntHasMode (AKA EntGetHasPowerMode) (AccessLevel 9) [Notes|Command_EntHasMode_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchModeName (string)*
+Returns true if the passed entity has the specified power mode
+
+
+h4.EntArrayReverse (AccessLevel 9) [Notes|Command_EntArrayReverse_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Reverses an ent array... useful for sorted arrays when you want to crop from the lowest
+
+
+h4.EntityIsAlive (AccessLevel 9) [Notes|Command_EntityIsAlive_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+Determine if a single entity is alive
+Only checks first entity in ent array
+
+
+h4.EntityIsInCombat (AccessLevel 9) [Notes|Command_EntityIsInCombat_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+Determine if a single entity is in combat
+Only checks first entity in ent array
+
+
+h4.EntityIsNearDeath (AccessLevel 9) [Notes|Command_EntityIsNearDeath_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+Determine if a single entity is alive
+Only checks first entity in ent array
+
+
+h4.GetEncounterOwnerNemesis (AccessLevel 9) [Notes|Command_GetEncounterOwnerNemesis_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.GetEndurancePct (AccessLevel 9) [Notes|Command_GetEndurancePct_GameServerLib]
+*Returns: float*
+*Parameter 1: ents (Entity Array)*
+Returns the average endurance of the passed in ent array as a percentage of their total health
+
+
+h4.GetEntsInVolume (AccessLevel 9) [Notes|Command_GetEntsInVolume_GameServerLib]
+*Parameter 1: pcVolName (string)*
+Get an entarray of all ents currently inside an encounter layer volume
+
+
+h4.GetEntsInVolumeAll (AccessLevel 9) [Notes|Command_GetEntsInVolumeAll_GameServerLib]
+*Parameter 1: pcVolName (string)*
+No comment provided
+
+h4.GetEntsWithEncounterCredit (AccessLevel 9) [Notes|Command_GetEntsWithEncounterCredit_GameServerLib]
+Get an entarray of all ents who currently have credit for an Encounter completion
+
+
+h4.GetEntsWithinDistOfEnt (AccessLevel 9) [Notes|Command_GetEntsWithinDistOfEnt_GameServerLib]
+*Parameter 1: peaEntsIn (Entity Array)*
+*Parameter 2: fDist (float)*
+Get an entarray of all entities close to another ent
+
+
+h4.GetEntsWithinDistOfEntAll (AccessLevel 9) [Notes|Command_GetEntsWithinDistOfEntAll_GameServerLib]
+*Parameter 1: peaEntsIn (Entity Array)*
+*Parameter 2: fDist (float)*
+Get an entarray of all entities close to another ent
+
+
+h4.GetEntsWithinDistOfEntDeadAll (AccessLevel 9) [Notes|Command_GetEntsWithinDistOfEntDeadAll_GameServerLib]
+*Parameter 1: peaEntsIn (Entity Array)*
+*Parameter 2: fDist (float)*
+Get an entarray of all entities close to another ent
+
+
+h4.GetEntsWithinDistOfPoint (AccessLevel 9) [Notes|Command_GetEntsWithinDistOfPoint_GameServerLib]
+*Parameter 1: mPoint (Location)*
+*Parameter 2: fDist (float)*
+Get an entarray of all entities close to a named point
+
+
+h4.GetEntsWithinDistOfPointAll (AccessLevel 9) [Notes|Command_GetEntsWithinDistOfPointAll_GameServerLib]
+*Parameter 1: mPoint (Location)*
+*Parameter 2: fDist (float)*
+Get an entarray of all entities close to a named point
+
+
+h4.GetEntsWithinDistOfPointDeadAll (AccessLevel 9) [Notes|Command_GetEntsWithinDistOfPointDeadAll_GameServerLib]
+*Parameter 1: mPoint (Location)*
+*Parameter 2: fDist (float)*
+Get an entarray of all entities close to a named point
+
+
+h4.GetFormationPos (AccessLevel 9) [Notes|Command_GetFormationPos_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+Return arithmetic mean of formation positions, ignoring non-formation ents
+
+
+h4.GetGang (AccessLevel 9) [Notes|Command_GetGang_GameServerLib]
+*Parameter 1: peaEntsIn (Entity Array)*
+Gets the Gang ID of ent array passed in.
+Only checks first entity in ent array
+
+
+h4.GetHealthPct (AccessLevel 9) [Notes|Command_GetHealthPct_GameServerLib]
+*Returns: float*
+*Parameter 1: ents (Entity Array)*
+Returns the average health of the passed in ent array as a percentage of their total health
+
+
+h4.GetMapOwnerNemesis (AccessLevel 9) [Notes|Command_GetMapOwnerNemesis_GameServerLib]
+*Returns: Entity struct*
+Commands to get a Nemesis.
+
+
+h4.GetMyHealth (AKA GetMyHealthPct100) (AccessLevel 9) [Notes|Command_GetMyHealth_GameServerLib]
+*Returns: int*
+Returns the percentage of health the current entity has left
+
+
+h4.GetMyHealthPoints (AccessLevel 9) [Notes|Command_GetMyHealthPoints_GameServerLib]
+*Returns: int*
+Returns the percentage of health the current entity has left
+
+
+h4.GetMyLevel (AccessLevel 9) [Notes|Command_GetMyLevel_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.GetPos (AccessLevel 9) [Notes|Command_GetPos_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+Returns the geometric average of the passed in entities
+
+
+h4.GetPowerRechargeTime (AccessLevel 9) [Notes|Command_GetPowerRechargeTime_GameServerLib]
+*Parameter 1: powerName (string)*
+No comment provided
+
+h4.GetPrimaryNemesisName (AccessLevel 9) [Notes|Command_GetPrimaryNemesisName_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+No comment provided
+
+h4.GetShieldPct (AccessLevel 9) [Notes|Command_GetShieldPct_GameServerLib]
+*Returns: float*
+*Parameter 1: ents (Entity Array)*
+Returns the average shield percentage of the passed in ent array
+
+
+h4.GetSpawningPlayerNemesis (AccessLevel 9) [Notes|Command_GetSpawningPlayerNemesis_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.GrantFFAPvPRewardToEntArray (AccessLevel 9) [Notes|Command_GrantFFAPvPRewardToEntArray_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: totalScoreValueName (string)*
+*Parameter 4: totalPlayers (int)*
+*Parameter 5: winner (int)*
+*Parameter 6: personalScoreValueName (string)*
+*Parameter 7: gameLength (int)*
+Grant a reward according to a hardcoded PvP formula for players on a free-for-all map.  Keeps designer expressions simpler and avoids typos
+The PvP equation is: (2 * score / (score + average_score + 1)) + winner) / 3
+
+
+h4.GrantPvPRewardToEntArray (AccessLevel 9) [Notes|Command_GrantPvPRewardToEntArray_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: teamScoreValueName (string)*
+*Parameter 4: opponentScoreValueName (string)*
+*Parameter 5: teamWon (int)*
+*Parameter 6: personalScoreValueName (string)*
+*Parameter 7: personalDeathsValueName (string)*
+*Parameter 8: gameLength (int)*
+*Parameter 9: personalDamageValueName (string)*
+*Parameter 10: personalHealingValueName (string)*
+Grant a reward according to a hardcoded PvP formula.  Less flexible than the above, but keeps designer expressions simpler and avoids typos
+The PvP equation is: ((teamScore / (teamScore + opponentScore + 1)) + teamWon + (0.75 * ((personalScore + teamScore) / 2) / (teamScore + 1))) / 3
+
+
+h4.GrantRewardToEntArray (AccessLevel 9) [Notes|Command_GrantRewardToEntArray_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+Example: GetAllMapPlayers().GrantRewardToEntArray("RewardTableName")
+
+
+h4.GrantRewardToEntArrayWithScale (AccessLevel 9) [Notes|Command_GrantRewardToEntArrayWithScale_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: subExpr (SubExpression)*
+DANGER: Applies the given reward table to every ent in the array  Uses the supplied expression to create
+a numeric input for each ent separately.  Can be quite expensive, so use this expression sparingly.
+If you use this function to give reward tables with non-numeric rewards, those rewards will materialize at the
+players' feet (which may be a design faux pas).
+Example: GetAllMapPlayers().GrantRewardToEntArray("RewardTableName", { PlayerMapValueGet(targetEnt, "Score")})
+
+
+h4.GrantStrongholdPvPRewardToEntArray (AccessLevel 9) [Notes|Command_GrantStrongholdPvPRewardToEntArray_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: teamScoreValueName (string)*
+*Parameter 4: opponentScoreValueName (string)*
+*Parameter 5: teamKillsValueName (string)*
+*Parameter 6: teamWon (int)*
+*Parameter 7: personalKillsValueName (string)*
+*Parameter 8: personalDeathsValueName (string)*
+*Parameter 9: gameLength (int)*
+Grant a reward according to a hardcoded PvP formula for players on the stronghold apocalypse map.  Keeps designer expressions simpler and avoids typos
+Very similar to the normal table, except that team score is different than the total kills on the map.
+The PvP equation is: ((teamScore / (teamScore + opponentScore + 1)) + teamWon + (personalKills / (teamKills + 1))) / 3
+
+
+h4.GrantZombiePvPRewardToEntArray (AccessLevel 9) [Notes|Command_GrantZombiePvPRewardToEntArray_GameServerLib]
+*No Return*
+*Parameter 1: allPlayers (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: personalTimeValueName (string)*
+*Parameter 4: personalKillsValueName (string)*
+*Parameter 5: winnerValueName (string)*
+*Parameter 6: gameLength (int)*
+Grant a reward according to a hardcoded PvP formula for players on the zombie apocalypse map.  Keeps designer expressions simpler and avoids typos
+Very similar to the FFA table, except that score = time + 20*kills, and the total score is calculated rather than passed in.
+The PvP equation is: (2 * score / (score + average_score + 1)) + winner) / 3
+Must be passed all players on the map
+
+
+h4.HideClickable (AccessLevel 9) [Notes|Command_HideClickable_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+This function hides an interactable so that it can't be seen or interacted with
+
+
+h4.HideClickableGroup (AccessLevel 9) [Notes|Command_HideClickableGroup_GameServerLib]
+*Parameter 1: pcGroupName (string)*
+This function hides all interactables in a logical group so that it can't be seen or interacted with
+
+
+h4.IsCritterCurrentlyInteracted (AccessLevel 9) [Notes|Command_IsCritterCurrentlyInteracted_GameServerLib]
+*Returns: bool*
+Returns true if the critter is currently being interacted with at least one player.
+
+
+h4.IsGateOpen (AccessLevel 9) [Notes|Command_IsGateOpen_GameServerLib]
+*Parameter 1: pcGateName (string)*
+Get the gate state for a named interactable
+
+
+h4.IsMapOwner (AccessLevel 9) [Notes|Command_IsMapOwner_GameServerLib]
+*Parameter 1: peaEnts (Entity Array)*
+No comment provided
+
+h4.IsStatusTableMissingAnyLuckyCharmEntity (AccessLevel 9) [Notes|Command_IsStatusTableMissingAnyLuckyCharmEntity_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pppOwner (Entity Array)*
+*Parameter 3: eLuckyCharmType (int)*
+*Parameter 4: bCheckFirstOnly (bool)*
+No comment provided
+
+h4.Kill (AccessLevel 9) [Notes|Command_Kill_GameServerLib]
+*No Return*
+*Parameter 1: secToLinger (float)*
+*Parameter 2: giveRewards (int)*
+*Parameter 3: giveKillCredit (int)*
+*Parameter 4: dontFade (int)*
+Kills the current entity, and leaves the body around for <secToLinger>. Whether anyone receives
+credit for the kill can be controlled by passing in <giveRewards>.  Will fade out unless <dontfade> is true. 
+Also note that any expression functions like "PlayFX()" will not behave consistently if you kill the critter 
+they affect.
+
+
+h4.KillPets (AccessLevel 9) [Notes|Command_KillPets_GameServerLib]
+*No Return*
+*Parameter 1: secToLinger (float)*
+*Parameter 2: giveRewards (int)*
+*Parameter 3: giveKillCredit (int)*
+*Parameter 4: dontFade (int)*
+Kills all of the current entity's pets. See exprFuncKill.
+
+
+h4.LayerFSMGetTickRate (AccessLevel 9) [Notes|Command_LayerFSMGetTickRate_GameServerLib]
+*Returns: float*
+Returns the tick rate of layerFSMs in seconds
+
+
+h4.NemesisMinionCostumeIsType (AccessLevel 9) [Notes|Command_NemesisMinionCostumeIsType_GameServerLib]
+*Parameter 1: peaNemesisEnt (Entity Array)*
+*Parameter 2: costumeSetName (string)*
+No comment provided
+
+h4.NemesisMinionPowersetIsType (AccessLevel 9) [Notes|Command_NemesisMinionPowersetIsType_GameServerLib]
+*Parameter 1: peaNemesisEnt (Entity Array)*
+*Parameter 2: powerSetName (string)*
+No comment provided
+
+h4.NemesisMotivationIsType (AccessLevel 9) [Notes|Command_NemesisMotivationIsType_GameServerLib]
+*Parameter 1: peaNemesisEnt (Entity Array)*
+*Parameter 2: typeToCheck (string)*
+No comment provided
+
+h4.NemesisPersonalityIsType (AccessLevel 9) [Notes|Command_NemesisPersonalityIsType_GameServerLib]
+*Parameter 1: peaNemesisEnt (Entity Array)*
+*Parameter 2: typeToCheck (string)*
+No comment provided
+
+h4.NumPlayersOnMap (AccessLevel 9) [Notes|Command_NumPlayersOnMap_GameServerLib]
+*Returns: int*
+Returns the number of players currently on the map
+
+
+h4.PVPInfectStart (AccessLevel 9) [Notes|Command_PVPInfectStart_GameServerLib]
+*No Return*
+*Parameter 1: radius (float)*
+*Parameter 2: allow_heal (int)*
+No comment provided
+
+h4.PVPInfectStop (AccessLevel 9) [Notes|Command_PVPInfectStop_GameServerLib]
+*No Return*
+No comment provided
+
+h4.PetDismissSelf (AccessLevel 9) [Notes|Command_PetDismissSelf_GameServerLib]
+*No Return*
+No comment provided
+
+h4.PlayFx (AccessLevel 9) [Notes|Command_PlayFx_GameServerLib]
+*Parameter 1: fxName (string)*
+Plays an effect on the current entity for every player within the FX draw distance
+
+
+h4.PlayFxAtPoint (AccessLevel 9) [Notes|Command_PlayFxAtPoint_GameServerLib]
+*Parameter 1: posIn (Location)*
+*Parameter 2: fxName (string)*
+Plays an effect at the passed in location, for everyone who is within the effect's draw
+distance
+
+
+h4.PlayFxAtPointForWholeMap (AccessLevel 9) [Notes|Command_PlayFxAtPointForWholeMap_GameServerLib]
+*Parameter 1: posIn (Location)*
+*Parameter 2: fxName (string)*
+Plays an effect at the passed in location, for everyone on the map
+
+
+h4.PlayFxPointToPoint (AccessLevel 9) [Notes|Command_PlayFxPointToPoint_GameServerLib]
+*Parameter 1: posSource (Location)*
+*Parameter 2: posTarget (Location)*
+*Parameter 3: fxName (string)*
+Plays an effect that starts at the first point and targets the second point, for everyone who is within
+the effect's draw distance
+
+
+h4.PlayFxPointToPointForWholeMap (AccessLevel 9) [Notes|Command_PlayFxPointToPointForWholeMap_GameServerLib]
+*Parameter 1: posSource (Location)*
+*Parameter 2: posTarget (Location)*
+*Parameter 3: fxName (string)*
+Plays an effect at the passed in location to the target location, for everyone on the map
+
+
+h4.PlayMusic (AccessLevel 9) [Notes|Command_PlayMusic_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays the specified music event for every entity within proximity range
+
+
+h4.PlayMusicEvent (AccessLevel 9) [Notes|Command_PlayMusicEvent_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays the specified music event for the active player
+
+
+h4.PlayOneShotSound (AccessLevel 9) [Notes|Command_PlayOneShotSound_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays a one shot sound to all players within proximity range
+TODO: non-AIs should actually use PlayOneShotSoundAtPoint and this should be removed from the player context
+
+
+h4.PlayOneShotSoundFromEntity (AccessLevel 9) [Notes|Command_PlayOneShotSoundFromEntity_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays a one shot sound to all players within proximity range (keeps the sound's position at the source entity)
+
+
+h4.PlaySound (AccessLevel 9) [Notes|Command_PlaySound_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: soundName (string)*
+Plays a sound to all players in the specified ent array
+NOTE: it's generally a good idea to save the ent array you're playing a sound on so you can pass
+it in to StopSound() later
+
+
+h4.PlaySoundAtPointForEnts (AccessLevel 9) [Notes|Command_PlaySoundAtPointForEnts_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: pcSoundName (string)*
+*Parameter 3: mat4 (Location)*
+Play a sound effect for the specified players at the specific point
+
+
+h4.PlaySoundForEnts (AccessLevel 9) [Notes|Command_PlaySoundForEnts_GameServerLib]
+*No Return*
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: pcSoundName (string)*
+Play a sound effect for the specified players at the specific point
+
+
+h4.PlayVoiceSetSound (AccessLevel 9) [Notes|Command_PlayVoiceSetSound_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Plays a voice-set sound to all players within proximity range
+
+
+h4.PlayerIsAvailable (AccessLevel 9) [Notes|Command_PlayerIsAvailable_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+No comment provided
+
+h4.PrimaryNemesisMinionCostumeIsType (AccessLevel 9) [Notes|Command_PrimaryNemesisMinionCostumeIsType_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: costumeSetName (string)*
+No comment provided
+
+h4.PrimaryNemesisMinionPowersetIsType (AccessLevel 9) [Notes|Command_PrimaryNemesisMinionPowersetIsType_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: powerSetName (string)*
+No comment provided
+
+h4.PrimaryNemesisMotivationIsType (AccessLevel 9) [Notes|Command_PrimaryNemesisMotivationIsType_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: typeToCheck (string)*
+Deprecated functions to get a nemesis from an entarray
+
+
+h4.PrimaryNemesisPersonalityIsType (AccessLevel 9) [Notes|Command_PrimaryNemesisPersonalityIsType_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: typeToCheck (string)*
+No comment provided
+
+h4.PvPAwardPlayerPoints (AccessLevel 9) [Notes|Command_PvPAwardPlayerPoints_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: iPoints (int)*
+*Parameter 3: pchMessage (string)*
+No comment provided
+
+h4.RemoveCostumeFx (AccessLevel 9) [Notes|Command_RemoveCostumeFx_GameServerLib]
+*No Return*
+*Parameter 1: fxName (string)*
+No comment provided
+
+h4.RemoveFx (AccessLevel 9) [Notes|Command_RemoveFx_GameServerLib]
+*Parameter 1: fxId (int)*
+No comment provided
+
+h4.RemoveItem (AccessLevel 9) [Notes|Command_RemoveItem_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: itemName (string)*
+No comment provided
+
+h4.RemoveItemCount (AccessLevel 9) [Notes|Command_RemoveItemCount_GameServerLib]
+*Parameter 1: ents (Entity Array)*
+*Parameter 2: itemName (string)*
+*Parameter 3: count (int)*
+No comment provided
+
+h4.ReplaceMusic (AccessLevel 9) [Notes|Command_ReplaceMusic_GameServerLib]
+*No Return*
+*Parameter 1: soundName (string)*
+Replaces the currently playing music with the passed in music event for all entities
+within proximity range
+
+
+h4.ResetAllPets (AccessLevel 9) [Notes|Command_ResetAllPets_GameServerLib]
+*No Return*
+For player entities only- resets all pets 
+
+
+h4.ResetClickable (AccessLevel 9) [Notes|Command_ResetClickable_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+This function resets an interactable to its map-start state
+
+
+h4.SayExternMessageVarNemesis (AccessLevel 9) [Notes|Command_SayExternMessageVarNemesis_GameServerLib]
+*Parameter 1: category (string)*
+*Parameter 2: pchVarPrefix (string)*
+*Parameter 3: duration (float)*
+Makes a Nemesis critter say a message from an extern var named <VarPrefix>_<NemesisPersonality> from
+<category>. This is correctly localized for whoever sees it and stays up for <duration>
+seconds
+
+
+h4.SendEntArrayMessageToLayerFSM (AccessLevel 9) [Notes|Command_SendEntArrayMessageToLayerFSM_GameServerLib]
+*No Return*
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pcFSMName (string)*
+*Parameter 3: pcMsgTag (string)*
+Send a message to a layer FSM with ent array data
+
+
+h4.SendEntArrayMessageToLayerFSMByLogicalName (AccessLevel 9) [Notes|Command_SendEntArrayMessageToLayerFSMByLogicalName_GameServerLib]
+*No Return*
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pcLogicalName (string)*
+*Parameter 3: pcMsgTag (string)*
+Send a message to a layer FSM with ent array data by logical Name
+
+
+h4.SendExternMessageFloater (AccessLevel 9) [Notes|Command_SendExternMessageFloater_GameServerLib]
+*Parameter 1: pcCategory (string)*
+*Parameter 2: pcName (string)*
+*Parameter 3: r (int)*
+*Parameter 4: g (int)*
+*Parameter 5: b (int)*
+Sends a floater message from the <category> category with tag <name> and colors (<r> <g> <b>)
+to whichever players make sense for the current context
+If this is called from a mission with an owner, it will only send it to the current owner
+If this is called from an encounter, it'll send it to everyone who will get a reward for the current encounter
+Otherwise, it'll send the floater to every player on the map
+
+
+h4.SendExternMessageFloaterGameFormatted (AccessLevel 9) [Notes|Command_SendExternMessageFloaterGameFormatted_GameServerLib]
+*Parameter 1: pcCategory (string)*
+*Parameter 2: pcName (string)*
+*Parameter 3: r (int)*
+*Parameter 4: g (int)*
+*Parameter 5: b (int)*
+Like SendExternMessageFloater, but gameformatted and more expensive, use only when necessary
+
+
+h4.SendExternMessageFloaterToEnts (AccessLevel 9) [Notes|Command_SendExternMessageFloaterToEnts_GameServerLib]
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcCategory (string)*
+*Parameter 3: pcName (string)*
+*Parameter 4: r (int)*
+*Parameter 5: g (int)*
+*Parameter 6: b (int)*
+No comment provided
+
+h4.SendExternMessageFloaterToEntsGameFormatted (AccessLevel 9) [Notes|Command_SendExternMessageFloaterToEntsGameFormatted_GameServerLib]
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcCategory (string)*
+*Parameter 3: pcName (string)*
+*Parameter 4: r (int)*
+*Parameter 5: g (int)*
+*Parameter 6: b (int)*
+No comment provided
+
+h4.SendFXMessageToNamed (AccessLevel 9) [Notes|Command_SendFXMessageToNamed_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+*Parameter 2: pchMessage (string)*
+This function hides an interactable so that it can't be seen or interacted with.
+Upon further reflection, this approach is flawed.  I will be taking this function back out.
+
+
+h4.SendMessageToLayerFSM (AccessLevel 9) [Notes|Command_SendMessageToLayerFSM_GameServerLib]
+*No Return*
+*Parameter 1: pcFSMName (string)*
+*Parameter 2: pcMsgTag (string)*
+Send a message to a disembodied layer FSM
+
+
+h4.SendMessageToLayerFSMByLogicalName (AccessLevel 9) [Notes|Command_SendMessageToLayerFSMByLogicalName_GameServerLib]
+*No Return*
+*Parameter 1: pcLogicalName (string)*
+*Parameter 2: pcMsgTag (string)*
+Send a message to a disembodied layer FSM by logical name
+
+
+h4.SetActiveCostume (AccessLevel 9) [Notes|Command_SetActiveCostume_GameServerLib]
+*No Return*
+*Parameter 1: index (int)*
+Currently be used for testing purposes in Creatures for doing the transfomration costume swapping
+
+
+h4.SetContactOverride (AccessLevel 9) [Notes|Command_SetContactOverride_GameServerLib]
+*No Return*
+*Parameter 1: pchContactDefName (string)*
+Sets an override for the ContactDef on a Critter
+
+
+h4.SetCostume (AccessLevel 9) [Notes|Command_SetCostume_GameServerLib]
+*No Return*
+*Parameter 1: costume (string)*
+No comment provided
+
+h4.SetDisableFace (AccessLevel 9) [Notes|Command_SetDisableFace_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the powers disableface flag for this entity on or off 
+
+
+h4.SetGang (AccessLevel 9) [Notes|Command_SetGang_GameServerLib]
+*No Return*
+*Parameter 1: peaEntsIn (Entity Array)*
+*Parameter 2: iGang (int)*
+Sets the Gang ID of all entities in the ent array passed in to <gang>
+
+
+h4.SetGateOpen (AccessLevel 9) [Notes|Command_SetGateOpen_GameServerLib]
+*Parameter 1: pcGateName (string)*
+*Parameter 2: bOpen (bool)*
+Set the gate state for a named interactable
+
+
+h4.SetIgnorePushyGeometry (AccessLevel 9) [Notes|Command_SetIgnorePushyGeometry_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Ignores pushy geometry
+
+
+h4.SetInvincible (AccessLevel 9) [Notes|Command_SetInvincible_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the invincible flag for this entity on or off 
+
+
+h4.SetInvisible (AccessLevel 9) [Notes|Command_SetInvisible_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns invisibility for this entity on or off 
+NOTE: invisibility in this context means the entity doesn't get sent down to any clients
+
+
+h4.SetInvulnerable (AccessLevel 9) [Notes|Command_SetInvulnerable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the invulnerable flag for this entity on or off 
+
+
+h4.SetMyEntAsNonCombatantForComplete (AccessLevel 9) [Notes|Command_SetMyEntAsNonCombatantForComplete_GameServerLib]
+*No Return*
+No comment provided
+
+h4.SetMyHealth (AccessLevel 9) [Notes|Command_SetMyHealth_GameServerLib]
+*Returns: int*
+*Parameter 1: health (int)*
+Sets my health to the specified value (0-hitPointsMax)
+
+
+h4.SetMyHealthPct (AccessLevel 9) [Notes|Command_SetMyHealthPct_GameServerLib]
+*Returns: int*
+*Parameter 1: pct (float)*
+Sets my health to the specified percentage (0-100)
+
+
+h4.SetNearDeath (AccessLevel 9) [Notes|Command_SetNearDeath_GameServerLib]
+*Returns: int*
+*Parameter 1: timeout (int)*
+Forces a Character into the NearDeath state, if they're alive and not already NearDeath.
+If the timer is negative, the NearDeath state is forever.  If the timer is 0 it uses the
+default timer for the particular Character (if the Character doesn't normally go into
+NearDeath, the default timer is forever).  Otherwise the NearDeath state will
+use the specified timer.
+Returns the resulting timer value (-1 for forever), or 0 if something went wrong.
+
+
+h4.SetNoColl (AccessLevel 9) [Notes|Command_SetNoColl_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns collision on or off for this entity
+
+
+h4.SetUnattackable (AccessLevel 9) [Notes|Command_SetUnattackable_GameServerLib]
+*Parameter 1: on (int)*
+Turns the untargetable flag for this entity on or off 
+
+
+h4.SetUndrawable (AccessLevel 9) [Notes|Command_SetUndrawable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns invisibility for this entity on or off 
+NOTE: invisibility in this context means the entity is still sent to the client but is not drawn
+
+
+h4.SetUnkillable (AccessLevel 9) [Notes|Command_SetUnkillable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the powers unkillable flag for this entity on or off 
+
+
+h4.SetUnstoppable (AccessLevel 9) [Notes|Command_SetUnstoppable_GameServerLib]
+*No Return*
+*Parameter 1: on (int)*
+Turns the powers unstoppable flag for this entity on or off 
+
+
+h4.SetUntargetable (AccessLevel 9) [Notes|Command_SetUntargetable_GameServerLib]
+*Parameter 1: on (int)*
+Turns the untargetable flag for this entity on or off 
+
+
+h4.EntSortByHealthPctDsc (AccessLevel 9) [Notes|Command_EntSortByHealthPctDsc_GameServerLib]
+*No Return*
+*Parameter 1: entsInOut (Entity Array (modified))*
+Sorts entities in the array by health pct, descending
+
+
+h4.StaticRandomFloat (AccessLevel 9) [Notes|Command_StaticRandomFloat_GameServerLib]
+*Returns: float*
+*Parameter 1: min (float)*
+*Parameter 2: max (float)*
+Returns a float in the range [min..max) which is generally static for the entity,
+though it can be regenerated using StaticRandomRegenerate().
+
+
+h4.StaticRandomRegenerate (AccessLevel 9) [Notes|Command_StaticRandomRegenerate_GameServerLib]
+*No Return*
+Regenerates the entity's static random seed, which is used for the StaticRandom() functions
+
+
+h4.StopSound (AccessLevel 9) [Notes|Command_StopSound_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: soundName (string)*
+Ends a sound played with PlaySound() for all players in the passed in ent array
+
+
+h4.TriggerConditionState (AccessLevel 9) [Notes|Command_TriggerConditionState_GameServerLib]
+*Parameter 1: pcCondName (string)*
+Gets the state of a trigger condition on an encounter layer
+
+
+h4.UnhideClickable (AccessLevel 9) [Notes|Command_UnhideClickable_GameServerLib]
+*Parameter 1: pcClickableName (string)*
+This function unhides an interactable
+
+
+h4.UnhideClickableGroup (AccessLevel 9) [Notes|Command_UnhideClickableGroup_GameServerLib]
+*Parameter 1: pcGroupName (string)*
+This function unhides all interactables in a group
+
+
+h4.WarpPlayerEntArrayToNearestSpawnPoint (AccessLevel 9) [Notes|Command_WarpPlayerEntArrayToNearestSpawnPoint_GameServerLib]
+*Parameter 1: eaEnts (Entity Array)*
+No comment provided
+
+h4.WarpPlayerEntArrayToSpawnPoint (AccessLevel 9) [Notes|Command_WarpPlayerEntArrayToSpawnPoint_GameServerLib]
+*Parameter 1: eaEnts (Entity Array)*
+*Parameter 2: pcSpawnPoint (string)*
+Moves all players in the ent array to given spawn point - 
+only players because critters can't use spawn logic and players need to
+
+
+h4.WarpPlayerEntArrayToStartSpawnPoint (AccessLevel 9) [Notes|Command_WarpPlayerEntArrayToStartSpawnPoint_GameServerLib]
+*Parameter 1: eaEnts (Entity Array)*
+No comment provided
+
+h4.GiveLootBagToEachPlayer (AccessLevel 9) [Notes|Command_GiveLootBagToEachPlayer_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: pchNamedPoints (string)*
+*Parameter 4: pchYoursCostumeOverride (string)*
+*Parameter 5: pchNotYoursCostumeOverride (string)*
+Generates a loot bag for each player in entsIn
+
+
+h4.GiveLootBagToEachPlayerWithScale (AccessLevel 9) [Notes|Command_GiveLootBagToEachPlayerWithScale_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: pchNamedPoints (string)*
+*Parameter 4: pchYoursCostumeOverride (string)*
+*Parameter 5: pchNotYoursCostumeOverride (string)*
+*Parameter 6: subExpr (SubExpression)*
+Generates a loot bag for each player in entsIn
+
+
+h4.GiveLootBagToEachTeamMember (AccessLevel 9) [Notes|Command_GiveLootBagToEachTeamMember_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: pchNamedPoints (string)*
+*Parameter 4: pchYoursCostumeOverride (string)*
+*Parameter 5: pchNotYoursCostumeOverride (string)*
+Generates a loot bag for each team member
+
+
+h4.GiveLootBagToTeam (AccessLevel 9) [Notes|Command_GiveLootBagToTeam_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: pchNamedPoint (string)*
+*Parameter 4: pchYoursCostumeOverride (string)*
+*Parameter 5: pchNotYoursCostumeOverride (string)*
+Generates a loot bag at the specified position with the specified costume for the first entity in the passed in entity array.
+
+
+h4.QueueThresholdGiveLoot (AccessLevel 9) [Notes|Command_QueueThresholdGiveLoot_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: pchNamedPoints (string)*
+*Parameter 4: pchYoursCostumeOverride (string)*
+*Parameter 5: pchNotYoursCostumeOverride (string)*
+Generates a loot bag for each player in entsIn, no loot is given if queue threshold check fails
+
+
+h4.QueueThresholdGiveLootScaled (AccessLevel 9) [Notes|Command_QueueThresholdGiveLootScaled_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: reward_table_name (string)*
+*Parameter 3: pchNamedPoints (string)*
+*Parameter 4: pchYoursCostumeOverride (string)*
+*Parameter 5: pchNotYoursCostumeOverride (string)*
+*Parameter 6: subExpr (SubExpression)*
+Generates a loot bag for each player in entsIn, no loot is given if queue threshold check fails ... scale version
+
+
+h4.RespawnPlayer (AccessLevel 9) [Notes|Command_RespawnPlayer_GameServerLib]
+*No Return*
+No comment provided
+
+h4.SendFloaterMsg (AccessLevel 9) [Notes|Command_SendFloaterMsg_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMsgKey (string)*
+*Parameter 2: r (int)*
+*Parameter 3: g (int)*
+*Parameter 4: b (int)*
+Sends a floater message of specified <floatText> and colors (<r> <g> <b>) to whichever players
+make sense for the current context
+If this is called from a mission with an owner, it will only send it to the current owner
+If this is called from an encounter, it'll send it to everyone who will get a reward for the current encounter
+Otherwise, it'll send the floater to every player on the map
+
+
+h4.SendFloaterMsgAbout (AccessLevel 9) [Notes|Command_SendFloaterMsgAbout_GameServerLib]
+*Parameter 1: pcMsgKey (string)*
+*Parameter 2: r (int)*
+*Parameter 3: g (int)*
+*Parameter 4: b (int)*
+*Parameter 5: eaEntAbout (Entity Array)*
+Like SendFloaterMsg, but takes an entarray (of a single ent) and says something about them
+
+
+h4.SendFloaterMsgGameFormatted (AccessLevel 9) [Notes|Command_SendFloaterMsgGameFormatted_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMsgKey (string)*
+*Parameter 2: r (int)*
+*Parameter 3: g (int)*
+*Parameter 4: b (int)*
+Like SendFloaterMsg, but game formatted (meaning {Entity.Name} etc. are legal) and thus more expensive
+
+
+h4.SendFloaterMsgToEnts (AccessLevel 9) [Notes|Command_SendFloaterMsgToEnts_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcMsgKey (string)*
+*Parameter 3: r (int)*
+*Parameter 4: g (int)*
+*Parameter 5: b (int)*
+Like SendFloaterMsg, but takes an entarray of ents who should hear this message
+
+
+h4.SendFloaterMsgToEntsAbout (AccessLevel 9) [Notes|Command_SendFloaterMsgToEntsAbout_GameServerLib]
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcMsgKey (string)*
+*Parameter 3: r (int)*
+*Parameter 4: g (int)*
+*Parameter 5: b (int)*
+*Parameter 6: eaEntAbout (Entity Array)*
+Like SendFloaterMsg, but takes an entarray (of a single ent) and says something about them to specified ents
+
+
+h4.SendFloaterMsgToEntsGameFormatted (AccessLevel 9) [Notes|Command_SendFloaterMsgToEntsGameFormatted_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcMsgKey (string)*
+*Parameter 3: r (int)*
+*Parameter 4: g (int)*
+*Parameter 5: b (int)*
+Like SendFloaterMsg, but takes an entarray of ents who should hear this message
+This message is formated, so it is more expensive, use wisely
+
+
+h4.SendFloaterMsgToEntsWithInt (AccessLevel 9) [Notes|Command_SendFloaterMsgToEntsWithInt_GameServerLib]
+*Returns: int*
+*Parameter 1: peaEnts (Entity Array)*
+*Parameter 2: pcMsgKey (string)*
+*Parameter 3: integer (int)*
+*Parameter 4: r (int)*
+*Parameter 5: g (int)*
+*Parameter 6: b (int)*
+Like SendFloaterMsg, but has an integer argument passed in (meaning {Integer} is legal)
+
+
+h4.MapStateCreateScoreboardGroup (AccessLevel 9) [Notes|Command_MapStateCreateScoreboardGroup_GameServerLib]
+*Parameter 1: pchFaction (string)*
+*Parameter 2: pchDisplayMessage (string)*
+No comment provided
+
+h4.MapStateResetAll (AccessLevel 9) [Notes|Command_MapStateResetAll_GameServerLib]
+Deprecated expression
+
+
+h4.MapStateResetScoreboard (AccessLevel 9) [Notes|Command_MapStateResetScoreboard_GameServerLib]
+Reset scoreboard-related information for the map
+
+
+h4.MapStateStopTrackingEvents (AccessLevel 9) [Notes|Command_MapStateStopTrackingEvents_GameServerLib]
+Stops tracking all players and all game events on the map
+
+
+h4.MapStateStopTrackingPlayers (AccessLevel 9) [Notes|Command_MapStateStopTrackingPlayers_GameServerLib]
+No comment provided
+
+h4.MapStringSet (AccessLevel 9) [Notes|Command_MapStringSet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: pcNewString (string)*
+No comment provided
+
+h4.MapValueAdd (AccessLevel 9) [Notes|Command_MapValueAdd_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: iAmountToAdd (int)*
+No comment provided
+
+h4.MapValueSet (AccessLevel 9) [Notes|Command_MapValueSet_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: iValue (int)*
+No comment provided
+
+h4.MapValueTrackEvent (AccessLevel 9) [Notes|Command_MapValueTrackEvent_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: pcEventString (string)*
+No comment provided
+
+h4.PlayerMapValueAdd (AccessLevel 9) [Notes|Command_PlayerMapValueAdd_GameServerLib]
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pcValueName (string)*
+*Parameter 3: iAmountToAdd (int)*
+No comment provided
+
+h4.PlayerMapValueCreateForAll (AccessLevel 9) [Notes|Command_PlayerMapValueCreateForAll_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: iStartingValue (int)*
+No comment provided
+
+h4.PlayerMapValueGetFromArray (AccessLevel 9) [Notes|Command_PlayerMapValueGetFromArray_GameServerLib]
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pcValueName (string)*
+Get the current map value for a given player.  The input array can only contain one player.
+
+
+h4.PlayerMapValueSet (AccessLevel 9) [Notes|Command_PlayerMapValueSet_GameServerLib]
+*Parameter 1: eaEntsIn (Entity Array)*
+*Parameter 2: pcValueName (string)*
+*Parameter 3: iNewValue (int)*
+No comment provided
+
+h4.PlayerMapValueSetForAll (AccessLevel 9) [Notes|Command_PlayerMapValueSetForAll_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: iNewValue (int)*
+This is like PlayerMapValueSet, but guaranteed to set the map value for all players (even those who aren't on the map
+
+
+h4.PlayerMapValueTrackEventForAll (AccessLevel 9) [Notes|Command_PlayerMapValueTrackEventForAll_GameServerLib]
+*Parameter 1: pcValueName (string)*
+*Parameter 2: pcEventString (string)*
+No comment provided
+
+h4.EntCropCanAcceptMission (AccessLevel 9) [Notes|Command_EntCropCanAcceptMission_GameServerLib]
+*No Return*
+*Parameter 1: peaEntsInOut (Entity Array (modified))*
+*Parameter 2: pcMissionName (string)*
+No comment provided
+
+h4.EntCropHasCompletedMission (AccessLevel 9) [Notes|Command_EntCropHasCompletedMission_GameServerLib]
+*No Return*
+*Parameter 1: peaEntsInOut (Entity Array (modified))*
+*Parameter 2: pcMissionName (string)*
+Removes every entity from the passed in ent array that hasn't completed the given Mission
+
+
+h4.EntCropMissionStateFailed (AccessLevel 9) [Notes|Command_EntCropMissionStateFailed_GameServerLib]
+*No Return*
+*Parameter 1: peaEntsInOut (Entity Array (modified))*
+*Parameter 2: pcMissionRefString (string)*
+Removes every entity from the passed in ent array that doesn't have the mission in the Failed state
+
+
+h4.EntCropMissionStateInProgress (AccessLevel 9) [Notes|Command_EntCropMissionStateInProgress_GameServerLib]
+*No Return*
+*Parameter 1: peaEntsInOut (Entity Array (modified))*
+*Parameter 2: pcMissionRefString (string)*
+Removes every entity from the passed in ent array that doesn't have the mission in progress
+
+
+h4.EntCropMissionStateSucceeded (AccessLevel 9) [Notes|Command_EntCropMissionStateSucceeded_GameServerLib]
+*No Return*
+*Parameter 1: peaEntsInOut (Entity Array (modified))*
+*Parameter 2: pcMissionRefString (string)*
+Removes every entity from the passed in ent array that doesn't have the mission in the Succeeded state
+
+
+h4.GetEntMissionVariableFloat (AccessLevel 9) [Notes|Command_GetEntMissionVariableFloat_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pcMissionName (string)*
+*Parameter 3: pcVarName (string)*
+No comment provided
+
+h4.GetEntMissionVariableInt (AccessLevel 9) [Notes|Command_GetEntMissionVariableInt_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pcMissionName (string)*
+*Parameter 3: pcVarName (string)*
+No comment provided
+
+h4.GetEntMissionVariableString (AccessLevel 9) [Notes|Command_GetEntMissionVariableString_GameServerLib]
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pcMissionName (string)*
+*Parameter 3: pcVarName (string)*
+No comment provided
+
+h4.GiveAccountRewardGateToEnts (AccessLevel 9) [Notes|Command_GiveAccountRewardGateToEnts_GameServerLib]
+*No Return*
+*Parameter 1: entsIn (Entity Array)*
+*Parameter 2: pchRewardTable (string)*
+*Parameter 3: pchGateType (string)*
+No comment provided
+
+h4.MissionLockoutAddEscortee (AccessLevel 9) [Notes|Command_MissionLockoutAddEscortee_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionRefString (string)*
+Adds the entity to the player ercorting list. This allows client to show entity on the mini map
+
+
+h4.MissionLockoutBegin (AccessLevel 9) [Notes|Command_MissionLockoutBegin_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionRefString (string)*
+Starts the Lockout List for the given Mission (stops new players from joining)
+
+
+h4.MissionLockoutEnd (AccessLevel 9) [Notes|Command_MissionLockoutEnd_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionRefString (string)*
+Stops the LockoutList and destroys it
+
+
+h4.MissionLockoutEndOnMyDeath (AccessLevel 9) [Notes|Command_MissionLockoutEndOnMyDeath_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionRefString (string)*
+Makes the specified MissionLockout end as soon as this Entity dies
+
+
+h4.MissionLockoutGetEnts (AccessLevel 9) [Notes|Command_MissionLockoutGetEnts_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionRefString (string)*
+Gets an EntArray containing all players on the lockout list
+
+
+h4.MissionLockoutSetEnts (AccessLevel 9) [Notes|Command_MissionLockoutSetEnts_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionRefString (string)*
+*Parameter 2: peaEntsIn (Entity Array)*
+Sets the list of players on this LockoutList
+
+
+h4.OpenMissionEnd (AccessLevel 9) [Notes|Command_OpenMissionEnd_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+Ends an Open Mission
+
+
+h4.OpenMissionGrantFailureRewards (AccessLevel 9) [Notes|Command_OpenMissionGrantFailureRewards_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pRewardDropPoint (Location)*
+Gives Failure Rewards to all participants of an Open Mission according to their scores.
+
+
+h4.OpenMissionGrantFailureRewardsNoDropPoint (AccessLevel 9) [Notes|Command_OpenMissionGrantFailureRewardsNoDropPoint_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+Gives Rewards to all participants of an Open Mission according to their scores. This uses a different reward granting algorithm than the other expressions
+
+
+h4.OpenMissionGrantFailureRewardsNonRecursive (AccessLevel 9) [Notes|Command_OpenMissionGrantFailureRewardsNonRecursive_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pRewardDropPoint (Location)*
+Gives Rewards to all participants of an Open Mission according to their scores.
+
+
+h4.OpenMissionGrantRewards (AccessLevel 9) [Notes|Command_OpenMissionGrantRewards_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pRewardDropPoint (Location)*
+Gives Rewards to all participants of an Open Mission according to their scores.
+
+
+h4.OpenMissionGrantRewardsNoDropPoint (AccessLevel 9) [Notes|Command_OpenMissionGrantRewardsNoDropPoint_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+Gives Rewards to all participants of an Open Mission according to their scores. This uses a different reward granting algorithm than the other expressions
+
+
+h4.OpenMissionGrantRewardsNonRecursive (AccessLevel 9) [Notes|Command_OpenMissionGrantRewardsNonRecursive_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: pRewardDropPoint (Location)*
+Gives Rewards to all participants of an Open Mission according to their scores.
+
+
+h4.OpenMissionInitResetTimer (AccessLevel 9) [Notes|Command_OpenMissionInitResetTimer_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+*Parameter 2: fTimeSeconds (float)*
+Starts a visible timer for when the Open Mission will restart
+
+
+h4.OpenMissionResetTimerExpired (AccessLevel 9) [Notes|Command_OpenMissionResetTimerExpired_GameServerLib]
+*Returns: bool*
+*Parameter 1: pcMissionName (string)*
+Returns TRUE if the Reset Timer has expired
+
+
+h4.OpenMissionSendShowScoreboardNotification (AccessLevel 9) [Notes|Command_OpenMissionSendShowScoreboardNotification_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStart (AccessLevel 9) [Notes|Command_OpenMissionStart_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+Begins an Open Mission using the given MissionDef
+
+
+h4.OpenMissionStartWithNotification (AccessLevel 9) [Notes|Command_OpenMissionStartWithNotification_GameServerLib]
+*No Return*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateFailed (AccessLevel 9) [Notes|Command_OpenMissionStateFailed_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateInProgress (AccessLevel 9) [Notes|Command_OpenMissionStateInProgress_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.OpenMissionStateSucceeded (AccessLevel 9) [Notes|Command_OpenMissionStateSucceeded_GameServerLib]
+*Returns: int*
+*Parameter 1: pcMissionName (string)*
+No comment provided
+
+h4.InstanceDifficultyIs (AccessLevel 9) [Notes|Command_InstanceDifficultyIs_GameServerLib]
+*Parameter 1: pchInternalName (string)*
+No comment provided
+

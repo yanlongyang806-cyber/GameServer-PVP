@@ -1,0 +1,15 @@
+h4.ReplayLogs (AccessLevel 9) [Notes|Command_ReplayLogs_GameServerLib]
+*Parameter 1: pDir (string)*
+Replay logs to the ObjectDB!
+
+
+h4.StartPercolator (AccessLevel 9) [Notes|Command_StartPercolator_GameServerLib]
+*Parameter 1: perc_id (string)*
+*Parameter 2: pType (string)*
+*Parameter 3: storeoffset (int)*
+Force container moves to the gameserver based on a perc id. This command will start or continue an existing percolation.
+
+
+h4.StopPercolator (AccessLevel 9) [Notes|Command_StopPercolator_GameServerLib]
+No comment provided
+

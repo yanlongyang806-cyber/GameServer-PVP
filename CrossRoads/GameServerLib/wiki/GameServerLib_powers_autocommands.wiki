@@ -1,0 +1,241 @@
+h4.BattleFormForce (AccessLevel 4) [Notes|Command_BattleFormForce_GameServerLib]
+*Parameter 1: enable (int)*
+BattleFormForce <0/1>: Force Disable/Enable BattleForm
+
+
+h4.CombatLogServer (AccessLevel 9) [Notes|Command_CombatLogServer_GameServerLib]
+*Parameter 1: bEnabled (int)*
+Enables server-side CombatLog.log
+
+
+h4.CombatReactivePowerDebugServer (AccessLevel 9) [Notes|Command_CombatReactivePowerDebugServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.NNOUnFuckery (AccessLevel 9) [Notes|Command_NNOUnFuckery_GameServerLib]
+No comment provided
+
+h4.PowerDisable (AccessLevel 9) [Notes|Command_PowerDisable_GameServerLib]
+*Parameter 1: name (string)*
+*Parameter 2: bDisable (int)*
+No comment provided
+
+h4.PowerSlots_ForceSetCurrent (AccessLevel 9) [Notes|Command_PowerSlots_ForceSetCurrent_GameServerLib]
+*Parameter 1: uiIndex (int)*
+PowerSlots_ForceSetCurrent <Index>: Switches the currently active set of PowerSlots
+
+
+h4.PowerTree_AddWithoutRules (AccessLevel 9) [Notes|Command_PowerTree_AddWithoutRules_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iRank (int)*
+*Parameter 3: iRankEnh (int)*
+PowerTree_AddWithoutRules <PowerTreeName> <Rank> <EnhRank>: Purchases the PowerTree and given rank of all nodes
+and enhancements, ignoring all purchasing rules, including cost.  This command will fail on a live server.
+
+
+h4.Power_Add (AKA Add_Power) (AccessLevel 7) [Notes|Command_Power_Add_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add <PowerName>: Adds the power of the given name to the player, outside of the scope of a tree
+
+
+h4.Power_Add_FromCritter (AccessLevel 9) [Notes|Command_Power_Add_FromCritter_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add_FromCritter <CritterName>: Adds all powers from a critter, outside of the scope of a tree
+
+
+h4.Power_Add_FromTree (AccessLevel 9) [Notes|Command_Power_Add_FromTree_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Add_FromTree <PowerTreeName>: Adds all powers from a power tree, outside of the scope of a tree.  Tree "all" will add all trees.
+
+
+h4.Power_Add_FromTreeRank (AccessLevel 9) [Notes|Command_Power_Add_FromTreeRank_GameServerLib]
+*Parameter 1: pchName (string)*
+*Parameter 2: iRank (int)*
+Power_Add_FromTreeRank <PowerTreeName> <Rank>: Adds powers from a power tree at the specific rank, outside of the scope of a tree. Tree "all" adds all trees. Rank 0 adds all ranks.
+
+
+h4.Power_Remove (AKA Remove_Power) (AccessLevel 7) [Notes|Command_Power_Remove_GameServerLib]
+*Parameter 1: pchName (string)*
+Power_Remove <PowerName>: Removes the power of the given name from the player, if that power is outside the scope of a tree
+
+
+h4.PowersDebugServer (AccessLevel 9) [Notes|Command_PowersDebugServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.PowersErrorsServer (AccessLevel 9) [Notes|Command_PowersErrorsServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.PowersResetIDs (AccessLevel 7) [Notes|Command_PowersResetIDs_GameServerLib]
+Completely resets all PowerIDs on the Entity and all of its OwnedContainers.  Useful if an Entity gets
+its PowerIDs into a bad state.  Generally should not be run on an online Entity.
+
+
+h4.PowersSelectDebugServer (AccessLevel 9) [Notes|Command_PowersSelectDebugServer_GameServerLib]
+*Parameter 1: enabled (int)*
+No comment provided
+
+h4.PowersSetGlobalCooldown (AccessLevel 9) [Notes|Command_PowersSetGlobalCooldown_GameServerLib]
+*Parameter 1: time (float)*
+Command to change the global cooldown on the fly
+
+
+h4.PowersSpeedRecharge (AccessLevel 9) [Notes|Command_PowersSpeedRecharge_GameServerLib]
+*Parameter 1: fSpeed (float)*
+PowerSpeedRecharge <speed>: Adjusts the global modifier to recharge speed.  1 is default, larger is faster, negative is invalid.
+
+
+h4.RespecAdvantages (AccessLevel 4) [Notes|Command_RespecAdvantages_GameServerLib]
+Respecs your advantages (all of them)
+
+
+h4.RespecFull (AKA Character_RespecFull) (AccessLevel 4) [Notes|Command_RespecFull_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing
+
+
+h4.RespecPowerTrees (AccessLevel 0) [Notes|Command_RespecPowerTrees_GameServerLib]
+*Parameter 1: steps (int)*
+Respecs a number of steps of your PowerTrees
+
+
+h4.RespecPowerTreesGroupNoCost (AccessLevel 0) [Notes|Command_RespecPowerTreesGroupNoCost_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs as many steps as possible that are free
+
+
+h4.RespecPowerTreesInternal (AccessLevel 9) [Notes|Command_RespecPowerTreesInternal_GameServerLib]
+*Parameter 1: steps (int)*
+*Parameter 2: usecost (int)*
+Respecs your PowerTrees back the given number of steps, optionally use the cost
+
+
+h4.RespecPowerTreesInvalid (AccessLevel 0) [Notes|Command_RespecPowerTreesInvalid_GameServerLib]
+Respecs your PowerTrees to nothing if they are currently invalid for some reason
+
+
+h4.Character_UseFreeRespec (AccessLevel 0) [Notes|Command_Character_UseFreeRespec_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing
+
+
+h4.Character_UseGameAccountRespec (AccessLevel 0) [Notes|Command_Character_UseGameAccountRespec_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing using a game account key
+
+
+h4.Character_UseItemOrGameAccountRespec (AccessLevel 0) [Notes|Command_Character_UseItemOrGameAccountRespec_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.Character_UseItemRespec (AccessLevel 0) [Notes|Command_Character_UseItemRespec_GameServerLib]
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.Character_UseItemRespecEx (AccessLevel 0) [Notes|Command_Character_UseItemRespecEx_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.Character_UseNumericRespec (AccessLevel 0) [Notes|Command_Character_UseNumericRespec_GameServerLib]
+*Parameter 1: eRespecType (enum)*
+Respecs your PowerTrees and StatPoints to nothing using a token item
+
+
+h4.buildClass (AccessLevel 0) [Notes|Command_buildClass_GameServerLib]
+*Parameter 1: uiBuild (int)*
+*Parameter 2: pchClass (sentence)*
+Sets the class of a build
+
+
+h4.buildCopyFromCurrent (AccessLevel 0) [Notes|Command_buildCopyFromCurrent_GameServerLib]
+*Parameter 1: uiDestBuild (int)*
+*Parameter 2: bCopyClass (int)*
+*Parameter 3: bCopyCostume (int)*
+*Parameter 4: bCopyItems (int)*
+*Parameter 5: bCopyPowers (int)*
+No comment provided
+
+h4.buildCreate (AccessLevel 0) [Notes|Command_buildCreate_GameServerLib]
+Makes a new build based on your current state
+
+
+h4.buildCreate_force (AccessLevel 9) [Notes|Command_buildCreate_force_GameServerLib]
+Makes a new build based on your current state
+
+
+h4.buildDelete (AccessLevel 9) [Notes|Command_buildDelete_GameServerLib]
+*Parameter 1: uiBuild (int)*
+Deletes a build
+
+
+h4.buildDelete_force (AccessLevel 9) [Notes|Command_buildDelete_force_GameServerLib]
+*Parameter 1: uiBuild (int)*
+Deletes a build
+
+
+h4.buildName (AccessLevel 0) [Notes|Command_buildName_GameServerLib]
+*Parameter 1: uiBuild (int)*
+*Parameter 2: pchName (sentence)*
+Names a build
+
+
+h4.buildSet (AccessLevel 0) [Notes|Command_buildSet_GameServerLib]
+*Parameter 1: uiBuild (int)*
+Sets your build to the specified index
+
+
+h4.buildSetItem (AccessLevel 0) [Notes|Command_buildSetItem_GameServerLib]
+*Parameter 1: uiBuild (int)*
+*Parameter 2: iInvBag (int)*
+*Parameter 3: iSlot (int)*
+*Parameter 4: ilItemID (U64)*
+*Parameter 5: iSrcBag (int)*
+*Parameter 6: iSrcSlot (int)*
+Sets the item in iInvBag, iSlot to ilItemID which came from iSrcBag, iSrcSlot
+
+
+h4.buildSet_force (AccessLevel 9) [Notes|Command_buildSet_force_GameServerLib]
+*Parameter 1: uiBuild (int)*
+Sets your build to the specified index
+
+
+h4.PowerEmit (AccessLevel 0) [Notes|Command_PowerEmit_GameServerLib]
+*Parameter 1: uiID (int)*
+*Parameter 2: pchEmit (string)*
+PowerEmit <PowerID> <Emit>: Sets the emit point of the Power.  PowerID of 0 applies to all Powers, invalid Emit reverts to default.
+
+
+h4.PowerEntCreateCostume (AccessLevel 0) [Notes|Command_PowerEntCreateCostume_GameServerLib]
+*Parameter 1: uiID (int)*
+*Parameter 2: iEntCreateCostume (int)*
+PowerEntCreateCostume <PowerID> <EntCreateCostume>: Sets the EntCreateCostume of the Power.  PowerID of 0 applies to all Powers, EntCreateCostume of 0 reverts to default.
+
+
+h4.PowerHue (AccessLevel 0) [Notes|Command_PowerHue_GameServerLib]
+*Parameter 1: uiID (int)*
+*Parameter 2: fHue (float)*
+PowerHue <PowerID> <Hue>: Sets the hue of the Power's FX.  PowerID of 0 applies to all Powers, Hue of 0 reverts to default.
+
+
+h4.pDebugLevel (AccessLevel 9) [Notes|Command_pDebugLevel_GameServerLib]
+*Parameter 1: d (int)*
+No comment provided
+
+h4.pDebugToggle (AccessLevel 9) [Notes|Command_pDebugToggle_GameServerLib]
+*Parameter 1: str (string)*
+No comment provided
+
+h4.PowerTree_SendListToClient (AccessLevel 0) [Notes|Command_PowerTree_SendListToClient_GameServerLib]
+*Parameter 1: bOnlyIfCanBuy (bool)*
+Send the client a list of all player power trees.
+If necessary this can be filtered even more later.
+
+
+h4.EnableExtraAttribmodProfileData (int) - (AccessLevel 9) [Notes|Command_EnableExtraAttribmodProfileData_GameServerLib]
+Whether to enable extra attribmod data collection when profiling.  Made conditional because it really slows things down.
+
+
+h4.PowersVariance (int) - (AccessLevel 9) [Notes|Command_PowersVariance_GameServerLib]
+Whether variance is enabled
+
+

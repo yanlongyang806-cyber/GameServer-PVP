@@ -1,0 +1,6 @@
+h4.PowerArtGetMatNameWithExt (AccessLevel 9) [Notes|Command_PowerArtGetMatNameWithExt_GameServerLib]
+*Returns: string*
+*Parameter 1: pcMatName (string)*
+*Parameter 2: pcExtension (string)*
+No comment provided
+

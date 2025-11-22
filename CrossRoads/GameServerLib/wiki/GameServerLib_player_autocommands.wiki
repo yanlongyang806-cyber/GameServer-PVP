@@ -1,0 +1,119 @@
+h4.NemesisLeaderLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has nemesis loaded
+
+
+h4.NemesisLeaderLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisLeaderLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: bAnyTeamMember (bool)*
+True if the team leader (or with optional flag any team member) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.NemesisTeamIndexLoadedOrNotByEnt (AccessLevel 9) [Notes|Command_NemesisTeamIndexLoadedOrNotByEnt_GameServerLib]
+*Returns: bool*
+*Parameter 1: iIndex (int)*
+True if the team index (0 is for solo) has a nemesis
+
+
+h4.OfficerIsOfRankAndAllegiance (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegiance_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+No comment provided
+
+h4.OfficerIsOfRankAndAllegianceUsingNumeric (AccessLevel 9) [Notes|Command_OfficerIsOfRankAndAllegianceUsingNumeric_GameServerLib]
+*Returns: bool*
+*Parameter 1: iRank (int)*
+*Parameter 2: pchAllegiance (string)*
+*Parameter 3: pchNumeric (string)*
+TODO(MK): could make pchAllegiance into a comma delimited list if necessary later on
+
+
+h4.AccessLevel (AccessLevel 9) [Notes|Command_AccessLevel_GameServerLib]
+*Returns: int*
+Check the player's access level.
+
+
+h4.AccountAccessLevel (AccessLevel 9) [Notes|Command_AccountAccessLevel_GameServerLib]
+*Returns: int*
+Check the player's account access level.
+
+
+h4.EntIsLinkedAccount (AccessLevel 9) [Notes|Command_EntIsLinkedAccount_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntIsShadowAccount (AccessLevel 9) [Notes|Command_EntIsShadowAccount_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.IsPlayer (AccessLevel 9) [Notes|Command_IsPlayer_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.PlayerCreateTime (AccessLevel 9) [Notes|Command_PlayerCreateTime_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetDupVanityPets (AccessLevel 9) [Notes|Command_EntGetDupVanityPets_GameServerLib]
+*Returns: int*
+*Parameter 1: pItemDef (ItemDef struct)*
+Returns the number of duplicate vanity pets on the item.  Returns -1 if ALL pets 
+
+
+h4.MapIsInterior (AccessLevel 9) [Notes|Command_MapIsInterior_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.PlayerIsPlayerType (AccessLevel 9) [Notes|Command_PlayerIsPlayerType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+No comment provided
+
+h4.PlayerSetMovementThrottle (AccessLevel 9) [Notes|Command_PlayerSetMovementThrottle_GameServerLib]
+*No Return*
+*Parameter 1: fThrottle (float)*
+Sets the Player's movement throttle, clamped to [-0.25..1]
+
+
+h4.SetTutorialDone (AccessLevel 9) [Notes|Command_SetTutorialDone_GameServerLib]
+*No Return*
+No comment provided
+
+h4.SavedPetsClearAllDeceased (AccessLevel 9) [Notes|Command_SavedPetsClearAllDeceased_GameServerLib]
+*No Return*
+No comment provided
+
+h4.SetSkill (AccessLevel 9) [Notes|Command_SetSkill_GameServerLib]
+*No Return*
+*Parameter 1: iSkillType (int)*
+No comment provided
+
+h4.EntGetAccountDataValue (AccessLevel 9) [Notes|Command_EntGetAccountDataValue_GameServerLib]
+*Returns: string*
+*Parameter 1: pchAttrib (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetAccountKeyValue (AccessLevel 9) [Notes|Command_EntGetAccountKeyValue_GameServerLib]
+*Returns: S64*
+*Parameter 1: pchKey (string)*
+Return the value associated with a GameAccountData attribute.
+
+
+h4.EntGetGender (AccessLevel 9) [Notes|Command_EntGetGender_GameServerLib]
+*Returns: string*
+Get the gender as a string
+
+
+h4.EntGetHiddenInGateway (AccessLevel 9) [Notes|Command_EntGetHiddenInGateway_GameServerLib]
+*Returns: bool*
+No comment provided
+

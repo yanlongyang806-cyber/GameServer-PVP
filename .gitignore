@@ -1,0 +1,41 @@
+﻿# 缂栬瘧杈撳嚭
+obj/
+bin/
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.exp
+*.ilk
+*.idb
+*.ipdb
+*.iobj
+*.tlog
+*.lastbuildstate
+*.cache
+*.log
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+
+# AutoGen 鏂囦欢锛堜細鍦ㄧ紪璇戞椂鐢熸垚锛?
+AutoGen/
+**/AutoGen/
+
+# 涓存椂鏂囦欢
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+
+# 鏂囨。锛堝彲閫夛紝濡傛灉闇€瑕佸彲浠ュ垹闄よ繖琛岋級
+*.md
+!README.md

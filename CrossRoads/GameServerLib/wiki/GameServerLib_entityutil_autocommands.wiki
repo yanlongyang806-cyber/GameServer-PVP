@@ -1,0 +1,172 @@
+h4.CharacterCreation_IsValidNNOCharacter (AccessLevel 9) [Notes|Command_CharacterCreation_IsValidNNOCharacter_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.CharacterPathFromNameCanUse (AccessLevel 9) [Notes|Command_CharacterPathFromNameCanUse_GameServerLib]
+*Returns: bool*
+*Parameter 1: className (string)*
+return true if this is a usable character class, uses pcGamePermissionValue field of CharacterPath
+NULL is a valid character path name (free form) and will always return true
+
+
+h4.EntHasCharacterPath (AccessLevel 9) [Notes|Command_EntHasCharacterPath_GameServerLib]
+*Returns: bool*
+Returns true if the 
+moved here as it needs to be in a common file
+
+
+h4.EntDoesHaveCharacterPath (AccessLevel 9) [Notes|Command_EntDoesHaveCharacterPath_GameServerLib]
+*Returns: bool*
+*Parameter 1: characterPathName (string)*
+Given an entity and logical name of a character path
+returns true if the entity has the given character path
+
+
+h4.EntIsAffectedByPowerTagCount (AccessLevel 9) [Notes|Command_EntIsAffectedByPowerTagCount_GameServerLib]
+*Returns: int*
+*Parameter 1: tagName (string)*
+Character
+Inputs: Character, PowerTag name
+Return: Number of underived AttribMods on the Character with the given PowerTag
+
+
+h4.EntIsClass (AccessLevel 9) [Notes|Command_EntIsClass_GameServerLib]
+*Returns: int*
+*Parameter 1: className (string)*
+Return: 1 if the Entity's Character is the named class, otherwise 0
+
+
+h4.EntIsClassCategory (AccessLevel 9) [Notes|Command_EntIsClassCategory_GameServerLib]
+*Returns: int*
+*Parameter 1: classCategoryName (string)*
+Return: 1 if the Entity's Character's class is the same as the named class category, otherwise 0
+
+
+h4.EntIsSpeciesGroup (AccessLevel 9) [Notes|Command_EntIsSpeciesGroup_GameServerLib]
+*Returns: int*
+*Parameter 1: speciesGroup (string)*
+Returns true if the Entity's Character's Species has the SpeciesGroup.
+This is NOT the same thing as the Species' internal name.
+
+
+h4.GamePermissions_CanBuyBag (AccessLevel 9) [Notes|Command_GamePermissions_CanBuyBag_GameServerLib]
+*Returns: bool*
+*Parameter 1: eBagId (int)*
+No comment provided
+
+h4.GetRespecNumericCostInternal (AccessLevel 9) [Notes|Command_GetRespecNumericCostInternal_GameServerLib]
+*Returns: int*
+*Parameter 1: pchRespecGroupTypeName (string)*
+No comment provided
+
+h4.HasFreeRespecInGroup (AccessLevel 9) [Notes|Command_HasFreeRespecInGroup_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchRespecGroupTypeName (string)*
+Does this group have free respecs in the tree
+Must be able to do respecs on this group
+
+
+h4.EntityIsPlayerType (AccessLevel 9) [Notes|Command_EntityIsPlayerType_GameServerLib]
+*Returns: int*
+*Parameter 1: pchType (string)*
+No comment provided
+
+h4.ChooseEntity (AccessLevel 9) [Notes|Command_ChooseEntity_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: which (int)*
+No comment provided
+
+h4.ChooseEntityStrict (AccessLevel 9) [Notes|Command_ChooseEntityStrict_GameServerLib]
+*Returns: Entity struct*
+*Parameter 1: which (int)*
+No comment provided
+
+h4.EntGetAccountFirstPlayed (AccessLevel 9) [Notes|Command_EntGetAccountFirstPlayed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetAccountTotalPlayed (AccessLevel 9) [Notes|Command_EntGetAccountTotalPlayed_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetAttrib (AccessLevel 9) [Notes|Command_EntGetAttrib_GameServerLib]
+*Returns: float*
+*Parameter 1: attribName (string)*
+Returns the value of the Entity's Character's attribute.  Returns 0 on failure.
+
+
+h4.EntGetDaysSubscribed (AccessLevel 9) [Notes|Command_EntGetDaysSubscribed_GameServerLib]
+*Returns: int*
+return the number of days subscribed
+
+
+h4.EntGetHasPersonalPowerModeAnyTarget (AccessLevel 9) [Notes|Command_EntGetHasPersonalPowerModeAnyTarget_GameServerLib]
+*Returns: int*
+*Parameter 1: modeName (string)*
+Returns 1 if the Entity has the specified personal powermode with any target, 0 if it's not.  Returns -1 on failure.
+
+
+h4.EntGetMapRevealPercentage (AccessLevel 9) [Notes|Command_EntGetMapRevealPercentage_GameServerLib]
+*Returns: float*
+Return the percentage of the current map revealed by the player.
+
+
+h4.EntGetTarget (AccessLevel 9) [Notes|Command_EntGetTarget_GameServerLib]
+*Returns: Entity struct*
+No comment provided
+
+h4.EntIsFalling (AccessLevel 9) [Notes|Command_EntIsFalling_GameServerLib]
+*Returns: int*
+Inputs: entity
+Return: 1 if the entity is not flying and not on the ground, otherwise 0
+
+
+h4.EntIsLifetimeSubscription (AccessLevel 9) [Notes|Command_EntIsLifetimeSubscription_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntIsPressSubscription (AccessLevel 9) [Notes|Command_EntIsPressSubscription_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.CritterTeamSizeAtSpawn (AccessLevel 9) [Notes|Command_CritterTeamSizeAtSpawn_GameServerLib]
+*Returns: int*
+No comment provided
+
+h4.EntGetSharedBankEnt (AccessLevel 9) [Notes|Command_EntGetSharedBankEnt_GameServerLib]
+*Returns: Entity struct*
+Returns the shared bank entity
+
+
+h4.EntHasMode (AKA EntGetHasPowerMode) (AccessLevel 9) [Notes|Command_EntHasMode_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchModeName (string)*
+Returns true if the passed entity has the specified power mode
+
+
+h4.EntSetAccountDataValue (AccessLevel 9) [Notes|Command_EntSetAccountDataValue_GameServerLib]
+*No Return*
+*Parameter 1: pchAttrib (string)*
+*Parameter 2: pchValue (string)*
+Set the value associated with a GameAccountData attribute.
+
+
+h4.EntGetGender (AccessLevel 9) [Notes|Command_EntGetGender_GameServerLib]
+*Returns: string*
+Get the gender as a string
+
+
+h4.EntGetHiddenInGateway (AccessLevel 9) [Notes|Command_EntGetHiddenInGateway_GameServerLib]
+*Returns: bool*
+No comment provided
+
+h4.GetItemCount (AccessLevel 9) [Notes|Command_GetItemCount_GameServerLib]
+*Returns: int*
+*Parameter 1: pcItemName (string)*
+No comment provided
+
+h4.scp_EntIsSuperCritterPet (AccessLevel 9) [Notes|Command_scp_EntIsSuperCritterPet_GameServerLib]
+*Returns: bool*
+Expression for UI to check if an ent is an SCP.  
+
+

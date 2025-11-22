@@ -1,0 +1,4 @@
+h4.GetAssetSetIndex (AccessLevel 9) [Notes|Command_GetAssetSetIndex_GameServerLib]
+*Returns: int*
+No comment provided
+

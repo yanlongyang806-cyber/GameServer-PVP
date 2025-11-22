@@ -1,0 +1,6 @@
+h4.Genesis.MakeVistas (AccessLevel 9) [Notes|Command_Genesis.MakeVistas_GameServerLib]
+*Parameter 1: count (int)*
+*Parameter 2: ecosystem_name (string)*
+*Parameter 3: geotype_name (string)*
+No comment provided
+

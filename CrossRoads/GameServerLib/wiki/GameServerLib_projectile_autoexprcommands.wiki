@@ -1,0 +1,20 @@
+h4.ProjectileOverrideRange (AccessLevel 9) [Notes|Command_ProjectileOverrideRange_GameServerLib]
+*No Return*
+*Parameter 1: fRange (float)*
+overrides the range of the projectile
+
+
+h4.ProjectileResetExpirations (AccessLevel 9) [Notes|Command_ProjectileResetExpirations_GameServerLib]
+*No Return*
+Resets all things that would expire the projectile, like range and lifetime
+
+
+h4.ProjectileResetHitEntities (AccessLevel 9) [Notes|Command_ProjectileResetHitEntities_GameServerLib]
+*No Return*
+Resets the list of entities hit by the projectile and allows the projectile to hit them again
+
+
+h4.ProjectileReturnToOwner (AccessLevel 9) [Notes|Command_ProjectileReturnToOwner_GameServerLib]
+*No Return*
+No comment provided
+

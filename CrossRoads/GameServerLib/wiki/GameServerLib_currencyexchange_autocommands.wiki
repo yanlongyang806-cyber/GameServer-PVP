@@ -1,0 +1,22 @@
+h4.CurrencyExchange_ClaimMTC (AccessLevel 0) [Notes|Command_CurrencyExchange_ClaimMTC_GameServerLib]
+*Parameter 1: quantity (int)*
+No comment provided
+
+h4.CurrencyExchange_ClaimTC (AccessLevel 0) [Notes|Command_CurrencyExchange_ClaimTC_GameServerLib]
+*Parameter 1: quantity (int)*
+No comment provided
+
+h4.CurrencyExchange_CreateBuyOrder (AccessLevel 0) [Notes|Command_CurrencyExchange_CreateBuyOrder_GameServerLib]
+*Parameter 1: quantity (int)*
+*Parameter 2: price (int)*
+No comment provided
+
+h4.CurrencyExchange_CreateSellOrder (AccessLevel 0) [Notes|Command_CurrencyExchange_CreateSellOrder_GameServerLib]
+*Parameter 1: quantity (int)*
+*Parameter 2: price (int)*
+No comment provided
+
+h4.CurrencyExchange_WithdrawOrder (AccessLevel 0) [Notes|Command_CurrencyExchange_WithdrawOrder_GameServerLib]
+*Parameter 1: orderID (int)*
+No comment provided
+

@@ -1,0 +1,101 @@
+h4.Activity_EventIsActive (AccessLevel 9) [Notes|Command_Activity_EventIsActive_GameServerLib]
+*Returns: bool*
+*Parameter 1: pchEventName (string)*
+No comment provided
+
+h4.DDCharacterTake10 (AccessLevel 9) [Notes|Command_DDCharacterTake10_GameServerLib]
+*Returns: bool*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: skillName (string)*
+*Parameter 3: DC (int)*
+Returns the result of taking 10 vs. a DC.
+
+
+h4.DDEntGetSkillBonus (AccessLevel 9) [Notes|Command_DDEntGetSkillBonus_GameServerLib]
+*Returns: float*
+*Parameter 1: skillName (string)*
+Returns the magnitude of the given character's bonus for a specified skill name.
+
+
+h4.DDEntityTake10 (AccessLevel 9) [Notes|Command_DDEntityTake10_GameServerLib]
+*Returns: bool*
+*Parameter 1: skillName (string)*
+*Parameter 2: DC (int)*
+Returns the result of taking 10 vs. a DC.
+
+
+h4.UGCProject_IsImportant (AccessLevel 9) [Notes|Command_UGCProject_IsImportant_GameServerLib]
+*Returns: bool*
+*Parameter 1: project (UGCProject struct)*
+No comment provided
+
+h4.EntGameAccountCharacterSlotTest (AccessLevel 9) [Notes|Command_EntGameAccountCharacterSlotTest_GameServerLib]
+*Returns: bool*
+*Parameter 1: iValue (int)*
+No comment provided
+
+h4.GetCurrentMapType (AccessLevel 9) [Notes|Command_GetCurrentMapType_GameServerLib]
+*Returns: string*
+No comment provided
+
+h4.GetShardVariableFloat (AccessLevel 9) [Notes|Command_GetShardVariableFloat_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a shard variable as a float
+
+
+h4.GetShardVariableFloatWithDefault (AccessLevel 9) [Notes|Command_GetShardVariableFloatWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: fDefault (float)*
+No comment provided
+
+h4.GetShardVariableInt (AccessLevel 9) [Notes|Command_GetShardVariableInt_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a shard variable as an integer
+
+
+h4.GetShardVariableIntWithDefault (AccessLevel 9) [Notes|Command_GetShardVariableIntWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: iDefault (int)*
+No comment provided
+
+h4.GetShardVariableString (AccessLevel 9) [Notes|Command_GetShardVariableString_GameServerLib]
+*Parameter 1: pcVarName (string)*
+Gets the value of a shard variable as a string
+
+
+h4.GetShardVariableStringWithDefault (AccessLevel 9) [Notes|Command_GetShardVariableStringWithDefault_GameServerLib]
+*Parameter 1: pcVarName (string)*
+*Parameter 2: pcDefault (string)*
+No comment provided
+
+h4.GetTime (AccessLevel 9) [Notes|Command_GetTime_GameServerLib]
+*Returns: float*
+Gets the server time (not to be confused with the absolute time).  0 is midnight, 12 is noon
+
+
+h4.GamePermissionTimedSecondsLeft (AccessLevel 9) [Notes|Command_GamePermissionTimedSecondsLeft_GameServerLib]
+*Returns: int*
+*Parameter 1: pPath (CharacterPath struct)*
+No comment provided
+
+h4.GamePermissionTimedSecondsLeftByName (AccessLevel 9) [Notes|Command_GamePermissionTimedSecondsLeftByName_GameServerLib]
+*Returns: int*
+*Parameter 1: pcCharacterPathName (string)*
+No comment provided
+
+h4.IsFullMoon (AccessLevel 9) [Notes|Command_IsFullMoon_GameServerLib]
+*Returns: bool*
+Is this the full moon
+
+
+h4.IsFullMoonRange (AccessLevel 9) [Notes|Command_IsFullMoonRange_GameServerLib]
+*Returns: bool*
+*Parameter 1: uDaysRange (int)*
+Is this the full moon with a number of days in the range
+
+
+h4.SafeTimeStepScale (AccessLevel 9) [Notes|Command_SafeTimeStepScale_GameServerLib]
+*No Return*
+*Parameter 1: fTimeStep (float)*
+No comment provided
+

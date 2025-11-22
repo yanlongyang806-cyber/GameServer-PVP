@@ -1,0 +1,22 @@
+h4.ActCharged (AccessLevel 9) [Notes|Command_ActCharged_GameServerLib]
+*Returns: float*
+Activation
+Inputs: None
+Return: The time the activation was charged
+
+
+h4.ActPercentCharged (AccessLevel 9) [Notes|Command_ActPercentCharged_GameServerLib]
+*Returns: float*
+Activation
+Inputs: None
+Return: The percent the power would be charged based on the input time charged
+
+
+h4.CombatPowerStateSwitching_IsInState (AccessLevel 9) [Notes|Command_CombatPowerStateSwitching_IsInState_GameServerLib]
+*Returns: bool*
+*Parameter 1: pChar (Character struct)*
+*Parameter 2: pchState (string)*
+Returns true if the given character has a CombatPowerState and is in the given state
+an empty string "" is the same as the default state 
+
+

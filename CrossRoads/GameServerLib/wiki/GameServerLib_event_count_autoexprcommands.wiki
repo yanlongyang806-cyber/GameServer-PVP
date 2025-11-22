@@ -1,0 +1,5 @@
+h4.EventCount (AccessLevel 9) [Notes|Command_EventCount_GameServerLib]
+*Parameter 1: pcEventName (string)*
+Get the event count for the given event.
+
+

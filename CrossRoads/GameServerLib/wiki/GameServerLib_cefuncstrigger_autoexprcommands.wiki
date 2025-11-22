@@ -1,0 +1,48 @@
+h4.TriggerMag (AccessLevel 9) [Notes|Command_TriggerMag_GameServerLib]
+*Returns: float*
+Trigger
+Inputs: none
+Return: The magnitude of the event that caused the trigger to fire, NOT the
+magnitude of the trigger AttribMod itself.  0 if the Application was not the
+result of a trigger.  Replacement for Application.DamageTrigger.Mag.
+
+
+h4.TriggerMagPreResist (AccessLevel 9) [Notes|Command_TriggerMagPreResist_GameServerLib]
+*Returns: float*
+Trigger
+Inputs: none
+Return: Like TriggerMag(), except the magnitude is pre-resistance by the target.
+Replacement for Application.DamageTrigger.MagPreResist.
+
+
+h4.TriggerMagScale (AccessLevel 9) [Notes|Command_TriggerMagScale_GameServerLib]
+*Returns: float*
+Trigger
+Inputs: none
+Return: Like TriggerMag(), except the magnitude is divided by the target's maximum health.
+Replacement for Application.DamageTrigger.MagScale.
+
+
+h4.TriggerModDef (AccessLevel 9) [Notes|Command_TriggerModDef_GameServerLib]
+*Returns: AttribModDef_ForExpr struct*
+Trigger
+Inputs: none
+Return: The AttribModDef that caused the event that triggered this response, or NULL
+
+
+h4.TriggerOtherChar (AccessLevel 9) [Notes|Command_TriggerOtherChar_GameServerLib]
+*Returns: Character struct*
+Trigger
+Inputs: none
+Return: The Character that was at the other end of the event that triggered this response.
+For example, a CriticalOut event occurs when you land a critical hit, so the "Other" Character
+is the one who was hit by the critical.  Returns NULL for failure cases.
+
+
+h4.TriggerPowerDef (AccessLevel 9) [Notes|Command_TriggerPowerDef_GameServerLib]
+*Returns: PowerDef_ForExpr struct*
+Trigger
+Inputs: none
+Return: The PowerDef that caused the event that triggered this response, or NULL
+
+

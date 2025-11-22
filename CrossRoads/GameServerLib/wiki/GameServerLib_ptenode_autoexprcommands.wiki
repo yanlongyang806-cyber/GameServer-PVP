@@ -1,0 +1,5 @@
+h4.EnhTypeOwned (AccessLevel 9) [Notes|Command_EnhTypeOwned_GameServerLib]
+*Returns: int*
+*Parameter 1: pchEnhType (string)*
+No comment provided
+
