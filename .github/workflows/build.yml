@@ -1,4 +1,4 @@
-name: Build GameServer
+name: Build GameServer Only
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout
       uses: actions/checkout@v4
 
     - name: Setup MSBuild
@@ -16,15 +16,9 @@ jobs:
 
     - name: Create Fake StructParser
       run: |
-        mkdir Utilities\bin
+        mkdir Utilities\bin -Force
         echo. > Utilities\bin\StructParser.exe
 
     - name: Build GameServer
-      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
-
-    - name: Upload GameServer.exe
-      uses: actions/upload-artifact@v4
-      with:
-        name: GameServer
-        path: Core\bin\Debug\GameServer.exe
-        if-no-files-found: error
+      shell: cmd
+      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Deb
