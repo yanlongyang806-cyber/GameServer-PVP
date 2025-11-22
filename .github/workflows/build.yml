@@ -1,6 +1,8 @@
 name: Build GameServer Only
 
 on:
+  push:
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -16,8 +18,7 @@ jobs:
 
     - name: Build CoreGameServer (skip StructParser)
       shell: cmd
-      run: >
-        msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /p:PreBuildEvent= /p:RunStructParser=false /p:UseStructParser=false /m /v:minimal
+      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /p:PreBuildEvent= /p:RunStructParser=false /p:UseStructParser=false /m /v:minimal
 
     - name: Upload GameServer.exe
       uses: actions/upload-artifact@v4
