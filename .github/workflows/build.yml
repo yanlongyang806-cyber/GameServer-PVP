@@ -14,14 +14,12 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Create fake StructParser.exe (correct path)
+    - name: Create Fake StructParser (fix all errors)
       run: |
         mkdir Utilities\bin
-        echo @echo off > Utilities\bin\StructParser.bat
-        echo. >> Utilities\bin\StructParser.bat
-        powershell -Command "Add-Type -AssemblyName System.Windows.Forms; $bytes = [System.Text.Encoding]::ASCII.GetBytes('MZ'); Set-Content -Path 'Utilities/bin/StructParser.exe' -Value $bytes -Encoding Byte"
+        echo. > Utilities\bin\StructParser.exe
 
-    - name: Build CoreGameServer
+    - name: Build GameServer Only
       shell: cmd
       run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
 
