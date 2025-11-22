@@ -30,7 +30,7 @@
     <ProjectGuid>{487DB8D6-6FAF-4E86-9800-75088911A703}</ProjectGuid>
     <RootNamespace>EntityLib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'" Label="Configuration">

@@ -30,7 +30,7 @@
     <ProjectGuid>{DD475A7C-B1D4-43C4-ACB7-D73C24BE1EB7}</ProjectGuid>
     <RootNamespace>ServerLib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'" Label="Configuration">

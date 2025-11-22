@@ -30,7 +30,7 @@
     <ProjectGuid>{A6741F6E-5476-4F9F-9D65-62B54AAF1D08}</ProjectGuid>
     <RootNamespace>UtilitiesLib</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|Win32'" Label="Configuration">
