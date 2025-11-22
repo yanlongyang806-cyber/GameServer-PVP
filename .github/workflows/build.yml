@@ -29,7 +29,14 @@ jobs:
     - name: Setup StructParser for main build
       run: |
         if not exist Utilities\bin mkdir Utilities\bin
-        copy Utilities\StructParser\bin\Debug\StructParser.exe Utilities\bin\StructParser.exe
+        if exist Utilities\StructParser\bin\Debug\StructParser.exe (
+          copy Utilities\StructParser\bin\Debug\StructParser.exe Utilities\bin\StructParser.exe
+        ) else if exist Utilities\bin\StructParser.exe (
+          echo StructParser.exe already in Utilities\bin
+        ) else (
+          echo Error: StructParser.exe not found after build
+          exit /b 1
+        )
       
     - name: Build Solution
       run: |
