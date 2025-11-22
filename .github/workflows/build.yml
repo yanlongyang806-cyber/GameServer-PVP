@@ -1,0 +1,39 @@
+不要修改任何 .vcxproj、.h、.cpp 文件，也不要触碰 expat、StructParserStub、xml 相关代码。
+
+只做一件事：
+
+将 .github/workflows/build.yml 替换为以下内容，不许改动：
+
+name: Build GameServer Only
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Create Fake StructParser (disable all structparser calls)
+      run: |
+        mkdir Utilities\bin -Force
+        echo. > Utilities\bin\StructParser.exe
+
+    - name: Build GameServer
+      shell: cmd
+      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /p:PreBuildEvent="" /m /v:minimal
+
+    - name: Upload GameServer.exe
+      uses: actions/upload-artifact@v4
+      with:
+        name: GameServer
+        path: Core/bin/Debug/GameServer.exe
+        if-no-files-found: error
+
+完成以上修改后，提交一次 commit，其他文件一律不要变。
