@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Code Coverage|Win32">
@@ -99,9 +99,7 @@
       <EnablePREfast>false</EnablePREfast>
     </ClCompile>
     <Lib />
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Code Coverage|x64'">
     <ClCompile>
@@ -113,9 +111,7 @@
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -125,9 +121,7 @@
       <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <Lib />
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
     <PostBuildEvent>
       <Command>
       </Command>
@@ -143,9 +137,7 @@
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|Win32'">
     <ClCompile>
@@ -153,9 +145,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_FULLDEBUG;_LIB;USEZLIB;_CRTDBG_MAP_ALLOC;SERVERLIB=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Lib />
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Full Debug|x64'">
     <ClCompile>
@@ -167,9 +157,7 @@
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
-    <PreBuildEvent>
-      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Core\Common\AutoGen\Controller_autogen_RemoteFuncs.c" />

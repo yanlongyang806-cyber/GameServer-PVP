@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -62,10 +62,7 @@
       <OptimizeReferences>false</OptimizeReferences>
       <EntryPointSymbol>wmainCRTStartup</EntryPointSymbol>
     </Link>
-    <PreBuildEvent>
-      <Command>if exist "$(SolutionDir)Utilities\bin\StructParser.exe" ("$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) || exit /b 0</Command>
-      <Message>Running StructParser...</Message>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
     <PostBuildEvent>
       <Command>
       </Command>
@@ -86,10 +83,7 @@
       <OptimizeReferences>false</OptimizeReferences>
       <EntryPointSymbol>wmainCRTStartup</EntryPointSymbol>
     </Link>
-    <PreBuildEvent>
-      <Command>if exist "$(SolutionDir)Utilities\bin\StructParser.exe" ("$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)) || exit /b 0</Command>
-      <Message>Running StructParser...</Message>
-    </PreBuildEvent>
+    <PreBuildEvent></PreBuildEvent>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>

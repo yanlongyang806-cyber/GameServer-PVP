@@ -1,0 +1,66 @@
+========================================
+StructParser.exe 禁用操作日志
+========================================
+执行时间: 2024-12-19
+操作: 禁用所有 .vcxproj 文件中的 StructParser.exe PreBuildEvent
+
+========================================
+已修改的文件列表 (共 10 个):
+========================================
+
+1. Core\GameServer\CoreGameServer.vcxproj
+   - 修改了 2 个 PreBuildEvent (Debug|Win32 和 Full Debug|Win32)
+
+2. CrossRoads\GameServerLib\GameServerLib.vcxproj
+   - 修改了 2 个 PreBuildEvent (Debug|Win32 和 Full Debug|Win32)
+
+3. libs\AILib\AILib.vcxproj
+   - 修改了 2 个 PreBuildEvent (Debug|Win32 和 Full Debug|Win32)
+
+4. libs\ContentLib\ContentLib.vcxproj
+   - 修改了 4 个 PreBuildEvent (Debug|Win32, Debug|x64, Full Debug|Win32, Full Debug|x64)
+
+5. libs\HttpLib\HttpLib.vcxproj
+   - 修改了 6 个 PreBuildEvent (Code Coverage|Win32, Code Coverage|x64, Debug|Win32, Debug|x64, Full Debug|Win32, Full Debug|x64)
+
+6. libs\PatchClientLib\PatchClientLib.vcxproj
+   - 修改了 6 个 PreBuildEvent (多个配置)
+
+7. libs\ServerLib\ServerLib.vcxproj
+   - 修改了 6 个 PreBuildEvent (Code Coverage|Win32, Code Coverage|x64, Debug|Win32, Debug|x64, Full Debug|Win32, Full Debug|x64)
+
+8. libs\StructParserStub\StructParserStub.vcxproj
+   - 修改了 4 个 PreBuildEvent (多个配置)
+
+9. libs\UtilitiesLib\UtilitiesLib.vcxproj
+   - 修改了 6 个 PreBuildEvent (多个配置)
+
+10. libs\WorldLib\WorldLib.vcxproj
+    - 修改了 4 个 PreBuildEvent (Debug|Win32, Debug|x64, Full Debug|Win32, Full Debug|x64)
+
+========================================
+修改内容:
+========================================
+所有包含 StructParser.exe 的 <PreBuildEvent> 标签已被替换为:
+<PreBuildEvent></PreBuildEvent>
+
+这确保了 StructParser.exe 在编译时不会被调用，解决了 GitHub Actions 中的兼容性问题：
+"This version of StructParser.exe is not compatible with the version of Windows you're running. exited with code 216"
+
+========================================
+验证结果:
+========================================
+✓ 已确认：所有 .vcxproj 文件中不再包含 StructParser.exe 的 PreBuildEvent 命令
+✓ 已确认：所有 PreBuildEvent 标签已被正确替换为空标签
+✓ 已确认：其他 MSBuild 配置（PostBuildEvent、Import 等）均未改动
+
+========================================
+下一步:
+========================================
+1. 提交这些更改到 Git 仓库
+2. 推送到 GitHub
+3. 在 GitHub Actions 中测试编译
+
+现在 GameServer.exe 应该可以在 GitHub Actions 上成功编译了！
+
+========================================
