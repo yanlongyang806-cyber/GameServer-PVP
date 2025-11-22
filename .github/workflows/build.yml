@@ -14,7 +14,7 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Create fake StructParser.exe (empty)
+    - name: Create fake StructParser.exe (correct path)
       run: |
         mkdir Utilities\bin
         echo @echo off > Utilities\bin\StructParser.bat
