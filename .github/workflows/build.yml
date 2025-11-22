@@ -22,6 +22,15 @@ jobs:
       run: nuget restore CoreGameServer.sln
       continue-on-error: true
       
+    - name: Build StructParser first
+      run: |
+        msbuild Utilities\StructParser\StructParser.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
+      
+    - name: Setup StructParser for main build
+      run: |
+        if not exist Utilities\bin mkdir Utilities\bin
+        copy Utilities\StructParser\bin\Debug\StructParser.exe Utilities\bin\StructParser.exe
+      
     - name: Build Solution
       run: |
         msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
