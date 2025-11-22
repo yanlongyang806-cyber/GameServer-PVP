@@ -3,7 +3,7 @@ name: Build GameServer Only
 on:
   workflow_dispatch:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -16,20 +16,32 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
+    # 1. Fake StructParser
     - name: Create Fake StructParser
       shell: cmd
       run: |
         if not exist Utilities\bin mkdir Utilities\bin
         echo. > Utilities\bin\StructParser.exe
 
-    - name: Build Solution
+    # 2. 先构建 StructParserStub.exe（必须有 AutoGen）
+    - name: Build StructParserStub
       shell: cmd
       run: |
-        msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
+        msbuild libs\StructParserStub\StructParserStub.vcxproj ^
+          /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
 
+    # 3. 构建整个 Solution（AutoGen 已准备好）
+    - name: Build GameServer Solution
+      shell: cmd
+      run: |
+        msbuild CoreGameServer.sln ^
+          /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 ^
+          /m /v:minimal
+
+    # 4. 上传 GameServer.exe
     - name: Upload GameServer.exe
       uses: actions/upload-artifact@v4
       with:
         name: GameServer
         path: Core/bin/Debug/GameServer.exe
-        if-no-files-found: warn
+        if-no-files-found: error
