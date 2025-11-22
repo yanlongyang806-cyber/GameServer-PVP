@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: windows-latest
 
+    env:
+      RUN_STRUCTPARSER: false
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -16,21 +19,8 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Restore NuGet packages
-      run: nuget restore CoreGameServer.sln
-      continue-on-error: true
-
-    - name: Build ONLY CoreGameServer (GameServer.exe)
+    - name: Build ONLY GameServer (skip StructParser)
       run: |
         msbuild CoreGameServer.sln `
           /t:CoreGameServer `
-          /p:Configuration=Debug `
-          /p:Platform=Win32 `
-          /m /v:minimal
-
-    - name: Upload GameServer.exe
-      uses: actions/upload-artifact@v4
-      with:
-        name: GameServer
-        path: Core/bin/Debug/GameServer.exe
-        if-no-files-found: error
+          /p:
