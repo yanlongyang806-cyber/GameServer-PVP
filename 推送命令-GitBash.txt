@@ -1,0 +1,41 @@
+========================================
+  Git Bash 推送命令（复制粘贴使用）
+========================================
+
+# 1. 进入仓库目录
+cd /i/wdym/GameServer-PVP
+
+# 2. 检查 Git 状态
+git status
+
+# 3. 添加远程仓库（替换为你的仓库地址）
+git remote add origin https://github.com/你的用户名/GameServer-PVP.git
+
+# 如果远程仓库已存在，使用这个命令更新：
+# git remote set-url origin https://github.com/你的用户名/GameServer-PVP.git
+
+# 4. 设置分支为 main
+git branch -M main
+
+# 5. 推送代码
+git push -u origin main
+
+========================================
+  注意事项
+========================================
+
+1. 如果提示需要身份验证：
+   - 用户名：你的 GitHub 用户名
+   - 密码：使用 Personal Access Token（不是密码）
+   - 创建 Token：https://github.com/settings/tokens
+   - 权限：至少需要 repo 权限
+
+2. 如果仓库已存在，先删除再添加：
+   git remote remove origin
+   git remote add origin https://github.com/你的用户名/GameServer-PVP.git
+
+3. 查看远程仓库：
+   git remote -v
+
+========================================
+
