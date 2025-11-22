@@ -63,7 +63,7 @@
       <EntryPointSymbol>wmainCRTStartup</EntryPointSymbol>
     </Link>
     <PreBuildEvent>
-      <Command>..\..\Utilities\bin\StructParser.exe X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -86,7 +86,7 @@
       <EntryPointSymbol>wmainCRTStartup</EntryPointSymbol>
     </Link>
     <PreBuildEvent>
-      <Command>..\..\Utilities\bin\StructParser.exe X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
     </PreBuildEvent>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>

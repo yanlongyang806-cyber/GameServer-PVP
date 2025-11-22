@@ -50,7 +50,7 @@
       <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
     <PreBuildEvent>
-      <Command>..\..\Utilities\bin\StructParser.exe X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>
@@ -64,7 +64,7 @@
       <WarningLevel>Level4</WarningLevel>
     </ClCompile>
     <PreBuildEvent>
-      <Command>..\..\Utilities\bin\StructParser.exe X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
+      <Command>"$(SolutionDir)Utilities\bin\StructParser.exe" X $(ProjectDir) X $(ProjectFileName) X $(Platform) X $(Configuration) X $(VCInstallDir) X $(SolutionPath)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
