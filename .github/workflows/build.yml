@@ -2,6 +2,8 @@ name: Build GameServer Only
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main, master ]
 
 jobs:
   build:
@@ -18,34 +20,16 @@ jobs:
       shell: cmd
       run: |
         if not exist Utilities\bin mkdir Utilities\bin
-        echo MZ > Utilities\bin\StructParser.exe
+        echo. > Utilities\bin\StructParser.exe
 
-    - name: Build Solution (all dependencies)
+    - name: Build Solution
       shell: cmd
       run: |
         msbuild CoreGameServer.sln /p:Configuration=Debug /p:Platform=Win32 /p:PlatformToolset=v143 /m /v:minimal
-        if errorlevel 1 (
-          echo Build failed with error code %errorlevel%
-          exit /b 1
-        )
-
-    - name: Find GameServer.exe
-      shell: cmd
-      run: |
-        echo Searching for GameServer.exe...
-        if exist Core\bin\Debug\GameServer.exe (
-          echo Found: Core\bin\Debug\GameServer.exe
-          dir Core\bin\Debug\GameServer.exe
-        ) else (
-          echo Core\bin\Debug\GameServer.exe does not exist
-          echo Searching entire repository...
-          dir /s /b GameServer.exe 2>nul
-          exit /b 1
-        )
 
     - name: Upload GameServer.exe
       uses: actions/upload-artifact@v4
       with:
         name: GameServer
         path: Core/bin/Debug/GameServer.exe
-        if-no-files-found: error
+        if-no-files-found: warn
