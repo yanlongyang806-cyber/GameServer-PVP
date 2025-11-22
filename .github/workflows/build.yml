@@ -1,4 +1,4 @@
-name: Build GameServer Only
+name: Build GameServer
 
 on:
   workflow_dispatch:
@@ -14,14 +14,14 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
 
-    - name: Create Fake StructParser
+    - name: Create Fake StructParser.exe
+      shell: pwsh
       run: |
-        mkdir Utilities\bin -Force
-        echo. > Utilities\bin\StructParser.exe
+        New-Item -ItemType Directory -Force -Path "Utilities/bin" | Out-Null
+        Set-Content -Path "Utilities/bin/StructParser.exe" -Value ([byte[]](0x4D,0x5A)) -Encoding Byte
 
     - name: Build GameServer
-      shell: cmd
-      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /p:PreBuildEvent="" /m /v:minimal
+      run: msbuild CoreGameServer.sln /t:CoreGameServer /p:Configuration=Debug /p:Platform=Win32 /m /v:minimal
 
     - name: Upload GameServer.exe
       uses: actions/upload-artifact@v4
