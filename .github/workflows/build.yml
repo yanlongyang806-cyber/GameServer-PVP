@@ -18,6 +18,33 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v1
       
+    - name: Download expat 2.0.1
+      run: |
+        mkdir 3rdparty
+        cd 3rdparty
+        curl -L https://github.com/libexpat/libexpat/archive/refs/tags/R_2_0_1.zip -o expat.zip
+        powershell -Command "Expand-Archive -Path expat.zip -DestinationPath . -Force"
+        move libexpat-R_2_0_1 expat-2.0.1
+      
+    - name: Build expat
+      run: |
+        cd 3rdparty/expat-2.0.1/win32
+        msbuild expat_static.vcxproj /p:Configuration=Release /p:Platform=Win32 /p:PlatformToolset=v143
+      
+    - name: Prepare expat lib/include for StructParser
+      run: |
+        mkdir 3rdparty\expat-2.0.1\lib
+        mkdir 3rdparty\expat-2.0.1\xmlwf
+        copy 3rdparty\expat-2.0.1\lib\expat.h 3rdparty\expat-2.0.1\lib\
+        copy 3rdparty\expat-2.0.1\lib\expat_external.h 3rdparty\expat-2.0.1\lib\
+        copy 3rdparty\expat-2.0.1\lib\winconfig.h 3rdparty\expat-2.0.1\lib\
+        copy 3rdparty\expat-2.0.1\xmlwf\xmlfile.h 3rdparty\expat-2.0.1\xmlwf\
+        if exist 3rdparty\expat-2.0.1\win32\bin\Release\expat.lib (
+          copy 3rdparty\expat-2.0.1\win32\bin\Release\expat.lib 3rdparty\expat-2.0.1\lib\libexpatMT.lib
+        ) else (
+          echo Warning: expat.lib not found, StructParser may fail
+        )
+      
     - name: Restore NuGet packages (if any)
       run: nuget restore CoreGameServer.sln
       continue-on-error: true
